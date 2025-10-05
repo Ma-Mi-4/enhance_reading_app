@@ -45,6 +45,7 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 gem 'bootstrap', '~> 5.2'
+gem 'dartsass-rails'
 gem 'jquery-rails'
 
 gem 'sorcery', '0.16.3'
