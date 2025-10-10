@@ -45,7 +45,7 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 gem 'bootstrap', '~> 5.2'
-gem 'dartsass-rails'
+gem "dartsass-rails", "~> 0.5.1"
 gem 'jquery-rails'
 
 gem 'sorcery', '0.16.3'
@@ -71,3 +71,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "dockerfile-rails", ">= 1.7", :group => :development
