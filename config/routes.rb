@@ -10,9 +10,9 @@ Rails.application.routes.draw do
   root "main#index"
 
   resources :users, only: [:new, :create]
-  get 'login', to: 'user_sessions#new'
-  post 'login', to: 'user_sessions#create'
-  delete 'logout', to: 'user_sessions#destroy'
+  get 'login', to: 'sessions#new'
+  post 'login', to: 'sessions#create'
+  delete 'logout', to: 'sessions#destroy'
 
   get 'questions', to: 'questions#index'
   get 'settings', to: 'settings#index'

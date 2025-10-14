@@ -17,11 +17,12 @@
           <div class='dropdown-menu dropdown-menu-end'>
             <div class='dropdown-item'>メニュー</div>
             <div class='dropdown-divider'></div>
-            <%= link_to '設定', settings_path, class: 'dropdown-item' %>
+            <%= link_to '設定', '#', class: 'dropdown-item' %>
             <%= link_to 'レベル設定変更', '#', class: 'dropdown-item' %>
             <%= link_to '通知設定', '#', class: 'dropdown-item' %>
             <%= link_to 'アカウント情報変更', '#', class: 'dropdown-item' %>
-            <%= link_to 'ログアウト', logout_path, data: { turbo_method: :delete }, class: 'dropdown-item' %>
+            <%= link_to 'ログアウト', '#', class: 'dropdown-item' %>
+          </div>
           </div>
         </li>
       </ul>
