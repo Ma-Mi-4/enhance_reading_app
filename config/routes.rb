@@ -16,4 +16,6 @@ Rails.application.routes.draw do
 
   get 'questions', to: 'questions#index'
   get 'settings', to: 'settings#index'
+  get 'terms_of_service', to: 'static_pages#terms_of_service'
+  get 'main', to: 'main#index'
 end
