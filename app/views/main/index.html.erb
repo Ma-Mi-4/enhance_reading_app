@@ -12,5 +12,5 @@
     <%= button_to 'ログアウト', logout_path, method: :delete, data: { turbo: false }, class: "text-red-600 hover:underline" %>
   </div>
 <% else %>
-  <%= link_to 'ログイン', login_path, class: 'btn btn-outline-primary me-2' %>
+  <%= button_to 'ログイン', login_path, class: 'btn btn-outline-primary me-2' %>
 <% end %>
