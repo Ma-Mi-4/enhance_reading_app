@@ -1,23 +1,19 @@
 <header x-data="{ open: false, dropdownOpen: false }" class="bg-white shadow">
   <nav class="container mx-auto flex items-center justify-between px-4 py-3">
-    <!-- アプリ名 -->
     <h1 class="text-xl font-semibold text-gray-800">
       Enhance_reading_app
     </h1>
 
-    <!-- ナビゲーション項目 -->
     <div class="w-full lg:flex lg:items-center lg:w-auto hidden">
       <ul class="flex flex-col lg:flex-row w-full justify-end mt-4 lg:mt-0 items-center list-none">
-        <li class="relative mr-4 list-none">
-          <!-- メニュー文字だけのボタン -->
+        <li class="relative mr-4">
           <button
             @click="dropdownOpen = !dropdownOpen"
             class="px-2 py-1 text-sm bg-gray-100 hover:bg-gray-200 rounded-md text-gray-700 focus:outline-none"
           >
-            メニュー
+          メニュー
           </button>
 
-          <!-- ドロップダウンメニュー -->
           <div
             x-show="dropdownOpen"
             @click.away="dropdownOpen = false"
@@ -28,7 +24,7 @@
             <%= link_to 'レベル設定変更', '#', class: 'block px-3 py-1.5 text-gray-700 hover:bg-gray-100' %>
             <%= link_to '通知設定', '#', class: 'block px-3 py-1.5 text-gray-700 hover:bg-gray-100' %>
             <%= link_to 'アカウント情報変更', '#', class: 'block px-3 py-1.5 text-gray-700 hover:bg-gray-100' %>
-            <%= button_to 'ログアウト', logout_path, method: :delete, form: { class: "inline" }, class: 'block px-3 py-1.5 text-gray-700 hover:bg-gray-100' %>
+            <%= link_to 'メイン画面', main_path, class: 'block px-3 py-1.5 text-gray-700 hover:bg-gray-100' %>
           </div>
         </li>
       </ul>
