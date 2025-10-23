@@ -9,7 +9,12 @@ Rails.application.routes.draw do
   # root "posts#index"
   root "main#index"
 
+  if ENV["ENABLE_LETTER_OPENER_WEB"] != "false"
+    mount LetterOpenerWeb::Engine, at: "/letter_opener"
+  end
+
   resources :users, only: [:new, :create]
+  resources :password_resets, only: %i[new create edit update]
   get 'login', to: 'sessions#new'
   post 'login', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'

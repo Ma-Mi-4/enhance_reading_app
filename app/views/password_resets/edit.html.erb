@@ -1,0 +1,33 @@
+<% content_for(:title, "パスワードリセット") %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-lg-8 mx-auto">
+      <h1><%= "パスワードリセット" %></h1>
+      <%= form_with model: @user, url: password_reset_path(@token), method: :patch do |f| %>
+      <% if @user.errors.any? %>
+        <div style="color: red;">
+          <h2><%= pluralize(@user.errors.count, "件のエラー") %>が発生しました：</h2>
+          <ul>
+            <% @user.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+        <div class="mb-3">
+          <%= f.label :email, "メールアドレス", class: "form-label" %>
+          <%= @user.email %>
+        </div>
+        <div class="mb-3">
+          <%= f.label :password, "パスワード", class: "form-label" %>
+          <%= f.password_field :password, class: "form-control" %>
+        </div>
+        <div class="mb-3">
+          <%= f.label :password_confirmation, "確認用パスワード", class: "form-label" %>
+          <%= f.password_field :password_confirmation, class: "form-control" %>
+        </div>
+        <%= f.submit "更新", class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>
