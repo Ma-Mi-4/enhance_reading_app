@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'calendars/index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
@@ -9,12 +10,13 @@ Rails.application.routes.draw do
   # root "posts#index"
   root "main#index"
 
-  if ENV["ENABLE_LETTER_OPENER_WEB"] != "false"
+  if ENV["ENABLE_LETTER_OPENER_WEB"] == "true"
     mount LetterOpenerWeb::Engine, at: "/letter_opener"
   end
 
   resources :users, only: [:new, :create]
   resources :password_resets, only: %i[new create edit update]
+  resources :calendars, only: [:index]
   get 'login', to: 'sessions#new'
   post 'login', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
@@ -23,4 +25,7 @@ Rails.application.routes.draw do
   get 'settings', to: 'settings#index'
   get 'terms_of_service', to: 'static_pages#terms_of_service'
   get 'main', to: 'main#index'
+  get 'settings/level', to: 'settings#level', as: 'settings_level'
+get 'settings/notification', to: 'settings#notification', as: 'settings_notification'
+get 'settings/account', to: 'settings#account', as: 'settings_account'
 end

@@ -243,6 +243,7 @@ Rails.application.config.sorcery.configure do |config|
   # config.battlenet.scope = "openid"
   # --- user config ---
   config.user_config do |user|
+    user.salt_attribute_name = nil
     # -- core --
     # Specify username attributes, for example: [:username, :email].
     # Default: `[:email]`
@@ -402,8 +403,8 @@ Rails.application.config.sorcery.configure do |config|
     # Password reset mailer class.
     # Default: `nil`
     #
-    # user.reset_password_mailer =
     user.reset_password_mailer = UserMailer
+    # user.reset_password_mailer =
 
     # Reset password email method on your mailer class.
     # Default: `:reset_password_email`

@@ -10,6 +10,8 @@ services:
       DB_USERNAME: postgres
       DB_PASSWORD: password
       DB_NAME: app_development
+      ENABLE_LETTER_OPENER_WEB: "true"
+      PORT: 3000
     volumes:
       - .:/rails
     ports:

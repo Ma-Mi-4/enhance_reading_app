@@ -4,8 +4,9 @@
   <p class="mb-2">ようこそ、<%= current_user.name %>さん！</p>
   
   <nav class="space-x-4">
-    <%= link_to '問題画面へ', questions_path, class: "text-blue-600 hover:underline" %>
-    <%= link_to '設定画面へ', settings_path, class: "text-blue-600 hover:underline" %>
+    <%= link_to '問題へ', questions_path, class: "text-blue-600 hover:underline" %>
+    <%= link_to '設定へ', settings_path, class: "text-blue-600 hover:underline" %>
+    <%= link_to '学習カレンダーへ', calendars_path, class: "text-blue-600 hover:underline" %>
   </nav>
   
   <div class="mt-4">
