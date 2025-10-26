@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   # root "posts#index"
   root "main#index"
 
-  if ENV["ENABLE_LETTER_OPENER_WEB"] != "false"
+  if ENV["ENABLE_LETTER_OPENER_WEB"] == "true"
     mount LetterOpenerWeb::Engine, at: "/letter_opener"
   end
 
