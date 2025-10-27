@@ -1,0 +1,73 @@
+{
+  "level": 800,
+  "title": "Vocabulary Quiz from Part7 Level800_001",
+  "questions": [
+    {
+      "word": "initiative",
+      "question_text": "“initiative” の意味はどれでしょう？",
+      "choices_text": [
+        "a new plan or program",
+        "a financial report",
+        "a team-building activity",
+        "a legal document"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The company launched a new Sustainability Initiative."
+    },
+    {
+      "word": "collaboration",
+      "question_text": "“collaboration” の意味はどれでしょう？",
+      "choices_text": [
+        "working together with others",
+        "competing against others",
+        "supervising employees",
+        "reviewing reports"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The initiative encourages collaboration with eco-friendly suppliers."
+    },
+    {
+      "word": "eco-friendly",
+      "question_text": "“eco-friendly” の意味はどれでしょう？",
+      "choices_text": [
+        "having a positive effect on the environment",
+        "related to corporate finances",
+        "focused on employee productivity",
+        "supporting marketing campaigns"
+      ],
+      "correct_index": 0,
+      "example_sentence": "We collaborate with eco-friendly suppliers."
+    },
+    {
+      "word": "implement",
+      "question_text": "“implement” の意味はどれでしょう？",
+      "choices_text": [
+        "to put a plan or system into action",
+        "to cancel a project",
+        "to discuss ideas",
+        "to report results"
+      ],
+      "correct_index": 0,
+      "example_sentence": "We will implement several projects to reduce energy consumption."
+    },
+    {
+      "word": "workshop",
+      "question_text": "“workshop” の意味はどれでしょう？",
+      "choices_text": [
+        "a meeting for discussion or training",
+        "a regular team meeting",
+        "a social gathering",
+        "an online newsletter"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The Sustainability Workshop will include guest speakers."
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level800_001.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 800",
+    "type": "vocabulary"
+  }
+}

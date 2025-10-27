@@ -25,6 +25,7 @@ ActiveRecord::Schema[7.1].define(version: 2025_10_26_071146) do
     t.integer "access_count_to_reset_password_page", default: 0
     t.string "crypted_password"
     t.string "salt"
+    t.string "password_digest"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 

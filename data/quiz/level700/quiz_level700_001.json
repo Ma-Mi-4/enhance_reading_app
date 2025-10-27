@@ -1,0 +1,73 @@
+{
+  "level": 700,
+  "title": "Vocabulary Quiz from Part7 Level700_001",
+  "questions": [
+    {
+      "word": "flexibility",
+      "question_text": "“flexibility” の意味はどれでしょう？",
+      "choices_text": [
+        "the ability to change easily",
+        "the state of being firm and unchanging",
+        "the ability to work quickly",
+        "the control of strict rules"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Our company values flexibility in work arrangements."
+    },
+    {
+      "word": "approve",
+      "question_text": "“approve” の意味はどれでしょう？",
+      "choices_text": [
+        "to officially accept or agree to something",
+        "to reject an idea or plan",
+        "to suggest a new proposal",
+        "to check something carefully"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Each manager must approve the remote work schedule."
+    },
+    {
+      "word": "coverage",
+      "question_text": "“coverage” の意味はどれでしょう？",
+      "choices_text": [
+        "the range of responsibility someone manages",
+        "the payment from an insurance policy",
+        "the process of advertising a product",
+        "the time period of a vacation"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Managers need to ensure adequate in-office coverage."
+    },
+    {
+      "word": "require",
+      "question_text": "“require” の意味はどれでしょう？",
+      "choices_text": [
+        "to need or demand something",
+        "to delay or postpone something",
+        "to decide or conclude something",
+        "to report or record something"
+      ],
+      "correct_index": 0,
+      "example_sentence": "All remote employees are required to attend the meeting."
+    },
+    {
+      "word": "representative",
+      "question_text": "“representative” の意味はどれでしょう？",
+      "choices_text": [
+        "a person who speaks or acts for a group",
+        "a person who is learning as a trainee",
+        "a customer who buys a product",
+        "a person who reviews company finances"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Please contact your HR representative for more details."
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level700_001.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 700",
+    "type": "vocabulary"
+  }
+}

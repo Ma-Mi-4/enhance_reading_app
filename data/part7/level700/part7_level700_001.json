@@ -1,0 +1,24 @@
+{
+  "level": 700,
+  "title": "Internal Notice: Change in Remote Work Policy",
+  "text": "To: All Employees\nFrom: Human Resources Department\nSubject: Update on Remote Work Policy\n\nDear Team,\n\nAs part of our continued effort to support flexibility and productivity, we are updating our remote work policy effective from next month. Employees will now be allowed to work remotely up to three days per week, instead of the previous two.\n\nHowever, please note that each department manager must approve individual remote work schedules to ensure adequate in-office coverage. Employees who wish to work remotely on Mondays or Fridays must submit a request form through the HR portal by the end of this week.\n\nAdditionally, starting next quarter, all remote employees will be required to attend a quarterly virtual check-in meeting with their supervisors to discuss performance and goals.\n\nFor detailed policy guidelines, please refer to the attached document or contact your HR representative.\n\nThank you for your cooperation.\n\nHuman Resources Department",
+  "questions": [
+    {
+      "question_text": "What is the main purpose of this notice?",
+      "choices_text": [
+        "To announce a change in remote work rules",
+        "To introduce new employees to the HR team",
+        "To cancel all remote work options",
+        "To remind staff of an upcoming company event"
+      ],
+      "correct_index": 0
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "type": "reading",
+    "difficulty": "TOEIC Level 700",
+    "question_count": 1,
+    "word_count": 260
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "level": 600,
+  "title": "Vocabulary Quiz from Part7 Level600_001",
+  "questions": [
+    {
+      "word": "reschedule",
+      "question_text": "“reschedule” の意味はどれでしょう？",
+      "choices_text": [
+        "To plan something for a different time",
+        "To cancel something completely",
+        "To confirm a schedule",
+        "To make a new meeting place"
+      ],
+      "correct_index": 0,
+      "example_sentence": "We had to reschedule the meeting because of the client presentation."
+    },
+    {
+      "word": "presentation",
+      "question_text": "“presentation” の意味はどれでしょう？",
+      "choices_text": [
+        "A spoken or visual display of information",
+        "A written report sent by email",
+        "A short phone conversation",
+        "A type of meeting room"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The team prepared a presentation for the client."
+    },
+    {
+      "word": "conference room",
+      "question_text": "“conference room” の意味はどれでしょう？",
+      "choices_text": [
+        "A room used for meetings",
+        "A place to store documents",
+        "A restaurant inside the office",
+        "A space for product design"
+      ],
+      "correct_index": 0,
+      "example_sentence": "We will meet in the main conference room at 2 p.m."
+    },
+    {
+      "word": "confirm",
+      "question_text": "“confirm” の意味はどれでしょう？",
+      "choices_text": [
+        "To make sure something is true or correct",
+        "To delay an event",
+        "To ask for permission",
+        "To introduce a person"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Please confirm whether the design team will attend."
+    },
+    {
+      "word": "feedback",
+      "question_text": "“feedback” の意味はどれでしょう？",
+      "choices_text": [
+        "Comments or opinions about something",
+        "A financial report",
+        "An official document",
+        "An online meeting system"
+      ],
+      "correct_index": 0,
+      "example_sentence": "We need the design team’s feedback on the new layout."
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level600_001.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 600",
+    "type": "vocabulary"
+  }
+}
