@@ -1,0 +1,29 @@
+{
+  "level": 500,
+  "vocab_questions": [
+    {
+      "word": "schedule",
+      "question_text": "\"schedule\"の意味はどれでしょう？",
+      "choices_text": ["plan", "problem", "meeting", "building"],
+      "correct_index": 0
+    },
+    {
+      "word": "avoid",
+      "question_text": "\"avoid\"の意味はどれでしょう？",
+      "choices_text": ["stop from happening", "help", "move quickly", "clean"],
+      "correct_index": 0
+    },
+    {
+      "word": "cooperation",
+      "question_text": "\"cooperation\"の意味はどれでしょう？",
+      "choices_text": ["teamwork", "payment", "complaint", "rule"],
+      "correct_index": 0
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": {
+    "created_by": "chatgpt",
+    "checked": true,
+    "notes": "Level 500 vocabulary problems with simplified Japanese question text"
+  }
+}

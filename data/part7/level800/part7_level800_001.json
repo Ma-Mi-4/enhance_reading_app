@@ -1,0 +1,24 @@
+{
+  "level": 800,
+  "title": "Company Newsletter: New Sustainability Initiative",
+  "text": "Subject: Introducing Our New Sustainability Initiative\n\nDear Valued Partners,\n\nWe are excited to announce the launch of our new Sustainability Initiative, which aims to reduce our company’s environmental impact and promote responsible business practices. Over the next six months, we will implement several projects designed to decrease energy consumption, minimize waste, and increase collaboration with eco-friendly suppliers.\n\nOne of the key components of this initiative is the introduction of energy-efficient lighting systems in all office buildings. Additionally, we will transition to digital-only documentation to reduce paper use by nearly 70%.\n\nTo ensure the success of these efforts, we will host a Sustainability Workshop for employees and partner companies in mid-November. The workshop will feature guest speakers from the environmental sector and highlight innovative ways businesses can operate more sustainably.\n\nWe believe that by working together, we can make a meaningful difference. Your continued support and participation are essential in helping us reach our goals.\n\nFor more details about the program schedule and participation guidelines, please visit our internal website or contact the Corporate Responsibility Team.\n\nSincerely,\nThe Green Future Committee",
+  "questions": [
+    {
+      "question_text": "What is the main goal of the new Sustainability Initiative?",
+      "choices_text": [
+        "To reduce the company’s environmental impact",
+        "To improve financial reporting accuracy",
+        "To expand into international markets",
+        "To launch a new product line"
+      ],
+      "correct_index": 0
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "type": "reading",
+    "difficulty": "TOEIC Level 800",
+    "question_count": 1,
+    "word_count": 320
+  }
+}

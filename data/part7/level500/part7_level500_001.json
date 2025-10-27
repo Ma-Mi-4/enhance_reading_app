@@ -1,0 +1,26 @@
+{
+  "level": 500,
+  "title": "Office Cleaning Schedule",
+  "category": "email",
+  "content": "Dear Staff,\n\nI hope you are doing well. This is to inform everyone about our new office cleaning schedule. Starting next Monday, the cleaning team will come in the evening instead of the morning. This change is to avoid disturbing employees during working hours. The cleaning will begin at 6:30 p.m. every weekday and finish around 8:00 p.m.\n\nWe also ask all staff members to clear their desks before leaving. Please make sure no personal items are left on the tables or floors. If you need special cleaning, such as for your computer or shelf, please contact the office assistant, Ms. Lee, before Friday.\n\nThank you for your cooperation.\n\nBest regards,\nMichael Brown\nOffice Manager",
+  "word_count": 266,
+  "questions": [
+    {
+      "body": "What is the main purpose of this email?",
+      "choices_text": [
+        "To announce a new cleaning schedule",
+        "To request a meeting with staff",
+        "To introduce a new employee",
+        "To report a maintenance issue"
+      ],
+      "correct_index": 0,
+      "explanation": "The email is about informing staff of a new cleaning schedule."
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": {
+    "created_by": "chatgpt",
+    "checked": true,
+    "notes": "Level 500 passage with simple vocabulary and clear structure, only 1 comprehension question for MVP testing."
+  }
+}
