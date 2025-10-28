@@ -1,0 +1,16 @@
+<h1>復習問題</h1>
+
+<% if @quiz_data["questions"].any? %>
+  <% @quiz_data["questions"].each_with_index do |q, index| %>
+    <div class="question">
+      <p><%= "#{index + 1}. #{q["question_text"]}" %></p>
+      <ul>
+        <% q["choices_text"].each_with_index do |choice, i| %>
+          <li><%= choice %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+<% else %>
+  <p>復習問題が見つかりません。</p>
+<% end %>

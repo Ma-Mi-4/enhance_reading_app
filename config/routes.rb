@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'quizzes/show'
   get 'calendars/index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -21,11 +22,12 @@ Rails.application.routes.draw do
   post 'login', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
 
-  get 'questions', to: 'questions#index'
+  get 'questions', to: 'questions#show'
+  get 'quizzes', to: 'quizzes#show'
   get 'settings', to: 'settings#index'
   get 'terms_of_service', to: 'static_pages#terms_of_service'
   get 'main', to: 'main#index'
   get 'settings/level', to: 'settings#level', as: 'settings_level'
-get 'settings/notification', to: 'settings#notification', as: 'settings_notification'
-get 'settings/account', to: 'settings#account', as: 'settings_account'
+  get 'settings/notification', to: 'settings#notification', as: 'settings_notification'
+  get 'settings/account', to: 'settings#account', as: 'settings_account'
 end

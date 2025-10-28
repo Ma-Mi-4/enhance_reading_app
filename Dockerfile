@@ -47,7 +47,10 @@ COPY . .
 RUN bundle exec bootsnap precompile app/ lib/
 
 # Precompiling assets for production without requiring secret RAILS_MASTER_KEY
-RUN SECRET_KEY_BASE_DUMMY=1 ./bin/rails assets:precompile
+RUN apt-get update -qq && apt-get install -y dos2unix && \
+    dos2unix bin/rails && \
+    chmod +x bin/rails && \
+    SECRET_KEY_BASE_DUMMY=1 ./bin/rails assets:precompile
 
 
 # Final stage for app image
@@ -67,7 +70,7 @@ USER 1000:1000
 # Entrypoint prepares the database.
 # ENTRYPOINT ["/rails/bin/docker-entrypoint"] 
 RUN mkdir -p tmp/pids
-ENTRYPOINT ["/bin/sh", "-c", "rm -f tmp/pids/server.pid && exec bundle exec puma -C config/puma.rb"]
+ENTRYPOINT ["bundle", "exec", "puma", "-C", "config/puma.rb"]
 
 # Start the server by default, this can be overwritten at runtime
 EXPOSE 3000
