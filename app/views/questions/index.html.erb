@@ -1,6 +1,0 @@
-<h1>問題画面</h1>
-<p><%= @question %></p>
-
-<% @choices.each do |choice| %>
-  <%= button_to choice, "#", method: :get %>
-<% end %>

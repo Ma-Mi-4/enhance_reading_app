@@ -1,0 +1,25 @@
+<h1><%= @questions_data["title"] %></h1>
+
+<p><%= @questions_data["text"] %></p>
+
+<% @questions_data["questions"].each_with_index do |q, index| %>
+  <div style="margin-bottom: 20px; padding: 10px; border: 1px solid #ccc;">
+    <p><strong>Question <%= index + 1 %>:</strong> <%= q["question_text"] %></p>
+    <ul>
+      <% q["choices_text"].each_with_index do |choice, i| %>
+        <li>
+          <input type="radio" name="q<%= index %>" id="q<%= index %>_choice<%= i %>">
+          <label for="q<%= index %>_choice<%= i %>"><%= choice %></label>
+        </li>
+      <% end %>
+    </ul>
+    <button type="button" onclick="document.getElementById('answer<%= index %>').style.display='block'">
+      Show Answer
+    </button>
+    <p id="answer<%= index %>" style="display:none; color:green;">
+      Correct: <%= q["choices_text"][q["correct_index"]] %><br>
+      Example: <%= q["example_sentence"] %>
+    </p>
+  </div>
+<% end %>
+<%= link_to "復習へ進む", quizzes_path(level: params[:level], id: params[:id]), class: "btn btn-primary" %>
