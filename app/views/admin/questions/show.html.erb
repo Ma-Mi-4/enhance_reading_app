@@ -1,0 +1,10 @@
+<h1>問題詳細（管理者用）</h1>
+
+<p><strong>ID:</strong> <%= @question.id %></p>
+<p><strong>タイトル:</strong> <%= @question.title %></p>
+<p><strong>レベル:</strong> <%= @question.level %></p>
+<p><strong>種類:</strong> <%= @question.kind %></p>
+<p><strong>内容(JSON):</strong></p>
+<pre><%= JSON.pretty_generate(@question.content || {}) %></pre>
+
+<%= link_to "一覧に戻る", admin_questions_path, class: "btn btn-secondary" %>

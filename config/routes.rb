@@ -30,4 +30,13 @@ Rails.application.routes.draw do
   get 'settings/level', to: 'settings#level', as: 'settings_level'
   get 'settings/notification', to: 'settings#notification', as: 'settings_notification'
   get 'settings/account', to: 'settings#account', as: 'settings_account'
+
+  namespace :admin do
+    root to: "main#index"
+    get 'login', to: 'sessions#new'
+    post 'login', to: 'sessions#create'
+    delete 'logout', to: 'sessions#destroy'
+
+    resources :questions
+  end
 end
