@@ -1,0 +1,24 @@
+<%= form_with model: [:admin, @question], local: true do |f| %>
+  <div class="mb-3">
+    <%= f.label :title %>
+    <%= f.text_field :title, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= f.label :level %>
+    <%= f.select :level, [500, 600, 700, 800], {}, class: "form-select" %>
+  </div>
+
+  <div class="mb-3">
+    <%= f.label :kind %>
+    <%= f.select :kind, ["part7", "quiz"], {}, class: "form-select" %>
+  </div>
+
+  <div class="mb-3">
+    <%= f.label :content, "問題内容(JSON)" %>
+    <%= f.text_area :content, value: @question.content&.to_json || '{}', rows: 10, class: "form-control" %>
+    <small class="form-text text-muted">JSON形式で入力してください</small>
+  </div>
+
+  <%= f.submit class: "btn btn-primary" %>
+<% end %>

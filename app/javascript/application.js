@@ -1,7 +1,9 @@
-// Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
 import "@hotwired/turbo-rails"
 import "bootstrap"
 import "controllers"
 import Alpine from "alpinejs"
+import Rails from "@rails/ujs"
+
+Rails.start()
 window.Alpine = Alpine
 Alpine.start()
