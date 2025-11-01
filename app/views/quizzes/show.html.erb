@@ -14,3 +14,5 @@
 <% else %>
   <p>復習問題が見つかりません。</p>
 <% end %>
+<%= link_to "解説を見る", explanation_quiz_path(params[:id], level: params[:level]), class: "btn btn-primary" %>
+

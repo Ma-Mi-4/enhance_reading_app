@@ -1,0 +1,31 @@
+<h1>解説: <%= @questions_data["title"] %></h1>
+<p><%= @questions_data["text"] %></p>
+
+<% @questions_data["questions"].each_with_index do |q, index| %>
+  <div style="margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; border-radius: 8px;">
+    <!-- 問題文 -->
+    <p><strong>問題 <%= index + 1 %>:</strong> <%= q["question_text"] %></p>
+
+    <!-- 解答・解説 -->
+    <div style="margin-left: 20px; color: #333;">
+      <% correct_choice = q["choices_text"][q["correct_index"]] %>
+      <% wrong_choices = q["choices_text"].each_with_index.reject { |_, i| i == q["correct_index"] }.map(&:first) %>
+
+      <p><strong>正解:</strong> <span style="color: green;"><%= correct_choice %></span></p>
+
+      <% if wrong_choices.any? %>
+        <p><strong>不正解の選択肢:</strong> 
+          <%= wrong_choices.join(", ") %>
+        </p>
+      <% end %>
+
+      <p><strong>解説:</strong> <%= q["explanation"] %></p>
+
+      <% if q["example_sentence"].present? %>
+        <p><strong>例文:</strong> <%= q["example_sentence"] %></p>
+      <% end %>
+    </div>
+  </div>
+<% end %>
+
+<%= link_to "復習問題へ進む", quiz_path(id: params[:id], level: params[:level]), class: "btn btn-primary" %>
