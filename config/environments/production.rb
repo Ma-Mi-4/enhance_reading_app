@@ -103,4 +103,7 @@ Rails.application.configure do
     host: "enhance-reading-app-morning-sound-6129.fly.dev",
     protocol: "https"
   }
+
+  config.session_store :cookie_store, key: "_enhance_reading_app_session", secure: false
+
 end
