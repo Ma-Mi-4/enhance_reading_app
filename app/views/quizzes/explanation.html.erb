@@ -1,0 +1,11 @@
+<h1>復習解説: <%= @quiz_data["title"] %></h1>
+
+<% if @quiz_data["questions"].present? %>
+  <% @quiz_data["questions"].each_with_index do |q, i| %>
+    <p>Q<%= i+1 %>: <%= q["question"] %></p>
+    <p>解説: <%= q["explanation"] %></p>
+  <% end %>
+<% else %>
+  <p>復習問題が見つかりません。</p>
+<% end %>
+<%= link_to "カレンダーへ", calendars_path, class: "btn btn-primary" %>

@@ -22,6 +22,18 @@ Rails.application.routes.draw do
   post 'login', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
 
+  resources :questions, only: [:show] do
+    member do
+      get 'explanation'
+    end
+  end
+
+  resources :quizzes, only: [:show] do
+    member do
+      get 'explanation'
+    end
+  end
+
   get 'questions', to: 'questions#show'
   get 'quizzes', to: 'quizzes#show'
   get 'settings', to: 'settings#index'

@@ -13,13 +13,7 @@
         </li>
       <% end %>
     </ul>
-    <button type="button" onclick="document.getElementById('answer<%= index %>').style.display='block'">
-      Show Answer
-    </button>
-    <p id="answer<%= index %>" style="display:none; color:green;">
-      Correct: <%= q["choices_text"][q["correct_index"]] %><br>
-      Example: <%= q["example_sentence"] %>
-    </p>
   </div>
 <% end %>
-<%= link_to "復習へ進む", quizzes_path(level: params[:level], id: params[:id]), class: "btn btn-primary" %>
+<%= link_to "解説を見る", explanation_question_path(params[:id] || '001', level: params[:level] || '600') %>
+
