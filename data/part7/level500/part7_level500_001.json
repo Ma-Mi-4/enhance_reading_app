@@ -14,13 +14,18 @@
         "To report a maintenance issue"
       ],
       "correct_index": 0,
-      "explanation": "The email is about informing staff of a new cleaning schedule."
+      "explanation": "このメールはスタッフに新しい清掃スケジュールを知らせる内容です。",
+      "wrong_explanations": [
+        "",  
+        "メール内には会議の依頼についての記述はありません。",
+        "メール内には新しい従業員の紹介はありません。",
+        "メール内にはメンテナンスの報告はありません。"
+      ]
     }
   ],
   "source": "generated_by_chatgpt",
   "meta": {
     "created_by": "chatgpt",
-    "checked": true,
-    "notes": "Level 500 passage with simple vocabulary and clear structure, only 1 comprehension question for MVP testing."
+    "checked": true
   }
 }

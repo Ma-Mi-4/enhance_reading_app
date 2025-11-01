@@ -1,4 +1,5 @@
 class Admin::SessionsController < ApplicationController
+  include Sorcery::Controller
   layout "admin"
   skip_before_action :require_login, only: [:new, :create]
 

@@ -11,7 +11,13 @@
         "To cancel all remote work options",
         "To remind staff of an upcoming company event"
       ],
-      "correct_index": 0
+      "correct_index": 0,
+      "explanation": "この通知は、リモートワークの規則変更を従業員に知らせることが目的です。",
+      "wrong_explanations": [
+        "この通知は新入社員の紹介ではありません。",
+        "リモートワークを完全に廃止するものではありません。",
+        "社内イベントのリマインドではありません。"
+      ]
     }
   ],
   "meta": {

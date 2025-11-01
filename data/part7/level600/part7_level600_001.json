@@ -1,7 +1,7 @@
 {
   "level": 600,
   "title": "Email about a Schedule Change",
-  "text": "Dear Mr. Tanaka,\n\nI hope this message finds you well. I wanted to inform you that our weekly project meeting originally planned for Thursday has been rescheduled. Due to a client presentation, we will now meet on Friday at 2 p.m. in the main conference room. Please bring the updated sales report and any questions you might have regarding the new marketing strategy.\n\nAlso, I would appreciate it if you could confirm whether the design team will be able to join us remotely. Their feedback on the new product layout will be essential for our next step.\n\nBest regards,\nNaoko Suzuki\nProject Manager",
+  "text": "Dear Mr. Tanaka, ...",
   "questions": [
     {
       "question_text": "Why was the meeting rescheduled?",
@@ -11,13 +11,14 @@
         "Because of a staff shortage",
         "Because the manager will be absent"
       ],
-      "correct_index": 0
+      "correct_index": 0,
+      "explanation": "このミーティングはクライアントプレゼンテーションのために再スケジュールされました。",
+      "wrong_explanations": [
+        "",
+        "メールには祝日のためという記述はありません。",
+        "スタッフ不足のためとは書かれていません。",
+        "マネージャー不在のためではありません。"
+      ]
     }
-  ],
-  "meta": {
-    "created_by": "chatgpt",
-    "word_count": 180,
-    "difficulty": "TOEIC Level 600",
-    "type": "email"
-  }
+  ]
 }

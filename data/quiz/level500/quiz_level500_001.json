@@ -1,27 +1,29 @@
 {
   "level": 500,
   "title": "Vocabulary Quiz from Part7 Level500_001",
-  "vocab_questions": [
+  "questions": [
     {
       "word": "schedule",
-      "question_text": "\"schedule\"の意味はどれでしょう？",
+      "question_text": "\"schedule\" の意味はどれでしょう？",
       "choices_text": ["plan", "problem", "meeting", "building"],
-      "correct_index": 0
+      "correct_index": 0,
+      "example_sentence": "We need to schedule the cleaning next week."
     },
     {
       "word": "avoid",
-      "question_text": "\"avoid\"の意味はどれでしょう？",
+      "question_text": "\"avoid\" の意味はどれでしょう？",
       "choices_text": ["stop from happening", "help", "move quickly", "clean"],
-      "correct_index": 0
+      "correct_index": 0,
+      "example_sentence": "Please avoid leaving personal items on your desk."
     },
     {
       "word": "cooperation",
-      "question_text": "\"cooperation\"の意味はどれでしょう？",
+      "question_text": "\"cooperation\" の意味はどれでしょう？",
       "choices_text": ["teamwork", "payment", "complaint", "rule"],
-      "correct_index": 0
+      "correct_index": 0,
+      "example_sentence": "Thank you for your cooperation with the cleaning schedule."
     }
   ],
-  "source": "generated_by_chatgpt",
   "meta": {
     "created_by": "chatgpt",
     "checked": true,
