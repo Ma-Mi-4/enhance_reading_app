@@ -11,7 +11,13 @@
         "To expand into international markets",
         "To launch a new product line"
       ],
-      "correct_index": 0
+      "correct_index": 0,
+      "explanation": "このイニシアチブの主目的は、企業の環境への影響を減らすことです。",
+      "wrong_explanations": [
+        "財務報告の精度向上ではありません。",
+        "国際展開の拡大が目的ではありません。",
+        "新製品の発売が目的ではありません。"
+      ]
     }
   ],
   "meta": {

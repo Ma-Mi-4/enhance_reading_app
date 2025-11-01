@@ -1,30 +1,41 @@
 <h1>解説: <%= @questions_data["title"] %></h1>
-<p><%= @questions_data["text"] %></p>
+<div style="white-space: pre-wrap;">
+  <%= @questions_data["content"] || @questions_data["text"] %>
+</div>
 
 <% @questions_data["questions"].each_with_index do |q, index| %>
+  <% correct_index = q["correct_index"].to_i %>
+
   <div style="margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; border-radius: 8px;">
     <!-- 問題文 -->
-    <p><strong>問題 <%= index + 1 %>:</strong> <%= q["question_text"] %></p>
+    <p><strong>問題 <%= index + 1 %>:</strong> <%= q["question_text"] || q["body"] %></p>
 
-    <!-- 解答・解説 -->
-    <div style="margin-left: 20px; color: #333;">
-      <% correct_choice = q["choices_text"][q["correct_index"]] %>
-      <% wrong_choices = q["choices_text"].each_with_index.reject { |_, i| i == q["correct_index"] }.map(&:first) %>
+    <!-- 正解 -->
+    <p style="color: green; font-weight: bold;">
+      正解: <%= q["choices_text"][correct_index] %>
+    </p>
 
-      <p><strong>正解:</strong> <span style="color: green;"><%= correct_choice %></span></p>
+    <hr>
 
-      <% if wrong_choices.any? %>
-        <p><strong>不正解の選択肢:</strong> 
-          <%= wrong_choices.join(", ") %>
-        </p>
-      <% end %>
+    <!-- 間違いの選択肢＋解説 -->
+    <h4>間違いの選択肢と解説：</h4>
+    <% wrong_choices = q["choices_text"].each_with_index.reject { |_, i| i == correct_index } %>
+    <% wrong_choices.each do |choice, i| %>
+      <% wrong_index = q["choices_text"].index(choice) %>
+      <% explanation = Array(q["wrong_explanations"])[wrong_index].to_s.strip %>
+      <p>
+        <strong><%= choice %></strong>：
+        <%= explanation.present? ? explanation : "（解説なし）" %>
+      </p>
+    <% end %>
 
+      <!-- 問題全体の解説 -->
       <p><strong>解説:</strong> <%= q["explanation"] %></p>
 
+      <!-- 例文 -->
       <% if q["example_sentence"].present? %>
         <p><strong>例文:</strong> <%= q["example_sentence"] %></p>
       <% end %>
-    </div>
   </div>
 <% end %>
 
