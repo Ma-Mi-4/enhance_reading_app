@@ -12,6 +12,12 @@ services:
       DB_NAME: app_development
       ENABLE_LETTER_OPENER_WEB: "true"
       PORT: 3000
+
+      PROD_DB_HOST: db
+      PROD_DB_USERNAME: app
+      APP_DATABASE_PASSWORD: password123
+      PROD_DB_NAME: app_production
+
     volumes:
       - .:/rails
     ports:
@@ -27,6 +33,11 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
       POSTGRES_DB: app_development
+
+      POSTGRES_USER_PROD: app
+      POSTGRES_PASSWORD_PROD: password123
+      POSTGRES_DB_PROD: app_production
+
     volumes:
       - db_data:/var/lib/postgresql/data
     ports:
