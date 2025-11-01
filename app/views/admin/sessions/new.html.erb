@@ -1,6 +1,6 @@
 <h1>管理者ログイン</h1>
 
-<%= form_with url: admin_login_path, method: :post, local: true do |f| %>
+<%= form_with url: admin_login_path, method: :post, data: { turbo: false }, local: true do |f| %>
   <div class="mb-3">
     <%= f.label :email %>
     <%= f.email_field :email, class: "form-control" %>
