@@ -6,7 +6,10 @@
       <p><%= "#{index + 1}. #{q["question_text"]}" %></p>
       <ul>
         <% q["choices_text"].each_with_index do |choice, i| %>
-          <li><%= choice %></li>
+          <li>
+            <input type="radio" name="q<%= index %>" id="q<%= index %>_choice<%= i %>">
+            <label for="q<%= index %>_choice<%= i %>"><%= choice %></label>
+          </li>
         <% end %>
       </ul>
     </div>
@@ -14,5 +17,4 @@
 <% else %>
   <p>復習問題が見つかりません。</p>
 <% end %>
-<%= link_to "解説を見る", explanation_quiz_path(params[:id], level: params[:level]), class: "btn btn-primary" %>
-
+<%= link_to "解説を見る", explanation_quiz_path(params[:id] || '001', level: params[:level] || '600') %>

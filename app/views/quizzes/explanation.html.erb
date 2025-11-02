@@ -1,9 +1,32 @@
-<h1>復習解説: <%= @quiz_data["title"] %></h1>
+<h1>復習解説</h1>
 
 <% if @quiz_data["questions"].present? %>
   <% @quiz_data["questions"].each_with_index do |q, i| %>
-    <p>Q<%= i+1 %>: <%= q["question"] %></p>
-    <p>解説: <%= q["explanation"] %></p>
+    <div style="margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; border-radius: 8px;">
+    
+    <!-- 問題文 -->
+    <p><strong>問題 <%= i + 1 %>:</strong> <%= q["question_text"] %></p>
+    
+    <!-- 正解 -->
+    <p style="color: green; font-weight: bold;">
+      正解: <%= q["choices_text"][q["correct_index"]] %>
+    </p>
+
+    <!-- 間違いの選択肢 -->
+    <h4>間違いの選択肢：</h4>
+    <% q["choices_text"].each_with_index do |choice, i| %>
+      <% next if i == q["correct_index"] %>
+      <p>
+        <strong><%= choice %></strong>： （解説なし）
+      </p>
+      <% end %>
+
+    <!-- 例文 -->
+    <% if q["example_sentence"].present? %>
+      <p><strong>例文:</strong> <%= q["example_sentence"] %></p>
+    <% end %>
+
+    </div>
   <% end %>
 <% else %>
   <p>復習問題が見つかりません。</p>
