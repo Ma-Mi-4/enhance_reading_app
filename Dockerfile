@@ -53,8 +53,8 @@ RUN apt-get update -qq && apt-get install -y nodejs npm && npm install -g yarn
 RUN dos2unix bin/rails && chmod +x bin/rails
 
 # Precompile assets with temporary SECRET_KEY_BASE
-ENV SECRET_KEY_BASE=$(bundle exec rails secret)
-RUN ./bin/rails assets:precompile
+RUN SECRET_KEY_BASE=$(bundle exec rails secret) ./bin/rails assets:precompile
+
 
 # Final stage for app image
 FROM base
