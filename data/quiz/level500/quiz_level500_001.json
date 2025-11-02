@@ -5,28 +5,45 @@
     {
       "word": "schedule",
       "question_text": "\"schedule\" の意味はどれでしょう？",
-      "choices_text": ["plan", "problem", "meeting", "building"],
+      "choices_text": [
+        "To plan something",
+        "A problem",
+        "A meeting",
+        "A building"
+      ],
       "correct_index": 0,
       "example_sentence": "We need to schedule the cleaning next week."
     },
     {
       "word": "avoid",
       "question_text": "\"avoid\" の意味はどれでしょう？",
-      "choices_text": ["stop from happening", "help", "move quickly", "clean"],
+      "choices_text": [
+        "To stop something from happening",
+        "To help",
+        "To move quickly",
+        "To clean"
+      ],
       "correct_index": 0,
       "example_sentence": "Please avoid leaving personal items on your desk."
     },
     {
       "word": "cooperation",
       "question_text": "\"cooperation\" の意味はどれでしょう？",
-      "choices_text": ["teamwork", "payment", "complaint", "rule"],
+      "choices_text": [
+        "Teamwork or working together",
+        "A payment",
+        "A complaint",
+        "A rule"
+      ],
       "correct_index": 0,
       "example_sentence": "Thank you for your cooperation with the cleaning schedule."
     }
   ],
   "meta": {
     "created_by": "chatgpt",
-    "checked": true,
-    "notes": "Level 500 vocabulary problems with simplified Japanese question text"
+    "source_file": "part7_level500_001.json",
+    "question_count": 3,
+    "difficulty": "TOEIC Level 500",
+    "type": "vocabulary"
   }
 }

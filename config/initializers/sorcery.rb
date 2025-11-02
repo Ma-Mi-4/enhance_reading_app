@@ -244,6 +244,7 @@ Rails.application.config.sorcery.configure do |config|
   # --- user config ---
   config.user_config do |user|
     user.salt_attribute_name = nil
+    user.encryption_algorithm = :bcrypt
     # -- core --
     # Specify username attributes, for example: [:username, :email].
     # Default: `[:email]`
