@@ -29,10 +29,12 @@ ENV BUNDLE_DEPLOYMENT="1" \
 # Throw-away build stage to reduce size of final image
 FROM base AS build
 
-# Install packages needed to build gems
+# Install packages needed to build gems + Node/Yarn + dos2unix
 RUN apt-get update -qq && \
-    apt-get install --no-install-recommends -y build-essential libpq-dev libyaml-dev && \
-    rm -rf /var/lib/apt/lists /var/cache/apt/archives
+    apt-get install --no-install-recommends -y \
+      build-essential libpq-dev libyaml-dev \
+      nodejs npm yarn dos2unix && \
+    rm -rf /var/lib/apt/lists/*
 
 # Install application gems
 COPY Gemfile Gemfile.lock ./
@@ -45,9 +47,6 @@ COPY . .
 
 # Precompile bootsnap code for faster boot times
 RUN bundle exec bootsnap precompile app/ lib/
-
-# Install Node and Yarn for Rails 7 JS build
-RUN apt-get update -qq && apt-get install -y nodejs npm && npm install -g yarn
 
 # Fix bin/rails line endings
 RUN dos2unix bin/rails && chmod +x bin/rails
