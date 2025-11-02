@@ -11,7 +11,6 @@ Rails.application.config.sorcery.configure do |config|
   config.session_timeout = 3600
   config.session_http_only = true
   config.session_secure = Rails.env.production?
-end
   # -- core --
   # What controller action to call for non-authenticated users. You can also
   # override the 'not_authenticated' method of course.
