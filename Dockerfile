@@ -46,12 +46,15 @@ COPY . .
 # Precompile bootsnap code for faster boot times
 RUN bundle exec bootsnap precompile app/ lib/
 
-# Precompiling assets for production without requiring secret RAILS_MASTER_KEY
-RUN apt-get update -qq && apt-get install -y dos2unix && \
-    dos2unix bin/rails && \
-    chmod +x bin/rails && \
-    SECRET_KEY_BASE_DUMMY=1 ./bin/rails assets:precompile
+# Install Node and Yarn for Rails 7 JS build
+RUN apt-get update -qq && apt-get install -y nodejs npm && npm install -g yarn
 
+# Fix bin/rails line endings
+RUN dos2unix bin/rails && chmod +x bin/rails
+
+# Precompile assets with temporary SECRET_KEY_BASE
+ENV SECRET_KEY_BASE=$(bundle exec rails secret)
+RUN ./bin/rails assets:precompile
 
 # Final stage for app image
 FROM base
