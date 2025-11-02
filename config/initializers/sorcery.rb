@@ -8,7 +8,6 @@ Rails.application.config.sorcery.submodules = [:reset_password]
 
 # Here you can configure each submodule's features.
 Rails.application.config.sorcery.configure do |config|
-  config.session_timeout = 3600
   config.session_http_only = true
   config.session_secure = Rails.env.production?
   # -- core --
