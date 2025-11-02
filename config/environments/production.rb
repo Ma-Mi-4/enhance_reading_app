@@ -103,5 +103,7 @@ Rails.application.configure do
   }
 
   config.session_store :cookie_store, key: "_enhance_reading_app_session", secure: false
-
+  config.action_controller.default_url_options = { protocol: "https" }
+  config.action_controller.relative_url_root = "/"
+  config.force_ssl = true
 end
