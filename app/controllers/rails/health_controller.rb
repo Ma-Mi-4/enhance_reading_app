@@ -1,4 +1,4 @@
-class HealthController < ApplicationController
+class Rails::HealthController < ApplicationController
   skip_before_action :require_login
 
   def show
