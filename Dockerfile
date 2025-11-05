@@ -72,7 +72,8 @@ USER 1000:1000
 # Entrypoint prepares the database.
 # ENTRYPOINT ["/rails/bin/docker-entrypoint"] 
 RUN mkdir -p tmp/pids
-ENTRYPOINT ["bundle", "exec", "puma", "-C", "config/puma.rb"]
+ENTRYPOINT ["/rails/bin/docker-entrypoint"]
+CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]
 
 # Start the server by default, this can be overwritten at runtime
 EXPOSE 3000
