@@ -52,8 +52,7 @@ RUN bundle exec bootsnap precompile app/ lib/
 RUN dos2unix bin/rails && chmod +x bin/rails
 
 # Precompile assets with dummy SECRET_KEY_BASE
-ENV SECRET_KEY_BASE=dummykey
-RUN bundle exec rails assets:precompile
+RUN SECRET_KEY_BASE=dummykey bundle exec rails assets:precompile
 
 # Final stage for app image
 FROM base
