@@ -9,5 +9,5 @@ fi
 # Always prepare the database
 bundle exec rails db:prepare
 
-# Start the app
-exec "$@"
+# Start Puma directly
+exec bundle exec puma -C config/puma.rb
