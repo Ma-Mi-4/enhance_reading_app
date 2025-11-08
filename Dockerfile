@@ -48,6 +48,9 @@ COPY . .
 # Precompile bootsnap code for faster boot times
 RUN bundle exec bootsnap precompile app/ lib/
 
+# Fix line endings and add execute permission for docker-entrypoint
+RUN dos2unix bin/docker-entrypoint && chmod +x bin/docker-entrypoint
+
 # Fix bin/rails line endings
 RUN dos2unix bin/rails && chmod +x bin/rails
 
