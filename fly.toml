@@ -22,6 +22,7 @@ console_command = '/rails/bin/rails console'
   method = "GET"
   timeout = "10s"
   path = "/up"
+  tls_skip_verify = true
 
 [[vm]]
   memory = '512mb'
@@ -34,6 +35,7 @@ console_command = '/rails/bin/rails console'
   RAILS_LOG_TO_STDOUT = "enabled"
   RAILS_SERVE_STATIC_FILES = "enabled"
   ENABLE_LETTER_OPENER_WEB = "true"
+  FORCE_SSL = "false" 
 
 [[services]]
   internal_port = 3000

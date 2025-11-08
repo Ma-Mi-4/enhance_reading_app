@@ -103,8 +103,8 @@ Rails.application.configure do
     protocol: "https"
   }
 
-  config.session_store :cookie_store, key: "_enhance_reading_app_session", secure: false
-  config.action_controller.default_url_options = { protocol: "https" }
+  config.session_store :cookie_store, key: "_enhance_reading_app_session", secure: config.force_ssl
+  config.action_controller.default_url_options = { protocol: config.force_ssl ? "https" : "http" }
   config.action_controller.relative_url_root = "/"
-  config.force_ssl = true
+  config.force_ssl = ENV.fetch("FORCE_SSL", "false") == "true"
 end
