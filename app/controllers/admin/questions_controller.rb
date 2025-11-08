@@ -4,6 +4,28 @@ class Admin::QuestionsController < Admin::ApplicationController
 
   def index
     @questions = Question.order(:level)
+
+    @json_questions = []
+    %w[part7 quiz].each do |category|
+      Dir[Rails.root.join("data/#{category}/level*/#{category}_level*_*.json")].each do |file_path|
+        begin
+          quiz_data = JSON.parse(File.read(file_path))
+          quiz_data["category"] = category
+          quiz_data["file_path"] = file_path
+          @json_questions << quiz_data
+        rescue JSON::ParserError
+          next
+        end
+      end
+    end
+
+    db_titles = @questions.pluck(:title)
+    @json_questions.reject! { |q| db_titles.include?(q["title"]) }
+
+    @all_questions = (@questions.map { |q| q.attributes.merge("source" => "db", "level" => q.level.to_i) } +
+                      @json_questions.map { |q| q.merge("source" => "json", "level" => q["level"].to_i) })
+                     .sort_by { |q| q["level"] }
+
   end
 
   def new
