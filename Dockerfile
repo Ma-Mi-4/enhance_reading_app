@@ -29,10 +29,12 @@ ENV BUNDLE_DEPLOYMENT="1" \
 # Throw-away build stage to reduce size of final image
 FROM base AS build
 
-# Install packages needed to build gems
+# Install packages needed to build gems + Node/Yarn + dos2unix
 RUN apt-get update -qq && \
-    apt-get install --no-install-recommends -y build-essential libpq-dev libyaml-dev && \
-    rm -rf /var/lib/apt/lists /var/cache/apt/archives
+    apt-get install --no-install-recommends -y \
+      build-essential libpq-dev libyaml-dev \
+      nodejs npm yarn dos2unix && \
+    rm -rf /var/lib/apt/lists/*
 
 # Install application gems
 COPY Gemfile Gemfile.lock ./
@@ -46,12 +48,11 @@ COPY . .
 # Precompile bootsnap code for faster boot times
 RUN bundle exec bootsnap precompile app/ lib/
 
-# Precompiling assets for production without requiring secret RAILS_MASTER_KEY
-RUN apt-get update -qq && apt-get install -y dos2unix && \
-    dos2unix bin/rails && \
-    chmod +x bin/rails && \
-    SECRET_KEY_BASE_DUMMY=1 ./bin/rails assets:precompile
+# Fix bin/rails line endings
+RUN dos2unix bin/rails && chmod +x bin/rails
 
+# Precompile assets with dummy SECRET_KEY_BASE
+RUN SECRET_KEY_BASE=dummykey DATABASE_URL=postgres://localhost bundle exec rails assets:precompile
 
 # Final stage for app image
 FROM base
@@ -68,9 +69,9 @@ RUN groupadd --system --gid 1000 rails && \
 USER 1000:1000
 
 # Entrypoint prepares the database.
-# ENTRYPOINT ["/rails/bin/docker-entrypoint"] 
+ENTRYPOINT ["/rails/bin/docker-entrypoint"] 
 RUN mkdir -p tmp/pids
-ENTRYPOINT ["bundle", "exec", "puma", "-C", "config/puma.rb"]
 
 # Start the server by default, this can be overwritten at runtime
 EXPOSE 3000
+

@@ -12,7 +12,8 @@
         "a legal document"
       ],
       "correct_index": 0,
-      "example_sentence": "The company launched a new Sustainability Initiative."
+      "example_sentence": "The company launched a new Sustainability Initiative.",
+      "explanation": "新しい計画やプログラム\n財務報告\nチームビルディング活動\n法的文書"
     },
     {
       "word": "collaboration",
@@ -24,7 +25,8 @@
         "reviewing reports"
       ],
       "correct_index": 0,
-      "example_sentence": "The initiative encourages collaboration with eco-friendly suppliers."
+      "example_sentence": "The initiative encourages collaboration with eco-friendly suppliers.",
+      "explanation": "他者と協力して働くこと\n他者と競争すること\n従業員を監督すること\n報告書を確認すること"
     },
     {
       "word": "eco-friendly",
@@ -36,7 +38,8 @@
         "supporting marketing campaigns"
       ],
       "correct_index": 0,
-      "example_sentence": "We collaborate with eco-friendly suppliers."
+      "example_sentence": "We collaborate with eco-friendly suppliers.",
+      "explanation": "環境に良い影響を与える\n企業の財務に関する\n従業員の生産性に焦点を当てた\nマーケティング活動を支援する"
     },
     {
       "word": "implement",
@@ -48,7 +51,8 @@
         "to report results"
       ],
       "correct_index": 0,
-      "example_sentence": "We will implement several projects to reduce energy consumption."
+      "example_sentence": "We will implement several projects to reduce energy consumption.",
+      "explanation": "計画やシステムを実行に移す\nプロジェクトを中止する\nアイデアを議論する\n結果を報告する"
     },
     {
       "word": "workshop",
@@ -60,7 +64,8 @@
         "an online newsletter"
       ],
       "correct_index": 0,
-      "example_sentence": "The Sustainability Workshop will include guest speakers."
+      "example_sentence": "The Sustainability Workshop will include guest speakers.",
+      "explanation": "議論や研修のための会議\n定例チーム会議\n社交の集まり\nオンラインニュースレター"
     }
   ],
   "meta": {

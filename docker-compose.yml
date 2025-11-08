@@ -11,7 +11,7 @@ services:
       DB_PASSWORD: password
       DB_NAME: app_development
       ENABLE_LETTER_OPENER_WEB: "true"
-      PORT: 3000
+      PORT: 3001
 
       PROD_DB_HOST: db
       PROD_DB_USERNAME: app
@@ -21,7 +21,7 @@ services:
     volumes:
       - .:/rails
     ports:
-      - "3000:3000"
+      - "3002:3001"
     depends_on:
       - db
     tty: true

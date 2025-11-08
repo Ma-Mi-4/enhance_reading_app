@@ -22,6 +22,7 @@ Rails.application.configure do
   
   # Disable serving static files from `public/`, relying on NGINX/Apache to do so instead.
   # config.public_file_server.enabled = false
+  config.public_file_server.enabled = ENV["RAILS_SERVE_STATIC_FILES"].present?
   
   # Compress CSS using a preprocessor.
   # config.assets.css_compressor = :sass
@@ -102,6 +103,8 @@ Rails.application.configure do
     protocol: "https"
   }
 
-  config.session_store :cookie_store, key: "_enhance_reading_app_session", secure: false
-
+  config.session_store :cookie_store, key: "_enhance_reading_app_session", secure: config.force_ssl
+  config.action_controller.default_url_options = { protocol: config.force_ssl ? "https" : "http" }
+  config.action_controller.relative_url_root = "/"
+  config.force_ssl = ENV.fetch("FORCE_SSL", "false") == "true"
 end

@@ -12,7 +12,8 @@
         "the control of strict rules"
       ],
       "correct_index": 0,
-      "example_sentence": "Our company values flexibility in work arrangements."
+      "example_sentence": "Our company values flexibility in work arrangements.",
+      "explanation": "簡単に変化できる能力\n硬く変わらない状態\n素早く働く能力\n厳しい規則の管理"
     },
     {
       "word": "approve",
@@ -24,7 +25,8 @@
         "to check something carefully"
       ],
       "correct_index": 0,
-      "example_sentence": "Each manager must approve the remote work schedule."
+      "example_sentence": "Each manager must approve the remote work schedule.",
+      "explanation": "正式に受け入れる、承認する\nアイデアや計画を却下する\n新しい提案を示す\n何かを注意深く確認する"
     },
     {
       "word": "coverage",
@@ -36,7 +38,8 @@
         "the time period of a vacation"
       ],
       "correct_index": 0,
-      "example_sentence": "Managers need to ensure adequate in-office coverage."
+      "example_sentence": "Managers need to ensure adequate in-office coverage.",
+      "explanation": "誰かが管理する責任の範囲\n保険からの支払い\n商品の広告活動\n休暇の期間"
     },
     {
       "word": "require",
@@ -48,7 +51,8 @@
         "to report or record something"
       ],
       "correct_index": 0,
-      "example_sentence": "All remote employees are required to attend the meeting."
+      "example_sentence": "All remote employees are required to attend the meeting.",
+      "explanation": "何かを必要とする、要求する\n何かを遅らせる、延期する\n何かを決定する\n何かを報告、記録する"
     },
     {
       "word": "representative",
@@ -60,7 +64,8 @@
         "a person who reviews company finances"
       ],
       "correct_index": 0,
-      "example_sentence": "Please contact your HR representative for more details."
+      "example_sentence": "Please contact your HR representative for more details.",
+      "explanation": "グループの代表として話したり行動する人\n研修生として学んでいる人\n製品を購入する顧客\n会社の財務を確認する人"
     }
   ],
   "meta": {

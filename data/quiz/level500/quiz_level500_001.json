@@ -12,7 +12,8 @@
         "A building"
       ],
       "correct_index": 0,
-      "example_sentence": "We need to schedule the cleaning next week."
+      "example_sentence": "We need to schedule the cleaning next week.",
+      "explanation": "何かを予定する\n問題\n会議\n建物"
     },
     {
       "word": "avoid",
@@ -24,7 +25,8 @@
         "To clean"
       ],
       "correct_index": 0,
-      "example_sentence": "Please avoid leaving personal items on your desk."
+      "example_sentence": "Please avoid leaving personal items on your desk.",
+      "explanation": "何かが起こるのを避ける\n助ける\n素早く動く\n掃除する"
     },
     {
       "word": "cooperation",
@@ -36,7 +38,8 @@
         "A rule"
       ],
       "correct_index": 0,
-      "example_sentence": "Thank you for your cooperation with the cleaning schedule."
+      "example_sentence": "Thank you for your cooperation with the cleaning schedule.",
+      "explanation": "チームワーク、協力すること\n支払い\n苦情\n規則"
     }
   ],
   "meta": {

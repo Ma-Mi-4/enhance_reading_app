@@ -2,14 +2,14 @@
 
 <%= link_to "新規作成", new_admin_question_path, class: "btn btn-primary mb-3" %>
 
-<% if @questions.any? %>
+<% if @all_questions.any? %>
   <table class="table table-striped">
     <thead>
       <tr>
         <th>ID</th>
         <th>タイトル</th>
         <th>レベル</th>
-        <th>種類</th>
+        <th>種類/カテゴリ</th>
         <th>内容(JSON)</th>
         <th>作成日</th>
         <th>更新日</th>
@@ -17,21 +17,25 @@
       </tr>
     </thead>
     <tbody>
-      <% @questions.each do |q| %>
-        <tr id="<%= dom_id(q) %>">
-          <td><%= q.id %></td>
-          <td><%= q.title %></td>
-          <td><%= q.level %></td>
-          <td><%= q.kind %></td>
-          <td><%= truncate(JSON.pretty_generate(q.content || {}), length: 80) %></td>
-          <td><%= q.created_at.strftime("%Y-%m-%d %H:%M") %></td>
-          <td><%= q.updated_at.strftime("%Y-%m-%d %H:%M") %></td>
+      <% @all_questions.each do |q| %>
+        <tr>
+          <td><%= q["source"] == "db" ? q["id"] : "-" %></td>
+          <td><%= q["title"] %></td>
+          <td><%= q["level"] %></td>
+          <td><%= q["source"] == "db" ? q["kind"] : q["category"] %></td>
+          <td><%= truncate(JSON.pretty_generate(q["content"] || q["questions"] || {}), length: 80) %></td>
+          <td><%= q["source"] == "db" ? q["created_at"].strftime("%Y-%m-%d %H:%M") : "-" %></td>
+          <td><%= q["source"] == "db" ? q["updated_at"].strftime("%Y-%m-%d %H:%M") : "-" %></td>
           <td>
-            <%= link_to "詳細", admin_question_path(q), class: "btn btn-sm btn-outline-secondary" %>
-            <%= link_to "編集", edit_admin_question_path(q), class: "btn btn-sm btn-warning" %>
-            <%= link_to "削除", admin_question_path(q),
-                  data: { turbo_method: :delete, turbo_confirm: "本当に削除しますか？" },
-                  class: "btn btn-sm btn-danger" %>
+            <% if q["source"] == "db" %>
+              <%= link_to "詳細", admin_question_path(q["id"]), class: "btn btn-sm btn-outline-secondary" %>
+              <%= link_to "編集", edit_admin_question_path(q["id"]), class: "btn btn-sm btn-warning" %>
+              <%= link_to "削除", admin_question_path(q["id"]),
+                    data: { turbo_method: :delete, turbo_confirm: "本当に削除しますか？" },
+                    class: "btn btn-sm btn-danger" %>
+            <% else %>
+              <span class="text-muted">JSONファイル</span>
+            <% end %>
           </td>
         </tr>
       <% end %>
