@@ -12,7 +12,8 @@
         "To make a new meeting place"
       ],
       "correct_index": 0,
-      "example_sentence": "We had to reschedule the meeting because of the client presentation."
+      "example_sentence": "We had to reschedule the meeting because of the client presentation.",
+      "explanation": "別の時間に予定を変更する\n完全にキャンセルする\nスケジュールを確認する\n新しい会議場所を作る"
     },
     {
       "word": "presentation",
@@ -24,7 +25,8 @@
         "A type of meeting room"
       ],
       "correct_index": 0,
-      "example_sentence": "The team prepared a presentation for the client."
+      "example_sentence": "The team prepared a presentation for the client.",
+      "explanation": "口頭または視覚的な情報の提示\nメールで送る書面報告\n短い電話での会話\n会議室の種類"
     },
     {
       "word": "conference room",
@@ -36,7 +38,8 @@
         "A space for product design"
       ],
       "correct_index": 0,
-      "example_sentence": "We will meet in the main conference room at 2 p.m."
+      "example_sentence": "We will meet in the main conference room at 2 p.m.",
+      "explanation": "会議用の部屋\n書類を保管する場所\nオフィス内のレストラン\n製品設計のスペース"
     },
     {
       "word": "confirm",
@@ -48,7 +51,8 @@
         "To introduce a person"
       ],
       "correct_index": 0,
-      "example_sentence": "Please confirm whether the design team will attend."
+      "example_sentence": "Please confirm whether the design team will attend.",
+      "explanation": "何かが正しいか確認する\nイベントを遅らせる\n許可を求める\n人を紹介する"
     },
     {
       "word": "feedback",
@@ -60,7 +64,8 @@
         "An online meeting system"
       ],
       "correct_index": 0,
-      "example_sentence": "We need the design team’s feedback on the new layout."
+      "example_sentence": "We need the design team’s feedback on the new layout.",
+      "explanation": "何かに関する意見や感想\n 財務報告\n公式な書類\nオンライン会議システム"
     }
   ],
   "meta": {
@@ -71,5 +76,3 @@
     "type": "vocabulary"
   }
 }
-
-
