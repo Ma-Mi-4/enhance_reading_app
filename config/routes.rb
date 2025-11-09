@@ -14,7 +14,13 @@ Rails.application.routes.draw do
     mount LetterOpenerWeb::Engine, at: "/letter_opener"
   end
 
-  resources :users, only: [:new, :create]
+  resources :users, only: [:new, :create] do
+    member do
+      get  'set_level', to: 'settings#level'
+      patch 'update_level', to: 'settings#update_level'
+    end
+  end
+
   resources :password_resets, only: %i[new create edit update]
   resources :calendars, only: [:index]
   get 'login', to: 'sessions#new'
@@ -39,12 +45,13 @@ Rails.application.routes.draw do
   get 'terms_of_service', to: 'static_pages#terms_of_service'
   get 'main', to: 'main#index'
   get 'settings/level', to: 'settings#level', as: 'settings_level'
+  patch 'settings/level', to: 'settings#update_level'
   get 'settings/notification', to: 'settings#notification', as: 'settings_notification'
   get 'settings/account', to: 'settings#account', as: 'settings_account'
 
   namespace :admin do
     root to: "main#index"
-    get 'login', to: 'sessions#new'
+    get 'login', to: 'sessions#new', as: 'login'
     post 'login', to: 'sessions#create'
     delete 'logout', to: 'sessions#destroy'
 

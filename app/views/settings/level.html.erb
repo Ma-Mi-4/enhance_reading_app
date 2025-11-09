@@ -1,5 +1,27 @@
-<h1>レベル設定変更</h1>
-<p>800点</p>
-<p>700点</p>
-<p>600点</p>
-<p>500点</p>
+<h1><%= @new_registration ? "レベル設定" : "レベル設定変更" %></h1>
+
+<% form_url = update_level_user_path(@user, new_registration: @new_registration) %>
+
+<%= form_with(model: @user, url: form_url, method: :patch, local: true) do |f| %>
+
+  <% if @user.errors.any? %>
+    <div style="color: red;">
+      <ul>
+        <% @user.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p><%= f.radio_button :level, 800 %> 800点</p>
+  <p><%= f.radio_button :level, 700 %> 700点</p>
+  <p><%= f.radio_button :level, 600 %> 600点</p>
+  <p><%= f.radio_button :level, 500 %> 500点</p>
+
+  <% if @new_registration %>
+    <%= hidden_field_tag :new_registration, true %>
+  <% end %>
+
+  <%= f.submit "保存" %>
+<% end %>
