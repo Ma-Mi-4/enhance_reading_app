@@ -15,5 +15,6 @@
     </ul>
   </div>
 <% end %>
-<%= link_to "解説を見る", explanation_question_path(params[:id] || '001', level: params[:level] || '600') %>
+<%= link_to "解説を見る", explanation_question_path(id: @id, level: params[:level] || current_user.level) %>
+
 

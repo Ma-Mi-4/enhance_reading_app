@@ -3,17 +3,17 @@ class QuestionsController < ApplicationController
   before_action :load_questions_data, only: [:show, :explanation]
 
   def show
+    @id = params[:id] || "001"
   end
 
   def explanation
-    # 解説ページ用
-    # @questions_data["questions"][i]["explanation"] を view で使える
   end
 
   private
 
   def load_questions_data
-    level = params[:level] || '600'
+    level = current_user.level
+    level = params[:level] if params[:level].present?
     file_path = Rails.root.join("data/part7/level#{level}/part7_level#{level}_001.json")
 
     if File.exist?(file_path)

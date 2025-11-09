@@ -6,19 +6,13 @@ class QuizzesController < ApplicationController
   end
 
   def explanation
-    # 復習解説用
-    # @quiz_data["questions"][i]["explanation"] をビューで使える
   end
 
   private
 
-  def set_quiz_params
-    @level = params[:level] || '600'
-    @id = params[:id] || '001'
-  end
-
   def load_quiz_data
-    level = params[:level] || '600'
+    level = current_user.level.to_s
+    level = params[:level] if params[:level].present?
     id = params[:id] || '001'
     file_path = Rails.root.join("data/quiz/level#{level}/quiz_level#{level}_#{id}.json")
 
