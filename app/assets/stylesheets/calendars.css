@@ -1,0 +1,37 @@
+.calendar-table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 30px;
+}
+
+.calendar-table th,
+.calendar-table td {
+  border: 1px solid #000;
+  width: 14.2%;
+  height: 80px;
+  position: relative;
+  vertical-align: top;
+  padding: 0;
+}
+
+.calendar-table th {
+  background-color: #f7f7f7;
+}
+
+.calendar-day-link {
+  position: absolute;
+  bottom: 4px;
+  right: 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Kaku Gothic ProN",
+               "Meiryo", sans-serif;
+}
+
+.calendar-day-link:hover {
+  background-color: #e9ecef;
+  color: #000;
+}

@@ -1,0 +1,7 @@
+<h1><%= @date.strftime('%Y年%m月%d日') %> の記録</h1>
+
+<p>正答率：<%= @accuracy.present? ? "#{@accuracy}%" : "記録なし" %></p>
+<p>予想スコア：<%= @score.present? ? "#{@score}点" : "記録なし" %></p>
+
+<br>
+<%= link_to "カレンダーへ戻る", calendars_path, class: "btn btn-secondary" %>
