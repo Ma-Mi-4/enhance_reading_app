@@ -1,20 +1,26 @@
 <h1>復習問題</h1>
 
-<% if @quiz_data["questions"].any? %>
-  <% @quiz_data["questions"].each_with_index do |q, index| %>
-    <div class="question">
-      <p><%= "#{index + 1}. #{q["question_text"]}" %></p>
-      <ul>
-        <% q["choices_text"].each_with_index do |choice, i| %>
-          <li>
-            <input type="radio" name="q<%= index %>" id="q<%= index %>_choice<%= i %>">
-            <label for="q<%= index %>_choice<%= i %>"><%= choice %></label>
-          </li>
-        <% end %>
-      </ul>
-    </div>
+<%= form_with url: @review ? review_explanation_quiz_path(params[:id]) : explanation_quiz_path(params[:id], level: params[:level] || '600'), method: :get, local: true, onsubmit: "stopTimer()" do |f| %>
+  <div id="timer">00:00</div>
+  <%= hidden_field_tag :study_seconds, 0, id: "study_seconds" %>
+
+  <% if @quiz_data["questions"].any? %>
+    <% @quiz_data["questions"].each_with_index do |q, index| %>
+      <div class="question">
+        <p><%= "#{index + 1}. #{q["question_text"]}" %></p>
+        <ul>
+          <% q["choices_text"].each_with_index do |choice, i| %>
+            <li>
+              <input type="radio" name="q<%= index %>" id="q<%= index %>_choice<%= i %>">
+              <label for="q<%= index %>_choice<%= i %>"><%= choice %></label>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+  <% else %>
+    <p>復習問題が見つかりません。</p>
   <% end %>
-<% else %>
-  <p>復習問題が見つかりません。</p>
+
+  <%= f.submit "解説を見る" %>
 <% end %>
-<%= link_to "解説を見る", explanation_quiz_path(params[:id] || '001', level: params[:level] || '600') %>

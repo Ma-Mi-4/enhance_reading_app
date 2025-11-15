@@ -2,19 +2,23 @@
 
 <p><%= @questions_data["text"] %></p>
 
-<% @questions_data["questions"].each_with_index do |q, index| %>
-  <div style="margin-bottom: 20px; padding: 10px; border: 1px solid #ccc;">
-    <p><strong>Question <%= index + 1 %>:</strong> <%= q["question_text"] %></p>
-    <ul>
-      <% q["choices_text"].each_with_index do |choice, i| %>
-        <li>
-          <input type="radio" name="q<%= index %>" id="q<%= index %>_choice<%= i %>">
-          <label for="q<%= index %>_choice<%= i %>"><%= choice %></label>
-        </li>
-      <% end %>
-    </ul>
-  </div>
+<%= form_with url: @review ? review_explanation_question_path(@id) : explanation_question_path(@id, level: params[:level] || current_user.level), method: :get, local: true, onsubmit: "stopTimer()" do |f| %>
+  <div id="timer" style="font-size: 24px;">00:00</div>
+  <%= hidden_field_tag :study_seconds, 0, id: "study_seconds" %>
+
+  <% @questions_data["questions"].each_with_index do |q, index| %>
+    <div style="margin-bottom: 20px; padding: 10px; border: 1px solid #ccc;">
+      <p><strong>Question <%= index + 1 %>:</strong> <%= q["question_text"] %></p>
+      <ul>
+        <% q["choices_text"].each_with_index do |choice, i| %>
+          <li>
+            <input type="radio" name="q<%= index %>" id="q<%= index %>_choice<%= i %>">
+            <label for="q<%= index %>_choice<%= i %>"><%= choice %></label>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= f.submit "解説を見る" %>
 <% end %>
-<%= link_to "解説を見る", explanation_question_path(id: @id, level: params[:level] || current_user.level) %>
-
-

@@ -1,4 +1,3 @@
-# config/importmap.rb
 pin "application"
 pin "@hotwired/turbo-rails", to: "turbo.min.js"
 pin "@hotwired/stimulus", to: "stimulus.min.js"
@@ -11,3 +10,7 @@ pin "bootstrap", to: "https://ga.jspm.io/npm:bootstrap@5.3.8/dist/js/bootstrap.e
 pin "alpinejs", to: "https://unpkg.com/alpinejs@3.x.x/dist/module.esm.js"
 
 pin "@rails/ujs", to: "@rails/ujs.js"
+
+pin "chart.js", to: "https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"
+
+pin "timer", to: "timer.js"

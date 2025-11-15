@@ -1,11 +1,13 @@
 class QuizzesController < ApplicationController
   before_action :require_login
   before_action :load_quiz_data, only: [:show, :explanation] 
+  include StudyTimeTracker
 
   def show
   end
 
   def explanation
+    save_study_time(params[:id], params[:study_seconds].to_i, review: true)
   end
 
   private
