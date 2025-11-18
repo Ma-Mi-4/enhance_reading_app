@@ -1,3 +1,5 @@
+<meta name="turbo-cache-control" content="no-cache">
+
 <h1><%= @date.strftime('%Y年%m月') %></h1>
 
 <div style="margin-bottom: 16px;">
@@ -29,45 +31,41 @@
 
   <div class="study-container">
     <h2>学習時間（分）</h2>
-    <!-- Canvas の高さは属性で固定 -->
-    <canvas id="studyChart" width="800" height="250"></canvas>
+    <canvas id="studyChart"
+           data-study='<%= raw({ labels: @labels, values: @data }.to_json) %>'></canvas>
   </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 <script>
-document.addEventListener("turbo:load", function() {
-  const ctx = document.getElementById("studyChart");
-  if (!ctx) return;
+  document.addEventListener("turbo:load", () => {
+    const canvas = document.getElementById("studyChart");
 
-  const dataMax = Math.max(...<%= raw @data.to_json %>);
-  // Y軸の上限を調整（最大 60分に固定など）
-  const yMax = Math.max(60, Math.ceil(dataMax / 10) * 10);
+    if (!canvas || !window.Chart) return;
 
-  new Chart(ctx, {
-    type: "bar",
-    data: {
-      labels: <%= raw @labels.to_json %>,
-      datasets: [{
-        label: "学習時間（分）",
-        data: <%= raw @data.to_json %>,
-        backgroundColor: "rgba(54, 162, 235, 0.5)",
-        borderWidth: 1
-      }]
-    },
-    options: { 
-      maintainAspectRatio: false, // 親要素に依存せず高さ固定
-      scales: { 
-        y: { 
-          beginAtZero: true,
-          max: yMax
-        } 
+    const parsed = JSON.parse(canvas.dataset.study);
+    canvas.width = canvas.parentElement.clientWidth;
+    canvas.height = 300;  
+
+    new Chart(canvas, {
+      type: "bar",
+      data: {
+        labels: parsed.labels,
+        datasets: [{
+          label: "学習時間（分）",
+          data: parsed.values,
+          backgroundColor: "rgba(54, 162, 235, 0.5)"
+        }]
       },
-      responsive: true
-    }
+      options: {
+        responsive: false,
+        maintainAspectRatio: false
+      }
+    });
   });
-});
 </script>
 
 <br>
 <%= link_to "メイン画面へ戻る", main_path, class: "btn btn-primary" %>
+

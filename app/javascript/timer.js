@@ -1,33 +1,43 @@
-let seconds = 0;
-let timerInterval;
+console.log("timer.js loaded");
 
-function startTimer() {
-  clearInterval(timerInterval);
-  seconds = 0;
+let timerInterval = null;
+let totalSeconds = 0;
+
+window.startTimer = function() {
+  const timerEl = document.getElementById("timer");
+  const hiddenEl = document.getElementById("study_seconds");
+  if (!timerEl || !hiddenEl) return;
+
+  if (timerInterval) clearInterval(timerInterval);
+
   timerInterval = setInterval(() => {
-    seconds++;
-    const timerEl = document.getElementById("timer");
-    if (timerEl) timerEl.innerText = formatTime(seconds);
-
-    const hiddenEl = document.getElementById("study_seconds");
-    if (hiddenEl) hiddenEl.value = seconds;
+    totalSeconds += 1;
+    const m = String(Math.floor(totalSeconds / 60)).padStart(2, "0");
+    const s = String(totalSeconds % 60).padStart(2, "0");
+    timerEl.textContent = `${m}:${s}`;
+    hiddenEl.value = totalSeconds;
+    console.log("timer running:", m, s);
   }, 1000);
-}
 
-function stopTimer() {
+  console.log("timer started");
+};
+
+window.stopTimer = function() {
+  console.log("stopTimer called");
   clearInterval(timerInterval);
+  timerInterval = null;
+};
+
+function initTimer() {
+  const timerEl = document.getElementById("timer");
+  const hiddenEl = document.getElementById("study_seconds");
+  console.log("initTimer called", timerEl, hiddenEl);
+  if (timerEl && hiddenEl) {
+    console.log("Calling startTimer...");
+    window.startTimer();
+  }
 }
 
-function formatTime(sec) {
-  const m = String(Math.floor(sec / 60)).padStart(2,'0');
-  const s = String(sec % 60).padStart(2,'0');
-  return `${m}:${s}`;
-}
-
-window.startTimer = startTimer; // グローバルに露出
-window.stopTimer = stopTimer;
-
-document.addEventListener("turbo:load", startTimer);
-document.addEventListener("turbo:render", startTimer);
-document.addEventListener("DOMContentLoaded", startTimer);
-document.addEventListener("turbo:before-cache", stopTimer);
+document.addEventListener("DOMContentLoaded", initTimer);
+document.addEventListener("turbo:load", initTimer);
+document.addEventListener("turbo:frame-load", initTimer);

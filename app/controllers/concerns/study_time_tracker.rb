@@ -4,11 +4,16 @@ module StudyTimeTracker
   private
 
   def save_study_time(question_id, seconds, review: false)
-    StudyTime.create(
-      user: current_user,
-      question_id: question_id,
-      seconds: seconds,
-      review: review
-    )
+    return if seconds <= 0
+
+    minutes = (seconds / 60.0).round
+    today = Date.today
+
+    record = StudyRecord.find_or_initialize_by(user: current_user, date: today)
+
+    record.minutes ||= 0
+    record.minutes += minutes
+
+    record.save
   end
 end

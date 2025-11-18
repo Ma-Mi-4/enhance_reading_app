@@ -27,14 +27,14 @@ Rails.application.routes.draw do
 
   resources :questions, only: [:show] do
     member do
-      get 'explanation'
+      post 'explanation'
       post 'answer'
     end
   end
 
   resources :quizzes, only: [:show] do
     member do
-      get 'explanation'
+      post 'explanation'
       post 'answer'
     end
   end

@@ -7,7 +7,15 @@ class QuizzesController < ApplicationController
   end
 
   def explanation
-    save_study_time(params[:id], params[:study_seconds].to_i, review: true)
+    seconds = params[:study_seconds].to_i
+    save_study_time(params[:id], seconds, review: false)
+
+    minutes = (seconds / 60.0).round
+    today = Date.today
+    record = StudyRecord.find_or_initialize_by(user: current_user, date: today)
+    record.minutes ||= 0
+    record.minutes += minutes
+    record.save
   end
 
   private
