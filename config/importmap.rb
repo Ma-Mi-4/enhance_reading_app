@@ -11,7 +11,6 @@ pin "alpinejs", to: "https://unpkg.com/alpinejs@3.x.x/dist/module.esm.js"
 
 pin "@rails/ujs", to: "@rails/ujs.js"
 
-pin "chart.js", to: "vendor/javascript/chart.js.js"
-
 pin "timer", to: "timer.js"
-pin "@kurkle/color", to:  "vendor/javascript/@kurkle/color.js"
+pin "chart.js", to: "vendor/javascript/chart.js.js"
+pin "@kurkle/color", to: "vendor/javascript/@kurkle/color.js"
