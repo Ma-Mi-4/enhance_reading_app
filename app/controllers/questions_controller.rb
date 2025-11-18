@@ -1,12 +1,37 @@
 class QuestionsController < ApplicationController
   before_action :require_login
   before_action :load_questions_data, only: [:show, :explanation]
+  include StudyTimeTracker
 
   def show
     @id = params[:id] || "001"
   end
 
   def explanation
+    seconds = params[:study_seconds].to_i
+    save_study_time(params[:id], seconds, review: false)
+
+    minutes = (seconds / 60.0).round
+    today = Date.today
+    record = StudyRecord.find_or_initialize_by(user: current_user, date: today)
+    record.minutes ||= 0
+    record.minutes += minutes
+    record.save
+  end
+
+  def answer
+    study_seconds = params[:study_seconds].to_i
+    minutes = (study_seconds / 60.0).round
+
+    today = Date.today
+
+    record = StudyRecord.find_or_initialize_by(user: current_user, date: today)
+
+    record.minutes ||= 0
+    record.minutes += minutes
+    record.save
+
+    redirect_to next_question_path
   end
 
   private

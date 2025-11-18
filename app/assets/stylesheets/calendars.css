@@ -6,11 +6,36 @@
   font-size: 30px;
 }
 
+.dashboard {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.calendar-container {
+  flex: 1;
+}
+
+.study-container {
+  flex: 1;
+  position: relative;
+  min-height: 300px;
+  max-height: 300px;
+}
+
+#studyChart {
+  width: 100% !important;
+  height: 100% !important;
+  position: relative;
+  top: auto;
+  left: auto;
+}
+
 .calendar-table th,
 .calendar-table td {
   border: 1px solid #000;
   width: 14.2%;
-  height: 80px;
+  height: 100%;
   position: relative;
   vertical-align: top;
   padding: 0;

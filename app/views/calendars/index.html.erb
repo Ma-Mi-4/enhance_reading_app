@@ -1,32 +1,71 @@
+<meta name="turbo-cache-control" content="no-cache">
+
 <h1><%= @date.strftime('%Y年%m月') %></h1>
 
-<!-- 月送り -->
 <div style="margin-bottom: 16px;">
   <%= link_to "前の月", calendars_path(month: @date.prev_month), class: "btn btn-secondary" %>
   <%= link_to "次の月", calendars_path(month: @date.next_month), class: "btn btn-secondary" %>
 </div>
 
-<table class="calendar-table">
-  <tr>
-    <% ['日','月','火','水','木','金','土'].each_with_index do |d,i| %>
-      <th style="<%= 'color:red;' if i == 0 %><%= 'color:blue;' if i == 6 %>"><%= d %></th>
-    <% end %>
-  </tr>
+<div class="dashboard">
+  <div class="calendar-container">
+    <table class="calendar-table">
+      <tr>
+        <% ['日','月','火','水','木','金','土'].each_with_index do |d,i| %>
+          <th style="<%= 'color:red;' if i == 0 %><%= 'color:blue;' if i == 6 %>"><%= d %></th>
+        <% end %>
+      </tr>
 
-  <% @first_wday.times { %>
-  <td style="border:1px solid #000;"></td>
-  <% } %>
+      <% @first_wday.times do %>
+        <td></td>
+      <% end %>
 
-  <% (1..@last_day_num).each do |day| %>
-    <% current_date = Date.new(@date.year, @date.month, day) rescue nil %>
-    <% next unless current_date %>
+      <% @days.each do |current_date| %>
+        <td>
+          <%= link_to current_date.day, calendar_day_path(date: current_date), class: "calendar-day-link" %>
+        </td>
+        <% if current_date.saturday? %></tr><tr><% end %>
+      <% end %>
+    </table>
+  </div>
 
-    <td style="border:1px solid #000; position: relative;">
-      <%= link_to day, calendar_day_path(date: current_date), class: "calendar-day-link" %>
-    </td>
-    <% if current_date.saturday? %></tr><tr><% end %>
-  <% end %>
-</table>
+  <div class="study-container">
+    <h2>学習時間（分）</h2>
+    <canvas id="studyChart"
+           data-study='<%= raw({ labels: @labels, values: @data }.to_json) %>'></canvas>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  document.addEventListener("turbo:load", () => {
+    const canvas = document.getElementById("studyChart");
+
+    if (!canvas || !window.Chart) return;
+
+    const parsed = JSON.parse(canvas.dataset.study);
+    canvas.width = canvas.parentElement.clientWidth;
+    canvas.height = 300;  
+
+    new Chart(canvas, {
+      type: "bar",
+      data: {
+        labels: parsed.labels,
+        datasets: [{
+          label: "学習時間（分）",
+          data: parsed.values,
+          backgroundColor: "rgba(54, 162, 235, 0.5)"
+        }]
+      },
+      options: {
+        responsive: false,
+        maintainAspectRatio: false
+      }
+    });
+  });
+</script>
 
 <br>
 <%= link_to "メイン画面へ戻る", main_path, class: "btn btn-primary" %>
+

@@ -6,10 +6,20 @@ class CalendarsController < ApplicationController
       @date = Date.today
     end
 
-    @date = params[:month]&.to_date || Date.today
     @first_day = @date.beginning_of_month
     @last_day  = @date.end_of_month
     @first_wday = @first_day.wday
+
+    @days = (@first_day..@last_day).to_a
+
+    start_date = @date.beginning_of_month
+    end_date   = @date.end_of_month
+
+    records = StudyRecord.where(user: current_user, date: start_date..end_date)
+    @daily_minutes = records.group(:date).sum(:minutes)
+
+    @labels = (start_date..end_date).map { |d| d.strftime("%m/%d") }
+    @data   = (start_date..end_date).map { |d| @daily_minutes[d] || 0 }
   end
 
   def show
