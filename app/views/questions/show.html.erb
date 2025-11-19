@@ -10,10 +10,11 @@
               method: :post,
               local: true,
               data: { turbo: false },
-              onsubmit: "stopTimer()" do |f| %>
+              onsubmit: "stopTimer(); calculateAccuracy()" do |f| %>
 
   <div id="timer" style="font-size: 24px;">00:00</div>
   <%= hidden_field_tag :study_seconds, 0, id: "study_seconds" %>
+  <%= hidden_field_tag :accuracy, 0, id: "accuracy_field" %>
 
   <% @questions_data["questions"].each_with_index do |q, index| %>
     <div style="margin-bottom: 20px; padding: 10px; border: 1px solid #ccc;">
@@ -36,14 +37,11 @@
   let totalSeconds = 0;
 
   function startTimer() {
-    console.log("startTimer() called!");
     timerInterval = setInterval(() => {
       totalSeconds++;
       document.getElementById("study_seconds").value = totalSeconds;
-
       const minutes = Math.floor(totalSeconds / 60);
       const seconds = totalSeconds % 60;
-
       document.getElementById("timer").textContent =
         String(minutes).padStart(2, "0") + ":" +
         String(seconds).padStart(2, "0");
@@ -51,15 +49,25 @@
   }
 
   function stopTimer() {
-    console.log("stopTimer() called!");
     clearInterval(timerInterval);
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
-    console.log("DOMContentLoaded fired", window.Chart)
-  });
+  function calculateAccuracy() {
+    const correctIndexes = <%= raw @questions_data["questions"].map { |q| q["correct_choice_index"] }.to_json %>;
+    let correctCount = 0;
+
+    for (let i = 0; i < correctIndexes.length; i++) {
+      const selected = document.querySelector(`input[name="q${i}"]:checked`);
+      if (selected && parseInt(selected.value) === correctIndexes[i]) {
+        correctCount++;
+      }
+    }
+
+    const accuracy = correctCount / correctIndexes.length;
+    document.getElementById("accuracy_field").value = accuracy;
+  }
+
   document.addEventListener("turbo:load", () => {
-    console.log("turbo:load fired", window.Chart)
     startTimer();
   });
 </script>

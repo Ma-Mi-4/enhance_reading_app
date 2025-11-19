@@ -37,7 +37,7 @@
            data-chart='<%= raw({
              labels: @labels,
              durations: @data,
-             predicted_scores: [@month_summary[:predicted_score]] * @labels.size
+             predicted_scores: @predicted_scores
            }.to_json) %>'>
     </canvas>
 

@@ -4,12 +4,10 @@ class StudiesController < ApplicationController
     end_date = Date.today.end_of_week
 
     @weekly_data = (start_date..end_date).map do |date|
-      day_studies = Study.where(user: current_user, date: date)
-      duration = day_studies.sum(:duration_min)
+      day_records = StudyRecord.where(user: current_user, date: date)
+      duration = day_records.sum(:minutes)
 
-      weighted_correct = day_studies.sum { |s| s.correct * s.difficulty }
-      max_score = day_studies.sum(&:difficulty)
-      weighted_rate = max_score.zero? ? 0 : weighted_correct.to_f / max_score
+      weighted_rate = day_records.any? ? day_records.sum(&:accuracy).to_f / day_records.size : 0
 
       predicted_score = 500 + (800 - 500) * weighted_rate
       predicted_score = (predicted_score / 5.0).round * 5
@@ -22,18 +20,18 @@ class StudiesController < ApplicationController
     end
 
     month_start = Date.today.beginning_of_month
-    month_end = Date.today.end_of_month
-    month_studies = Study.where(user: current_user, date: month_start..month_end)
-    month_total_duration = month_studies.sum(:duration_min)
-    month_weighted_correct = month_studies.sum { |s| s.correct * s.difficulty }
-    month_max_score = month_studies.sum(&:difficulty)
-    month_weighted_rate = month_max_score.zero? ? 0 : month_weighted_correct.to_f / month_max_score
-    month_predicted_score = 500 + (800-500) * month_weighted_rate
+    month_end   = Date.today.end_of_month
+    month_records = StudyRecord.where(user: current_user, date: month_start..month_end)
+
+    month_total_duration = month_records.sum(:minutes)
+    month_weighted_rate = month_records.any? ? month_records.sum(&:accuracy).to_f / month_records.size : 0
+    month_predicted_score = 500 + (800 - 500) * month_weighted_rate
     month_predicted_score = (month_predicted_score / 5.0).round * 5
 
     @month_summary = {
       total_duration: month_total_duration,
-      predicted_score: month_predicted_score
+      predicted_score: month_predicted_score,
+      average_accuracy: (month_weighted_rate * 100).round(1)
     }
 
     @chart_data = {

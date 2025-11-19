@@ -13,8 +13,15 @@ class CalendarsController < ApplicationController
     records = StudyRecord.where(user: current_user, date: @first_day..@last_day)
 
     @daily_minutes = records.group(:date).sum(:minutes)
+    @daily_accuracy = records.each_with_object({}) { |r, h| h[r.date] = r.accuracy }
+    @daily_scores   = records.each_with_object({}) { |r, h| h[r.date] = r.estimated_score }
     @labels = (@first_day..@last_day).map { |d| d.strftime("%m/%d") }
     @data   = (@first_day..@last_day).map { |d| @daily_minutes[d] || 0 }
+    @predicted_scores = (@first_day..@last_day).map do |d|
+      score = (@daily_scores[d] || 0).to_i
+      score < 500 ? 500 : score
+    end
+
 
     total_minutes = records.sum(:minutes)
 
@@ -34,11 +41,12 @@ class CalendarsController < ApplicationController
     }
   end
 
-
   def show
     @date = Date.parse(params[:date])
+    
     record = StudyRecord.find_by(user: current_user, date: @date)
     @accuracy = record&.accuracy
     @score    = record&.estimated_score
+    @minutes  = record&.minutes
   end
 end
