@@ -8,22 +8,27 @@ class QuestionsController < ApplicationController
   end
 
   def explanation
+    Rails.logger.debug "Params received: #{params.inspect}"
     seconds = params[:study_seconds].to_i
-    save_study_time(params[:id], seconds, review: false)
-
     minutes = (seconds / 60.0).round
     today = Date.today
+
     record = StudyRecord.find_or_initialize_by(user: current_user, date: today)
     record.minutes ||= 0
     record.minutes += minutes
 
     if params[:accuracy].present?
       record.accuracy = params[:accuracy].to_f
+      Rails.logger.debug "Assigned accuracy: #{record.accuracy}"
       record.estimated_score = 500 + (800 - 500) * record.accuracy
       record.estimated_score = (record.estimated_score / 5.0).round * 5
     end
 
-    record.save
+    saved = record.save
+    p "accuracy = #{record.accuracy}"
+    p "estimated_score = #{record.estimated_score}"
+    p "saved = #{saved}"
+    Rails.logger.debug "StudyRecord saved: #{saved}, record: #{record.inspect}"
   end
 
   def answer

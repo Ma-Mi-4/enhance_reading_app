@@ -1,30 +1,65 @@
-import { Chart } from "chart.js";
+import Chart from "chart.js/auto";
 
-let studyChart;
-
-function initStudyChart() {
+document.addEventListener("turbo:load", () => {
   const canvas = document.getElementById("studyChart");
   if (!canvas) return;
 
-  const parsed = JSON.parse(canvas.dataset.study);
+  const parsed = JSON.parse(canvas.dataset.study || "[]");
+  if (!parsed.length) return;
 
-  if (studyChart) studyChart.destroy();
+  const labels = parsed.map(d => d.label);
+  const durations = parsed.map(d => d.minutes);
+  const predicted_scores = parsed.map(d => d.predicted_score);
 
-  studyChart = new Chart(canvas, {
-    type: "bar",
+  if (canvas.chartInstance) {
+    canvas.chartInstance.destroy();
+  }
+
+  canvas.chartInstance = new Chart(canvas, {
     data: {
-      labels: parsed.labels,
-      datasets: [{
-        label: "学習時間（分）",
-        data: parsed.values,
-        backgroundColor: "rgba(54, 162, 235, 0.5)"
-      }]
+      labels: labels,
+      datasets: [
+        {
+          label: "学習時間（分）",
+          data: durations,
+          type: "bar",
+          backgroundColor: "rgba(54, 162, 235, 0.5)",
+          yAxisID: "y",
+        },
+        {
+          label: "予想スコア",
+          data: predicted_scores,
+          type: "line",
+          borderColor: "rgba(255, 99, 132, 1)",
+          backgroundColor: "rgba(255, 99, 132, 0.2)",
+          yAxisID: "y1",
+          tension: 0.3,
+          fill: false
+        }
+      ]
     },
     options: {
       responsive: true,
-      maintainAspectRatio: false
+      interaction: {
+        mode: 'index',
+        intersect: false
+      },
+      stacked: false,
+      plugins: {
+        legend: { position: "top" },
+        annotation: {
+          annotations: {
+            score500: { type: "line", yMin: 500, yMax: 500, borderColor: "gray", borderDash: [6,6], label: { enabled: true, content: "500点", position: "end" }},
+            score600: { type: "line", yMin: 600, yMax: 600, borderColor: "gray", borderDash: [6,6], label: { enabled: true, content: "600点", position: "end" }},
+            score700: { type: "line", yMin: 700, yMax: 700, borderColor: "gray", borderDash: [6,6], label: { enabled: true, content: "700点", position: "end" }},
+            score800: { type: "line", yMin: 800, yMax: 800, borderColor: "gray", borderDash: [6,6], label: { enabled: true, content: "800点", position: "end" }},
+          }
+        }
+      },
+      scales: {
+        y: { type: "linear", position: "left", title: { display: true, text: "学習時間（分）" } },
+        y1: { type: "linear", position: "right", title: { display: true, text: "予想スコア" }, min: 500, max: 800, ticks: { stepSize: 50 }, grid: { drawOnChartArea: false } }
+      }
     }
   });
-}
-
-document.addEventListener("turbo:load", initStudyChart);
+});

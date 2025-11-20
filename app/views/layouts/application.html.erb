@@ -9,7 +9,7 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-  <body data-turbo="true" <%= yield :body_attributes %>>
+  <body data-turbo="false" <%= yield :body_attributes %>>
     <%= render 'shared/header' %>
 
     <% flash.each do |key, message| %>

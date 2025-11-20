@@ -1,15 +1,17 @@
-<% content_for :body_attributes do %> data-has-timer="true" <% end %>
+<% content_for :body_attributes do %> data-has-timer="true" data-turbo="false" <% end %>
 
 <h1>復習問題</h1>
 
 <%= form_with url: (@review ? review_explanation_quiz_path(params[:id]) : explanation_quiz_path(params[:id], level: params[:level] || '600')),
               method: :post,
               local: true,
+              html: { id: "quiz_form" },
               data: { turbo: false },
-              onsubmit: "stopTimer()" do |f| %>
+              onsubmit: "stopTimer(); calculateAccuracy(); return true;" do |f| %>
 
   <div id="timer">00:00</div>
   <%= hidden_field_tag :study_seconds, 0, id: "study_seconds" %>
+  <%= hidden_field_tag :accuracy, 0, id: "accuracy_field_quiz" %>
 
   <% if @quiz_data["questions"].any? %>
     <% @quiz_data["questions"].each_with_index do |q, index| %>
@@ -33,38 +35,70 @@
   <% end %>
 
 <script>
-  console.log("inline timer script loaded");
+  console.log("Quiz script loaded");
 
   let timerInterval;
   let totalSeconds = 0;
 
   function startTimer() {
-    console.log("startTimer() called!");
+    console.log("startTimer() called");
     timerInterval = setInterval(() => {
       totalSeconds++;
       document.getElementById("study_seconds").value = totalSeconds;
-
       const minutes = Math.floor(totalSeconds / 60);
       const seconds = totalSeconds % 60;
-
       document.getElementById("timer").textContent =
-        String(minutes).padStart(2, "0") + ":" +
-        String(seconds).padStart(2, "0");
+        String(minutes).padStart(2, "0") + ":" + String(seconds).padStart(2, "0");
     }, 1000);
   }
 
   function stopTimer() {
-    console.log("stopTimer() called!");
+    console.log("stopTimer() called");
     clearInterval(timerInterval);
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
-    console.log("DOMContentLoaded fired", window.Chart)
-  });
-  document.addEventListener("turbo:load", () => {
-    console.log("turbo:load fired", window.Chart)
+  function calculateAccuracy() {
+    const correctIndexes = <%= raw @quiz_data["questions"].map { |q| q["correct_choice_index"] }.to_json %>;
+    console.log("correctIndexes:", correctIndexes);
+
+    let correctCount = 0;
+    const form = document.getElementById("quiz_form");
+
+    for (let i = 0; i < correctIndexes.length; i++) {
+      const selected = form.querySelector(`input[name="q${i}"]:checked`);
+      if (selected) {
+        if (parseInt(selected.value) === correctIndexes[i]) correctCount++;
+      } else {
+        console.log(`Question ${i} is not answered`);
+      }
+    }
+
+    const accuracy = correctCount / correctIndexes.length;
+    document.getElementById("accuracy_field_quiz").value = accuracy;
+    console.log("Accuracy calculated:", accuracy);
+  }
+
+  window.startTimer = startTimer;
+  window.stopTimer = stopTimer;
+  window.calculateAccuracy = calculateAccuracy;
+
+  function initQuiz() {
+    console.log("initQuiz called");
+
     startTimer();
-  });
+
+    const form = document.getElementById("quiz_form");
+    if (form) {
+      form.addEventListener("submit", () => {
+        console.log("Form submit event triggered");
+        stopTimer();
+        calculateAccuracy();
+      });
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", initQuiz);
+  document.addEventListener("turbo:load", initQuiz);
 </script>
 
   <%= f.submit "解説を見る" %>

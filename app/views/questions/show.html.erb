@@ -1,4 +1,4 @@
-<% content_for :body_attributes do %> data-has-timer="true" <% end %>
+<% content_for :body_attributes do %> data-has-timer="true" data-turbo="false" <% end %>
 
 <meta name="turbo-cache-control" content="no-cache">
 
@@ -9,12 +9,12 @@
 <%= form_with url: (@review ? review_explanation_question_path(@id) : explanation_question_path(@id, level: (params[:level] || current_user.level))),
               method: :post,
               local: true,
-              data: { turbo: false },
-              onsubmit: "stopTimer(); calculateAccuracy()" do |f| %>
+              html: { id: "question_form" }, 
+              data: { turbo: false } do |f| %>
 
   <div id="timer" style="font-size: 24px;">00:00</div>
   <%= hidden_field_tag :study_seconds, 0, id: "study_seconds" %>
-  <%= hidden_field_tag :accuracy, 0, id: "accuracy_field" %>
+  <%= hidden_field_tag :accuracy, 0, id: "accuracy_field_questions" %>
 
   <% @questions_data["questions"].each_with_index do |q, index| %>
     <div style="margin-bottom: 20px; padding: 10px; border: 1px solid #ccc;">
@@ -31,46 +31,77 @@
   <% end %>
 
 <script>
-  console.log("inline timer script loaded");
+console.log("Quiz script loaded");
 
-  let timerInterval;
-  let totalSeconds = 0;
+let timerInterval;
+let totalSeconds = 0;
 
-  function startTimer() {
-    timerInterval = setInterval(() => {
-      totalSeconds++;
-      document.getElementById("study_seconds").value = totalSeconds;
-      const minutes = Math.floor(totalSeconds / 60);
-      const seconds = totalSeconds % 60;
-      document.getElementById("timer").textContent =
-        String(minutes).padStart(2, "0") + ":" +
-        String(seconds).padStart(2, "0");
-    }, 1000);
-  }
+function startTimer() {
+  console.log("startTimer() called");
+  timerInterval = setInterval(() => {
+    totalSeconds++;
+    document.getElementById("study_seconds").value = totalSeconds;
+    const minutes = Math.floor(totalSeconds / 60);
+    const seconds = totalSeconds % 60;
+    document.getElementById("timer").textContent =
+      String(minutes).padStart(2, "0") + ":" + String(seconds).padStart(2, "0");
 
-  function stopTimer() {
-    clearInterval(timerInterval);
-  }
+     console.log("Study seconds:", totalSeconds);
+  }, 1000);
+}
 
-  function calculateAccuracy() {
-    const correctIndexes = <%= raw @questions_data["questions"].map { |q| q["correct_choice_index"] }.to_json %>;
-    let correctCount = 0;
+function stopTimer() {
+  console.log("stopTimer() called");
+  clearInterval(timerInterval);
+}
 
-    for (let i = 0; i < correctIndexes.length; i++) {
-      const selected = document.querySelector(`input[name="q${i}"]:checked`);
-      if (selected && parseInt(selected.value) === correctIndexes[i]) {
-        correctCount++;
-      }
+function calculateAccuracy() {
+  const correctIndexes = <%= raw @questions_data["questions"].map { |q| q["correct_choice_index"] }.to_json %>;
+  console.log("correctIndexes:", correctIndexes);
+
+  let correctCount = 0;
+  const form = document.getElementById("question_form");
+
+  for (let i = 0; i < correctIndexes.length; i++) {
+    const selected = form.querySelector(`input[name="q${i}"]:checked`);
+    if (selected) {
+      if (parseInt(selected.value) === correctIndexes[i]) correctCount++;
+    } else {
+      console.log(`Question ${i} is not answered`);
     }
-
-    const accuracy = correctCount / correctIndexes.length;
-    document.getElementById("accuracy_field").value = accuracy;
   }
 
-  document.addEventListener("turbo:load", () => {
-    startTimer();
-  });
+  const accuracy = correctCount / correctIndexes.length;
+  document.getElementById("accuracy_field_questions").value = accuracy;
+
+  console.log("Correct answers:", correctCount);
+  console.log("Total questions:", correctIndexes.length);
+  console.log("Accuracy calculated:", accuracy);
+  console.log("Study seconds at submit:", totalSeconds);
+}
+
+function initQuiz() {
+  console.log("initQuiz called");
+  startTimer();
+
+  const form = document.getElementById("question_form");
+  if (form) {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      console.log("Form submit event triggered");
+      stopTimer();
+      calculateAccuracy();
+
+      console.log("Accuracy field value before submit:", document.getElementById("accuracy_field_questions").value);
+      form.submit();
+    });
+  }
+}
+
+document.addEventListener("DOMContentLoaded", initQuiz);
+document.addEventListener("turbo:load", initQuiz);
 </script>
+
 
   <%= f.submit "解説を見る" %>
 <% end %>
