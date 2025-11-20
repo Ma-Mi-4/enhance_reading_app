@@ -4,6 +4,7 @@ class QuizzesController < ApplicationController
   include StudyTimeTracker
 
   def show
+    @id = params[:id] || "001"
   end
 
   def explanation
@@ -11,11 +12,33 @@ class QuizzesController < ApplicationController
     save_study_time(params[:id], seconds, review: false)
 
     minutes = (seconds / 60.0).round
-    today = Date.today
+    today = Date.current
     record = StudyRecord.find_or_initialize_by(user: current_user, date: today)
     record.minutes ||= 0
     record.minutes += minutes
-    record.save
+
+    if params[:accuracy].present?
+      record.accuracy = params[:accuracy].to_f
+      Rails.logger.debug "Assigned accuracy: #{record.accuracy}"
+      record.estimated_score = 500 + (800 - 500) * record.accuracy
+      record.estimated_score = (record.estimated_score / 5.0).round * 5
+    end
+
+    saved = record.save
+    p "accuracy = #{record.accuracy}"
+    p "estimated_score = #{record.estimated_score}"
+    p "saved = #{saved}"
+    Rails.logger.debug "StudyRecord saved: #{saved}, record: #{record.inspect}"
+  end
+
+  def answer
+    save_study_record(
+      seconds: params[:study_seconds].to_i,
+      accuracy: params[:accuracy],
+      review: true
+    )
+
+    redirect_to next_quiz_path
   end
 
   private

@@ -8,6 +8,7 @@
 </div>
 
 <div class="dashboard">
+  <!-- カレンダー -->
   <div class="calendar-container">
     <table class="calendar-table">
       <tr>
@@ -29,41 +30,90 @@
     </table>
   </div>
 
+  <!-- 学習グラフ -->
   <div class="study-container">
-    <h2>学習時間（分）</h2>
+    <h2>今週の学習時間・予想スコア</h2>
     <canvas id="studyChart"
-           data-study='<%= raw({ labels: @labels, values: @data }.to_json) %>'></canvas>
+        data-study='<%= raw(@study_data.to_json) %>'>
+    </canvas>
+
+    <!-- 今月の集計表示 -->
+    <div class="month-summary" style="margin-top:16px;">
+      <p>今月の学習時間合計: <%= @month_summary[:total_duration] %> 分</p>
+      <p>今月の正答率: <%= @month_summary[:average_accuracy] %> %</p>
+      <p>今月の予想スコア: <%= @month_summary[:predicted_score] %> 点</p>
+    </div>
   </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
-  document.addEventListener("turbo:load", () => {
-    const canvas = document.getElementById("studyChart");
+document.addEventListener("turbo:load", () => {
+  const canvas = document.getElementById("studyChart");
+  if (!canvas) return;
 
-    if (!canvas || !window.Chart) return;
+  const parsed = JSON.parse(canvas.dataset.study);
 
-    const parsed = JSON.parse(canvas.dataset.study);
-    canvas.width = canvas.parentElement.clientWidth;
-    canvas.height = 300;  
-
-    new Chart(canvas, {
-      type: "bar",
-      data: {
-        labels: parsed.labels,
-        datasets: [{
-          label: "学習時間（分）",
-          data: parsed.values,
-          backgroundColor: "rgba(54, 162, 235, 0.5)"
-        }]
-      },
-      options: {
-        responsive: false,
-        maintainAspectRatio: false
-      }
-    });
+  console.log("Parsed study data:", parsed);
+  parsed.forEach(d => {
+    console.log(`Date: ${d.label}, Minutes: ${d.minutes}, Predicted Score: ${d.predicted_score}`);
   });
+
+  const labels = parsed.map(d => d.label);
+  const durations = parsed.map(d => d.minutes);
+  const predicted_scores = parsed.map(d => d.predicted_score);
+
+  console.log("Labels:", labels);
+  console.log("Durations:", durations);
+  console.log("Predicted Scores:", predicted_scores);
+
+  if (canvas.chartInstance) canvas.chartInstance.destroy();
+
+  canvas.chartInstance = new Chart(canvas, {
+    data: {
+      labels: labels,
+      datasets: [
+        {
+          label: "学習時間（分）",
+          data: durations,
+          type: "bar",
+          backgroundColor: "rgba(54, 162, 235, 0.5)",
+          yAxisID: "y"
+        },
+        {
+          label: "予想スコア",
+          data: predicted_scores,
+          type: "line",
+          borderColor: "rgba(255, 99, 132, 1)",
+          backgroundColor: "rgba(255, 99, 132, 0.2)",
+          yAxisID: "y1",
+          fill: false,
+          tension: 0.3
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      interaction: { mode: "index", intersect: false },
+      stacked: false,
+      scales: {
+        y: { 
+          type: "linear", 
+          position: "left", 
+          title: { display: true, text: "学習時間（分）" } 
+        },
+        y1: { 
+          type: "linear", 
+          position: "right", 
+          title: { display: true, text: "予想スコア" },
+          min: 500, max: 800, ticks: { stepSize: 50 }, 
+          grid: { drawOnChartArea: false } 
+        }
+      }
+    }
+  });
+});
 </script>
 
 <br>
