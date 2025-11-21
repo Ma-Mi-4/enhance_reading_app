@@ -60,7 +60,6 @@ RUN SECRET_KEY_BASE=dummykey DATABASE_URL=postgres://localhost bundle exec rails
 # Final stage for app image
 FROM base
 
-
 # Copy built artifacts: gems, application
 COPY --from=build "${BUNDLE_PATH}" "${BUNDLE_PATH}"
 COPY --from=build /rails /rails
