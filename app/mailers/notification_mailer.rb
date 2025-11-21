@@ -1,6 +1,11 @@
 class NotificationMailer < ApplicationMailer
-  def notify(user)
+  def daily_reminder(user, question)
     @user = user
-    mail(to: @user.email, subject: "通知テスト")
+    @question = question
+
+    mail(
+      to: @user.email,
+      subject: "今日の学習リマインダー"
+    )
   end
 end
