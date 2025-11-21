@@ -47,6 +47,7 @@ Rails.application.routes.draw do
   get 'settings/level', to: 'settings#level', as: 'settings_level'
   patch 'settings/level', to: 'settings#update_level'
   get 'settings/notification', to: 'settings#notification', as: 'settings_notification'
+  patch 'settings/notification', to: 'settings#update_notification', as: 'update_notification_settings'
   get 'settings/account', to: 'settings#account', as: 'settings_account'
   get '/calendars', to: 'calendars#index', as: 'calendars'
   get '/calendars/:date', to: 'calendars#show', as: 'calendar_day'
