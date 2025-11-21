@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  enabled: false
+  notify_time: 2025-11-21 02:20:47
+
+two:
+  user: two
+  enabled: false
+  notify_time: 2025-11-21 02:20:47

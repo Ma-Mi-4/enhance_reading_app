@@ -1,3 +1,24 @@
 <h1>通知設定</h1>
-<p>通知 ON/OFF</p>
-<p>通知時刻設定</p>
+
+<%= form_with model: @notification_setting, url: update_notification_settings_path, method: :patch do |f| %>
+  <p>
+  <div>
+    <label>通知ON/OFF</label><br>
+    <%= f.radio_button :enabled, true %>
+    <%= f.label :enabled_true, "通知ON" %><br>
+    <%= f.radio_button :enabled, false %>
+    <%= f.label :enabled_false, "通知OFF" %>
+  </div>
+  </p>
+
+  <p>
+  <div>
+    <label>通知時刻</label>
+    <%= f.time_field :notify_time, value: @notification_setting.notify_time&.strftime("%H:%M") %>
+  </div>
+  </p>
+
+  <div>
+    <%= f.submit "保存" %>
+  </div>
+<% end %>
