@@ -21,7 +21,11 @@
             class="absolute right-0 mt-2 w-36 bg-white border border-gray-200 rounded-md shadow-md py-1 z-50 text-sm"
           >
             <%= link_to '設定', settings_path, class: 'block px-3 py-1.5 text-gray-700 hover:bg-gray-100' %>
-            <%= link_to 'レベル設定変更', settings_level_path, class: 'block px-3 py-1.5 text-gray-700 hover:bg-gray-100' %>
+            <% if @new_registration %>
+              <%= link_to 'レベル設定変更', set_level_users_path, class: 'block px-3 py-1.5 text-gray-700 hover:bg-gray-100' %>
+            <% elsif current_user %>
+              <%= link_to 'レベル設定変更', set_level_user_path(current_user), class: 'block px-3 py-1.5 text-gray-700 hover:bg-gray-100' %>
+            <% end %>
             <%= link_to '通知設定', settings_notification_path, class: 'block px-3 py-1.5 text-gray-700 hover:bg-gray-100' %>
             <%= link_to 'アカウント情報変更', settings_account_path, class: 'block px-3 py-1.5 text-gray-700 hover:bg-gray-100' %>
             <%= link_to 'メイン画面', main_path, class: 'block px-3 py-1.5 text-gray-700 hover:bg-gray-100' %>

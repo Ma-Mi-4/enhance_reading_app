@@ -12,7 +12,7 @@ class SettingsController < ApplicationController
       if params[:new_registration].present?
         redirect_to login_path, notice: "レベル設定が完了しました。ログインしてください"
       else
-        redirect_to settings_level_path, notice: "レベル設定を更新しました"
+        redirect_to set_level_user_path(@user), notice: "レベル設定を更新しました"
       end
     else
       flash.now[:alert] = "レベル設定に失敗しました"

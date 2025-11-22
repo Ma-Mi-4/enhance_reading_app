@@ -19,8 +19,13 @@ Rails.application.routes.draw do
 
   resources :users, only: [:new, :create] do
     member do
-      get  'set_level', to: 'settings#level'
+     get 'set_level', to: 'settings#level'
       patch 'update_level', to: 'settings#update_level'
+    end
+
+    collection do
+      get 'set_level', to: 'settings#level'
+      patch 'update_level_for_registration', to: 'settings#update_level_for_registration'
     end
   end
 
@@ -48,8 +53,6 @@ Rails.application.routes.draw do
   get 'settings', to: 'settings#index'
   get 'terms_of_service', to: 'static_pages#terms_of_service'
   get 'main', to: 'main#index'
-  get 'settings/level', to: 'settings#level', as: 'settings_level'
-  patch 'settings/level', to: 'settings#update_level'
   get 'settings/notification', to: 'settings#notification', as: 'settings_notification'
   patch 'settings/notification', to: 'settings#update_notification', as: 'update_notification_settings'
   get 'settings/account', to: 'settings#account', as: 'settings_account'
