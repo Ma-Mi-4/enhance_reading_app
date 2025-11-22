@@ -87,8 +87,6 @@ GEM
     bindex (0.8.1)
     bootsnap (1.18.6)
       msgpack (~> 1.2)
-    bootstrap (5.3.5)
-      popper_js (>= 2.11.8, < 3)
     builder (3.3.0)
     capybara (3.40.0)
       addressable
@@ -203,7 +201,6 @@ GEM
       multi_xml (~> 0.5)
       rack (>= 1.2, < 4)
     pg (1.6.2-x86_64-linux)
-    popper_js (2.11.8)
     pp (0.6.3)
       prettyprint
     prettyprint (0.2.0)
@@ -323,7 +320,6 @@ PLATFORMS
 DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootsnap
-  bootstrap (~> 5.2)
   capybara
   dartsass-rails (~> 0.5.1)
   debug

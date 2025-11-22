@@ -8,9 +8,7 @@ pin "alpinejs", to: "https://unpkg.com/alpinejs@3.x.x/dist/module.esm.js"
 
 pin "timer", to: "timer.js"
 
-pin "chart.js", to: "vendor/chart.js.js"
-pin "@kurkle/color", to: "vendor/@kurkle--color.js"
-pin "@popperjs/core", to: "vendor/@popperjs--core.js"
-pin "bootstrap", to: "vendor/bootstrap.js"
 pin "@rails/ujs", to: "vendor/@rails--ujs.js"
 
+pin "chart.js", to: "https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.esm.js"
+pin "chartjs-plugin-annotation", to: "https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@4.2.1/dist/chartjs-plugin-annotation.esm.js"

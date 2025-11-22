@@ -1,0 +1,15 @@
+<h1>パスワード変更</h1>
+
+<%= form_with url: user_password_path, method: :patch do |f| %>
+  <div>
+    <%= f.label :password, "新しいパスワード" %>
+    <%= f.password_field :password, required: true %>
+  </div>
+
+  <div>
+    <%= f.label :password_confirmation, "確認用パスワード" %>
+    <%= f.password_field :password_confirmation, required: true %>
+  </div>
+
+  <%= f.submit "更新" %>
+<% end %>

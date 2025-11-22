@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'emails/edit'
+  get 'emails/update'
+  get 'passwords/edit'
+  get 'passwords/update'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
@@ -15,8 +19,13 @@ Rails.application.routes.draw do
 
   resources :users, only: [:new, :create] do
     member do
-      get  'set_level', to: 'settings#level'
+     get 'set_level', to: 'settings#level'
       patch 'update_level', to: 'settings#update_level'
+    end
+
+    collection do
+      get 'set_level', to: 'settings#level'
+      patch 'update_level_for_registration', to: 'settings#update_level_for_registration'
     end
   end
 
@@ -44,13 +53,15 @@ Rails.application.routes.draw do
   get 'settings', to: 'settings#index'
   get 'terms_of_service', to: 'static_pages#terms_of_service'
   get 'main', to: 'main#index'
-  get 'settings/level', to: 'settings#level', as: 'settings_level'
-  patch 'settings/level', to: 'settings#update_level'
   get 'settings/notification', to: 'settings#notification', as: 'settings_notification'
   patch 'settings/notification', to: 'settings#update_notification', as: 'update_notification_settings'
   get 'settings/account', to: 'settings#account', as: 'settings_account'
   get '/calendars', to: 'calendars#index', as: 'calendars'
   get '/calendars/:date', to: 'calendars#show', as: 'calendar_day'
+  get  'users/password/edit', to: 'passwords#edit',   as: 'edit_user_password'
+  patch 'users/password',     to: 'passwords#update', as: 'user_password'
+  get   'users/email/edit', to: 'emails#edit',   as: 'edit_user_email'
+  patch 'users/email',      to: 'emails#update', as: 'user_email'
 
   namespace :admin do
     root to: "main#index"
