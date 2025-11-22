@@ -1,4 +1,6 @@
-import Chart from "chart.js/auto";
+if (window.Chart && window['chartjs-plugin-annotation']) {
+  Chart.register(window['chartjs-plugin-annotation']);
+}
 
 document.addEventListener("turbo:load", () => {
   const canvas = document.getElementById("studyChart");
