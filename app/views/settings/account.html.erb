@@ -1,1 +1,14 @@
 <h1>アカウント情報変更</h1>
+
+<h2>メールアドレス変更</h2>
+<%= form_with url: user_email_path, method: :patch do |f| %>
+  <%= f.email_field :email, value: current_user.email, required: true %>
+  <%= f.submit "更新" %>
+<% end %>
+
+<h2>パスワード変更</h2>
+<%= form_with url: user_password_path, method: :patch do |f| %>
+  <%= f.password_field :password, placeholder: "新しいパスワード", required: true %>
+  <%= f.password_field :password_confirmation, placeholder: "確認用", required: true %>
+  <%= f.submit "更新" %>
+<% end %>

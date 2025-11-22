@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'emails/edit'
+  get 'emails/update'
+  get 'passwords/edit'
+  get 'passwords/update'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
@@ -51,6 +55,10 @@ Rails.application.routes.draw do
   get 'settings/account', to: 'settings#account', as: 'settings_account'
   get '/calendars', to: 'calendars#index', as: 'calendars'
   get '/calendars/:date', to: 'calendars#show', as: 'calendar_day'
+  get  'users/password/edit', to: 'passwords#edit',   as: 'edit_user_password'
+  patch 'users/password',     to: 'passwords#update', as: 'user_password'
+  get   'users/email/edit', to: 'emails#edit',   as: 'edit_user_email'
+  patch 'users/email',      to: 'emails#update', as: 'user_email'
 
   namespace :admin do
     root to: "main#index"
