@@ -62,6 +62,9 @@ Rails.application.routes.draw do
   patch 'users/password',     to: 'passwords#update', as: 'user_password'
   get   'users/email/edit', to: 'emails#edit',   as: 'edit_user_email'
   patch 'users/email',      to: 'emails#update', as: 'user_email'
+  get "/auth/google/callback", to: "sessions#google"
+  post '/sessions/google', to: 'sessions#google'
+
 
   namespace :admin do
     root to: "main#index"
