@@ -36,6 +36,7 @@ console_command = '/rails/bin/rails console'
   RAILS_SERVE_STATIC_FILES = "enabled"
   ENABLE_LETTER_OPENER_WEB = "true"
   FORCE_SSL = "false" 
+  NEXT_PUBLIC_APP_URL = "https://enhance-reading-app-morning-sound-6129.fly.dev"
 
 [[services]]
   internal_port = 3000

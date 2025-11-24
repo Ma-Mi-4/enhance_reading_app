@@ -17,4 +17,24 @@ class SessionsController < ApplicationController
     logout
     redirect_to login_path, notice: "ログアウトしました"
   end
+
+  def google
+    access_token = params[:access_token] || request.raw_post
+    access_token = JSON.parse(access_token)['access_token'] rescue access_token
+    user_info = SupabaseService.get_user_from_access_token(access_token)
+    email = user_info[:email]
+
+    if email.blank?
+      render json: { error: "Googleからメールアドレスが取得できませんでした" }, status: :unprocessable_entity
+      return
+    end
+
+    user = User.find_or_create_by(email: email) do |u|
+      u.password = SecureRandom.hex(10)
+    end
+
+    auto_login(user)
+
+    render json: { message: "Googleログイン成功" }, status: :ok
+  end
 end

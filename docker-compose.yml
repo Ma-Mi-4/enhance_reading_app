@@ -17,6 +17,7 @@ services:
       PROD_DB_USERNAME: app
       APP_DATABASE_PASSWORD: password123
       PROD_DB_NAME: app_production
+      NEXT_PUBLIC_APP_URL: https://enhance-reading-app-morning-sound-6129.fly.dev
 
     volumes:
       - .:/rails
