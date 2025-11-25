@@ -1,0 +1,78 @@
+{
+  "level": 500,
+  "title": "Vocabulary Quiz from Part7 Level500_005",
+  "questions": [
+    {
+      "word": "update",
+      "question_text": "\"update\" の意味はどれでしょう？",
+      "choices_text": [
+        "To provide new or revised information",
+        "To remove something",
+        "To deliver a package",
+        "To buy equipment"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The company will send an update later this week.",
+      "explanation": "最新情報を提供する・更新する\n取り除く\n荷物を配達する\n機材を買う"
+    },
+    {
+      "word": "project",
+      "question_text": "\"project\" の意味はどれでしょう？",
+      "choices_text": [
+        "A planned piece of work",
+        "A personal message",
+        "A break time",
+        "An outdoor event"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The project will begin next month.",
+      "explanation": "計画された作業・プロジェクト\n個人的なメッセージ\n休憩時間\n屋外イベント"
+    },
+    {
+      "word": "prepare",
+      "question_text": "\"prepare\" の意味はどれでしょう？",
+      "choices_text": [
+        "To get ready for something",
+        "To cancel something",
+        "To wait for someone",
+        "To send money"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Please prepare your report before the meeting.",
+      "explanation": "準備する\n中止する\n誰かを待つ\nお金を送る"
+    },
+    {
+      "word": "materials",
+      "question_text": "\"materials\" の意味はどれでしょう？",
+      "choices_text": [
+        "Items needed for a task or activity",
+        "Personal documents",
+        "Snacks for visitors",
+        "Office workers"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Participants should bring all necessary materials.",
+      "explanation": "資料・材料\n個人書類\n訪問者用の軽食\n事務職員"
+    },
+    {
+      "word": "deadline",
+      "question_text": "\"deadline\" の意味はどれでしょう？",
+      "choices_text": [
+        "The final time by which something must be done",
+        "The start of a project",
+        "A type of meeting room",
+        "A customer request"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The deadline for submissions is Tuesday.",
+      "explanation": "締め切り\nプロジェクトの開始\n会議室の種類\n顧客からの依頼"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level500_005.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 500",
+    "type": "vocabulary"
+  }
+}

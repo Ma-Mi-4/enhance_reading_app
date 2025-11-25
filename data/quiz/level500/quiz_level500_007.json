@@ -1,0 +1,78 @@
+{
+  "level": 500,
+  "title": "Vocabulary Quiz from Part7 Level500_007",
+  "questions": [
+    {
+      "word": "delivery",
+      "question_text": "\"delivery\" の意味はどれでしょう？",
+      "choices_text": [
+        "The act of bringing goods to a place",
+        "A scheduled meeting",
+        "A type of service fee",
+        "A written announcement"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The delivery will arrive tomorrow morning.",
+      "explanation": "配達\n予定された会議\nサービス料金の種類\n文書のお知らせ"
+    },
+    {
+      "word": "package",
+      "question_text": "\"package\" の意味はどれでしょう？",
+      "choices_text": [
+        "A wrapped item or box",
+        "A food order",
+        "A piece of clothing",
+        "A job application"
+      ],
+      "correct_index": 0,
+      "example_sentence": "A package was left at the reception desk.",
+      "explanation": "包み・小包\n食べ物の注文\n衣類\n職務申請書"
+    },
+    {
+      "word": "delay",
+      "question_text": "\"delay\" の意味はどれでしょう？",
+      "choices_text": [
+        "To make something happen later",
+        "To make something faster",
+        "To repair something",
+        "To check a schedule"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The delivery was delayed due to heavy rain.",
+      "explanation": "遅らせる・遅延させる\n早める\n修理する\nスケジュールを確認する"
+    },
+    {
+      "word": "notice",
+      "question_text": "\"notice\" の意味はどれでしょう？",
+      "choices_text": [
+        "Official information given to people",
+        "A snack for visitors",
+        "A daily work report",
+        "A reservation form"
+      ],
+      "correct_index": 0,
+      "example_sentence": "A notice about the delay was posted on the board.",
+      "explanation": "通知・お知らせ\n来客用の軽食\n日報\n予約用紙"
+    },
+    {
+      "word": "address",
+      "question_text": "\"address\" の意味はどれでしょう？",
+      "choices_text": [
+        "The location of a building",
+        "The size of a package",
+        "The cost of shipping",
+        "The name of a company"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Please write the correct address on the form.",
+      "explanation": "住所\n荷物のサイズ\n送料\n会社名"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level500_007.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 500",
+    "type": "vocabulary"
+  }
+}

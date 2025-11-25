@@ -8,44 +8,70 @@
       "choices_text": [
         "To plan something",
         "A problem",
-        "A meeting",
-        "A building"
+        "A building",
+        "A short break"
       ],
       "correct_index": 0,
-      "example_sentence": "We need to schedule the cleaning next week.",
-      "explanation": "何かを予定する\n問題\n会議\n建物"
+      "example_sentence": "We need to schedule the cleaning for next week.",
+      "explanation": "予定する・計画する\n問題\n建物\n短い休憩"
+    },
+    {
+      "word": "evening",
+      "question_text": "\"evening\" の意味はどれでしょう？",
+      "choices_text": [
+        "The time around sunset",
+        "Early morning",
+        "Midnight",
+        "Lunchtime"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The cleaning team will come in the evening.",
+      "explanation": "夕方〜夜\n早朝\n深夜\n昼食時"
     },
     {
       "word": "avoid",
       "question_text": "\"avoid\" の意味はどれでしょう？",
       "choices_text": [
-        "To stop something from happening",
-        "To help",
+        "To prevent something from happening",
+        "To clean something",
         "To move quickly",
-        "To clean"
+        "To invite someone"
       ],
       "correct_index": 0,
-      "example_sentence": "Please avoid leaving personal items on your desk.",
-      "explanation": "何かが起こるのを避ける\n助ける\n素早く動く\n掃除する"
+      "example_sentence": "The new schedule helps avoid disturbing employees.",
+      "explanation": "避ける・防ぐ\n掃除する\n素早く動く\n招待する"
+    },
+    {
+      "word": "assistant",
+      "question_text": "\"assistant\" の意味はどれでしょう？",
+      "choices_text": [
+        "Someone who helps in an office",
+        "Someone who fixes machines",
+        "Someone who manages a company",
+        "Someone who cooks food"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Please contact the office assistant, Ms. Lee.",
+      "explanation": "助手・補佐する人\n機械を修理する人\n会社を管理する人\n料理を作る人"
     },
     {
       "word": "cooperation",
       "question_text": "\"cooperation\" の意味はどれでしょう？",
       "choices_text": [
-        "Teamwork or working together",
-        "A payment",
-        "A complaint",
-        "A rule"
+        "Working together to achieve something",
+        "A written complaint",
+        "A type of schedule",
+        "A personal item"
       ],
       "correct_index": 0,
-      "example_sentence": "Thank you for your cooperation with the cleaning schedule.",
-      "explanation": "チームワーク、協力すること\n支払い\n苦情\n規則"
+      "example_sentence": "Thank you for your cooperation.",
+      "explanation": "協力すること\n文書での苦情\nスケジュールの種類\n個人の持ち物"
     }
   ],
   "meta": {
     "created_by": "chatgpt",
     "source_file": "part7_level500_001.json",
-    "question_count": 3,
+    "question_count": 5,
     "difficulty": "TOEIC Level 500",
     "type": "vocabulary"
   }

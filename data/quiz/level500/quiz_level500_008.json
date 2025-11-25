@@ -1,0 +1,78 @@
+{
+  "level": 500,
+  "title": "Vocabulary Quiz from Part7 Level500_008",
+  "questions": [
+    {
+      "word": "event",
+      "question_text": "\"event\" の意味はどれでしょう？",
+      "choices_text": [
+        "An organized activity",
+        "A short break",
+        "A kitchen tool",
+        "A type of ticket"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The event will take place in the community hall.",
+      "explanation": "イベント・行事\n短い休憩\n調理器具\nチケットの種類"
+    },
+    {
+      "word": "invitation",
+      "question_text": "\"invitation\" の意味はどれでしょう？",
+      "choices_text": [
+        "A written or spoken request to attend something",
+        "A list of items",
+        "A rule for employees",
+        "A discount coupon"
+      ],
+      "correct_index": 0,
+      "example_sentence": "She received an invitation to the ceremony.",
+      "explanation": "招待・案内\n項目のリスト\n従業員への規則\n割引券"
+    },
+    {
+      "word": "participate",
+      "question_text": "\"participate\" の意味はどれでしょう？",
+      "choices_text": [
+        "To take part in an activity",
+        "To watch from a distance",
+        "To cancel attendance",
+        "To send a message"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Employees are encouraged to participate in the festival.",
+      "explanation": "参加する\n遠くから見る\n出席を取り消す\nメッセージを送る"
+    },
+    {
+      "word": "location",
+      "question_text": "\"location\" の意味はどれでしょう？",
+      "choices_text": [
+        "A place where something happens",
+        "A kind of document",
+        "A personal item",
+        "A time of day"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The location of the event is written on the flyer.",
+      "explanation": "場所\n種類の文書\n個人の持ち物\n時間帯"
+    },
+    {
+      "word": "flyer",
+      "question_text": "\"flyer\" の意味はどれでしょう？",
+      "choices_text": [
+        "A small printed paper with information",
+        "A long report",
+        "A type of email",
+        "A package label"
+      ],
+      "correct_index": 0,
+      "example_sentence": "They handed out flyers to promote the event.",
+      "explanation": "チラシ\n長い報告書\nメールの種類\n荷物のラベル"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level500_008.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 500",
+    "type": "vocabulary"
+  }
+}

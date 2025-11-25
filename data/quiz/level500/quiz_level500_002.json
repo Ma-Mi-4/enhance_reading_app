@@ -1,0 +1,78 @@
+{
+  "level": 500,
+  "title": "Vocabulary Quiz from Part7 Level500_002",
+  "questions": [
+    {
+      "word": "meal",
+      "question_text": "\"meal\" の意味はどれでしょう？",
+      "choices_text": [
+        "Food eaten at a specific time",
+        "A type of schedule",
+        "A meeting with coworkers",
+        "A cleaning tool"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Employees can choose a healthy meal from the cafeteria.",
+      "explanation": "食事\nスケジュールの種類\n同僚との会議\n掃除道具"
+    },
+    {
+      "word": "discount",
+      "question_text": "\"discount\" の意味はどれでしょう？",
+      "choices_text": [
+        "A reduced price",
+        "A new employee",
+        "A problem with service",
+        "A work schedule"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Staff members can receive a 10% discount at GreenBite.",
+      "explanation": "割引\n新しい従業員\nサービスの問題\n勤務スケジュール"
+    },
+    {
+      "word": "option",
+      "question_text": "\"option\" の意味はどれでしょう？",
+      "choices_text": [
+        "A choice or alternative",
+        "A strict rule",
+        "A required task",
+        "A report"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Several new options were added to the wellness program.",
+      "explanation": "選択肢・代わりのもの\n厳しい規則\n必須の作業\n報告書"
+    },
+    {
+      "word": "register",
+      "question_text": "\"register\" の意味はどれでしょう？",
+      "choices_text": [
+        "To sign up for something",
+        "To clean the office",
+        "To deliver packages",
+        "To cancel an event"
+      ],
+      "correct_index": 0,
+      "example_sentence": "You must register for the weekly classes in advance.",
+      "explanation": "登録する\nオフィスを掃除する\n荷物を届ける\nイベントを中止する"
+    },
+    {
+      "word": "seminar",
+      "question_text": "\"seminar\" の意味はどれでしょう？",
+      "choices_text": [
+        "A meeting for learning or discussion",
+        "A snack given during breaks",
+        "A type of office equipment",
+        "An online shopping site"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The company will host a wellness seminar in July.",
+      "explanation": "セミナー・講義\n休憩中の軽食\nオフィス用品の一種\nネット通販サイト"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level500_002.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 500",
+    "type": "vocabulary"
+  }
+}

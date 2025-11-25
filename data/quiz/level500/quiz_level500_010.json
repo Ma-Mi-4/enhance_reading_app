@@ -1,0 +1,78 @@
+{
+  "level": 500,
+  "title": "Vocabulary Quiz from Part7 Level500_010",
+  "questions": [
+    {
+      "word": "message",
+      "question_text": "\"message\" の意味はどれでしょう？",
+      "choices_text": [
+        "A written or spoken piece of communication",
+        "A type of office furniture",
+        "A travel destination",
+        "A discount coupon"
+      ],
+      "correct_index": 0,
+      "example_sentence": "You will receive a message with the event details.",
+      "explanation": "メッセージ・伝言\nオフィス家具の種類\n旅行先\n割引券"
+    },
+    {
+      "word": "organize",
+      "question_text": "\"organize\" の意味はどれでしょう？",
+      "choices_text": [
+        "To arrange or plan something",
+        "To remove old items",
+        "To design a website",
+        "To clean a large room"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The team will organize a small workshop next month.",
+      "explanation": "準備・計画する\n古い物を捨てる\nウェブサイトをデザインする\n大きな部屋を掃除する"
+    },
+    {
+      "word": "reply",
+      "question_text": "\"reply\" の意味はどれでしょう？",
+      "choices_text": [
+        "To answer a question or message",
+        "To schedule a meeting",
+        "To cook a meal",
+        "To buy equipment"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Please reply to the email by tomorrow.",
+      "explanation": "返事する・答える\n会議を予定する\n料理を作る\n機材を買う"
+    },
+    {
+      "word": "prepare",
+      "question_text": "\"prepare\" の意味はどれでしょう？",
+      "choices_text": [
+        "To make something ready",
+        "To cancel an event",
+        "To move equipment",
+        "To copy documents"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Please prepare the materials for Friday's meeting.",
+      "explanation": "準備する\nイベントを中止する\n機材を移動する\n書類をコピーする"
+    },
+    {
+      "word": "join",
+      "question_text": "\"join\" の意味はどれでしょう？",
+      "choices_text": [
+        "To take part in an activity",
+        "To repair a device",
+        "To close a store",
+        "To write a report"
+      ],
+      "correct_index": 0,
+      "example_sentence": "You can join the orientation session at 2 p.m.",
+      "explanation": "参加する\nデバイスを修理する\n店を閉める\nレポートを書く"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level500_010.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 500",
+    "type": "vocabulary"
+  }
+}

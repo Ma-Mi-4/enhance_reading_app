@@ -1,0 +1,78 @@
+{
+  "level": 500,
+  "title": "Vocabulary Quiz from Part7 Level500_004",
+  "questions": [
+    {
+      "word": "schedule",
+      "question_text": "\"schedule\" の意味はどれでしょう？",
+      "choices_text": [
+        "A plan of times for activities",
+        "A type of food",
+        "A small tool",
+        "A payment record"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The tour schedule will be provided at the entrance.",
+      "explanation": "予定・スケジュール\n食べ物\n小さな道具\n支払い記録"
+    },
+    {
+      "word": "guide",
+      "question_text": "\"guide\" の意味はどれでしょう？",
+      "choices_text": [
+        "A person or document that gives instructions",
+        "A person who cooks",
+        "A machine used for cleaning",
+        "A type of ticket"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Visitors will receive a guide at the information desk.",
+      "explanation": "案内する人・案内書\n料理人\n掃除に使う機械\nチケットの種類"
+    },
+    {
+      "word": "entrance",
+      "question_text": "\"entrance\" の意味はどれでしょう？",
+      "choices_text": [
+        "A place where you go into a building",
+        "A place where you leave a building",
+        "A waiting area",
+        "A storage room"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Please meet at the main entrance before 10 a.m.",
+      "explanation": "入り口\n出口\n待合エリア\n倉庫"
+    },
+    {
+      "word": "information",
+      "question_text": "\"information\" の意味はどれでしょう？",
+      "choices_text": [
+        "Details or facts about something",
+        "A complaint",
+        "A snack",
+        "A type of equipment"
+      ],
+      "correct_index": 0,
+      "example_sentence": "For more information, visit our website.",
+      "explanation": "情報\n苦情\n軽食\n機材の種類"
+    },
+    {
+      "word": "ticket",
+      "question_text": "\"ticket\" の意味はどれでしょう？",
+      "choices_text": [
+        "A piece of paper that allows entry or participation",
+        "A tool for fixing machines",
+        "A long report",
+        "A type of meeting"
+      ],
+      "correct_index": 0,
+      "example_sentence": "You must show your ticket at the auditorium door.",
+      "explanation": "入場券・参加券\n機械を修理する道具\n長い報告書\n会議の種類"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level500_004.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 500",
+    "type": "vocabulary"
+  }
+}
