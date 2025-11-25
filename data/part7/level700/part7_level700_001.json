@@ -1,30 +1,28 @@
 {
   "level": 700,
-  "title": "Internal Notice: Change in Remote Work Policy",
-  "text": "To: All Employees\nFrom: Human Resources Department\nSubject: Update on Remote Work Policy\n\nDear Team,\n\nAs part of our continued effort to support flexibility and productivity, we are updating our remote work policy effective from next month. Employees will now be allowed to work remotely up to three days per week, instead of the previous two.\n\nHowever, please note that each department manager must approve individual remote work schedules to ensure adequate in-office coverage. Employees who wish to work remotely on Mondays or Fridays must submit a request form through the HR portal by the end of this week.\n\nAdditionally, starting next quarter, all remote employees will be required to attend a quarterly virtual check-in meeting with their supervisors to discuss performance and goals.\n\nFor detailed policy guidelines, please refer to the attached document or contact your HR representative.\n\nThank you for your cooperation.\n\nHuman Resources Department",
+  "title": "Museum Notice: Temporary Exhibition Adjustment",
+  "category": "notice",
+  "content": "To all visitors,\n\nWe would like to inform you of a temporary adjustment to the exhibition schedule at the Greenford Museum of History. Due to the unexpected delay in the delivery of several artifacts borrowed from the Royal Maritime Collection, the opening of the \"Voyages Across the Pacific\" exhibit has been postponed by one week. The exhibition was originally planned to begin on March 3, but it will now open on March 10.\n\nDuring this period, the East Hall—where the new exhibit will be displayed—will remain closed for installation work. Visitors who had purchased advance tickets for the original opening week may either use them on any date after March 10 or request a full refund at the ticket counter. Online purchasers will receive an automated email with instructions on how to select a new date.\n\nTo ensure that guests still have a meaningful experience, the museum will extend the hours of the \"Ancient Civilizations\" gallery and offer additional guided tours throughout the week. These tours will be available at 11:00 a.m., 1:00 p.m., and 3:00 p.m. on weekdays, and no reservation is required.\n\nWe sincerely apologize for any inconvenience this change may cause and appreciate your patience as we work to prepare the exhibit safely. If you have any questions regarding ticket changes or tour schedules, please contact the Visitor Services Desk.",
+  "word_count": 243,
   "questions": [
     {
-      "question_text": "What is the main purpose of this notice?",
+      "body": "Why was the exhibition opening postponed?",
       "choices_text": [
-        "To announce a change in remote work rules",
-        "To introduce new employees to the HR team",
-        "To cancel all remote work options",
-        "To remind staff of an upcoming company event"
+        "Because some borrowed artifacts have not yet arrived.",
+        "Because the East Hall is undergoing structural repairs.",
+        "Because the museum staff requested additional training time.",
+        "Because a major event will be held at the museum that week."
       ],
       "correct_index": 0,
-      "explanation": "この通知は、リモートワークの規則変更を従業員に知らせることが目的です。",
+      "explanation": "展示物の一部が到着遅延しているためと本文で明確に述べられているため。",
       "wrong_explanations": [
-        "この通知は新入社員の紹介ではありません。",
-        "リモートワークを完全に廃止するものではありません。",
-        "社内イベントのリマインドではありません。"
+        "これは正解のため誤答理由には使いません。",
+        "東ホールの構造補修については本文に記述がありません。",
+        "スタッフ研修が理由だという説明は本文にありません。",
+        "同週に特別イベントが開催されるという記述も本文にはありません。"
       ]
     }
   ],
-  "meta": {
-    "created_by": "chatgpt",
-    "type": "reading",
-    "difficulty": "TOEIC Level 700",
-    "question_count": 1,
-    "word_count": 260
-  }
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
 }

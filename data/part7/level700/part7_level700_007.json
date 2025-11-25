@@ -1,0 +1,28 @@
+{
+  "level": 700,
+  "title": "Message: New Policy for Conference Room Bookings",
+  "category": "message",
+  "content": "Hello Team,\n\nI would like to share an update regarding the new policy for conference room bookings, which will take effect starting June 1. This change follows several months of feedback from employees who reported difficulties securing meeting spaces, especially during peak office hours. The revised policy aims to ensure fair access and reduce the number of unused reservations.\n\nUnder the new system, employees will be allowed to reserve conference rooms for a maximum of two hours at a time. Reservations must be made through the updated online booking platform, which now requires users to confirm their attendance 15 minutes before the meeting starts. If a reservation is not confirmed within that timeframe, the room will automatically become available for others.\n\nAdditionally, recurring weekly reservations will no longer be permitted unless approved by a department manager. This measure is intended to prevent long-term blocks of meeting spaces that may not always be used. Teams needing extended sessions are encouraged to reserve one of the larger collaboration spaces on the fourth floor, which are better suited for longer meetings.\n\nA short instructional video explaining how to use the new booking platform will be posted on the internal portal later this week. If you have questions about the policy or need help adjusting upcoming meetings, please reach out to the Facilities Support Team.",
+  "word_count": 241,
+  "questions": [
+    {
+      "body": "What happens to a conference room reservation if it is not confirmed?",
+      "choices_text": [
+        "It becomes available for others to reserve.",
+        "It is automatically extended for another hour.",
+        "It is reassigned to a different department.",
+        "It is permanently removed from the booking system."
+      ],
+      "correct_index": 0,
+      "explanation": "本文に、開始15分前までに確認されない予約は自動的に解放されると記載されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使用しません。",
+        "延長されるという記述は本文にありません。",
+        "他部署に再割り当てされるとは書かれていません。",
+        "予約が完全に削除されるという内容も本文にはありません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

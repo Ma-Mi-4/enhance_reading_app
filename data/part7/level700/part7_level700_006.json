@@ -1,0 +1,28 @@
+{
+  "level": 700,
+  "title": "Email: Request for Participation in Software Testing",
+  "category": "email",
+  "content": "Dear Colleagues,\n\nI am writing to request volunteers for the final testing phase of our new internal scheduling software. The software development team has completed all major features, including the automated shift generator and the conflict detection tool, and we are now ready to conduct user testing before the official launch next quarter. Your participation will help us identify any usability issues and ensure that the system works effectively across different departments.\n\nThe testing period will run from May 8 through May 15. During this time, volunteers will be asked to perform several common tasks such as creating team schedules, approving employee requests, and checking automated notifications. Each participant will receive a short instruction manual along with a list of scenarios to complete. Feedback can be submitted through the online survey linked in the testing guide.\n\nPlease note that the software is still in development, so occasional errors or unexpected behavior may occur. If you encounter any technical issues, the development team will be available through the support channel to provide assistance. Test data will not affect actual work schedules, as the system is currently operating in a separate testing environment.\n\nIf you are interested in joining the testing group, please sign up using the form posted on the internal portal by May 3. We greatly appreciate your cooperation and look forward to your valuable feedback.",
+  "word_count": 247,
+  "questions": [
+    {
+      "body": "What will volunteers be asked to do during the testing period?",
+      "choices_text": [
+        "Complete scenario-based tasks using the new scheduling software.",
+        "Train other employees on how to use the final version.",
+        "Approve actual work schedules for all departments.",
+        "Replace the development team in fixing technical issues."
+      ],
+      "correct_index": 0,
+      "explanation": "本文で、テスターは新ソフトを使ったシナリオタスクを実施すると明記されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使いません。",
+        "他の社員へのトレーニングを行うとは記載されていません。",
+        "実際の勤務表承認は行わず、テスト環境のみで作業すると書かれています。",
+        "技術的問題の修正は開発チームが担当すると本文に記載されています。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

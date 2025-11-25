@@ -1,0 +1,28 @@
+{
+  "level": 700,
+  "title": "Email: Survey on Remote Training Program",
+  "category": "email",
+  "content": "Dear Staff,\n\nAs part of our ongoing effort to improve employee development resources, the Learning & Development Team is conducting a survey regarding the remote training sessions introduced earlier this year. These online programs, which include modules on communication skills, project coordination, and software proficiency, were created to offer more flexibility for employees with varying schedules.\n\nWhile initial feedback has been positive, we would like to gather more detailed input to help us refine the content and delivery format. The survey includes questions about the clarity of the training materials, the effectiveness of the session instructors, and the convenience of the online platform. It should take no more than ten minutes to complete.\n\nEmployees who participated in at least one remote session between January and April are encouraged to fill out the survey by May 12. The results will be reviewed internally and used to determine whether additional topics or advanced training levels should be added later this year.\n\nA link to the survey has been posted on the internal portal, and a reminder will be emailed next week. If you have any questions or experience issues accessing the form, please contact the Learning & Development Team.",
+  "word_count": 240,
+  "questions": [
+    {
+      "body": "Who is encouraged to complete the survey?",
+      "choices_text": [
+        "Employees who joined at least one remote training session.",
+        "Employees who have recently transferred departments.",
+        "Employees who manage large project teams.",
+        "Employees who work fully in the office."
+      ],
+      "correct_index": 0,
+      "explanation": "本文で、1回以上のリモート研修に参加した社員が対象と明記されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使用しません。",
+        "部門異動者についての言及は本文にありません。",
+        "大規模チームの管理者が対象という記述はありません。",
+        "完全出社者が対象という記述は本文にありません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

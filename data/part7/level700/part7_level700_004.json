@@ -1,0 +1,28 @@
+{
+  "level": 700,
+  "title": "Notice: Changes to Library Study Room Reservations",
+  "category": "notice",
+  "content": "To all library patrons,\n\nWe would like to inform you of upcoming changes to the reservation system for the study rooms on the third floor of the Central Library. These adjustments have been made in response to recent feedback regarding long wait times and inconsistent availability, particularly during examination seasons. The goal of the new system is to ensure fairer access for all users.\n\nBeginning April 5, reservations will be limited to a maximum of two hours per person per day. Users will no longer be allowed to book multiple sessions under different names. Additionally, all reservations must now be made through the online portal, as the previous in-person sign-up sheets will be discontinued. The online system will automatically release study rooms if they are not checked into within ten minutes of the reserved time.\n\nTo help patrons transition smoothly, the library will offer brief demonstrations on how to use the new reservation system. These demonstrations will take place near the main entrance at 10:00 a.m. and 2:00 p.m. during the first week of April.\n\nWe appreciate your cooperation and hope these changes will improve access to the study rooms for all learners. Please contact the Information Desk if you have questions or concerns about the new reservation procedure.",
+  "word_count": 242,
+  "questions": [
+    {
+      "body": "What is one purpose of the new reservation policy?",
+      "choices_text": [
+        "To ensure more equal access to study rooms for all users.",
+        "To encourage patrons to visit the library earlier in the day.",
+        "To reduce noise levels on the third floor.",
+        "To promote the use of printed sign-up sheets again."
+      ],
+      "correct_index": 0,
+      "explanation": "本文で、利用者の公平な利用を確保するための変更であると述べられているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使いません。",
+        "早い時間帯の利用促進についての記述は本文にありません。",
+        "騒音対策としての変更という説明は本文にありません。",
+        "紙の予約表を再導入するわけではなく、逆に廃止しています。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}
