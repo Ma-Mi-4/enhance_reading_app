@@ -1,0 +1,28 @@
+{
+  "level": 600,
+  "title": "Internal Message: Update to Office Parking Rules",
+  "category": "message",
+  "content": "Hello Team,\n\nI would like to share an important update regarding our office parking rules. Over the last several weeks, we have received multiple reports of employees having difficulty finding available spaces in the morning. To help reduce congestion and ensure fair use of the parking lot, the Facilities Department has introduced a revised parking policy that will go into effect starting November 1.\n\nUnder the new policy, parking spaces in the north lot will be designated for carpool vehicles and employees with company-approved parking permits. These permits will be distributed to staff members who regularly commute long distances or transport team equipment. Employees who wish to apply for a permit should complete the online form available on the internal portal by October 20.\n\nAdditionally, to encourage the use of public transportation, the company will expand its commuter support program. Employees who take the train or bus at least three times per week will be eligible for partial reimbursement of their monthly transit passes. Details about the reimbursement process will be shared in a separate email.\n\nPlease note that vehicles parked in restricted areas without a valid permit may be subject to warnings or towing, depending on the severity of the violation. We recommend reviewing the updated parking map posted near the main entrance.\n\nIf you have any questions about the new rules or need assistance applying for a permit, feel free to reach out to the Facilities Department.",
+  "word_count": 248,
+  "questions": [
+    {
+      "body": "Who is eligible to receive a parking permit under the new policy?",
+      "choices_text": [
+        "Employees who commute long distances or transport team equipment.",
+        "Employees who take the train or bus most days of the week.",
+        "Employees who arrive at the office before 8:00 a.m.",
+        "Employees who work in the north building."
+      ],
+      "correct_index": 0,
+      "explanation": "本文に、長距離通勤者やチーム機材を運ぶ社員に許可証が配布されると記載されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使いません。",
+        "公共交通機関利用者は通勤補助の対象であり、駐車許可の対象ではありません。",
+        "早朝出勤についての条件は本文に記載されていません。",
+        "北棟勤務者についての記述はなく、駐車許可とは無関係です。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

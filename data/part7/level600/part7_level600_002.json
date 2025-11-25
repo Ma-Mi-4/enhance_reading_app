@@ -1,0 +1,28 @@
+{
+  "level": 600,
+  "title": "Internal Email: Change in Customer Support Hours",
+  "category": "email",
+  "content": "Dear Customer Support Team,\n\nI hope you are all doing well. I am writing to inform you about an upcoming adjustment to our customer support operating hours. This change is being made in response to recent data showing an increase in customer inquiries during the early evening. To better accommodate these customers, we will be extending our weekday support hours starting next month.\n\nBeginning September 3, the support center will operate from 8:00 a.m. to 7:00 p.m., Monday through Friday. Weekend hours will remain unchanged. To implement this transition smoothly, we will be creating two new shift options: a mid-day shift from 11:00 a.m. to 7:00 p.m. and a split shift for part-time staff. Additional training sessions will be provided next week to review procedures for handling evening inquiries.\n\nWe understand that this change may require scheduling adjustments, so managers will be reaching out individually to discuss shift preferences. Please check your email later this week for a link to the updated scheduling form. For those who regularly commute by bus, please note that the company has arranged discounted evening rides with the City Transit Service.\n\nThank you for your continued hard work and dedication. If you have questions or concerns about the new hours or shift options, feel free to contact your supervisor or the Operations Department.",
+  "word_count": 238,
+  "questions": [
+    {
+      "body": "What is the main reason for changing the support center hours?",
+      "choices_text": [
+        "An increase in customer inquiries during the early evening.",
+        "A shortage of customer support staff.",
+        "A company-wide cost reduction initiative.",
+        "A new government regulation about business operating hours."
+      ],
+      "correct_index": 0,
+      "explanation": "本文で、夕方の問い合わせ増加に対応するためと明記されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使いません。",
+        "スタッフ不足についての記述は本文にありません。",
+        "コスト削減に関する説明は本文にありません。",
+        "営業時間に関する新しい法規制は本文に登場しません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

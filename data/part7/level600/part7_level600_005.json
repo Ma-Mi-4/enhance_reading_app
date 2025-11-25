@@ -1,0 +1,28 @@
+{
+  "level": 600,
+  "title": "Notice: Upcoming System Maintenance",
+  "category": "notice",
+  "content": "To all employees,\n\nPlease be advised that the IT Department will conduct a scheduled system maintenance this weekend to improve server performance and enhance data security. During the maintenance period, several internal services—including the email system, project management platform, and shared file servers—may be temporarily unavailable. We strongly encourage all staff members to save their work and log out of the system before leaving the office on Friday evening.\n\nThe maintenance is scheduled to begin at 10:00 p.m. on Saturday and is expected to continue until 6:00 a.m. on Sunday. While the team will make every effort to minimize downtime, unexpected delays may occur. If maintenance is completed earlier than planned, an announcement will be posted on the internal portal.\n\nIn preparation for the update, the IT team will also replace outdated security certificates and perform vulnerability checks to ensure compliance with company security standards. Employees who experience issues accessing their accounts after the maintenance is finished may need to reset their passwords or clear their browser cache.\n\nIf you rely on any of the affected systems for weekend work, please make arrangements accordingly or reach out to the IT helpdesk to discuss temporary alternatives. We appreciate your cooperation and understanding as we work to maintain a reliable and secure environment for all staff.",
+  "word_count": 246,
+  "questions": [
+    {
+      "body": "When will the system maintenance begin?",
+      "choices_text": [
+        "At 10:00 p.m. on Saturday.",
+        "At 6:00 a.m. on Sunday.",
+        "On Friday evening after work hours.",
+        "At 8:00 a.m. on Saturday."
+      ],
+      "correct_index": 0,
+      "explanation": "本文で、メンテナンスは土曜の午後10時に開始すると明記されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使いません。",
+        "午前6時はメンテナンス終了予定時刻です。",
+        "金曜の夜から開始するという記述はありません。",
+        "土曜の午前8時についての言及はありません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}
