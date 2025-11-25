@@ -1,0 +1,78 @@
+{
+  "level": 800,
+  "title": "Vocabulary Quiz from Part7 Level800_008",
+  "questions": [
+    {
+      "word": "mitigate",
+      "question_text": "\"mitigate\" の意味はどれでしょう？",
+      "choices_text": [
+        "To make something less severe or harmful",
+        "To expand business operations",
+        "To report financial results publicly",
+        "To approve a new policy"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The company introduced new procedures to mitigate operational risks.",
+      "explanation": "緩和する・軽減する\n事業拡大\n決算公開\n方針承認"
+    },
+    {
+      "word": "assessment",
+      "question_text": "\"assessment\" の意味はどれでしょう？",
+      "choices_text": [
+        "The act of evaluating or analyzing something",
+        "A sudden system failure",
+        "An informal suggestion",
+        "A long-term partnership contract"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Risk assessments must be conducted annually to identify potential issues.",
+      "explanation": "評価・査定\nシステム障害\n提案\n契約"
+    },
+    {
+      "word": "framework",
+      "question_text": "\"framework\" の意味はどれでしょう？",
+      "choices_text": [
+        "A structured system that outlines processes or guidelines",
+        "A temporary storage facility",
+        "A type of insurance",
+        "A senior management position"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The new framework provides clear procedures for managing emergencies.",
+      "explanation": "枠組み・フレームワーク\n倉庫\n保険\n管理職"
+    },
+    {
+      "word": "protocol",
+      "question_text": "\"protocol\" の意味はどれでしょう？",
+      "choices_text": [
+        "An official procedure or set of rules",
+        "A schedule for routine maintenance",
+        "A statistical forecasting model",
+        "A communication tool for employees"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Emergency response protocols were updated to ensure employee safety.",
+      "explanation": "手順・規定\nメンテナンス予定\n予測モデル\nコミュニケーションツール"
+    },
+    {
+      "word": "comprehensive",
+      "question_text": "\"comprehensive\" の意味はどれでしょう？",
+      "choices_text": [
+        "Covering all aspects thoroughly",
+        "Completed in a short time",
+        "Designed only for specialists",
+        "Focused solely on financial reports"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The framework offers a comprehensive review of potential risks across all departments.",
+      "explanation": "包括的な・広範囲の\n短時間で完了\n専門家限定\n財務関連のみ"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level800_008.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 800",
+    "type": "vocabulary"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "level": 800,
+  "title": "Vocabulary Quiz from Part7 Level800_007",
+  "questions": [
+    {
+      "word": "disruption",
+      "question_text": "\"disruption\" の意味はどれでしょう？",
+      "choices_text": [
+        "A situation where normal operations are interrupted",
+        "A planned upgrade to a system",
+        "An increase in employee benefits",
+        "A new partnership announcement"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The report warns that weather-related disruptions may affect global shipping schedules.",
+      "explanation": "混乱・中断\n計画的アップグレード\n福利厚生拡大\n提携発表"
+    },
+    {
+      "word": "shortage",
+      "question_text": "\"shortage\" の意味はどれでしょう？",
+      "choices_text": [
+        "A lack of necessary supplies or resources",
+        "A major financial investment",
+        "A shift in marketing strategy",
+        "A surplus of unused equipment"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The industry continues to face a shortage of semiconductor components.",
+      "explanation": "不足・欠乏\n投資\n戦略変更\n余剰"
+    },
+    {
+      "word": "estimate",
+      "question_text": "\"estimate\" の意味はどれでしょう？",
+      "choices_text": [
+        "To roughly calculate or judge the value or amount",
+        "To finalize a written contract",
+        "To replace outdated systems",
+        "To confirm legal compliance"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Analysts estimate that demand will rise steadily over the next two years.",
+      "explanation": "見積もる・概算する\n契約締結\nシステム更新\n法令遵守の確認"
+    },
+    {
+      "word": "logistics",
+      "question_text": "\"logistics\" の意味はどれでしょう？",
+      "choices_text": [
+        "The planning and coordination of the movement of goods",
+        "The sales performance of a product",
+        "The design of new promotional materials",
+        "The hiring of seasonal staff"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Companies are investing heavily in logistics to prevent future supply issues.",
+      "explanation": "物流・ロジスティクス\n売上実績\n販促物デザイン\n短期雇用"
+    },
+    {
+      "word": "prioritize",
+      "question_text": "\"prioritize\" の意味はどれでしょう？",
+      "choices_text": [
+        "To decide what should be done first based on importance",
+        "To review past performance only",
+        "To purchase goods at a discount",
+        "To delay critical decisions"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Manufacturers are urged to prioritize essential orders during peak demand.",
+      "explanation": "優先順位を付ける\n過去のみを評価\n割引購入\n意思決定遅延"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level800_007.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 800",
+    "type": "vocabulary"
+  }
+}

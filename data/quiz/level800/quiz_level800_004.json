@@ -1,0 +1,78 @@
+{
+  "level": 800,
+  "title": "Vocabulary Quiz from Part7 Level800_004",
+  "questions": [
+    {
+      "word": "breakthrough",
+      "question_text": "\"breakthrough\" の意味はどれでしょう？",
+      "choices_text": [
+        "A significant and sudden advance or discovery",
+        "A minor correction in a report",
+        "A delay caused by technical issues",
+        "A meeting to review employee attendance"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Several speakers discussed recent breakthroughs in renewable energy technology.",
+      "explanation": "大きな進展・飛躍的発見\n小さな修正\n技術的遅延\n勤怠確認会議"
+    },
+    {
+      "word": "agenda",
+      "question_text": "\"agenda\" の意味はどれでしょう？",
+      "choices_text": [
+        "A list of topics to be discussed at a meeting",
+        "A financial penalty",
+        "A promotional advertisement",
+        "A company mission statement"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The agenda included sessions on leadership and digital transformation.",
+      "explanation": "議題・アジェンダ\n罰金\n広告\n企業理念"
+    },
+    {
+      "word": "facilitate",
+      "question_text": "\"facilitate\" の意味はどれでしょう？",
+      "choices_text": [
+        "To make a process easier or more efficient",
+        "To limit participation",
+        "To reject proposals",
+        "To monitor employee behavior"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The new software is designed to facilitate communication between departments.",
+      "explanation": "容易にする・促進する\n参加を制限する\n提案を却下する\n行動監視"
+    },
+    {
+      "word": "initiative",
+      "question_text": "\"initiative\" の意味はどれでしょう？",
+      "choices_text": [
+        "A strategic plan or action to address an issue",
+        "A temporary decrease in workload",
+        "A required safety inspection",
+        "An informal conversation"
+      ],
+      "correct_index": 0,
+      "example_sentence": "A major initiative presented at the forum focused on reducing production waste.",
+      "explanation": "戦略的取り組み\n作業量の一時減少\n安全検査\n雑談"
+    },
+    {
+      "word": "implementation",
+      "question_text": "\"implementation\" の意味はどれでしょう？",
+      "choices_text": [
+        "The act of putting a plan into practice",
+        "The evaluation of legal risks",
+        "The negotiation of salaries",
+        "The cancellation of an event"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Several companies shared challenges related to the implementation of AI-based tools.",
+      "explanation": "実行・導入\nリスク評価\n給与交渉\nイベント中止"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level800_004.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 800",
+    "type": "vocabulary"
+  }
+}

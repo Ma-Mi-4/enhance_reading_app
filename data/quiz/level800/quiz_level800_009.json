@@ -1,0 +1,78 @@
+{
+  "level": 800,
+  "title": "Vocabulary Quiz from Part7 Level800_009",
+  "questions": [
+    {
+      "word": "viability",
+      "question_text": "\"viability\" の意味はどれでしょう？",
+      "choices_text": [
+        "The ability to work successfully or be effective",
+        "A sudden change in market demand",
+        "A promotional discount program",
+        "A requirement for legal approval"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The report analyzes the viability of entering three emerging markets.",
+      "explanation": "実行可能性・成功の見込み\n需要変動\n割引制度\n法的承認"
+    },
+    {
+      "word": "insight",
+      "question_text": "\"insight\" の意味はどれでしょう？",
+      "choices_text": [
+        "A deep understanding of a situation or issue",
+        "A financial penalty for late payment",
+        "A digital security system",
+        "An international shipping method"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The survey data provides valuable insights into consumer behavior.",
+      "explanation": "洞察・深い理解\n罰金\nセキュリティ\n配送方法"
+    },
+    {
+      "word": "allocate",
+      "question_text": "\"allocate\" の意味はどれでしょう？",
+      "choices_text": [
+        "To distribute resources or tasks for a specific purpose",
+        "To delay the launch of a project",
+        "To negotiate with suppliers",
+        "To cancel previous agreements"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The company decided to allocate additional budget to market research.",
+      "explanation": "割り当てる\n延期する\n交渉する\n取り消す"
+    },
+    {
+      "word": "emerging",
+      "question_text": "\"emerging\" の意味はどれでしょう？",
+      "choices_text": [
+        "Newly developing or growing",
+        "Severely declining",
+        "Strictly regulated by law",
+        "Limited to domestic operations"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The report identifies key opportunities in emerging economies.",
+      "explanation": "新興の・発展途上\n衰退\n法規制が厳しい\n国内限定"
+    },
+    {
+      "word": "benchmark",
+      "question_text": "\"benchmark\" の意味はどれでしょう？",
+      "choices_text": [
+        "A standard used for comparison or evaluation",
+        "A temporary business license",
+        "A short-term marketing slogan",
+        "A customer loyalty requirement"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Sales figures from the previous year serve as a benchmark for evaluating progress.",
+      "explanation": "基準・指標\n許可証\nスローガン\n条件"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level800_009.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 800",
+    "type": "vocabulary"
+  }
+}

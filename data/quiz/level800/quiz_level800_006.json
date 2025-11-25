@@ -1,0 +1,78 @@
+{
+  "level": 800,
+  "title": "Vocabulary Quiz from Part7 Level800_006",
+  "questions": [
+    {
+      "word": "expertise",
+      "question_text": "\"expertise\" の意味はどれでしょう？",
+      "choices_text": [
+        "Specialized knowledge or skill in a particular field",
+        "A personal preference for certain topics",
+        "A temporary assignment",
+        "A casual conversation about research"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Each speaker was selected based on their expertise in data-driven analysis.",
+      "explanation": "専門知識\n好み\n一時的任務\n雑談"
+    },
+    {
+      "word": "keynote",
+      "question_text": "\"keynote\" の意味はどれでしょう？",
+      "choices_text": [
+        "The main speech that sets the tone for the event",
+        "A mandatory audience survey",
+        "A small breakout session",
+        "A technical manual for attendees"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Dr. Miller will deliver the keynote address on global research trends.",
+      "explanation": "基調講演\nアンケート\n分科会\n技術マニュアル"
+    },
+    {
+      "word": "panelist",
+      "question_text": "\"panelist\" の意味はどれでしょう？",
+      "choices_text": [
+        "A member of a discussion group at an event",
+        "A person responsible for event security",
+        "An attendee who submits questions",
+        "A researcher who manages conference registration"
+      ],
+      "correct_index": 0,
+      "example_sentence": "One panelist will discuss ethical considerations in AI research.",
+      "explanation": "パネリスト・討論者\n警備担当\n質問者\n登録管理者"
+    },
+    {
+      "word": "insight",
+      "question_text": "\"insight\" の意味はどれでしょう？",
+      "choices_text": [
+        "A deep understanding of a complex issue",
+        "A brief error in calculation",
+        "A printed summary of past events",
+        "A list of attendance numbers"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The conference aims to provide insights into emerging global challenges.",
+      "explanation": "洞察・深い理解\n計算ミス\n要約\n出席数リスト"
+    },
+    {
+      "word": "emphasize",
+      "question_text": "\"emphasize\" の意味はどれでしょう？",
+      "choices_text": [
+        "To give special importance or attention to something",
+        "To ignore minor differences",
+        "To shorten the program schedule",
+        "To identify technical malfunctions"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Several speakers emphasized the need for responsible data usage.",
+      "explanation": "強調する\n無視する\n短縮する\n故障を特定する"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level800_006.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 800",
+    "type": "vocabulary"
+  }
+}

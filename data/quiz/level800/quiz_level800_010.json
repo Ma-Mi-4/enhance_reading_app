@@ -1,0 +1,78 @@
+{
+  "level": 800,
+  "title": "Vocabulary Quiz from Part7 Level800_010",
+  "questions": [
+    {
+      "word": "collaboration",
+      "question_text": "\"collaboration\" の意味はどれでしょう？",
+      "choices_text": [
+        "Working together toward a shared goal",
+        "A formal financial audit",
+        "A delay in product delivery",
+        "A disagreement between departments"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The partnership aims to strengthen collaboration between the two companies.",
+      "explanation": "協力・共同作業\n監査\n遅延\n不一致"
+    },
+    {
+      "word": "mutual",
+      "question_text": "\"mutual\" の意味はどれでしょう？",
+      "choices_text": [
+        "Shared by two or more parties",
+        "Required by government regulation",
+        "Occurring only once",
+        "Related to financial investment"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The companies expressed mutual interest in developing new technologies together.",
+      "explanation": "相互の\n法規制\n一度だけ\n投資関連"
+    },
+    {
+      "word": "facilitate",
+      "question_text": "\"facilitate\" の意味はどれでしょう？",
+      "choices_text": [
+        "To make a process easier or more efficient",
+        "To prevent an agreement from being signed",
+        "To reduce product quality",
+        "To replace all existing employees"
+      ],
+      "correct_index": 0,
+      "example_sentence": "A dedicated coordinator will help facilitate communication between teams.",
+      "explanation": "円滑に進める\n妨げる\n品質低下\n従業員入れ替え"
+    },
+    {
+      "word": "compliance",
+      "question_text": "\"compliance\" の意味はどれでしょう？",
+      "choices_text": [
+        "Following rules or regulations",
+        "Predicting long-term sales trends",
+        "Promoting new services to customers",
+        "Negotiating contracts with suppliers"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Both companies must ensure compliance with international trade regulations.",
+      "explanation": "遵守\n予測\n宣伝\n交渉"
+    },
+    {
+      "word": "align",
+      "question_text": "\"align\" の意味はどれでしょう？",
+      "choices_text": [
+        "To match or coordinate goals or actions",
+        "To reduce the size of a department",
+        "To hire new executives",
+        "To finalize a financial report"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The partnership was formed to align long-term business strategies.",
+      "explanation": "一致させる・調整する\n縮小\n採用\n報告書作成"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level800_010.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 800",
+    "type": "vocabulary"
+  }
+}
