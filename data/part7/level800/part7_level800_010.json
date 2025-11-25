@@ -1,0 +1,29 @@
+{
+  "level": 800,
+  "title": "Company Newsletter: New Sustainability Initiative",
+  "category": "notice",
+  "content": "Dear Valued Partners,\n\nWe are pleased to introduce our new Sustainability Initiative, a company-wide effort aimed at reducing environmental impact and promoting responsible business practices. Over the next six months, we will implement a series of projects designed to decrease energy consumption, minimize waste, and strengthen collaborations with eco-conscious suppliers.\n\nOne of the key components of this initiative is the installation of energy-efficient lighting systems throughout all office buildings. This transition is expected to significantly reduce electricity use during peak hours. In addition, we will shift to digital-only documentation wherever possible, a change projected to cut paper consumption by nearly 70 percent.\n\nTo support these efforts, we will host a Sustainability Workshop in mid-November for employees and partner organizations. The workshop will feature guest speakers from the environmental sector and highlight practical approaches for integrating sustainable practices into daily operations. Participants will also have the opportunity to join small-group discussions focused on innovative waste-reduction strategies.\n\nWe believe that collective action is essential to achieving meaningful environmental progress. Your cooperation and engagement will play a vital role in the success of this initiative. For additional information, including detailed project timelines and participation guidelines, please visit our internal resource portal or contact the Corporate Responsibility Team.\n\nThank you for your continued support as we work together toward a greener future.",
+  "word_count": 264,
+  "questions": [
+    {
+      "body": "What is one primary goal of the Sustainability Initiative?",
+      "choices_text": [
+        "To reduce the company’s environmental impact.",
+        "To prepare for an upcoming product launch.",
+        "To expand the company’s international operations.",
+        "To redesign the corporate financial reporting system."
+      ],
+      "correct_index": 0,
+      "explanation": "本文に、環境への影響を減らすことが主要な目的と明確に記載されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使用しません。",
+        "プロダクトローンチに関する内容はありません。",
+        "国際展開の話も本文にありません。",
+        "財務報告システムの再設計とは無関係のため誤りです。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}
+

@@ -1,0 +1,28 @@
+{
+  "level": 600,
+  "title": "Event Notice: New Employee Orientation Session",
+  "category": "event",
+  "content": "To all department managers,\n\nWe are pleased to announce that the next New Employee Orientation Session will be held on October 12 in the Lakeside Conference Room. This orientation is designed to help new staff members learn about company policies, workplace expectations, and available resources. Each department is requested to ensure that recently hired employees attend the full program.\n\nThe session will begin at 9:30 a.m. with a welcome speech from the Human Resources Director, followed by short presentations from the IT and Compliance teams. New employees will receive an overview of the company’s communication tools and important security guidelines. After a brief coffee break, participants will take part in a guided tour of the main office areas, including the cafeteria, wellness room, and collaboration spaces.\n\nIn the afternoon, there will be a workshop focused on improving communication and teamwork. Employees will work in groups to solve simple scenario-based tasks intended to simulate common workplace challenges. Managers are encouraged to join the workshop if schedules allow, as their participation helps create a more supportive environment for newcomers.\n\nPlease review the attendance list sent earlier this week and inform the HR team of any updates. If your department expects to onboard additional employees before October 10, please submit their names by that date so we can prepare materials accordingly.\n\nThank you for your cooperation in helping our new colleagues transition smoothly into the company.",
+  "word_count": 248,
+  "questions": [
+    {
+      "body": "What will new employees do in the afternoon session?",
+      "choices_text": [
+        "Participate in a teamwork-focused workshop.",
+        "Attend a presentation on company history.",
+        "Meet individually with department managers.",
+        "Visit a partner company’s facility."
+      ],
+      "correct_index": 0,
+      "explanation": "本文で、午後にコミュニケーションとチームワークに関するワークショップが行われると明記されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使いません。",
+        "午後に会社の歴史に関するプレゼンテーションはありません。",
+        "個別面談を行うとは本文に書かれていません。",
+        "他社の施設訪問は本文に全く記載されていません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

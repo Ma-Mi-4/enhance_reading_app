@@ -10,9 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2025_11_21_022047) do
+ActiveRecord::Schema[7.1].define(version: 2025_11_25_061033) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "choices", force: :cascade do |t|
+    t.bigint "question_id", null: false
+    t.string "body", null: false
+    t.boolean "correct", default: false
+    t.text "explanation"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["question_id"], name: "index_choices_on_question_id"
+  end
 
   create_table "notification_settings", force: :cascade do |t|
     t.bigint "user_id", null: false
@@ -27,11 +37,15 @@ ActiveRecord::Schema[7.1].define(version: 2025_11_21_022047) do
   create_table "questions", force: :cascade do |t|
     t.string "title"
     t.text "body"
-    t.string "level"
+    t.integer "level"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.json "content"
     t.string "kind"
+    t.string "category", default: "email", null: false
+    t.integer "word_count", default: 0, null: false
+    t.string "source"
+    t.jsonb "meta", default: {}
   end
 
   create_table "study_records", force: :cascade do |t|
@@ -73,6 +87,7 @@ ActiveRecord::Schema[7.1].define(version: 2025_11_21_022047) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "choices", "questions"
   add_foreign_key "notification_settings", "users"
   add_foreign_key "study_records", "users"
   add_foreign_key "study_times", "users"

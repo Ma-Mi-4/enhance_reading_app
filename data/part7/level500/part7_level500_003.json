@@ -1,0 +1,28 @@
+{
+  "level": 500,
+  "title": "Café Discount for Employees",
+  "category": "advertisement",
+  "content": "To all office workers,\n\nWe are excited to announce a special discount program at Sunlight Café, located on the first floor of the Greenway Office Building. Starting next Monday, all employees will receive a 15 percent discount on selected menu items during weekday lunch hours. This offer was created in partnership with the building management team to support healthier and more convenient meal options for employees.\n\nThe discount applies to sandwiches, salads, and the daily lunch special. To receive the discount, simply show your employee ID card at the register before making your payment. Please note that the offer is not valid for beverages, desserts, or items ordered through delivery services.\n\nSunlight Café has also added several new vegetarian and low-calorie options to its menu. These items will be clearly marked with a green leaf icon. The café hopes that these additions will make it easier for employees to enjoy nutritious meals during busy workdays.\n\nIf you have any questions about the discount program or would like to suggest additional menu items, feel free to contact the café manager at info@sunlightcafe.com.\n\nWe hope you enjoy this special offer and look forward to serving you soon!\n",
+  "word_count": 224,
+  "questions": [
+    {
+      "body": "What must employees show to receive the discount?",
+      "choices_text": [
+        "Their employee ID card",
+        "A printed coupon from the café",
+        "A receipt from a previous visit",
+        "A building entry pass"
+      ],
+      "correct_index": 0,
+      "explanation": "本文で、割引を受けるにはIDカードを提示する必要があると書かれているため。",
+      "wrong_explanations": [
+        "Aは正解のため誤答理由ではありません。",
+        "クーポンについては本文に書かれていないため誤り。",
+        "過去のレシートの提示については言及がないため誤り。",
+        "入館証を提示するとは書かれていないため誤り。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

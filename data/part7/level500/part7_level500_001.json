@@ -1,31 +1,28 @@
 {
   "level": 500,
-  "title": "Office Cleaning Schedule",
+  "title": "Office Maintenance Request Update",
   "category": "email",
-  "content": "Dear Staff,\n\nI hope you are doing well. This is to inform everyone about our new office cleaning schedule. Starting next Monday, the cleaning team will come in the evening instead of the morning. This change is to avoid disturbing employees during working hours. The cleaning will begin at 6:30 p.m. every weekday and finish around 8:00 p.m.\n\nWe also ask all staff members to clear their desks before leaving. Please make sure no personal items are left on the tables or floors. If you need special cleaning, such as for your computer or shelf, please contact the office assistant, Ms. Lee, before Friday.\n\nThank you for your cooperation.\n\nBest regards,\nMichael Brown\nOffice Manager",
-  "word_count": 266,
+  "content": "Dear Team,\n\nI hope you are doing well. I would like to share an update regarding our office maintenance request system. Starting next Monday, all maintenance-related issues such as broken chairs, flickering lights, or malfunctioning air conditioners should be submitted through the new online request form. This form will replace the previous system where employees contacted the Facilities Department directly by email.\n\nThe new form can be accessed through the company portal under the “Support” section. When submitting a request, please include a brief description of the issue, your office location, and the urgency level. Once your request is submitted, you will receive a confirmation email with a tracking number. This will allow you to monitor the progress of your request and see when the repair will be completed.\n\nAdditionally, please remember that non-urgent issues may take up to three business days to resolve, depending on technician availability. If you experience an urgent issue that affects your ability to work, such as a power outage in your area, please inform your supervisor immediately before submitting the form.\n\nWe appreciate your cooperation as we transition to this updated system. If you have questions or encounter technical problems with the form, feel free to contact the IT Help Desk for assistance.\n\nBest regards,\nOffice Management Team",
+  "word_count": 246,
   "questions": [
     {
       "body": "What is the main purpose of this email?",
       "choices_text": [
-        "To announce a new cleaning schedule",
-        "To request a meeting with staff",
-        "To introduce a new employee",
-        "To report a maintenance issue"
+        "To inform employees about a new maintenance request form",
+        "To announce the relocation of the Facilities Department",
+        "To introduce new office equipment for employees",
+        "To request volunteers for an upcoming office event"
       ],
       "correct_index": 0,
-      "explanation": "このメールはスタッフに新しい清掃スケジュールを知らせる内容です。",
+      "explanation": "本文の冒頭で、メンテナンス関連の依頼方法が新しいオンラインフォームに変わると説明されているため。",
       "wrong_explanations": [
-        "",  
-        "メール内には会議の依頼についての記述はありません。",
-        "メール内には新しい従業員の紹介はありません。",
-        "メール内にはメンテナンスの報告はありません。"
+        "Aは正解のため誤答理由ではありません。",
+        "施設部の移転についての記述は本文にないため誤り。",
+        "新しい設備の導入については触れられていないため誤り。",
+        "オフィスイベントのボランティア募集については本文で述べられていないため誤り."
       ]
     }
   ],
   "source": "generated_by_chatgpt",
-  "meta": {
-    "created_by": "chatgpt",
-    "checked": true
-  }
+  "meta": { "created_by": "chatgpt", "checked": true }
 }

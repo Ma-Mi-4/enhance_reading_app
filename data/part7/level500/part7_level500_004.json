@@ -1,0 +1,28 @@
+{
+  "level": 500,
+  "title": "Library Meeting Room Reservation Update",
+  "category": "notice",
+  "content": "Dear Library Users,\n\nWe would like to inform you about an update to our meeting room reservation system, which will take effect beginning next Monday. Due to increased demand for study and collaboration spaces, the library has adopted a new online booking platform designed to make the reservation process faster and more convenient.\n\nTo reserve a room, please visit the library website and select the “Room Booking” tab. You may choose from small, medium, or large rooms depending on availability. After completing the reservation form, you will receive a confirmation email that includes your reservation number and room details.\n\nPlease note that meeting rooms may be reserved for a maximum of two hours per day per user. If you arrive more than ten minutes late, the room may be released to other users. Additionally, rooms should be kept tidy, and users are required to remove any personal belongings before leaving.\n\nFor group reservations of more than six people, please contact the library staff directly at library-support@cityuniv.com. They will assist you with special arrangements and answer any questions about the new system.\n\nThank you for your cooperation as we work to improve our library services.\n",
+  "word_count": 239,
+  "questions": [
+    {
+      "body": "What will users receive after booking a room online?",
+      "choices_text": [
+        "A confirmation email with reservation details",
+        "A printed map of the library",
+        "A discount coupon for café items",
+        "A reminder phone call from staff"
+      ],
+      "correct_index": 0,
+      "explanation": "オンライン予約後に確認メールが送られると本文に明記されているため。",
+      "wrong_explanations": [
+        "Aは正解のため誤答理由ではありません。",
+        "地図についての記述は本文にないため誤り。",
+        "カフェのクーポンの話は本文に書かれていないため誤り。",
+        "電話でのリマインダーに関する説明は本文にないため誤り。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

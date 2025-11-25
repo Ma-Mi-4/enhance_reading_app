@@ -1,0 +1,28 @@
+{
+  "level": 600,
+  "title": "Internal Notice: Update to Cafeteria Menu Options",
+  "category": "notice",
+  "content": "To all employees,\n\nWe are pleased to share that the company cafeteria will introduce several new menu options beginning next month. These updates were made in response to suggestions gathered from the employee satisfaction survey conducted earlier this year. The goal is to provide healthier choices and offer greater variety for staff members who regularly dine on-site.\n\nStarting December 1, employees will be able to enjoy three new daily meal categories: a low-calorie set, a high-protein set, and a rotating international menu. The international menu will feature dishes from different regions each week, such as Mediterranean salads, Thai-style stir-fry, and Mexican rice bowls. Additionally, the cafeteria will begin using locally sourced vegetables in most dishes to promote sustainability.\n\nTo help employees make informed choices, nutritional information—including calories, protein content, and allergen warnings—will be displayed next to each menu item. For those with dietary restrictions, the cafeteria team will also offer customized meal options upon request.\n\nPlease note that during the first week of December, the cafeteria will operate with slightly reduced hours as staff members undergo training to prepare the new dishes. The temporary opening hours will be from 11:30 a.m. to 1:30 p.m.\n\nIf you have questions or wish to suggest additional menu items for future consideration, please contact the Cafeteria Management Team.",
+  "word_count": 246,
+  "questions": [
+    {
+      "body": "What is one purpose of the cafeteria changes?",
+      "choices_text": [
+        "To offer healthier and more varied meal options.",
+        "To replace the current cafeteria staff.",
+        "To reduce the overall cost of ingredients.",
+        "To introduce a reservation-only dining system."
+      ],
+      "correct_index": 0,
+      "explanation": "本文の冒頭で、より健康的で多様な食事の提供が目的と述べられているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使いません。",
+        "スタッフの入れ替えについては本文に一切記載がありません。",
+        "食材コスト削減を目的とした変更ではありません。",
+        "予約制の導入についての言及は本文にありません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

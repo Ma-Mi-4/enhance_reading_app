@@ -8,7 +8,7 @@ export default function GoogleLoginButton() {
     const { data, error } = await supabase.auth.signInWithOAuth({
       provider: 'google',
       options: {
-        redirectTo: 'https://enhance-reading-app-morning-sound-6129.fly.dev'
+        redirectTo: 'https://enhance-reading-app-morning-sound-6129.fly.dev/auth/google/callback'
       },
     });
 

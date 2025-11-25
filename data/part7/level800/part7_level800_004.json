@@ -1,0 +1,28 @@
+{
+  "level": 800,
+  "title": "Event Announcement: Annual Partner Innovation Forum",
+  "category": "event",
+  "content": "Dear Partners,\n\nWe are pleased to announce that registration is now open for the Annual Partner Innovation Forum, scheduled to be held on September 22 at the Harbor Conference Center. This year’s theme, “Collaborating for a Smarter Future,” reflects the growing importance of cross-industry partnerships in driving technological progress and creating sustainable solutions.\n\nThe forum will feature keynote addresses from specialists in fields such as artificial intelligence, renewable energy, and cybersecurity. In addition to these presentations, the event will include several interactive workshops where participants can explore effective collaboration models and learn practical strategies for long-term innovation.\n\nA new highlight introduced this year is the Innovation Showcase Session. During this session, selected partner organizations will present prototypes or early-stage concepts currently under development. Attendees will be able to offer direct feedback to project teams and discuss potential opportunities for future cooperation.\n\nPlease note that space in the workshops is limited, and early registration is strongly recommended. To confirm your participation, please complete the registration form on our official event website by September 5. Additional information, including the full program schedule and list of speakers, will be released in early August.\n\nWe look forward to your involvement in this year’s forum and hope it will provide a valuable platform for exchanging ideas and forming meaningful partnerships.",
+  "word_count": 262,
+  "questions": [
+    {
+      "body": "What new feature is included in this year’s forum?",
+      "choices_text": [
+        "A session where partners present prototypes or early-stage concepts.",
+        "A set of keynote speeches from technology specialists.",
+        "Workshops focused on collaborative innovation strategies.",
+        "A requirement that all attendees complete early registration."
+      ],
+      "correct_index": 0,
+      "explanation": "本文で、今年新たに “Innovation Showcase Session” が追加されたと明記されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使用しません。",
+        "キーノートスピーチ自体は従来からある形式のため誤り。",
+        "ワークショップは新要素とは記述されていないため誤り。",
+        "早期登録は推奨されているが“新機能”として紹介されていないため誤り。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

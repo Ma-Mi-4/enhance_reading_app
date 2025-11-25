@@ -1,0 +1,28 @@
+{
+  "level": 500,
+  "title": "Maintenance of Office Water Dispensers",
+  "category": "notice",
+  "content": "To all employees,\n\nWe would like to notify you that the office water dispensers will undergo routine maintenance this Friday. The maintenance team will check the filters, sanitize the machines, and ensure that all units are functioning properly. This work is part of our regular effort to provide clean and safe drinking water for everyone.\n\nDuring maintenance hours, some dispensers may be temporarily unavailable. Signs will be posted on machines that cannot be used. Employees are encouraged to refill their bottles earlier in the day or use the dispensers located on other floors if necessary.\n\nThe maintenance is scheduled to take place between 10:00 a.m. and 2:00 p.m. on all floors. Please note that the work may cause brief interruptions, but the team will try to minimize any inconvenience.\n\nIf you notice any issues with a dispenser after the maintenance has been completed, please report it to the Facilities Department at facilities@cleanwater.com.\n\nThank you for your understanding and cooperation.\n",
+  "word_count": 201,
+  "questions": [
+    {
+      "body": "What should employees do if a dispenser is unavailable during maintenance?",
+      "choices_text": [
+        "Use a dispenser on another floor",
+        "Request delivery of bottled water",
+        "Bring their own water from home",
+        "Wait until the next business day"
+      ],
+      "correct_index": 0,
+      "explanation": "本文で、利用できない場合は他の階のディスペンサーを使うよう推奨されているため。",
+      "wrong_explanations": [
+        "Aは正解のため誤答理由ではありません。",
+        "ボトルウォーターを配達してもらう指示は本文にないため誤り。",
+        "自宅から水を持参するような指示は本文にないため誤り。",
+        "翌営業日まで待つ必要があるとは書かれていないため誤り。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

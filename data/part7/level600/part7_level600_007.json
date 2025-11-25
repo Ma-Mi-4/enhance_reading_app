@@ -1,0 +1,28 @@
+{
+  "level": 600,
+  "title": "Event Announcement: Annual Charity Run",
+  "category": "event",
+  "content": "To all employees,\n\nWe are excited to announce that our company will host the Annual Charity Run on November 10 at Riverside Park. This event aims to raise funds for local youth programs and promote a healthier lifestyle among our staff. All employees are welcome to participate, and family members may join as well.\n\nThe event will begin at 8:30 a.m. with a short warm-up session led by a certified fitness instructor. Participants can choose between a 3-kilometer fun course and a 7-kilometer challenge course. Water stations will be placed along both routes, and medical staff will be on-site to assist anyone who needs support.\n\nRegistration is free, but participants are encouraged to make voluntary donations. All contributions will go directly to the Riverside Youth Development Fund. To register, please fill out the online form posted on the internal portal by November 5. The first 150 participants will receive a complimentary event T-shirt.\n\nAfter the run, refreshments will be served at the community tent, where employees can enjoy light snacks and meet members of the youth program. Managers are asked to remind their team members about the registration deadline so we can properly prepare supplies for all runners.\n\nWe hope to see many of you at the event and look forward to spending a meaningful day together.",
+  "word_count": 245,
+  "questions": [
+    {
+      "body": "What must employees do to participate in the event?",
+      "choices_text": [
+        "Submit an online registration form before the deadline.",
+        "Pay a mandatory registration fee in advance.",
+        "Join a training session held the day before the event.",
+        "Get approval from their department manager."
+      ],
+      "correct_index": 0,
+      "explanation": "本文に、社内ポータルのオンラインフォームから登録する必要があると明記されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使いません。",
+        "登録料は任意寄付であり、必須料金ではありません。",
+        "前日トレーニングへの参加義務は本文にありません。",
+        "部門マネージャーの承認は不要との記述です。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

@@ -1,0 +1,28 @@
+{
+  "level": 700,
+  "title": "Article: Local Theater Introduces Digital Ticketing System",
+  "category": "article",
+  "content": "The Riverside Community Theater has announced the introduction of a new digital ticketing system that will be implemented beginning next month. The upgrade comes as part of an effort to modernize the theater’s operations and reduce the long lines that often form before popular performances. According to the theater management, many customers have requested a more convenient way to purchase tickets, especially for weekend shows and seasonal events.\n\nUnder the new system, patrons will be able to buy tickets online through the theater’s redesigned website or by using a mobile app. Once a ticket is purchased, a QR code will be emailed to the customer, allowing quick entry at the door. The theater also plans to install self-service kiosks in the lobby for customers who prefer to buy tickets on-site without waiting in line.\n\nTo help visitors adjust to the change, staff members will provide demonstrations during the first two weeks of the rollout. Additionally, a temporary help desk will be set up near the main entrance to assist customers with technical issues such as retrieving lost QR codes or navigating the website.\n\nThe theater hopes that the digital ticketing system will improve the overall experience for patrons and attract a broader audience by making the ticket purchasing process faster and more accessible.",
+  "word_count": 246,
+  "questions": [
+    {
+      "body": "What is one benefit of the new ticketing system?",
+      "choices_text": [
+        "Customers can enter the theater quickly using a QR code.",
+        "Ticket prices will be reduced for weekend performances.",
+        "Visitors will receive printed tickets by mail automatically.",
+        "The theater will eliminate the need for staff assistance entirely."
+      ],
+      "correct_index": 0,
+      "explanation": "本文で、QRコードにより素早く入場できると説明されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使用しません。",
+        "週末公演の値下げについては本文に記述がありません。",
+        "紙のチケット郵送に関する説明はありません。",
+        "スタッフが不要になるという内容は本文にありません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

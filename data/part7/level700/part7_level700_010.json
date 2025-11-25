@@ -1,0 +1,28 @@
+{
+  "level": 700,
+  "title": "Notice: New Policy for Employee Travel Reimbursement",
+  "category": "notice",
+  "content": "To all employees,\n\nWe would like to inform you of updates to the Employee Travel Reimbursement Policy, which will take effect starting July 1. These revisions were made to ensure clearer guidelines and to simplify the reimbursement process for both employees and the Finance Department. The new policy applies to all domestic business travel, including transportation, lodging, and meal expenses.\n\nUnder the updated rules, employees must submit all reimbursement requests within ten business days after completing their trip. Requests must include digital copies of receipts, which should be uploaded through the company’s expense management system. Paper submissions will no longer be accepted. Additionally, meal expenses will now be reimbursed based on a fixed daily allowance rather than itemized receipts.\n\nFor transportation, employees are encouraged to book flights and trains through the company’s preferred vendors to ensure access to discounted rates. Travel booked outside the approved vendor list may require additional justification and may not be fully reimbursed. Lodging expenses will continue to follow the existing nightly maximum rate but must be approved by a department manager in advance.\n\nA detailed guide explaining the updated rules, along with examples of acceptable documentation, will be published on the internal portal next week. If you have questions about the changes or need assistance using the expense system, please contact the Finance Support Team.",
+  "word_count": 248,
+  "questions": [
+    {
+      "body": "What must employees do when submitting reimbursement requests under the new policy?",
+      "choices_text": [
+        "Submit digital copies of receipts through the expense system.",
+        "Provide physical receipts directly to the Finance Department.",
+        "Book all travel independently without using vendor guidelines.",
+        "Wait until the end of the month to file all travel expenses."
+      ],
+      "correct_index": 0,
+      "explanation": "本文に、領収書のデジタルコピーを経費システムにアップロードする必要があると明記されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使いません。",
+        "紙の提出は廃止されると本文に書かれています。",
+        "承認ベンダー以外での予約は追加説明が必要で推奨されていません。",
+        "月末まで待つ必要があるという記述は本文にありません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

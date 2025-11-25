@@ -1,0 +1,28 @@
+{
+  "level": 800,
+  "title": "Article: Expansion of Corporate Training Platforms",
+  "category": "article",
+  "content": "In recent years, companies have increasingly invested in digital training platforms to strengthen employee development and streamline organizational learning. According to a report from the Global Learning Consortium, online training programs have grown steadily, driven largely by the demand for flexible, remote-friendly learning environments. The report notes that employees now prefer training systems that allow them to progress at their own pace while focusing on skills relevant to their roles.\n\nA key finding from the study is the effectiveness of adaptive learning systems, which adjust content difficulty based on an employee’s performance. Companies using these systems have reported higher completion rates because workers can focus on topics requiring improvement while skipping information they already understand. This personalized approach leads to more efficient use of training time.\n\nThe report also highlights the increasing use of simulation-based learning in industries such as engineering and healthcare. Simulations allow employees to practice complex scenarios without real-world risk, which significantly enhances skill retention. However, high implementation costs remain a barrier for smaller organizations, pushing many to explore subscription-based models offered by emerging technology vendors.\n\nAnother factor influencing successful training programs is the quality of data management practices. Companies with clear reporting standards and trained data analysts tend to see greater long-term benefits compared to those without structured procedures.\n\nAs digital learning tools continue to evolve, experts predict broader adoption and a shift toward training ecosystems that emphasize continuous development rather than one-time instruction.",
+  "word_count": 263,
+  "questions": [
+    {
+      "body": "According to the article, why are adaptive learning systems beneficial?",
+      "choices_text": [
+        "They allow employees to focus on areas where improvement is needed.",
+        "They reduce the cost of simulation-based training systems.",
+        "They eliminate the need for instructor-led courses entirely.",
+        "They ensure all employees achieve an identical skill level."
+      ],
+      "correct_index": 0,
+      "explanation": "本文に、適応型学習は苦手分野に集中でき効率的な学習を可能にするとあるため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使用しません。",
+        "コスト削減が適応型学習の主な利点とは書かれていません。",
+        "インストラクター不要になるとは説明されていません。",
+        "同じスキルレベルを保証するとは記載されていません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

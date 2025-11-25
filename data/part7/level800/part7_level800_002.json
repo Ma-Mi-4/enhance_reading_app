@@ -1,0 +1,28 @@
+{
+  "level": 800,
+  "title": "Notice: Implementation of Energy Monitoring System",
+  "category": "notice",
+  "content": "To all staff members,\n\nWe would like to inform you that the Facilities Management Division will begin introducing a new energy monitoring system across all office buildings starting next month. This initiative is part of the company’s broader sustainability efforts and is intended to help reduce unnecessary energy consumption during daily operations.\n\nThe new system will measure real-time usage of lighting, heating, air-conditioning, and shared office equipment. Data collected through these tools will be reviewed on a weekly basis to identify patterns that may indicate inefficient energy use. For instance, several meeting rooms have been found with lights and monitors left on for long periods when no employees are present. With the monitoring system in place, Facilities Management will be able to identify such cases more quickly and notify the responsible departments.\n\nBeginning on the first of next month, staff members may receive periodic reminders encouraging them to turn off unused devices or adjust thermostat settings in shared spaces. These messages are meant to promote awareness and are not connected to individual performance evaluations. Departments that achieve measurable improvements in energy efficiency will be recognized in the quarterly sustainability report.\n\nIf you have questions about how the new system works or would like more details on the company’s energy-saving initiatives, please contact the Facilities Management Division. Your cooperation is greatly appreciated as we transition to this updated approach.",
+  "word_count": 259,
+  "questions": [
+    {
+      "body": "What is one purpose of the new energy monitoring system?",
+      "choices_text": [
+        "To identify opportunities to reduce excessive energy use.",
+        "To monitor individual employees' personal electricity habits.",
+        "To calculate departmental budgets based on power consumption.",
+        "To introduce penalties for leaving devices turned on."
+      ],
+      "correct_index": 0,
+      "explanation": "本文に、不要なエネルギー使用を特定し削減するためと明記されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使用しません。",
+        "個人の使用状況を監視するという記述はありません。",
+        "部門ごとの予算計算として使うとは書かれていません。",
+        "罰則を導入するとは本文に記載されていません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

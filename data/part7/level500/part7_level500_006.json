@@ -1,0 +1,28 @@
+{
+  "level": 500,
+  "title": "Reminder: Staff Training Session",
+  "category": "message",
+  "content": "Hello Team,\n\nThis is a reminder about the upcoming staff training session scheduled for this Wednesday. The session will take place in Meeting Room 2 on the third floor and will begin promptly at 10:00 a.m. All staff members are encouraged to attend, especially those who joined the company within the last six months.\n\nThe training will cover basic workplace safety procedures, including emergency exits, fire extinguisher locations, and guidelines for reporting safety hazards. There will also be a short demonstration on how to use the new attendance tracking system that was introduced earlier this month.\n\nPlease bring a notebook or laptop if you would like to take notes. Light refreshments such as water, tea, and cookies will be provided. If you are unable to attend due to a schedule conflict, please inform your supervisor by Tuesday afternoon.\n\nWe appreciate your cooperation and look forward to seeing you at the session.\n",
+  "word_count": 204,
+  "questions": [
+    {
+      "body": "What will be included in the training session?",
+      "choices_text": [
+        "A demonstration of the new attendance system",
+        "Interviews with new employees",
+        "A tour of the nearby facilities",
+        "A presentation about upcoming projects"
+      ],
+      "correct_index": 0,
+      "explanation": "本文に、新しい出席管理システムのデモンストレーションが含まれると書かれているため。",
+      "wrong_explanations": [
+        "Aは正解のため誤答理由ではありません。",
+        "新入社員との面談に関する記述は本文にないため誤り。",
+        "周辺施設のツアーについての説明は本文にないため誤り。",
+        "今後のプロジェクトの発表については言及されていないため誤り。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

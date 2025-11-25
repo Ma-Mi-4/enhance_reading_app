@@ -1,0 +1,28 @@
+{
+  "level": 700,
+  "title": "Article: Expansion of the Regional Bus Network",
+  "category": "article",
+  "content": "The City Transportation Authority has announced a major expansion of the regional bus network that will take effect next spring. The initiative aims to improve access to developing residential areas and reduce traffic congestion during peak commuting hours. According to the authority's recent survey, many residents living in the northern districts reported limited transportation options, often relying on personal vehicles for daily travel. The expanded network is expected to provide more reliable alternatives.\n\nThe project includes the introduction of three new bus routes and the extension of two existing ones. One of the new routes will connect Greenhill Station to Brookside Community Center, an area that has recently seen a significant increase in population. Another route will operate between Lakeside Park and the downtown business district, offering more frequent service during the morning rush. Additionally, the transit authority will upgrade several bus stops by adding shelters, digital schedule boards, and improved lighting.\n\nIn preparation for these changes, the Transportation Authority will hold a series of public information sessions throughout February. These sessions will allow residents to share feedback and ask questions about the new routes. A detailed route map will also be posted on the authority’s official website later this month.\n\nCity officials believe that the expanded network will encourage more people to use public transportation and contribute to a more sustainable urban environment.",
+  "word_count": 243,
+  "questions": [
+    {
+      "body": "What is one purpose of the bus network expansion?",
+      "choices_text": [
+        "To provide better transportation access to growing residential areas.",
+        "To prepare for the construction of a new railway line.",
+        "To reduce the number of private bus companies in the city.",
+        "To replace all existing bus routes with faster express services."
+      ],
+      "correct_index": 0,
+      "explanation": "本文に、住宅地の拡大に合わせ交通手段を改善するためと明記されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使いません。",
+        "鉄道路線建設の準備という記述は本文にありません。",
+        "民間バス会社の削減については本文に一切触れられていません。",
+        "既存路線の全廃と高速便への置き換えという内容は本文と一致しません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

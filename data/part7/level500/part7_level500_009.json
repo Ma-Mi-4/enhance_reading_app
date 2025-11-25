@@ -1,0 +1,28 @@
+{
+  "level": 500,
+  "title": "Update on Office Shuttle Service",
+  "category": "email",
+  "content": "Dear Staff,\n\nWe would like to inform you about an update to the office shuttle service that many employees use for commuting. Beginning next Monday, the morning shuttle schedule will be adjusted to better accommodate staff members who arrive earlier than 9:00 a.m.\n\nThe first shuttle will now depart from Central Station at 7:10 a.m., followed by additional departures every 20 minutes until 8:50 a.m. The afternoon return service will remain unchanged, with shuttles leaving the office at 5:15 p.m., 5:45 p.m., and 6:15 p.m.\n\nTo board the shuttle, employees must present their company ID card to the driver. Please note that priority seating will be given to staff with mobility needs. We kindly ask everyone to follow the boarding instructions to ensure a smooth and safe ride for all passengers.\n\nIf you have any questions regarding the new schedule or experience issues with the shuttle service, please contact the Transportation Support Team at transport@commutehelp.com.\n\nThank you for your understanding and cooperation.\n",
+  "word_count": 219,
+  "questions": [
+    {
+      "body": "What must employees show when boarding the shuttle?",
+      "choices_text": [
+        "Their company ID card",
+        "A printed copy of the shuttle timetable",
+        "A reservation number",
+        "A signed permission form"
+      ],
+      "correct_index": 0,
+      "explanation": "本文で、シャトル乗車時に社員証を提示する必要があると明記されているため。",
+      "wrong_explanations": [
+        "Aは正解のため誤答理由ではありません。",
+        "時刻表の提示について本文には書かれていないため誤り。",
+        "予約番号が必要とは記載されていないため誤り。",
+        "許可書の提示については説明されていないため誤り。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

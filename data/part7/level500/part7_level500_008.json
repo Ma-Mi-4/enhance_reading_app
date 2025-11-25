@@ -1,0 +1,28 @@
+{
+  "level": 500,
+  "title": "Announcement: New Recycling Bins",
+  "category": "notice",
+  "content": "Dear Employees,\n\nWe are pleased to inform you that new recycling bins have been installed throughout the office building. This update is part of our ongoing effort to promote environmentally friendly practices and reduce the amount of waste sent to landfills.\n\nThe new bins are located in common areas such as break rooms, hallways, and near the elevators on each floor. Each bin is clearly labeled for paper, plastic, and metal items. Please make sure to place your items in the correct bin to help ensure that materials can be properly processed and reused.\n\nIn addition to the new bins, educational posters have been placed around the office to remind everyone of proper recycling habits. These posters include examples of what can and cannot be recycled. If you are unsure whether an item is recyclable, please check the poster or ask a member of the Facilities Team for guidance.\n\nWe appreciate your cooperation in helping us create a more sustainable workplace. Should you have suggestions for additional environmental initiatives, feel free to contact us at eco-office@company.com.\n",
+  "word_count": 215,
+  "questions": [
+    {
+      "body": "Where can employees find the new recycling bins?",
+      "choices_text": [
+        "In common areas throughout the office",
+        "Inside individual employee lockers",
+        "Only on the ground floor of the building",
+        "In the parking lot outside the office"
+      ],
+      "correct_index": 0,
+      "explanation": "本文に、休憩室や廊下などの共用エリアに設置されたと明記されているため。",
+      "wrong_explanations": [
+        "Aは正解のため誤答理由ではありません。",
+        "ロッカー内に設置されたとは記載されていないため誤り。",
+        "1階のみとは書かれていないため誤り。",
+        "駐車場に設置されたという記述は本文にないため誤り。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

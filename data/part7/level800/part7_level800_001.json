@@ -1,30 +1,28 @@
 {
   "level": 800,
-  "title": "Company Newsletter: New Sustainability Initiative",
-  "text": "Subject: Introducing Our New Sustainability Initiative\n\nDear Valued Partners,\n\nWe are excited to announce the launch of our new Sustainability Initiative, which aims to reduce our company’s environmental impact and promote responsible business practices. Over the next six months, we will implement several projects designed to decrease energy consumption, minimize waste, and increase collaboration with eco-friendly suppliers.\n\nOne of the key components of this initiative is the introduction of energy-efficient lighting systems in all office buildings. Additionally, we will transition to digital-only documentation to reduce paper use by nearly 70%.\n\nTo ensure the success of these efforts, we will host a Sustainability Workshop for employees and partner companies in mid-November. The workshop will feature guest speakers from the environmental sector and highlight innovative ways businesses can operate more sustainably.\n\nWe believe that by working together, we can make a meaningful difference. Your continued support and participation are essential in helping us reach our goals.\n\nFor more details about the program schedule and participation guidelines, please visit our internal website or contact the Corporate Responsibility Team.\n\nSincerely,\nThe Green Future Committee",
+  "title": "Trends in Remote Work Productivity",
+  "category": "article",
+  "content": "Over the past three years, companies around the world have continued refining their remote work policies in an effort to balance employee flexibility with long-term productivity. A recent study conducted by the Global Work Research Institute analyzed data from over 5,000 employees in a variety of industries. The findings show that while overall productivity levels have remained relatively stable, the factors influencing performance have shifted in meaningful ways.\n\nAccording to the report, employees who follow a consistent remote schedule—working from home at least three days a week—tend to show higher task completion rates than those who switch frequently between home and office. Researchers believe this is largely due to predictable routines, reduced commuting time, and greater control over the work environment. However, the study also notes that fully remote employees often experience challenges with collaboration, especially when team members are spread across several time zones.\n\nTo address these issues, many companies have introduced structured communication windows in which employees are expected to be reachable regardless of location. These windows, typically lasting two to four hours per day, have reportedly improved project alignment and helped reduce delays. Additionally, teams with clearly defined roles and standardized reporting formats demonstrated stronger coordination than those relying on spontaneous meetings or informal communication.\n\nThe study concludes that remote work productivity is shaped not by location alone but by the combination of communication strategy, schedule consistency, and organizational clarity. Companies expanding their remote work programs are encouraged to evaluate these elements collectively rather than focusing solely on how many days employees spend outside the office.",
+  "word_count": 258,
   "questions": [
     {
-      "question_text": "What is the main goal of the new Sustainability Initiative?",
+      "body": "Which practice contributed to better team coordination in remote settings?",
       "choices_text": [
-        "To reduce the company’s environmental impact",
-        "To improve financial reporting accuracy",
-        "To expand into international markets",
-        "To launch a new product line"
+        "Using standardized reporting formats within teams.",
+        "Increasing the number of spontaneous virtual meetings.",
+        "Allowing employees to choose communication hours freely.",
+        "Reducing the number of collaborative tasks required."
       ],
       "correct_index": 0,
-      "explanation": "このイニシアチブの主目的は、企業の環境への影響を減らすことです。",
+      "explanation": "本文で、標準化された報告形式を導入したチームは調整が強化されたと述べられているため。",
       "wrong_explanations": [
-        "財務報告の精度向上ではありません。",
-        "国際展開の拡大が目的ではありません。",
-        "新製品の発売が目的ではありません。"
+        "これは正解のため誤答理由には使用しません。",
+        "即興的な会議に頼るチームは調整効率が低いと本文に記載されています。",
+        "自由なコミュニケーション時間は改善策として示されていません。",
+        "協働タスクの削減が効果的だという記述はありません。"
       ]
     }
   ],
-  "meta": {
-    "created_by": "chatgpt",
-    "type": "reading",
-    "difficulty": "TOEIC Level 800",
-    "question_count": 1,
-    "word_count": 320
-  }
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
 }

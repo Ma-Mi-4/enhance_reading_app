@@ -1,0 +1,28 @@
+{
+  "level": 800,
+  "title": "Article: Adoption of Predictive Maintenance in Manufacturing",
+  "category": "article",
+  "content": "Manufacturing companies are increasingly turning to predictive maintenance technologies to reduce equipment downtime and improve overall productivity. Predictive maintenance uses sensor data, machine learning analysis, and real-time monitoring tools to detect early signs of equipment failure. By identifying irregularities such as unusual vibration patterns, rising temperatures, or abnormal energy consumption, engineers can schedule repairs before a breakdown occurs.\n\nA recent industry survey found that factories implementing predictive maintenance systems experienced a notable reduction in unplanned shutdowns. Several companies reported that proactively addressing minor issues prevented significant production delays and helped extend the lifespan of critical machinery. However, integrating predictive tools with older equipment remains a challenge, as many legacy machines lack the interfaces needed for smooth data collection.\n\nTo address this problem, some organizations are investing in retrofit devices that allow older equipment to transmit data wirelessly. These add-on sensors make it possible to incorporate decades-old machines into modern monitoring networks without requiring full replacement.\n\nThe survey also found that successful predictive maintenance programs rely heavily on strong data management practices. Companies with standardized reporting procedures and trained data analysts saw greater improvements in reliability than those without clear workflows.\n\nAs predictive technologies advance, experts expect adoption to continue growing. Many believe that fully automated maintenance systems—capable of diagnosing issues and triggering repairs autonomously—will become increasingly common across the manufacturing sector.",
+  "word_count": 266,
+  "questions": [
+    {
+      "body": "What is one benefit of predictive maintenance mentioned in the article?",
+      "choices_text": [
+        "It helps reduce unexpected equipment shutdowns.",
+        "It eliminates the need for engineers to monitor equipment.",
+        "It guarantees that all machines will operate without failure.",
+        "It allows companies to avoid installing sensors on older machines."
+      ],
+      "correct_index": 0,
+      "explanation": "予知保全導入企業では“予期しない停止が減った”という調査結果が示されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使用しません。",
+        "完全にエンジニア不要になるとは本文に記載されていません。",
+        "故障が完全になくなるとは明記されていません。",
+        "むしろ古い機械には後付けセンサーが必要と述べられています。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

@@ -1,0 +1,28 @@
+{
+  "level": 700,
+  "title": "Email: Request for Updated Project Timeline",
+  "category": "email",
+  "content": "Dear Project Team,\n\nI hope everyone is doing well. As we approach the final stages of the Orion Marketing Campaign, I would like to request an updated project timeline from each sub-team. Several tasks are moving simultaneously, and having the latest information will help us coordinate more effectively and ensure that we remain on schedule for the product launch next month.\n\nSpecifically, please provide the current status of your assigned tasks, any anticipated delays, and the estimated completion dates for remaining items. The design team should also confirm whether the newest banner layouts have been approved by the client. Meanwhile, the analytics team is reminded to upload the preliminary performance projections to the shared drive by Thursday.\n\nI would appreciate it if all updates could be submitted by the end of the day on Wednesday. After reviewing the information, I will prepare a consolidated timeline and share it during Friday’s check-in meeting. If any team foresees a significant obstacle that may impact the overall launch schedule, please notify me as soon as possible.\n\nThank you in advance for your cooperation and continued hard work. Let me know if you have questions or need clarification regarding the requested details.",
+  "word_count": 236,
+  "questions": [
+    {
+      "body": "What does the sender request from each sub-team?",
+      "choices_text": [
+        "An updated timeline including task status and expected completion dates.",
+        "A list of new team members who joined the project.",
+        "A proposal for expanding the marketing budget.",
+        "A report on customer feedback from last month."
+      ],
+      "correct_index": 0,
+      "explanation": "本文で、各チームにタスク状況と完了予定日を含む最新タイムラインを提出するよう依頼しているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使いません。",
+        "新メンバーのリスト提出については本文に記載がありません。",
+        "予算拡大の提案を求める記述は本文にありません。",
+        "先月の顧客フィードバック報告を求めているわけではありません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

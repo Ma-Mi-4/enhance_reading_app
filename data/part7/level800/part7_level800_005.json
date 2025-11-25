@@ -1,0 +1,28 @@
+{
+  "level": 800,
+  "title": "Article: Trends in Customer Loyalty Programs",
+  "category": "article",
+  "content": "Customer loyalty programs have undergone significant changes over the past decade as companies compete for consumer attention in a crowded marketplace. While point-based systems remain widely used, recent studies show that customers increasingly value personalized experiences over simple discounts. As a result, many retailers now integrate browsing history, purchase patterns, and customer preferences into their loyalty strategies to deliver more customized rewards.\n\nOne trend highlighted in the Retail Insights Report is the growing use of tiered membership structures. In this model, customers advance to higher tiers by engaging more frequently with a brand, unlocking exclusive benefits such as early access to new products, invitations to special events, and enhanced customer support. Businesses adopting tier-based systems have reported improved retention rates and stronger long-term customer relationships.\n\nAnother emerging approach involves partnerships between companies. For instance, a clothing retailer may collaborate with a fitness app to offer cross-platform rewards, encouraging customers to interact with multiple brands. These partnerships also help participating companies access a broader range of consumer data, enabling them to refine their marketing strategies.\n\nDespite these developments, the report cautions that poorly designed loyalty programs can overwhelm customers with excessive notifications or complex rules. Companies are therefore encouraged to focus on clarity, transparency, and meaningful value when building or updating their programs.\n\nAs loyalty programs continue to evolve, experts predict a shift toward systems that emphasize long-term engagement, personalized benefits, and seamless multi-channel user experiences.",
+  "word_count": 267,
+  "questions": [
+    {
+      "body": "According to the article, what is one benefit of tiered membership structures?",
+      "choices_text": [
+        "They help businesses improve customer retention.",
+        "They reduce the need for customer data collection.",
+        "They eliminate the requirement for exclusive rewards.",
+        "They make loyalty programs completely automatic."
+      ],
+      "correct_index": 0,
+      "explanation": "ティア制メンバーシップは顧客維持率の向上につながると本文に記載されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使用しません。",
+        "顧客データ収集が不要になるとは本文にありません。",
+        "むしろティア制では特典が強化されるため誤り。",
+        "完全自動化されるという記述はないため誤り。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

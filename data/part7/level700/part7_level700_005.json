@@ -1,0 +1,28 @@
+{
+  "level": 700,
+  "title": "Article: Launch of New Eco-friendly Packaging",
+  "category": "article",
+  "content": "In an effort to reduce environmental impact and meet growing consumer demand for sustainable products, Green Valley Foods has announced the launch of a new eco-friendly packaging line. The company has spent the past two years researching alternative materials and testing prototypes to ensure durability while minimizing waste. According to the development team, the new packaging uses 60 percent less plastic and incorporates plant-based fibers sourced from certified suppliers.\n\nThe initial rollout will focus on the company’s most popular snack items, including granola bars and dried fruit mixes. These items will be gradually introduced to supermarkets nationwide starting in July. To help customers distinguish the new packaging, Green Valley Foods will include clear labeling and a QR code that links to a page explaining the environmental benefits.\n\nIn addition to the packaging changes, the company plans to host a series of online seminars to raise awareness about sustainable shopping habits. Customers will be invited to participate in short surveys and share feedback on how the packaging performs in daily use. Early responses from a pilot launch conducted in three regions have been largely positive, with many customers noting the improved design and ease of recycling.\n\nCompany representatives believe that the initiative will not only reduce waste but also strengthen brand loyalty among environmentally conscious shoppers.",
+  "word_count": 243,
+  "questions": [
+    {
+      "body": "What is one feature of the new packaging?",
+      "choices_text": [
+        "It uses plant-based fibers from certified suppliers.",
+        "It keeps food products fresh for twice as long.",
+        "It requires customers to assemble the packaging themselves.",
+        "It is available only through online stores."
+      ],
+      "correct_index": 0,
+      "explanation": "本文で、新パッケージは認証済みの植物由来素材を使用していると述べられているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使いません。",
+        "鮮度保持期間が倍になるという記述は本文にありません。",
+        "顧客が組み立てる必要があるとは書かれていません。",
+        "オンライン限定販売であるという記述も本文にありません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

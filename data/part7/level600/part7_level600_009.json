@@ -1,0 +1,28 @@
+{
+  "level": 600,
+  "title": "Internal Email: Volunteer Recruitment for Community Event",
+  "category": "email",
+  "content": "Dear Team,\n\nI hope you are doing well. I am reaching out to invite volunteers for this year's Community Cleanup Event, which our company participates in annually. The event will take place on December 2 at Greenfield Park and is organized in collaboration with the City Environment Office. Each year, our volunteers help remove litter, clean walking trails, and plant seasonal flowers in designated areas of the park.\n\nThis year, the City Office is expecting a higher number of visitors due to a newly opened playground, so additional volunteers will be especially helpful. Participants will meet at the park entrance at 9:00 a.m., where they will receive gloves, trash bags, and simple gardening tools. Light refreshments will be provided during the morning break.\n\nEmployees interested in joining should register using the link in the internal portal by November 25. Those who sign up early may be asked to assist with distributing materials or guiding participants on the day of the event. If you are attending with family members, please include the number of guests on the form so we can prepare enough supplies.\n\nThank you as always for your willingness to support our community. If you have questions about the event schedule or transportation, feel free to contact the Corporate Social Responsibility Team.",
+  "word_count": 246,
+  "questions": [
+    {
+      "body": "What are volunteers expected to do at the event?",
+      "choices_text": [
+        "Help clean the park and assist with planting flowers.",
+        "Participate in a guided historical tour.",
+        "Deliver supplies to nearby community centers.",
+        "Attend a training session on environmental policy."
+      ],
+      "correct_index": 0,
+      "explanation": "本文に、清掃、花植え、指定エリアの整備などの作業を行うと明記されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使いません。",
+        "歴史ツアーについては本文に記載がありません。",
+        "地域センターへの物資配送に関する記述はありません。",
+        "環境政策トレーニングの実施についても本文にはありません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

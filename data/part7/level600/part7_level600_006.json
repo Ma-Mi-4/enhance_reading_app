@@ -1,0 +1,28 @@
+{
+  "level": 600,
+  "title": "Email: Update on Office Renovation Timeline",
+  "category": "email",
+  "content": "Dear Staff,\n\nI would like to provide an update regarding the ongoing renovation of our office's east wing. As many of you know, construction began earlier this month with the goal of improving workspace comfort and increasing the number of meeting rooms available for team use. While the project is progressing smoothly overall, the construction team has informed us of a slight delay in the schedule.\n\nThe installation of the new ceiling panels and lighting fixtures is taking longer than expected due to supply shortages from one of our vendors. As a result, the renovation is now expected to be completed by November 28 instead of the originally planned November 20. We understand that this may cause inconvenience for teams who were planning to use the renovated meeting rooms next month.\n\nTo help minimize disruptions, temporary meeting spaces have been arranged on the third floor. These rooms are equipped with basic audio-visual tools and can be reserved through the regular booking system. Additionally, noise-reduction panels have been placed near the construction area to help maintain a comfortable working environment.\n\nWe appreciate your patience and understanding as we continue to improve our office facilities. If you have questions about the updated timeline or need assistance relocating team activities, please contact the Administration Office.",
+  "word_count": 248,
+  "questions": [
+    {
+      "body": "Why has the renovation been delayed?",
+      "choices_text": [
+        "Because the arrival of materials from a vendor was slower than expected.",
+        "Because additional construction approval was required.",
+        "Because employees requested design changes.",
+        "Because the construction team reduced its working hours."
+      ],
+      "correct_index": 0,
+      "explanation": "本文で、仕入れ業者の供給遅延が原因と明記されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使いません。",
+        "追加の許可が必要だという記述は本文にありません。",
+        "社員のデザイン変更要望による遅れではありません。",
+        "作業時間短縮については本文に一切触れられていません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

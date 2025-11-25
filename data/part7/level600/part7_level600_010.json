@@ -1,0 +1,28 @@
+{
+  "level": 600,
+  "title": "Notice: Temporary Closure of Printing Room",
+  "category": "notice",
+  "content": "To all employees,\n\nPlease be informed that the main printing room on the second floor will be temporarily closed from January 6 to January 9 due to equipment upgrades. Over the past year, the printers in this room have frequently required maintenance, and several parts have become outdated. To improve printing quality and reduce future service interruptions, the Facilities Department has arranged for the installation of two new high-speed printers and an updated document scanning system.\n\nDuring the closure period, employees may use the smaller printing room located next to the Accounting Office on the first floor. This room has limited capacity, so we recommend avoiding peak hours between 9:00 a.m. and 11:00 a.m. whenever possible. Please also note that color printing will be restricted until the upgrade is completed.\n\nIn preparation for the installation work, all documents currently stored in the printing room will be relocated to a secure temporary storage area. If you need access to any materials during the closure, please contact the Facilities Department at least one day in advance.\n\nWe apologize for any inconvenience caused and appreciate your understanding as we work to improve our office equipment. A follow-up notice will be sent once the installation is complete and the room is ready for use again.",
+  "word_count": 242,
+  "questions": [
+    {
+      "body": "Why will the printing room be closed?",
+      "choices_text": [
+        "To install new printers and update the scanning system.",
+        "To conduct a company-wide audit.",
+        "To clean the room for an upcoming event.",
+        "To convert the space into a meeting area."
+      ],
+      "correct_index": 0,
+      "explanation": "本文で、新しいプリンターとスキャニングシステムの導入が理由と明記されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使いません。",
+        "監査については本文に一切記載がありません。",
+        "清掃やイベント準備のためではありません。",
+        "会議室への転用についても記述はありません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

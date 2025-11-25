@@ -1,24 +1,28 @@
 {
   "level": 600,
-  "title": "Email about a Schedule Change",
-  "text": "Dear Mr. Tanaka,\n\nI hope this message finds you well. I wanted to inform you that our weekly project meeting originally planned for Thursday has been rescheduled. Due to a client presentation, we will now meet on Friday at 2 p.m. in the main conference room. Please bring the updated sales report and any questions you might have regarding the new marketing strategy.\n\nAlso, I would appreciate it if you could confirm whether the design team will be able to join us remotely. Their feedback on the new product layout will be essential for our next step.\n\nBest regards,\nNaoko Suzuki\nProject Manager",
+  "title": "Announcement: Temporary Closure of Fitness Center",
+  "category": "notice",
+  "content": "To all employees,\n\nWe would like to inform you of a temporary closure of the company fitness center due to scheduled maintenance. Over the past few months, several machines have required repairs, and our maintenance team has recommended a full inspection to ensure the safety and comfort of all users. Because the inspection process involves moving heavy equipment and replacing several worn parts, the facility must remain closed during this period.\n\nThe fitness center will be unavailable from August 14 to August 18. During this time, contractors will perform safety checks on the treadmills, stationary bikes, and weight machines. Additionally, new flooring will be installed in the stretching area to improve shock absorption and reduce noise. We apologize for any inconvenience this may cause, especially for employees who use the fitness center during their lunch break.\n\nAs an alternative, employees are encouraged to use the temporary workout space set up in Meeting Room B on the second floor. This room will be equipped with yoga mats and resistance bands, and short stretching sessions will be offered twice a day by volunteer staff members. Please check the internal portal for the latest session schedule.\n\nWe appreciate your understanding and cooperation as we work to improve our wellness facilities. If you have any questions about the maintenance schedule or the temporary workout area, please contact the Human Resources Department.",
+  "word_count": 242,
   "questions": [
     {
-      "question_text": "Why was the meeting rescheduled?",
+      "body": "Why will the fitness center be temporarily closed?",
       "choices_text": [
-        "Because of a client presentation",
-        "Because of a public holiday",
-        "Because of a staff shortage",
-        "Because the manager will be absent"
+        "Because it requires a full inspection and equipment repairs.",
+        "Because the company is replacing the fitness instructors.",
+        "Because employees requested a new workout schedule.",
+        "Because the building will be used for a special company event."
       ],
       "correct_index": 0,
-      "explanation": "このミーティングはクライアントプレゼンテーションのために再スケジュールされました。",
+      "explanation": "本文で、機器の点検と修理のため全面的なメンテナンスが必要と説明されているため。",
       "wrong_explanations": [
-        "",
-        "メールには祝日のためという記述はありません。",
-        "スタッフ不足のためとは書かれていません。",
-        "マネージャー不在のためではありません。"
+        "これは正解のため誤答理由ではありません。",
+        "インストラクターの交代については本文に記述がありません。",
+        "新しい運動スケジュールの要望は本文に記載されていません。",
+        "特別な会社イベントで使用するという説明はありません。"
       ]
     }
-  ]
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
 }
