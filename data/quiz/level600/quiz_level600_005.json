@@ -1,0 +1,78 @@
+{
+  "level": 600,
+  "title": "Vocabulary Quiz from Part7 Level600_005",
+  "questions": [
+    {
+      "word": "launch",
+      "question_text": "\"launch\" の意味はどれでしょう？",
+      "choices_text": [
+        "To start or introduce something new",
+        "To review something",
+        "To remove an item",
+        "To delay a schedule"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The company will launch a new product next month.",
+      "explanation": "開始する・発売する\nレビューする\n物を取り除く\n予定を遅らせる"
+    },
+    {
+      "word": "initiative",
+      "question_text": "\"initiative\" の意味はどれでしょう？",
+      "choices_text": [
+        "A new plan or program",
+        "A technical issue",
+        "A customer complaint",
+        "A transportation method"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The sustainability initiative includes several new projects.",
+      "explanation": "新しい取り組み・計画\n技術的問題\n顧客の苦情\n交通手段"
+    },
+    {
+      "word": "reduce",
+      "question_text": "\"reduce\" の意味はどれでしょう？",
+      "choices_text": [
+        "To make something smaller or less",
+        "To compare two things",
+        "To record data",
+        "To request additional staff"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The initiative aims to reduce paper usage by 70 percent.",
+      "explanation": "減らす\n比較する\nデータを記録する\n人員追加を依頼する"
+    },
+    {
+      "word": "efficient",
+      "question_text": "\"efficient\" の意味はどれでしょう？",
+      "choices_text": [
+        "Working in a way that saves time or resources",
+        "Enjoying outdoor activities",
+        "Being easy to see",
+        "Needing frequent repairs"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The new lighting system is more energy-efficient.",
+      "explanation": "効率的な\n屋外活動を楽しむ\n見やすい\n頻繁に修理が必要"
+    },
+    {
+      "word": "supplier",
+      "question_text": "\"supplier\" の意味はどれでしょう？",
+      "choices_text": [
+        "A company or person that provides goods or services",
+        "A customer who buys goods",
+        "An employee who manages meetings",
+        "An officer who checks documents"
+      ],
+      "correct_index": 0,
+      "example_sentence": "We will collaborate with eco-friendly suppliers.",
+      "explanation": "供給業者\n商品を購入する顧客\n会議を管理する従業員\n書類を確認する担当者"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level600_005.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 600",
+    "type": "vocabulary"
+  }
+}

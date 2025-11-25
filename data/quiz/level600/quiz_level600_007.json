@@ -1,0 +1,78 @@
+{
+  "level": 600,
+  "title": "Vocabulary Quiz from Part7 Level600_007",
+  "questions": [
+    {
+      "word": "postpone",
+      "question_text": "\"postpone\" の意味はどれでしょう？",
+      "choices_text": [
+        "To delay something to a later time",
+        "To make something faster",
+        "To approve a request",
+        "To complete a task early"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The workshop was postponed due to bad weather.",
+      "explanation": "延期する\n早める\n依頼を承認する\n早く完了する"
+    },
+    {
+      "word": "agenda",
+      "question_text": "\"agenda\" の意味はどれでしょう？",
+      "choices_text": [
+        "A list of items to be discussed",
+        "A type of office equipment",
+        "A customer’s order",
+        "A financial document"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The meeting agenda was sent to all participants.",
+      "explanation": "議題・アジェンダ\nオフィス機器\n顧客の注文\n財務書類"
+    },
+    {
+      "word": "participate",
+      "question_text": "\"participate\" の意味はどれでしょう？",
+      "choices_text": [
+        "To take part in an activity",
+        "To send a message",
+        "To repair a machine",
+        "To write a report"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Employees are encouraged to participate in the training.",
+      "explanation": "参加する\nメッセージを送る\n機械を修理する\nレポートを書く"
+    },
+    {
+      "word": "requirement",
+      "question_text": "\"requirement\" の意味はどれでしょう？",
+      "choices_text": [
+        "Something that must be done or met",
+        "A suggestion",
+        "A complaint",
+        "A personal opinion"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Wearing safety gear is a requirement for this task.",
+      "explanation": "必要条件・要件\n提案\n苦情\n個人的意見"
+    },
+    {
+      "word": "equipment",
+      "question_text": "\"equipment\" の意味はどれでしょう？",
+      "choices_text": [
+        "Tools or machines used for a specific purpose",
+        "Snacks provided at events",
+        "A type of meeting",
+        "A company policy"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Please check the equipment before using it.",
+      "explanation": "機材・装置\nイベントの軽食\n会議の種類\n会社の方針"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level600_007.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 600",
+    "type": "vocabulary"
+  }
+}

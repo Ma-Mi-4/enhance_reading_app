@@ -1,0 +1,78 @@
+{
+  "level": 600,
+  "title": "Vocabulary Quiz from Part7 Level600_002",
+  "questions": [
+    {
+      "word": "feedback",
+      "question_text": "\"feedback\" の意味はどれでしょう？",
+      "choices_text": [
+        "Opinions or comments about something",
+        "A financial statement",
+        "A technical manual",
+        "A meeting schedule"
+      ],
+      "correct_index": 0,
+      "example_sentence": "We received valuable feedback from the design team.",
+      "explanation": "意見・フィードバック\n財務報告書\n技術マニュアル\n会議スケジュール"
+    },
+    {
+      "word": "strategy",
+      "question_text": "\"strategy\" の意味はどれでしょう？",
+      "choices_text": [
+        "A plan to achieve a goal",
+        "A physical tool",
+        "A meeting place",
+        "A daily routine"
+      ],
+      "correct_index": 0,
+      "example_sentence": "We discussed a new marketing strategy.",
+      "explanation": "戦略・計画\n物理的な道具\n会議場所\n日課"
+    },
+    {
+      "word": "join",
+      "question_text": "\"join\" の意味はどれでしょう？",
+      "choices_text": [
+        "To take part in something",
+        "To send an email",
+        "To postpone an event",
+        "To check equipment"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The design team will join the meeting remotely.",
+      "explanation": "参加する\nメールを送る\nイベントを延期する\n機材を確認する"
+    },
+    {
+      "word": "essential",
+      "question_text": "\"essential\" の意味はどれでしょう？",
+      "choices_text": [
+        "Very important or necessary",
+        "Difficult to understand",
+        "Not allowed",
+        "Free of charge"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Their feedback is essential for the project.",
+      "explanation": "不可欠な・重要な\n理解しにくい\n禁止されている\n無料の"
+    },
+    {
+      "word": "confirm",
+      "question_text": "\"confirm\" の意味はどれでしょう？",
+      "choices_text": [
+        "To make sure something is true",
+        "To remove something",
+        "To draw a diagram",
+        "To schedule a break"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Please confirm if the team can attend the meeting.",
+      "explanation": "確認する\n取り除く\n図を描く\n休憩を予定する"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level600_002.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 600",
+    "type": "vocabulary"
+  }
+}
