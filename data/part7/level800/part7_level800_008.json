@@ -1,0 +1,28 @@
+{
+  "level": 800,
+  "title": "Notice: Introduction of Cross-Department Skill Exchange Program",
+  "category": "notice",
+  "content": "To all employees,\n\nWe are pleased to announce the launch of the Cross-Department Skill Exchange Program beginning in October. This initiative is designed to strengthen collaboration across the organization and give employees opportunities to develop skills outside their primary roles. It also supports our long-term strategy to build a more adaptable and well-rounded workforce.\n\nUnder the program, employees may apply for short-term assignments in other departments. These assignments typically last two to four weeks and may involve assisting with active projects, conducting research, or supporting various operational tasks. Participants will work closely with designated mentors in their host departments to ensure meaningful learning experiences and smooth integration.\n\nA key component of the program is the weekly exchange session, where participating employees share insights gained from their temporary roles. These sessions are open to all staff members and are intended to foster a culture of continuous improvement and cross-departmental awareness.\n\nAlthough participation is voluntary, managers must approve each application to ensure that department workloads remain balanced. Employees interested in joining the program should complete the application form on the HR portal by September 12. Additional information, including eligibility guidelines and examples of past assignments, can be found in the HR documentation library.\n\nWe look forward to your involvement and hope this program encourages broader collaboration and personal growth throughout the company.",
+  "word_count": 259,
+  "questions": [
+    {
+      "body": "What is one primary goal of the Skill Exchange Program?",
+      "choices_text": [
+        "To promote collaboration and knowledge sharing across departments.",
+        "To permanently reassign employees to new departments.",
+        "To replace the existing training and development systems.",
+        "To reduce the total number of ongoing company projects."
+      ],
+      "correct_index": 0,
+      "explanation": "部門間の協力と知識共有を促進することが計画の主要目的として本文に明記されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使用しません。",
+        "恒久的な異動は目的ではありません。",
+        "研修制度の完全置き換えではありません。",
+        "プロジェクト数削減が目的とは記載されていません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

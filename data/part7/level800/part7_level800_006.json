@@ -1,0 +1,28 @@
+{
+  "level": 800,
+  "title": "Internal Memo: New Project Proposal Procedure",
+  "category": "notice",
+  "content": "To all department managers,\n\nBeginning next quarter, the company will introduce a revised procedure for submitting project proposals. The new process is intended to streamline evaluations, ensure more consistent documentation, and support better allocation of resources across ongoing initiatives.\n\nUnder the updated guidelines, all proposals must be submitted through the centralized Project Management Portal rather than by email. Each submission must include a standardized summary detailing expected outcomes, estimated costs, anticipated timelines, and any cross-departmental dependencies. Proposals that lack essential information will be returned for revision before they can proceed to review.\n\nManagers will also be required to schedule a consultation with the Strategic Planning Team prior to submission. These short meetings are meant to verify that each proposal aligns with long-term company goals and does not duplicate existing projects. Managers who have several related proposals may consolidate them into a single document if appropriate.\n\nThe evaluation cycle will operate on a monthly basis, with final decisions communicated within two weeks of the review date. Approved projects will receive resource assignments immediately, while submissions needing adjustments may be deferred to the next cycle.\n\nThis procedural update forms part of a broader effort to improve transparency and coordination between departments. If you have questions about the new requirements or need assistance using the portal, please contact the Strategic Planning Team.",
+  "word_count": 260,
+  "questions": [
+    {
+      "body": "What is one purpose of the required consultation meeting?",
+      "choices_text": [
+        "To verify that the proposal aligns with long-term company goals.",
+        "To negotiate increased budgets for department managers.",
+        "To train employees on using the project submission portal.",
+        "To assign team members before the proposal is approved."
+      ],
+      "correct_index": 0,
+      "explanation": "本文に、事前相談は提案内容が会社の長期方針と整合するか確認するためと明記されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使いません。",
+        "相談は予算交渉の場ではないとのため誤り。",
+        "ポータル使用トレーニングではないため誤り。",
+        "承認前にチームを割り当てる目的ではないため誤り。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

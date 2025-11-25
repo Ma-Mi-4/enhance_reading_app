@@ -1,0 +1,28 @@
+{
+  "level": 800,
+  "title": "Guide: Using the City Museum Audio Guide",
+  "category": "guide",
+  "content": "Welcome to the City Museum Audio Guide. This guide has been created to help visitors navigate the museum’s reorganized exhibition halls and make full use of the new digital tour system. The system allows guests to explore the displays at their own pace while listening to commentary from curators, historians, and local experts.\n\nTo begin your tour, pick up an audio device at the Information Desk located near the main entrance. Devices are available in six languages, and you may switch languages at any time during your visit. After receiving your device, scan the QR code printed on your admission ticket. Doing so loads a recommended route based on the exhibits featured on the day of your visit.\n\nThe audio guide includes three main sections. The first introduces the early history of the city and features interactive maps and recorded interviews. The second highlights major architectural developments and includes digital reconstructions of important buildings. The third section, newly added this year, focuses on contemporary art installations created by regional artists. Visitors who prefer a shorter tour may skip sections as needed, though doing so may remove certain recommended stops.\n\nHeadphones are provided, but guests may use their own if preferred. The average tour takes about 75 minutes, although your actual time may vary depending on which sections you explore. If you require assistance or encounter any technical issues, please speak with the nearest gallery attendant.\n\nWe hope this audio guide enhances your experience and helps you gain a deeper appreciation of the museum’s collections.",
+  "word_count": 268,
+  "questions": [
+    {
+      "body": "What is one feature of the audio guide mentioned in the text?",
+      "choices_text": [
+        "It allows visitors to change the device’s language at any time.",
+        "It provides transportation between different museum buildings.",
+        "It includes a live presentation by the museum director.",
+        "It restricts visitors from skipping sections of the tour."
+      ],
+      "correct_index": 0,
+      "explanation": "本文に「デバイスの言語はいつでも切り替え可能」と明記されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使用しません。",
+        "館間移動のための交通手段については書かれていません。",
+        "館長によるライブプレゼンの記述はありません。",
+        "むしろセクションをスキップできると説明されています。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}
