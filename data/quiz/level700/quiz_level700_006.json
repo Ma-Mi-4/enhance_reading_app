@@ -1,0 +1,78 @@
+{
+  "level": 700,
+  "title": "Vocabulary Quiz from Part7 Level700_006",
+  "questions": [
+    {
+      "word": "loyalty",
+      "question_text": "\"loyalty\" の意味はどれでしょう？",
+      "choices_text": [
+        "A customer’s ongoing support for a brand or service",
+        "A written travel schedule",
+        "A temporary discount coupon",
+        "A hotel room upgrade"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Members earn points as a reward for their loyalty to the hotel chain.",
+      "explanation": "ロイヤルティ・継続的な支持\n旅行日程表\n割引クーポン\n部屋のアップグレード"
+    },
+    {
+      "word": "accumulate",
+      "question_text": "\"accumulate\" の意味はどれでしょう？",
+      "choices_text": [
+        "To gather or build up gradually",
+        "To lose something suddenly",
+        "To pay a fee in advance",
+        "To cancel a reservation"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Points accumulate each time a member stays at a participating hotel.",
+      "explanation": "蓄積する・積み重なる\n突然失う\n前払いする\n予約を取り消す"
+    },
+    {
+      "word": "redeem",
+      "question_text": "\"redeem\" の意味はどれでしょう？",
+      "choices_text": [
+        "To exchange points for rewards or benefits",
+        "To check in earlier than usual",
+        "To compare hotel prices",
+        "To transfer membership to another person"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Members can redeem their points for free nights or room upgrades.",
+      "explanation": "ポイントを交換する\n早めにチェックインする\n料金を比較する\n会員資格を他人に譲る"
+    },
+    {
+      "word": "tier",
+      "question_text": "\"tier\" の意味はどれでしょう？",
+      "choices_text": [
+        "A level or rank in a system",
+        "A type of hotel room",
+        "A seasonal travel option",
+        "A cancellation fee"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The new program has four membership tiers based on annual spending.",
+      "explanation": "ランク・階層\n客室タイプ\n季節ごとの旅行プラン\nキャンセル料"
+    },
+    {
+      "word": "benefit",
+      "question_text": "\"benefit\" の意味はどれでしょう？",
+      "choices_text": [
+        "A useful advantage or gain",
+        "A special type of hotel tax",
+        "A required travel document",
+        "A rule about booking times"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Higher-tier members enjoy additional benefits such as late checkout.",
+      "explanation": "利益・特典\nホテル税\n旅行書類\n予約時間の規則"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level700_006.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 700",
+    "type": "vocabulary"
+  }
+}

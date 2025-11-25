@@ -1,0 +1,78 @@
+{
+  "level": 700,
+  "title": "Vocabulary Quiz from Part7 Level700_003",
+  "questions": [
+    {
+      "word": "venue",
+      "question_text": "\"venue\" の意味はどれでしょう？",
+      "choices_text": [
+        "A place where an event takes place",
+        "A list of event participants",
+        "A type of performance",
+        "A temporary stage"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The festival venue will be the newly renovated Riverside Plaza.",
+      "explanation": "イベントが開催される場所\n参加者リスト\nパフォーマンスの種類\n仮設ステージ"
+    },
+    {
+      "word": "participation",
+      "question_text": "\"participation\" の意味はどれでしょう？",
+      "choices_text": [
+        "The act of taking part in an activity",
+        "A fee required to enter an event",
+        "A detailed program schedule",
+        "A complaint about an event"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Local residents are encouraged to increase their participation in the festival.",
+      "explanation": "参加すること\n入場料\nイベントのスケジュール\nイベントに対する苦情"
+    },
+    {
+      "word": "booth",
+      "question_text": "\"booth\" の意味はどれでしょう？",
+      "choices_text": [
+        "A small stand or stall used for selling or displaying items",
+        "A ticket counter inside a station",
+        "A large performance hall",
+        "A museum storage room"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Artists can apply for a booth to showcase their work.",
+      "explanation": "（物販や展示の）小さなブース\n駅のチケット売り場\n大ホール\n保管室"
+    },
+    {
+      "word": "highlight",
+      "question_text": "\"highlight\" の意味はどれでしょう？",
+      "choices_text": [
+        "The most important or exciting part of an event",
+        "A ticket discount for students",
+        "A rule set by the event organizers",
+        "A late-night performance"
+      ],
+      "correct_index": 0,
+      "example_sentence": "One highlight of the festival will be the live painting demonstration.",
+      "explanation": "最も重要／魅力的な見どころ\n学生割引\n主催者の規則\n深夜の公演"
+    },
+    {
+      "word": "registration",
+      "question_text": "\"registration\" の意味はどれでしょう？",
+      "choices_text": [
+        "The process of signing up or enrolling",
+        "A payment made after an event ends",
+        "A printed map of the venue",
+        "A survey about the event audience"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Booth registration must be completed by June 20.",
+      "explanation": "登録・申し込み\nイベント後の支払い\n会場の地図\n観客調査"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level700_003.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 700",
+    "type": "vocabulary"
+  }
+}

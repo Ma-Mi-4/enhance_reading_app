@@ -4,68 +4,68 @@
   "questions": [
     {
       "word": "flexibility",
-      "question_text": "“flexibility” の意味はどれでしょう？",
+      "question_text": "\"flexibility\" の意味はどれでしょう？",
       "choices_text": [
-        "the ability to change easily",
-        "the state of being firm and unchanging",
-        "the ability to work quickly",
-        "the control of strict rules"
+        "The ability to change or adapt easily",
+        "A strict company rule",
+        "A long-term financial plan",
+        "A type of office equipment"
       ],
       "correct_index": 0,
-      "example_sentence": "Our company values flexibility in work arrangements.",
-      "explanation": "簡単に変化できる能力\n硬く変わらない状態\n素早く働く能力\n厳しい規則の管理"
+      "example_sentence": "The new remote work policy offers greater flexibility for employees.",
+      "explanation": "柔軟性・状況に合わせて適応できる力\n厳格な規則\n長期の財務計画\nオフィス機器"
     },
     {
       "word": "approve",
-      "question_text": "“approve” の意味はどれでしょう？",
+      "question_text": "\"approve\" の意味はどれでしょう？",
       "choices_text": [
-        "to officially accept or agree to something",
-        "to reject an idea or plan",
-        "to suggest a new proposal",
-        "to check something carefully"
+        "To officially accept or agree to something",
+        "To ignore a request",
+        "To delay a decision",
+        "To collect data from employees"
       ],
       "correct_index": 0,
-      "example_sentence": "Each manager must approve the remote work schedule.",
-      "explanation": "正式に受け入れる、承認する\nアイデアや計画を却下する\n新しい提案を示す\n何かを注意深く確認する"
+      "example_sentence": "Managers must approve each employee's remote work schedule.",
+      "explanation": "承認する\n無視する\n決定を延期する\nデータを集める"
     },
     {
       "word": "coverage",
-      "question_text": "“coverage” の意味はどれでしょう？",
+      "question_text": "\"coverage\" の意味はどれでしょう？",
       "choices_text": [
-        "the range of responsibility someone manages",
-        "the payment from an insurance policy",
-        "the process of advertising a product",
-        "the time period of a vacation"
+        "The amount of responsibility someone manages or supervises",
+        "A type of insurance policy",
+        "A TV program",
+        "A delivery service"
       ],
       "correct_index": 0,
-      "example_sentence": "Managers need to ensure adequate in-office coverage.",
-      "explanation": "誰かが管理する責任の範囲\n保険からの支払い\n商品の広告活動\n休暇の期間"
+      "example_sentence": "Managers must ensure enough in-office coverage during the week.",
+      "explanation": "担当範囲・対応できる体制\n保険の種類\nTV番組\n配達サービス"
     },
     {
       "word": "require",
-      "question_text": "“require” の意味はどれでしょう？",
+      "question_text": "\"require\" の意味はどれでしょう？",
       "choices_text": [
-        "to need or demand something",
-        "to delay or postpone something",
-        "to decide or conclude something",
-        "to report or record something"
+        "To need or demand something",
+        "To cancel a plan",
+        "To organize a schedule",
+        "To contact a supplier"
       ],
       "correct_index": 0,
-      "example_sentence": "All remote employees are required to attend the meeting.",
-      "explanation": "何かを必要とする、要求する\n何かを遅らせる、延期する\n何かを決定する\n何かを報告、記録する"
+      "example_sentence": "Remote employees are required to attend quarterly check-in meetings.",
+      "explanation": "必要とする・要求する\n計画を中止する\nスケジュールを組む\n取引先に連絡する"
     },
     {
       "word": "representative",
-      "question_text": "“representative” の意味はどれでしょう？",
+      "question_text": "\"representative\" の意味はどれでしょう？",
       "choices_text": [
-        "a person who speaks or acts for a group",
-        "a person who is learning as a trainee",
-        "a customer who buys a product",
-        "a person who reviews company finances"
+        "A person who speaks or acts for a group or organization",
+        "A person who works at a reception desk",
+        "A person who prepares financial reports",
+        "A person who repairs office equipment"
       ],
       "correct_index": 0,
-      "example_sentence": "Please contact your HR representative for more details.",
-      "explanation": "グループの代表として話したり行動する人\n研修生として学んでいる人\n製品を購入する顧客\n会社の財務を確認する人"
+      "example_sentence": "Employees can contact their HR representative for more details.",
+      "explanation": "代表者・担当者\n受付担当\n財務報告を行う人\n機器を修理する人"
     }
   ],
   "meta": {

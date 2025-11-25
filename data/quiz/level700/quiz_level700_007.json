@@ -1,0 +1,78 @@
+{
+  "level": 700,
+  "title": "Vocabulary Quiz from Part7 Level700_007",
+  "questions": [
+    {
+      "word": "exhibit",
+      "question_text": "\"exhibit\" の意味はどれでしょう？",
+      "choices_text": [
+        "An item or display shown to the public",
+        "A discount offered at the entrance",
+        "A type of conference room",
+        "A digital membership card"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Visitors can explore over 100 new tech exhibits at the expo.",
+      "explanation": "展示物・展示品\n入場割引\n会議室タイプ\nデジタル会員証"
+    },
+    {
+      "word": "demonstration",
+      "question_text": "\"demonstration\" の意味はどれでしょう？",
+      "choices_text": [
+        "A live explanation or show of how something works",
+        "A written evaluation report",
+        "A test required for entry",
+        "A temporary shutting down of a booth"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The robotics demonstration will take place every hour.",
+      "explanation": "実演・デモ\n評価レポート\n入場テスト\nブースの閉鎖"
+    },
+    {
+      "word": "innovation",
+      "question_text": "\"innovation\" の意味はどれでしょう？",
+      "choices_text": [
+        "A new idea, device, or method",
+        "A traditional design",
+        "A marketing rule",
+        "A customer complaint"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The expo highlights innovations that can shape the future of technology.",
+      "explanation": "革新・新しいアイデア\n伝統的なデザイン\nマーケティング規則\n苦情"
+    },
+    {
+      "word": "admission",
+      "question_text": "\"admission\" の意味はどれでしょう？",
+      "choices_text": [
+        "The fee or permission to enter a place",
+        "An online subscription",
+        "A security device",
+        "A type of training session"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Early-bird admission is available until May 10.",
+      "explanation": "入場料・入場許可\nオンライン購読\nセキュリティ装置\n研修"
+    },
+    {
+      "word": "schedule",
+      "question_text": "\"schedule\" の意味はどれでしょう？",
+      "choices_text": [
+        "A plan of events with times",
+        "A map of the city",
+        "A list of registered exhibitors",
+        "A required safety manual"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Visitors can view the full event schedule on the expo website.",
+      "explanation": "スケジュール・予定表\n都市地図\n出展者リスト\n安全マニュアル"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level700_007.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 700",
+    "type": "vocabulary"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "level": 700,
+  "title": "Vocabulary Quiz from Part7 Level700_009",
+  "questions": [
+    {
+      "word": "orientation",
+      "question_text": "\"orientation\" の意味はどれでしょう？",
+      "choices_text": [
+        "A session that provides introductory information",
+        "A detailed maintenance manual",
+        "A personal performance review",
+        "A ticket for special admission"
+      ],
+      "correct_index": 0,
+      "example_sentence": "All new volunteers must attend an orientation before beginning their duties.",
+      "explanation": "オリエンテーション・導入説明会\nメンテナンスマニュアル\n評価レビュー\n特別入場券"
+    },
+    {
+      "word": "assign",
+      "question_text": "\"assign\" の意味はどれでしょう？",
+      "choices_text": [
+        "To give someone a specific job or role",
+        "To replace old equipment",
+        "To close a facility temporarily",
+        "To purchase museum merchandise"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Volunteers will be assigned to different exhibition halls based on their interests.",
+      "explanation": "割り当てる・任命する\n設備交換\n一時閉鎖\n物販購入"
+    },
+    {
+      "word": "attire",
+      "question_text": "\"attire\" の意味はどれでしょう？",
+      "choices_text": [
+        "Clothing that is suitable for a specific situation",
+        "A discount for museum staff",
+        "A section of the museum store",
+        "A security check process"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Volunteers should wear appropriate attire during museum events.",
+      "explanation": "服装・衣装\nスタッフ割引\nストアの一角\nセキュリティチェック"
+    },
+    {
+      "word": "supervise",
+      "question_text": "\"supervise\" の意味はどれでしょう？",
+      "choices_text": [
+        "To watch over and guide someone's work",
+        "To create a financial budget",
+        "To design a new exhibition",
+        "To promote a fundraising event"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Experienced staff will supervise volunteers throughout the event.",
+      "explanation": "監督する・指導する\n予算作成\n展示デザイン\n募金イベントの宣伝"
+    },
+    {
+      "word": "availability",
+      "question_text": "\"availability\" の意味はどれでしょう？",
+      "choices_text": [
+        "The state of being free or able to participate",
+        "A museum policy about holidays",
+        "The cost of a membership card",
+        "The number of years the museum has operated"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Volunteers must submit their availability for weekend shifts.",
+      "explanation": "参加できる時間帯・都合\n休館日の規定\n会員カードの費用\n運営年数"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level700_009.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 700",
+    "type": "vocabulary"
+  }
+}

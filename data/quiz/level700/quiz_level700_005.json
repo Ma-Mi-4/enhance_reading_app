@@ -1,0 +1,78 @@
+{
+  "level": 700,
+  "title": "Vocabulary Quiz from Part7 Level700_005",
+  "questions": [
+    {
+      "word": "entrepreneur",
+      "question_text": "\"entrepreneur\" の意味はどれでしょう？",
+      "choices_text": [
+        "A person who starts and manages a business",
+        "A customer who frequently buys a product",
+        "An employee in charge of company finances",
+        "A person who delivers products"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The workshop aims to support new entrepreneurs in the community.",
+      "explanation": "起業家・事業を始める人\n常連客\n財務担当\n配達員"
+    },
+    {
+      "word": "panel",
+      "question_text": "\"panel\" の意味はどれでしょう？",
+      "choices_text": [
+        "A group of experts who discuss a topic",
+        "A printed advertisement",
+        "A large stage for performances",
+        "An annual company report"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The event will feature a panel discussion with local business leaders.",
+      "explanation": "専門家の討論グループ\n印刷広告\n公演用ステージ\n年次報告書"
+    },
+    {
+      "word": "expand",
+      "question_text": "\"expand\" の意味はどれでしょう？",
+      "choices_text": [
+        "To increase in size, amount, or range",
+        "To cancel a planned activity",
+        "To replace old equipment",
+        "To reduce business hours"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Many small businesses hope to expand their customer base.",
+      "explanation": "拡大する・広げる\n予定をキャンセルする\n設備を交換する\n営業時間を短縮する"
+    },
+    {
+      "word": "eligible",
+      "question_text": "\"eligible\" の意味はどれでしょう？",
+      "choices_text": [
+        "Qualified or allowed to do something",
+        "Unwilling to participate",
+        "Difficult to reach",
+        "Not related to business"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Participants must be eligible small-business owners.",
+      "explanation": "資格がある・適格である\n参加したくない\n到達しづらい\nビジネス無関係"
+    },
+    {
+      "word": "workshop",
+      "question_text": "\"workshop\" の意味はどれでしょう？",
+      "choices_text": [
+        "A meeting where people learn or practice skills",
+        "A company’s main office building",
+        "A type of online appointment system",
+        "A document summarizing annual goals"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The workshop offers practical training for new entrepreneurs.",
+      "explanation": "スキル学習のための講習会\n本社ビル\nオンライン予約システム\n年間目標の文書"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level700_005.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 700",
+    "type": "vocabulary"
+  }
+}
