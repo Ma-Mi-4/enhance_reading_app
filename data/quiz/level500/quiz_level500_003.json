@@ -1,0 +1,78 @@
+{
+  "level": 500,
+  "title": "Vocabulary Quiz from Part7 Level500_003",
+  "questions": [
+    {
+      "word": "reservation",
+      "question_text": "\"reservation\" の意味はどれでしょう？",
+      "choices_text": [
+        "An arrangement to save a seat or time",
+        "A mistake in a report",
+        "A type of ticket",
+        "A company rule"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Please confirm your reservation before arriving.",
+      "explanation": "予約\n報告書のミス\nチケットの種類\n会社の規則"
+    },
+    {
+      "word": "guest",
+      "question_text": "\"guest\" の意味はどれでしょう？",
+      "choices_text": [
+        "A visitor",
+        "A manager",
+        "A person who delivers mail",
+        "A security guard"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Each guest will receive a program guide at the entrance.",
+      "explanation": "訪問者・ゲスト\nマネージャー\n郵便を配達する人\n警備員"
+    },
+    {
+      "word": "event",
+      "question_text": "\"event\" の意味はどれでしょう？",
+      "choices_text": [
+        "An organized activity",
+        "A personal email",
+        "A store opening",
+        "A type of office chair"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The event will begin at 3 p.m. in the auditorium.",
+      "explanation": "イベント・行事\n個人的なメール\n店舗のオープン\nオフィスチェアの種類"
+    },
+    {
+      "word": "confirm",
+      "question_text": "\"confirm\" の意味はどれでしょう？",
+      "choices_text": [
+        "To check and make sure something is correct",
+        "To postpone something",
+        "To remove something",
+        "To buy something"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Please confirm your participation by Friday.",
+      "explanation": "確認する\n延期する\n取り除く\n購入する"
+    },
+    {
+      "word": "arrival",
+      "question_text": "\"arrival\" の意味はどれでしょう？",
+      "choices_text": [
+        "The act of coming to a place",
+        "The act of leaving a place",
+        "A loud announcement",
+        "A type of food"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Your arrival time will be recorded at the front desk.",
+      "explanation": "到着\n出発\n大きなアナウンス\n食べ物の種類"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level500_003.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 500",
+    "type": "vocabulary"
+  }
+}

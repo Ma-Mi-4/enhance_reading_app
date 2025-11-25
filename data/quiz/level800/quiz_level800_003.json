@@ -1,0 +1,78 @@
+{
+  "level": 800,
+  "title": "Vocabulary Quiz from Part7 Level800_003",
+  "questions": [
+    {
+      "word": "projection",
+      "question_text": "\"projection\" の意味はどれでしょう？",
+      "choices_text": [
+        "An estimate or prediction about future trends",
+        "A detailed customer survey",
+        "A government-issued regulation",
+        "A type of manufacturing equipment"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The report includes sales projections for the next fiscal year.",
+      "explanation": "予測・見通し\n顧客調査\n規制\n製造装置"
+    },
+    {
+      "word": "fluctuate",
+      "question_text": "\"fluctuate\" の意味はどれでしょう？",
+      "choices_text": [
+        "To change or vary irregularly",
+        "To rise steadily without change",
+        "To be permanently fixed",
+        "To decrease due to legal issues"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Market demand is expected to fluctuate during the first half of the year.",
+      "explanation": "変動する\n安定上昇する\n固定される\n法的問題で減少する"
+    },
+    {
+      "word": "sector",
+      "question_text": "\"sector\" の意味はどれでしょう？",
+      "choices_text": [
+        "A specific part of the economy or industry",
+        "A location within a warehouse",
+        "A new employee orientation",
+        "A type of promotional event"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The technology sector is projected to grow faster than other industries.",
+      "explanation": "部門・産業分野\n倉庫のエリア\n新人研修\n販促イベント"
+    },
+    {
+      "word": "stability",
+      "question_text": "\"stability\" の意味はどれでしょう？",
+      "choices_text": [
+        "The state of being steady and not changing suddenly",
+        "A period of rapid expansion",
+        "A promotional discount strategy",
+        "A decline caused by supply shortages"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Analysts note signs of stability in consumer spending patterns.",
+      "explanation": "安定\n急成長\n割引戦略\n供給不足による減少"
+    },
+    {
+      "word": "anticipate",
+      "question_text": "\"anticipate\" の意味はどれでしょう？",
+      "choices_text": [
+        "To expect or look forward to something",
+        "To delay decisions intentionally",
+        "To reduce the quality of a product",
+        "To replace older machinery"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Economists anticipate moderate growth in the second quarter.",
+      "explanation": "予測する・期待する\n意図的に遅らせる\n品質を下げる\n機械を交換する"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level800_003.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 800",
+    "type": "vocabulary"
+  }
+}

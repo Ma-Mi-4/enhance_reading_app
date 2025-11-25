@@ -3,69 +3,69 @@
   "title": "Vocabulary Quiz from Part7 Level800_001",
   "questions": [
     {
-      "word": "initiative",
-      "question_text": "“initiative” の意味はどれでしょう？",
-      "choices_text": [
-        "a new plan or program",
-        "a financial report",
-        "a team-building activity",
-        "a legal document"
-      ],
-      "correct_index": 0,
-      "example_sentence": "The company launched a new Sustainability Initiative.",
-      "explanation": "新しい計画やプログラム\n財務報告\nチームビルディング活動\n法的文書"
-    },
-    {
       "word": "collaboration",
-      "question_text": "“collaboration” の意味はどれでしょう？",
+      "question_text": "\"collaboration\" の意味はどれでしょう？",
       "choices_text": [
-        "working together with others",
-        "competing against others",
-        "supervising employees",
-        "reviewing reports"
+        "Working together with others toward a shared goal",
+        "Managing budget details independently",
+        "Reporting performance issues to a supervisor",
+        "Completing tasks without any assistance"
       ],
       "correct_index": 0,
-      "example_sentence": "The initiative encourages collaboration with eco-friendly suppliers.",
-      "explanation": "他者と協力して働くこと\n他者と競争すること\n従業員を監督すること\n報告書を確認すること"
+      "example_sentence": "The study noted that fully remote employees sometimes experience reduced collaboration efficiency.",
+      "explanation": "協力・共同作業\n予算管理\n問題報告\n単独作業"
     },
     {
-      "word": "eco-friendly",
-      "question_text": "“eco-friendly” の意味はどれでしょう？",
+      "word": "consistency",
+      "question_text": "\"consistency\" の意味はどれでしょう？",
       "choices_text": [
-        "having a positive effect on the environment",
-        "related to corporate finances",
-        "focused on employee productivity",
-        "supporting marketing campaigns"
+        "The quality of behaving or performing in a similar way over time",
+        "The ability to switch tasks quickly",
+        "A temporary drop in productivity",
+        "A sudden change in organizational structure"
       ],
       "correct_index": 0,
-      "example_sentence": "We collaborate with eco-friendly suppliers.",
-      "explanation": "環境に良い影響を与える\n企業の財務に関する\n従業員の生産性に焦点を当てた\nマーケティング活動を支援する"
+      "example_sentence": "Employees with consistent work schedules tend to maintain higher productivity.",
+      "explanation": "一貫性\n素早い作業切り替え\n一時的な低下\n組織変更"
     },
     {
-      "word": "implement",
-      "question_text": "“implement” の意味はどれでしょう？",
+      "word": "strategy",
+      "question_text": "\"strategy\" の意味はどれでしょう？",
       "choices_text": [
-        "to put a plan or system into action",
-        "to cancel a project",
-        "to discuss ideas",
-        "to report results"
+        "A plan designed to achieve long-term goals",
+        "A casual suggestion with no clear purpose",
+        "A mandatory company rule",
+        "A tool used to monitor employee attendance"
       ],
       "correct_index": 0,
-      "example_sentence": "We will implement several projects to reduce energy consumption.",
-      "explanation": "計画やシステムを実行に移す\nプロジェクトを中止する\nアイデアを議論する\n結果を報告する"
+      "example_sentence": "Companies are encouraged to review their communication strategies before expanding remote work.",
+      "explanation": "戦略・方針\n曖昧な提案\n必須ルール\n勤怠ツール"
     },
     {
-      "word": "workshop",
-      "question_text": "“workshop” の意味はどれでしょう？",
+      "word": "alignment",
+      "question_text": "\"alignment\" の意味はどれでしょう？",
       "choices_text": [
-        "a meeting for discussion or training",
-        "a regular team meeting",
-        "a social gathering",
-        "an online newsletter"
+        "The state of being in agreement or proper coordination",
+        "A conflict over differing goals",
+        "A sudden shift in work assignments",
+        "A period of low communication"
       ],
       "correct_index": 0,
-      "example_sentence": "The Sustainability Workshop will include guest speakers.",
-      "explanation": "議論や研修のための会議\n定例チーム会議\n社交の集まり\nオンラインニュースレター"
+      "example_sentence": "Structured communication windows improved alignment among distributed teams.",
+      "explanation": "調整・一致\n対立\n割り当て変更\n低コミュニケーション期間"
+    },
+    {
+      "word": "implementation",
+      "question_text": "\"implementation\" の意味はどれでしょう？",
+      "choices_text": [
+        "The act of putting a plan or system into action",
+        "The cancellation of a project",
+        "The evaluation of employee performance",
+        "The distribution of office equipment"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The implementation of standardized reporting formats increased team coordination.",
+      "explanation": "実施・導入\n計画中止\n業績評価\n備品配布"
     }
   ],
   "meta": {

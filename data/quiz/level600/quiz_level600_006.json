@@ -1,0 +1,78 @@
+{
+  "level": 600,
+  "title": "Vocabulary Quiz from Part7 Level600_006",
+  "questions": [
+    {
+      "word": "survey",
+      "question_text": "\"survey\" の意味はどれでしょう？",
+      "choices_text": [
+        "A method of collecting opinions",
+        "A type of payment system",
+        "A large office building",
+        "A travel schedule"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The company conducted a survey to gather employee feedback.",
+      "explanation": "調査・アンケート\n支払いシステムの一種\n大規模オフィスビル\n旅行日程"
+    },
+    {
+      "word": "well-being",
+      "question_text": "\"well-being\" の意味はどれでしょう？",
+      "choices_text": [
+        "A state of being healthy and comfortable",
+        "A company's financial status",
+        "The result of a test",
+        "A special event"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The wellness program aims to improve employees’ well-being.",
+      "explanation": "幸福・健康状態\n会社の財務状態\nテスト結果\n特別なイベント"
+    },
+    {
+      "word": "introduce",
+      "question_text": "\"introduce\" の意味はどれでしょう？",
+      "choices_text": [
+        "To bring something new into use",
+        "To remove something old",
+        "To correct a document",
+        "To cancel a policy"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The company will introduce new wellness classes.",
+      "explanation": "導入する\n古いものを取り除く\n文書を修正する\n方針を廃止する"
+    },
+    {
+      "word": "optional",
+      "question_text": "\"optional\" の意味はどれでしょう？",
+      "choices_text": [
+        "Not required; up to personal choice",
+        "Very urgent",
+        "Extremely expensive",
+        "Difficult to understand"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Participation in the seminar is optional.",
+      "explanation": "任意の・必須ではない\n非常に急ぎの\nとても高価な\n理解しづらい"
+    },
+    {
+      "word": "department",
+      "question_text": "\"department\" の意味はどれでしょう？",
+      "choices_text": [
+        "A specific section of a company or organization",
+        "A list of customer complaints",
+        "A travel document",
+        "A software update"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Please contact the Human Resources Department for questions.",
+      "explanation": "部門・部署\n顧客苦情リスト\n旅行書類\nソフトウェアのアップデート"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level600_006.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 600",
+    "type": "vocabulary"
+  }
+}

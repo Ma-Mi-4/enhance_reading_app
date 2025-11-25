@@ -1,0 +1,78 @@
+{
+  "level": 700,
+  "title": "Vocabulary Quiz from Part7 Level700_002",
+  "questions": [
+    {
+      "word": "interactive",
+      "question_text": "\"interactive\" の意味はどれでしょう？",
+      "choices_text": [
+        "Involving communication or active participation",
+        "Difficult to understand",
+        "Related to physical strength",
+        "Only used for children"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The first section includes interactive maps that visitors can explore.",
+      "explanation": "双方向の・参加型の\n理解しづらい\n体力に関する\n子供専用のもの"
+    },
+    {
+      "word": "installation",
+      "question_text": "\"installation\" の意味はどれでしょう？",
+      "choices_text": [
+        "A work of art created for a specific space",
+        "A safety announcement",
+        "A small souvenir shop",
+        "A maintenance tool"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The new section contains contemporary art installations.",
+      "explanation": "空間に設置された作品（インスタレーション）\n安全アナウンス\n土産物店\n整備用の道具"
+    },
+    {
+      "word": "attendant",
+      "question_text": "\"attendant\" の意味はどれでしょう？",
+      "choices_text": [
+        "A staff member who assists visitors",
+        "A person who collects museum tickets",
+        "A security guard",
+        "A member of the cleaning team"
+      ],
+      "correct_index": 0,
+      "example_sentence": "If you need help, the nearest gallery attendant will assist you.",
+      "explanation": "案内係・付き添いのスタッフ\nチケット係\n警備員\n清掃員"
+    },
+    {
+      "word": "device",
+      "question_text": "\"device\" の意味はどれでしょう？",
+      "choices_text": [
+        "A piece of electronic equipment",
+        "A rule made by the museum",
+        "A written guidebook",
+        "A type of museum ticket"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Visitors borrow an audio device at the entrance.",
+      "explanation": "装置・電子機器\n博物館の規則\n冊子ガイド\nチケットの種類"
+    },
+    {
+      "word": "recommended",
+      "question_text": "\"recommended\" の意味はどれでしょう？",
+      "choices_text": [
+        "Suggested as suitable or beneficial",
+        "Required by law",
+        "Restricted to members only",
+        "Available only during certain months"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The device loads a recommended route based on the exhibits.",
+      "explanation": "推奨される・勧められた\n法律で義務付けられた\n会員限定\n期間限定"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level700_002.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 700",
+    "type": "vocabulary"
+  }
+}

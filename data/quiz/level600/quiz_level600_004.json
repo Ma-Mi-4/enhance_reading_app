@@ -1,0 +1,78 @@
+{
+  "level": 600,
+  "title": "Vocabulary Quiz from Part7 Level600_004",
+  "questions": [
+    {
+      "word": "appreciate",
+      "question_text": "\"appreciate\" の意味はどれでしょう？",
+      "choices_text": [
+        "To be thankful for something",
+        "To sell something",
+        "To delay something",
+        "To remove something"
+      ],
+      "correct_index": 0,
+      "example_sentence": "We appreciate your cooperation during the survey.",
+      "explanation": "感謝する\n販売する\n遅らせる\n取り除く"
+    },
+    {
+      "word": "participation",
+      "question_text": "\"participation\" の意味はどれでしょう？",
+      "choices_text": [
+        "The act of taking part in something",
+        "The act of creating a rule",
+        "A financial payment",
+        "A travel schedule"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Your participation in the seminar is encouraged.",
+      "explanation": "参加\n規則を作ること\n支払い\n旅行スケジュール"
+    },
+    {
+      "word": "expand",
+      "question_text": "\"expand\" の意味はどれでしょう？",
+      "choices_text": [
+        "To make something larger or increase its range",
+        "To finish something early",
+        "To hide information",
+        "To replace a broken item"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The company plans to expand its partnership program.",
+      "explanation": "拡大する・広げる\n早く終える\n情報を隠す\n壊れたものを交換する"
+    },
+    {
+      "word": "option",
+      "question_text": "\"option\" の意味はどれでしょう？",
+      "choices_text": [
+        "A choice among several possibilities",
+        "A final decision",
+        "A mistake in a document",
+        "A required task"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Employees now have more lunch options than before.",
+      "explanation": "選択肢\n最終決定\n文書の誤り\n必須作業"
+    },
+    {
+      "word": "discount",
+      "question_text": "\"discount\" の意味はどれでしょう？",
+      "choices_text": [
+        "A reduced price offered to customers",
+        "A meeting request",
+        "A travel document",
+        "A cleaning tool"
+      ],
+      "correct_index": 0,
+      "example_sentence": "GreenBite offers a 10 percent discount at lunchtime.",
+      "explanation": "割引\n会議の依頼\n旅行書類\n掃除用具"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level600_004.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 600",
+    "type": "vocabulary"
+  }
+}

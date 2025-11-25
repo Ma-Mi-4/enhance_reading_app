@@ -1,0 +1,78 @@
+{
+  "level": 700,
+  "title": "Vocabulary Quiz from Part7 Level700_010",
+  "questions": [
+    {
+      "word": "vendor",
+      "question_text": "\"vendor\" の意味はどれでしょう？",
+      "choices_text": [
+        "A person or company that sells goods",
+        "A security officer at an event",
+        "A warehouse manager",
+        "A food inspector"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Vendors must arrive at least one hour before the market opens.",
+      "explanation": "販売者・出店者\n警備員\n倉庫管理者\n食品検査官"
+    },
+    {
+      "word": "guideline",
+      "question_text": "\"guideline\" の意味はどれでしょう？",
+      "choices_text": [
+        "A rule or instruction for how something should be done",
+        "A financial penalty",
+        "A type of market booth",
+        "An emergency contact list"
+      ],
+      "correct_index": 0,
+      "example_sentence": "All vendors are required to follow the market’s updated guidelines.",
+      "explanation": "指針・ガイドライン\n罰金\nブースの種類\n緊急連絡リスト"
+    },
+    {
+      "word": "inspection",
+      "question_text": "\"inspection\" の意味はどれでしょう？",
+      "choices_text": [
+        "A careful check to ensure rules are being followed",
+        "A delivery of fresh produce",
+        "A public announcement",
+        "A seasonal price change"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Health inspectors will conduct a routine inspection on Saturday.",
+      "explanation": "検査・点検\n商品配送\nアナウンス\n価格変動"
+    },
+    {
+      "word": "prohibited",
+      "question_text": "\"prohibited\" の意味はどれでしょう？",
+      "choices_text": [
+        "Not allowed by rules",
+        "Available for free",
+        "Equal for all vendors",
+        "Recommended but optional"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The sale of unlicensed products is strictly prohibited.",
+      "explanation": "禁止されている\n無料\n全出店者共通\n推奨だが任意"
+    },
+    {
+      "word": "maintain",
+      "question_text": "\"maintain\" の意味はどれでしょう？",
+      "choices_text": [
+        "To keep something in a certain condition",
+        "To start a new market event",
+        "To hire additional employees",
+        "To lower product prices"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Each vendor must maintain a clean and organized booth.",
+      "explanation": "維持する\n新イベントを開始する\n追加スタッフを雇う\n価格を下げる"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level700_010.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 700",
+    "type": "vocabulary"
+  }
+}

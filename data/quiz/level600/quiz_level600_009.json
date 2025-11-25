@@ -1,0 +1,78 @@
+{
+  "level": 600,
+  "title": "Vocabulary Quiz from Part7 Level600_009",
+  "questions": [
+    {
+      "word": "policy",
+      "question_text": "\"policy\" の意味はどれでしょう？",
+      "choices_text": [
+        "A set of rules or guidelines",
+        "A type of meal",
+        "A cleaning tool",
+        "A travel ticket"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The company updated its remote work policy.",
+      "explanation": "方針・ルール\n食事の種類\n掃除道具\n旅行チケット"
+    },
+    {
+      "word": "approval",
+      "question_text": "\"approval\" の意味はどれでしょう？",
+      "choices_text": [
+        "Official permission or agreement",
+        "A customer inquiry",
+        "A technical error",
+        "A type of product"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Employees need manager approval to work remotely.",
+      "explanation": "承認・許可\n顧客からの問い合わせ\n技術的なエラー\n製品の種類"
+    },
+    {
+      "word": "submit",
+      "question_text": "\"submit\" の意味はどれでしょう？",
+      "choices_text": [
+        "To send or hand in a document",
+        "To buy equipment",
+        "To design a logo",
+        "To organize an event"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Please submit the request form by Friday.",
+      "explanation": "提出する\n機材を購入する\nロゴをデザインする\nイベントを企画する"
+    },
+    {
+      "word": "coverage",
+      "question_text": "\"coverage\" の意味はどれでしょう？",
+      "choices_text": [
+        "The amount of responsibility or area handled",
+        "A large discount",
+        "A holiday schedule",
+        "A personal request"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Managers must ensure adequate in-office coverage.",
+      "explanation": "担当範囲・カバー範囲\n大幅な割引\n休日スケジュール\n個人的依頼"
+    },
+    {
+      "word": "performance",
+      "question_text": "\"performance\" の意味はどれでしょう？",
+      "choices_text": [
+        "How well someone works or completes tasks",
+        "A type of outdoor event",
+        "A machine manual",
+        "A lunch menu"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The quarterly meeting will review employee performance.",
+      "explanation": "業績・パフォーマンス\n屋外イベント\n機械マニュアル\nランチメニュー"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level600_009.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 600",
+    "type": "vocabulary"
+  }
+}

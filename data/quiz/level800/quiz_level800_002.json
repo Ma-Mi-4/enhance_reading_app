@@ -1,0 +1,78 @@
+{
+  "level": 800,
+  "title": "Vocabulary Quiz from Part7 Level800_002",
+  "questions": [
+    {
+      "word": "sustainability",
+      "question_text": "\"sustainability\" の意味はどれでしょう？",
+      "choices_text": [
+        "The practice of minimizing environmental impact for long-term balance",
+        "A short-term marketing campaign",
+        "A government tax policy",
+        "The process of hiring new staff"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The new initiative focuses on sustainability across all company operations.",
+      "explanation": "持続可能性・環境配慮\n短期マーケティング\n税政策\n採用活動"
+    },
+    {
+      "word": "initiative",
+      "question_text": "\"initiative\" の意味はどれでしょう？",
+      "choices_text": [
+        "A new plan or program designed to improve something",
+        "A mandatory legal requirement",
+        "A routine maintenance task",
+        "A financial penalty"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Several new initiatives aim to reduce energy use by 30 percent.",
+      "explanation": "新たな計画・取り組み\n法律上の義務\n日常的なメンテナンス\n罰金"
+    },
+    {
+      "word": "emission",
+      "question_text": "\"emission\" の意味はどれでしょう？",
+      "choices_text": [
+        "The release of gas or substances into the environment",
+        "A company’s quarterly revenue",
+        "An employee retirement program",
+        "A digital marketing tool"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The report shows a significant decrease in carbon emissions this year.",
+      "explanation": "排出・放出\n売上\n退職制度\nマーケティングツール"
+    },
+    {
+      "word": "monitor",
+      "question_text": "\"monitor\" の意味はどれでしょう？",
+      "choices_text": [
+        "To observe or track something carefully over time",
+        "To repair damaged equipment",
+        "To promote a new service",
+        "To handle customer complaints"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Departments are required to monitor their monthly energy consumption.",
+      "explanation": "監視・記録する\n修理\n宣伝活動\n苦情対応"
+    },
+    {
+      "word": "compliance",
+      "question_text": "\"compliance\" の意味はどれでしょう？",
+      "choices_text": [
+        "The act of following rules or regulations",
+        "A discussion between managers",
+        "A request for financial support",
+        "The beginning of a new construction project"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The company improved compliance with environmental regulations through new training.",
+      "explanation": "規則遵守・コンプライアンス\n管理職の会議\n資金援助の依頼\n建設開始"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level800_002.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 800",
+    "type": "vocabulary"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "level": 700,
+  "title": "Vocabulary Quiz from Part7 Level700_004",
+  "questions": [
+    {
+      "word": "route",
+      "question_text": "\"route\" の意味はどれでしょう？",
+      "choices_text": [
+        "A path or course taken to get from one place to another",
+        "A type of vehicle",
+        "A weather forecast",
+        "A payment system"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The app suggests the safest route based on current traffic conditions.",
+      "explanation": "道順・ルート\n乗り物の種類\n天気予報\n支払いシステム"
+    },
+    {
+      "word": "alert",
+      "question_text": "\"alert\" の意味はどれでしょう？",
+      "choices_text": [
+        "A warning or notification about something",
+        "A location where bicycles are stored",
+        "A tool for repairing bikes",
+        "A map used only by tourists"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Users receive an alert if a road becomes temporarily closed.",
+      "explanation": "警告・通知\n自転車置き場\n修理道具\n観光客向け地図"
+    },
+    {
+      "word": "tracking",
+      "question_text": "\"tracking\" の意味はどれでしょう？",
+      "choices_text": [
+        "The act of recording or monitoring movement",
+        "The process of cleaning a bicycle",
+        "A type of fitness competition",
+        "A parking system for electric bikes"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The app includes tracking features that show your distance and speed.",
+      "explanation": "追跡・記録\n自転車清掃\n競技イベント\n電動自転車の駐車システム"
+    },
+    {
+      "word": "temporary",
+      "question_text": "\"temporary\" の意味はどれでしょう？",
+      "choices_text": [
+        "Lasting for a short period of time",
+        "Related to temperature",
+        "Extremely dangerous",
+        "Not allowed by law"
+      ],
+      "correct_index": 0,
+      "example_sentence": "A temporary detour is in place near Central Park.",
+      "explanation": "一時的な\n気温の\n非常に危険な\n法律で禁止された"
+    },
+    {
+      "word": "accessible",
+      "question_text": "\"accessible\" の意味はどれでしょう？",
+      "choices_text": [
+        "Easy to reach or use",
+        "Very expensive",
+        "Only available to experts",
+        "Related to transportation fees"
+      ],
+      "correct_index": 0,
+      "example_sentence": "All bike stations are accessible via the city’s cycling app map.",
+      "explanation": "アクセスしやすい\n高価な\n専門家専用\n料金に関係する"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level700_004.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 700",
+    "type": "vocabulary"
+  }
+}

@@ -4,68 +4,68 @@
   "questions": [
     {
       "word": "reschedule",
-      "question_text": "“reschedule” の意味はどれでしょう？",
+      "question_text": "\"reschedule\" の意味はどれでしょう？",
       "choices_text": [
         "To plan something for a different time",
-        "To cancel something completely",
-        "To confirm a schedule",
-        "To make a new meeting place"
+        "To cancel something permanently",
+        "To begin something earlier",
+        "To approve a decision"
       ],
       "correct_index": 0,
-      "example_sentence": "We had to reschedule the meeting because of the client presentation.",
-      "explanation": "別の時間に予定を変更する\n完全にキャンセルする\nスケジュールを確認する\n新しい会議場所を作る"
+      "example_sentence": "We had to reschedule the meeting due to a presentation.",
+      "explanation": "予定を変更する\n永久に中止する\n早めに開始する\n決定を承認する"
     },
     {
       "word": "presentation",
-      "question_text": "“presentation” の意味はどれでしょう？",
+      "question_text": "\"presentation\" の意味はどれでしょう？",
       "choices_text": [
-        "A spoken or visual display of information",
-        "A written report sent by email",
-        "A short phone conversation",
-        "A type of meeting room"
+        "A spoken or visual explanation given to others",
+        "A short private phone call",
+        "A financial document",
+        "A team-building event"
       ],
       "correct_index": 0,
-      "example_sentence": "The team prepared a presentation for the client.",
-      "explanation": "口頭または視覚的な情報の提示\nメールで送る書面報告\n短い電話での会話\n会議室の種類"
+      "example_sentence": "The presentation will take place on Thursday.",
+      "explanation": "プレゼンテーション・説明\n短い電話\n財務書類\nチームビルディングイベント"
     },
     {
-      "word": "conference room",
-      "question_text": "“conference room” の意味はどれでしょう？",
+      "word": "conference",
+      "question_text": "\"conference\" の意味はどれでしょう？",
       "choices_text": [
-        "A room used for meetings",
-        "A place to store documents",
-        "A restaurant inside the office",
-        "A space for product design"
+        "A formal meeting for discussion",
+        "A休暇",
+        "A repair request",
+        "A short announcement"
       ],
       "correct_index": 0,
-      "example_sentence": "We will meet in the main conference room at 2 p.m.",
-      "explanation": "会議用の部屋\n書類を保管する場所\nオフィス内のレストラン\n製品設計のスペース"
+      "example_sentence": "The conference will be held in the main room.",
+      "explanation": "会議・協議会\n休暇\n修理依頼\n短いお知らせ"
     },
     {
       "word": "confirm",
-      "question_text": "“confirm” の意味はどれでしょう？",
+      "question_text": "\"confirm\" の意味はどれでしょう？",
       "choices_text": [
-        "To make sure something is true or correct",
+        "To make sure something is correct",
         "To delay an event",
-        "To ask for permission",
-        "To introduce a person"
+        "To reject a suggestion",
+        "To introduce a new member"
       ],
       "correct_index": 0,
       "example_sentence": "Please confirm whether the design team will attend.",
-      "explanation": "何かが正しいか確認する\nイベントを遅らせる\n許可を求める\n人を紹介する"
+      "explanation": "確認する\nイベントを遅らせる\n提案を却下する\n新メンバーを紹介する"
     },
     {
-      "word": "feedback",
-      "question_text": "“feedback” の意味はどれでしょう？",
+      "word": "remote",
+      "question_text": "\"remote\" の意味はどれでしょう？",
       "choices_text": [
-        "Comments or opinions about something",
-        "A financial report",
-        "An official document",
-        "An online meeting system"
+        "Done from a distance or away from the office",
+        "Done in person",
+        "Done as a group activity",
+        "Done without permission"
       ],
       "correct_index": 0,
-      "example_sentence": "We need the design team’s feedback on the new layout.",
-      "explanation": "何かに関する意見や感想\n 財務報告\n公式な書類\nオンライン会議システム"
+      "example_sentence": "Some team members will join the meeting remotely.",
+      "explanation": "遠隔の・リモートの\n対面で\nグループ活動として\n許可なく"
     }
   ],
   "meta": {

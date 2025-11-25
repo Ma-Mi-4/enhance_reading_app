@@ -1,0 +1,78 @@
+{
+  "level": 700,
+  "title": "Vocabulary Quiz from Part7 Level700_008",
+  "questions": [
+    {
+      "word": "mandatory",
+      "question_text": "\"mandatory\" の意味はどれでしょう？",
+      "choices_text": [
+        "Required by rules or laws",
+        "Optional and free to choose",
+        "Only for new employees",
+        "Available only once a year"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The company announced that the safety training is mandatory for all staff.",
+      "explanation": "義務的な\n任意の\n新入社員限定\n年1回のみ利用可能"
+    },
+    {
+      "word": "registration",
+      "question_text": "\"registration\" の意味はどれでしょう？",
+      "choices_text": [
+        "The process of signing up for something",
+        "A type of company policy",
+        "A written complaint",
+        "A meal provided during the event"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Registration for the training must be completed by June 5.",
+      "explanation": "登録・申し込み\n会社規定\n苦情\n食事提供"
+    },
+    {
+      "word": "capacity",
+      "question_text": "\"capacity\" の意味はどれでしょう？",
+      "choices_text": [
+        "The maximum number of people something can hold",
+        "A training instructor",
+        "A type of equipment",
+        "A personal evaluation"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The training room has a seating capacity of 40 people.",
+      "explanation": "収容人数・容量\n講師\n備品\n評価"
+    },
+    {
+      "word": "reschedule",
+      "question_text": "\"reschedule\" の意味はどれでしょう？",
+      "choices_text": [
+        "To change the time of an appointment or event",
+        "To cancel something permanently",
+        "To request a refund",
+        "To assign another trainer"
+      ],
+      "correct_index": 0,
+      "example_sentence": "If you cannot attend, please reschedule through the HR portal.",
+      "explanation": "時間を変更する\n永久にキャンセルする\n返金を申請する\n別の講師を割り当てる"
+    },
+    {
+      "word": "confirmation",
+      "question_text": "\"confirmation\" の意味はどれでしょう？",
+      "choices_text": [
+        "A message that verifies an appointment or action",
+        "A rejection notice",
+        "A financial report",
+        "A training summary booklet"
+      ],
+      "correct_index": 0,
+      "example_sentence": "You will receive a confirmation email once your registration is complete.",
+      "explanation": "確認通知・確定メール\n拒否通知\n財務報告書\n研修冊子"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level700_008.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 700",
+    "type": "vocabulary"
+  }
+}

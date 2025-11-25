@@ -1,0 +1,78 @@
+{
+  "level": 800,
+  "title": "Vocabulary Quiz from Part7 Level800_005",
+  "questions": [
+    {
+      "word": "expansion",
+      "question_text": "\"expansion\" の意味はどれでしょう？",
+      "choices_text": [
+        "A process of increasing in size, number, or scope",
+        "The cancellation of a product line",
+        "A temporary decrease in demand",
+        "A company’s internal survey"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The company announced its expansion into three new international markets.",
+      "explanation": "拡大・進出\n製品ラインの中止\n需要の一時減少\n社内調査"
+    },
+    {
+      "word": "emerging",
+      "question_text": "\"emerging\" の意味はどれでしょう？",
+      "choices_text": [
+        "Growing and becoming more visible or important",
+        "No longer used in the market",
+        "Extremely difficult to access",
+        "Already dominant in the global economy"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The briefing highlighted opportunities in emerging Asian markets.",
+      "explanation": "新興の・発展しつつある\n市場から消えた\nアクセス困難\n世界で既に支配的"
+    },
+    {
+      "word": "allocate",
+      "question_text": "\"allocate\" の意味はどれでしょう？",
+      "choices_text": [
+        "To distribute resources for a specific purpose",
+        "To delay an important task",
+        "To reduce product quality",
+        "To interview potential clients"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Additional funds will be allocated to support market research abroad.",
+      "explanation": "割り当てる・分配する\n遅延させる\n品質を下げる\n顧客面接"
+    },
+    {
+      "word": "barrier",
+      "question_text": "\"barrier\" の意味はどれでしょう？",
+      "choices_text": [
+        "A difficulty or obstacle that prevents progress",
+        "A new business partner",
+        "A storage facility",
+        "An employee training session"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Language differences remain a major barrier to entering new regions.",
+      "explanation": "障壁・妨げ\nビジネスパートナー\n倉庫\n研修"
+    },
+    {
+      "word": "collaborate",
+      "question_text": "\"collaborate\" の意味はどれでしょう？",
+      "choices_text": [
+        "To work together with others on a shared project",
+        "To compete aggressively for market share",
+        "To purchase competing companies",
+        "To evaluate employee performance"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The company plans to collaborate with local distributors in new markets.",
+      "explanation": "協力する・共同で行う\n激しく競争する\n競合企業を買収する\n業績評価を行う"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level800_005.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 800",
+    "type": "vocabulary"
+  }
+}

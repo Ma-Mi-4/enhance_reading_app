@@ -1,0 +1,78 @@
+{
+  "level": 500,
+  "title": "Vocabulary Quiz from Part7 Level500_006",
+  "questions": [
+    {
+      "word": "announcement",
+      "question_text": "\"announcement\" の意味はどれでしょう？",
+      "choices_text": [
+        "A public statement of information",
+        "A private message between friends",
+        "A type of equipment",
+        "A financial report"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The announcement will be posted on the bulletin board.",
+      "explanation": "告知・お知らせ\n友人間の私的メッセージ\n機材の種類\n財務報告"
+    },
+    {
+      "word": "facility",
+      "question_text": "\"facility\" の意味はどれでしょう？",
+      "choices_text": [
+        "A building or area for a specific purpose",
+        "A personal computer",
+        "A type of meeting",
+        "A holiday"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The sports facility will be closed on Sunday.",
+      "explanation": "施設\n個人用コンピューター\n会議の種類\n休日"
+    },
+    {
+      "word": "safety",
+      "question_text": "\"safety\" の意味はどれでしょう？",
+      "choices_text": [
+        "Being protected from harm or danger",
+        "A business partner",
+        "A type of discount",
+        "A daily schedule"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Safety procedures will be reviewed every month.",
+      "explanation": "安全\nビジネスパートナー\n割引の種類\n日程表"
+    },
+    {
+      "word": "temporary",
+      "question_text": "\"temporary\" の意味はどれでしょう？",
+      "choices_text": [
+        "Lasting for a short time",
+        "Very expensive",
+        "Extremely noisy",
+        "Difficult to understand"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The temporary closure is due to maintenance.",
+      "explanation": "一時的な\nとても高価な\n非常にうるさい\n理解しにくい"
+    },
+    {
+      "word": "maintenance",
+      "question_text": "\"maintenance\" の意味はどれでしょう？",
+      "choices_text": [
+        "Work done to keep something in good condition",
+        "A shopping event",
+        "A business meeting",
+        "A small tool"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The elevator will be unavailable during maintenance.",
+      "explanation": "点検・保守作業\n買い物イベント\n商談\n小さな道具"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level500_006.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 500",
+    "type": "vocabulary"
+  }
+}

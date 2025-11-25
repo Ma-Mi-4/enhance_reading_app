@@ -1,0 +1,78 @@
+{
+  "level": 600,
+  "title": "Vocabulary Quiz from Part7 Level600_010",
+  "questions": [
+    {
+      "word": "monitor",
+      "question_text": "\"monitor\" の意味はどれでしょう？",
+      "choices_text": [
+        "To watch or check something carefully",
+        "To print a document",
+        "To delay a meeting",
+        "To send a package"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Supervisors will monitor progress throughout the project.",
+      "explanation": "監視する・注意深く確認する\n書類を印刷する\n会議を延期する\n荷物を送る"
+    },
+    {
+      "word": "reminder",
+      "question_text": "\"reminder\" の意味はどれでしょう？",
+      "choices_text": [
+        "Something that helps you remember something",
+        "A type of technical device",
+        "An outdoor activity",
+        "A list of expenses"
+      ],
+      "correct_index": 0,
+      "example_sentence": "A reminder will be sent before the event starts.",
+      "explanation": "リマインダー・思い出させるもの\n技術機器の種類\n屋外活動\n費用の一覧"
+    },
+    {
+      "word": "assist",
+      "question_text": "\"assist\" の意味はどれでしょう？",
+      "choices_text": [
+        "To help someone",
+        "To charge a fee",
+        "To record a message",
+        "To set up equipment"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Staff members will assist visitors during the seminar.",
+      "explanation": "手伝う・支援する\n料金を請求する\nメッセージを記録する\n機材を設置する"
+    },
+    {
+      "word": "instruction",
+      "question_text": "\"instruction\" の意味はどれでしょう？",
+      "choices_text": [
+        "Information on how to do something",
+        "A holiday request",
+        "A customer complaint",
+        "A food order"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Please read the instructions before using the device.",
+      "explanation": "説明書き・指示\n休暇申請\n顧客の苦情\n食べ物の注文"
+    },
+    {
+      "word": "access",
+      "question_text": "\"access\" の意味はどれでしょう？",
+      "choices_text": [
+        "The ability to enter or use something",
+        "A type of employee benefit",
+        "A travel plan",
+        "A business contract"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Only managers have access to the secure system.",
+      "explanation": "アクセス・利用権\n従業員手当の種類\n旅行計画\nビジネス契約"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level600_010.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 600",
+    "type": "vocabulary"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "level": 600,
+  "title": "Vocabulary Quiz from Part7 Level600_008",
+  "questions": [
+    {
+      "word": "venue",
+      "question_text": "\"venue\" の意味はどれでしょう？",
+      "choices_text": [
+        "A place where an event happens",
+        "A type of food service",
+        "A personal schedule",
+        "An office department"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The venue for the ceremony has been changed.",
+      "explanation": "会場・開催地\n食事サービス\n個人の予定\n会社の部署"
+    },
+    {
+      "word": "attend",
+      "question_text": "\"attend\" の意味はどれでしょう？",
+      "choices_text": [
+        "To be present at an event",
+        "To design a poster",
+        "To prepare documents",
+        "To send a package"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Please attend the event if your schedule allows.",
+      "explanation": "出席する\nポスターをデザインする\n書類を準備する\n荷物を送る"
+    },
+    {
+      "word": "announce",
+      "question_text": "\"announce\" の意味はどれでしょう？",
+      "choices_text": [
+        "To make information known to the public",
+        "To collect money",
+        "To move equipment",
+        "To cancel a contract"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The organizer will announce the final schedule tomorrow.",
+      "explanation": "発表する・告知する\nお金を集める\n機材を移動する\n契約を解除する"
+    },
+    {
+      "word": "prepare",
+      "question_text": "\"prepare\" の意味はどれでしょう？",
+      "choices_text": [
+        "To get something ready",
+        "To forget a task",
+        "To stop an activity",
+        "To buy a ticket"
+      ],
+      "correct_index": 0,
+      "example_sentence": "They are preparing materials for the workshop.",
+      "explanation": "準備する\n作業を忘れる\n活動を止める\nチケットを買う"
+    },
+    {
+      "word": "schedule",
+      "question_text": "\"schedule\" の意味はどれでしょう？",
+      "choices_text": [
+        "A plan showing when events will happen",
+        "A type of machine",
+        "A customer request",
+        "A personal hobby"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The event schedule will be shared next week.",
+      "explanation": "スケジュール・予定\n機械の種類\n顧客依頼\n趣味"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level600_008.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 600",
+    "type": "vocabulary"
+  }
+}

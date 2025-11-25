@@ -1,0 +1,78 @@
+{
+  "level": 500,
+  "title": "Vocabulary Quiz from Part7 Level500_009",
+  "questions": [
+    {
+      "word": "notice",
+      "question_text": "\"notice\" の意味はどれでしょう？",
+      "choices_text": [
+        "A written announcement or message",
+        "A small machine",
+        "A personal opinion",
+        "A type of meal"
+      ],
+      "correct_index": 0,
+      "example_sentence": "A notice about the schedule was posted on the board.",
+      "explanation": "通知・掲示文\n小型の機械\n個人的な意見\n食事の種類"
+    },
+    {
+      "word": "desk",
+      "question_text": "\"desk\" の意味はどれでしょう？",
+      "choices_text": [
+        "A table used for work",
+        "A travel document",
+        "A meeting room",
+        "A snack item"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Please clear your desk before leaving.",
+      "explanation": "机・デスク\n旅行書類\n会議室\n軽食"
+    },
+    {
+      "word": "item",
+      "question_text": "\"item\" の意味はどれでしょう？",
+      "choices_text": [
+        "A single thing or object",
+        "A type of event",
+        "A written rule",
+        "A place to store files"
+      ],
+      "correct_index": 0,
+      "example_sentence": "No personal items should be left on the floor.",
+      "explanation": "物・項目\nイベントの種類\n文書の規則\nファイル置き場"
+    },
+    {
+      "word": "contact",
+      "question_text": "\"contact\" の意味はどれでしょう？",
+      "choices_text": [
+        "To get in touch with someone",
+        "To fix a machine",
+        "To cook a meal",
+        "To move something heavy"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Please contact Ms. Lee if you need help.",
+      "explanation": "連絡する\n機械を修理する\n食事を作る\n重い物を動かす"
+    },
+    {
+      "word": "team",
+      "question_text": "\"team\" の意味はどれでしょう？",
+      "choices_text": [
+        "A group of people working together",
+        "A payment method",
+        "A meeting schedule",
+        "An office building"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The cleaning team will start at 6:30 p.m.",
+      "explanation": "チーム・団体\n支払い方法\n会議スケジュール\nオフィスビル"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level500_009.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 500",
+    "type": "vocabulary"
+  }
+}
