@@ -1,0 +1,28 @@
+{
+  "level": 500,
+  "title": "Community Center Fitness Class Announcement",
+  "category": "event",
+  "content": "Dear Community Members,\n\nWe are pleased to announce that the Riverside Community Center will begin offering a new series of fitness classes starting next month. These classes are designed for participants of all experience levels and aim to help residents stay active and improve their overall health.\n\nThe new program includes three types of classes: morning yoga, afternoon aerobics, and evening strength training. Each session lasts 45 minutes and will be led by certified instructors. Classes will take place in Room B on the first floor of the center.\n\nParticipants are encouraged to bring their own water bottles, towels, and workout mats. All necessary fitness equipment, such as weights and resistance bands, will be provided by the center. Please arrive at least ten minutes before your scheduled class to allow time for check-in.\n\nRegistration opens next Monday and can be completed through our website under the “Programs” section. Space is limited, so we recommend signing up early to secure your preferred time. If you have any questions or need assistance with the registration process, please contact us at info@riversidecc.org.\n\nWe look forward to seeing you at the classes and hope this program helps support your fitness goals.\n",
+  "word_count": 243,
+  "questions": [
+    {
+      "body": "What should participants do before joining a class?",
+      "choices_text": [
+        "Arrive at least ten minutes early for check-in",
+        "Submit a medical certificate to the instructor",
+        "Purchase their own resistance bands",
+        "Bring a filled registration form to the center"
+      ],
+      "correct_index": 0,
+      "explanation": "本文で、参加者はクラス開始の10分前に到着するよう求められているため。",
+      "wrong_explanations": [
+        "Aは正解のため誤答理由ではありません。",
+        "医療証明書についての記述は本文にないため誤り。",
+        "抵抗バンドはセンターが提供すると書かれているため誤り。",
+        "紙の登録フォームについての記述は本文にないため誤り。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

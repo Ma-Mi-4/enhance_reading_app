@@ -1,0 +1,28 @@
+{
+  "level": 500,
+  "title": "Office Parking Lot Maintenance Notice",
+  "category": "notice",
+  "content": "To all employees,\n\nWe would like to inform you that the office parking lot will undergo scheduled maintenance next weekend. The maintenance work will include repainting parking lines, repairing uneven pavement sections, and improving overall lighting in the area to enhance safety for all employees and visitors.\n\nThe parking lot will be closed from Saturday at 8:00 a.m. until Sunday at 6:00 p.m. During this time, employees are asked to use the temporary parking area located behind the East Building. Signs will be posted around the office to guide drivers to the correct location.\n\nPlease remember to move your vehicles from the main parking lot before 8:00 a.m. on Saturday. Any cars left in the lot after this time may need to be towed to avoid delaying the maintenance schedule.\n\nIf you have questions or require special accommodations, please contact the Facilities Team at facilities@workplace.com.\n\nThank you for your understanding and cooperation.\n",
+  "word_count": 215,
+  "questions": [
+    {
+      "body": "Where should employees park during the maintenance period?",
+      "choices_text": [
+        "In the temporary parking area behind the East Building",
+        "In the basement level of the main office building",
+        "On nearby public streets",
+        "In the visitor parking section"
+      ],
+      "correct_index": 0,
+      "explanation": "本文に、メンテナンス期間中は東館裏の臨時駐車場を利用するよう指示されているため。",
+      "wrong_explanations": [
+        "Aは正解のため誤答理由ではありません。",
+        "地下駐車場の使用について本文に記述はないため誤り。",
+        "公共道路への駐車は禁止であり、本文にも記載がないため誤り。",
+        "訪問者用駐車場の使用について本文に言及がないため誤り。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

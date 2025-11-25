@@ -1,0 +1,28 @@
+{
+  "level": 500,
+  "title": "New Office Visitor Policy",
+  "category": "notice",
+  "content": "To all employees,\n\nWe would like to inform you about an update to our office visitor policy, which will take effect next Monday. Due to an increase in the number of external guests visiting our company, the security team has introduced new procedures to help ensure a safe and organized environment.\n\nAll employees who expect a visitor must register the guest in advance using the Visitor Registration Page on the company portal. After completing the registration, you will receive a confirmation email that includes a temporary visitor pass. Please forward this pass to your guest before their arrival.\n\nWhen visitors arrive at the reception desk, they should present the pass either on their mobile device or as a printed copy. The receptionist will then provide them with an access badge that allows entry to the designated meeting area. Visitors are not allowed to move freely around the office without an escort from an employee.\n\nPlease note that same-day registrations are still accepted; however, processing may take additional time during busy hours. To avoid delays, we recommend submitting visitor information as early as possible.\n\nIf you have questions about the updated policy or encounter issues with the registration system, please contact the Security Office at security@office-safe.com.\n\nThank you for your cooperation.\n",
+  "word_count": 235,
+  "questions": [
+    {
+      "body": "What must employees do before their visitors arrive?",
+      "choices_text": [
+        "Register the visitor through the company portal",
+        "Prepare refreshments for the visitor",
+        "Request additional parking space",
+        "Meet the visitor at the train station"
+      ],
+      "correct_index": 0,
+      "explanation": "本文で「Visitor Registration Page」を使って事前登録が必要と明記されているため。",
+      "wrong_explanations": [
+        "Aは正解のため誤答理由ではありません。",
+        "飲み物や軽食の準備については本文に記載がないため誤り。",
+        "駐車スペースの確保については本文に書かれていないため誤り。",
+        "駅での出迎えに関する説明は本文にないため誤り。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}
