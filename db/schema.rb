@@ -26,11 +26,10 @@ ActiveRecord::Schema[7.1].define(version: 2025_11_25_061033) do
 
   create_table "notification_settings", force: :cascade do |t|
     t.bigint "user_id", null: false
-    t.boolean "enabled", default: true, null: false
-    t.time "notify_time", default: "2000-01-01 09:00:00", null: false
+    t.boolean "enabled"
+    t.time "notify_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["notify_time"], name: "index_notification_settings_on_notify_time"
     t.index ["user_id"], name: "index_notification_settings_on_user_id"
   end
 
