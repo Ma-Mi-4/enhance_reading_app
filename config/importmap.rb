@@ -6,7 +6,8 @@ pin_all_from "app/javascript/controllers", under: "controllers"
 
 pin "alpinejs", to: "https://unpkg.com/alpinejs@3.x.x/dist/module.esm.js"
 
-pin "timer", to: "timer.js"
+pin "timer",       to: "timer.js"
+pin "study_chart", to: "study_chart.js"
 
 pin "@rails/ujs", to: "vendor/@rails--ujs.js"
 
