@@ -48,8 +48,6 @@ Rails.application.routes.draw do
     end
   end
 
-  get 'questions', to: 'questions#show'
-  get 'quizzes', to: 'quizzes#show'
   get 'settings', to: 'settings#index'
   get 'terms_of_service', to: 'static_pages#terms_of_service'
   get 'main', to: 'main#index'
@@ -62,9 +60,6 @@ Rails.application.routes.draw do
   patch 'users/password',     to: 'passwords#update', as: 'user_password'
   get   'users/email/edit', to: 'emails#edit',   as: 'edit_user_email'
   patch 'users/email',      to: 'emails#update', as: 'user_email'
-  get "/auth/google/callback", to: "sessions#google"
-  post '/sessions/google', to: 'sessions#google'
-
 
   namespace :admin do
     root to: "main#index"

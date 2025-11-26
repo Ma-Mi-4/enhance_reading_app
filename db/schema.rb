@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2025_11_25_061033) do
+ActiveRecord::Schema[7.1].define(version: 2025_11_26_082644) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -34,6 +34,18 @@ ActiveRecord::Schema[7.1].define(version: 2025_11_25_061033) do
     t.index ["user_id"], name: "index_notification_settings_on_user_id"
   end
 
+  create_table "question_sets", force: :cascade do |t|
+    t.integer "level"
+    t.string "title"
+    t.string "category"
+    t.text "content"
+    t.integer "word_count"
+    t.string "source"
+    t.jsonb "meta"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "questions", force: :cascade do |t|
     t.string "title"
     t.text "body"
@@ -46,17 +58,50 @@ ActiveRecord::Schema[7.1].define(version: 2025_11_25_061033) do
     t.integer "word_count", default: 0, null: false
     t.string "source"
     t.jsonb "meta", default: {}
+    t.bigint "question_set_id", null: false
+    t.jsonb "choices_text"
+    t.integer "correct_index"
+    t.text "explanation"
+    t.jsonb "wrong_explanations"
+    t.integer "order"
+    t.index ["question_set_id"], name: "index_questions_on_question_set_id"
+  end
+
+  create_table "quiz_questions", force: :cascade do |t|
+    t.bigint "quiz_set_id", null: false
+    t.string "word"
+    t.string "question_text"
+    t.jsonb "choices_text"
+    t.integer "correct_index"
+    t.string "example_sentence"
+    t.text "explanation"
+    t.integer "order"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["quiz_set_id"], name: "index_quiz_questions_on_quiz_set_id"
+  end
+
+  create_table "quiz_sets", force: :cascade do |t|
+    t.integer "level"
+    t.string "title"
+    t.jsonb "meta"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "question_set_id"
+    t.index ["question_set_id"], name: "index_quiz_sets_on_question_set_id"
   end
 
   create_table "study_records", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.date "date"
     t.integer "accuracy"
-    t.integer "estimated_score"
+    t.integer "predicted_score"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "minutes"
     t.integer "duration"
+    t.integer "correct_total"
+    t.integer "question_total"
     t.index ["user_id"], name: "index_study_records_on_user_id"
   end
 
@@ -89,6 +134,9 @@ ActiveRecord::Schema[7.1].define(version: 2025_11_25_061033) do
 
   add_foreign_key "choices", "questions"
   add_foreign_key "notification_settings", "users"
+  add_foreign_key "questions", "question_sets"
+  add_foreign_key "quiz_questions", "quiz_sets"
+  add_foreign_key "quiz_sets", "question_sets"
   add_foreign_key "study_records", "users"
   add_foreign_key "study_times", "users"
 end
