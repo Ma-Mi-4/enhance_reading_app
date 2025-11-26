@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2025_11_26_082644) do
+ActiveRecord::Schema[7.1].define(version: 2025_11_26_101841) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -44,6 +44,8 @@ ActiveRecord::Schema[7.1].define(version: 2025_11_26_082644) do
     t.jsonb "meta"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "filename"
+    t.index ["filename"], name: "index_question_sets_on_filename", unique: true
   end
 
   create_table "questions", force: :cascade do |t|
@@ -88,6 +90,8 @@ ActiveRecord::Schema[7.1].define(version: 2025_11_26_082644) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "question_set_id"
+    t.string "filename"
+    t.index ["filename"], name: "index_quiz_sets_on_filename", unique: true
     t.index ["question_set_id"], name: "index_quiz_sets_on_question_set_id"
   end
 
