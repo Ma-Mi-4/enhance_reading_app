@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2025_11_26_061259) do
+ActiveRecord::Schema[7.1].define(version: 2025_11_26_082644) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -26,10 +26,11 @@ ActiveRecord::Schema[7.1].define(version: 2025_11_26_061259) do
 
   create_table "notification_settings", force: :cascade do |t|
     t.bigint "user_id", null: false
-    t.boolean "enabled"
-    t.time "notify_time"
+    t.boolean "enabled", default: true, null: false
+    t.time "notify_time", default: "2000-01-01 09:00:00", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["notify_time"], name: "index_notification_settings_on_notify_time"
     t.index ["user_id"], name: "index_notification_settings_on_user_id"
   end
 
@@ -94,11 +95,13 @@ ActiveRecord::Schema[7.1].define(version: 2025_11_26_061259) do
     t.bigint "user_id", null: false
     t.date "date"
     t.integer "accuracy"
-    t.integer "estimated_score"
+    t.integer "predicted_score"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "minutes"
     t.integer "duration"
+    t.integer "correct_total"
+    t.integer "question_total"
     t.index ["user_id"], name: "index_study_records_on_user_id"
   end
 

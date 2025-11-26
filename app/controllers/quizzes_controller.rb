@@ -34,7 +34,6 @@ class QuizzesController < ApplicationController
       }
     end
 
-
     seconds = params[:study_seconds].to_i
     minutes = (seconds / 60.0).round
     today = Date.current
@@ -44,9 +43,28 @@ class QuizzesController < ApplicationController
     record.minutes += minutes
 
     if params[:accuracy].present?
-      record.accuracy = params[:accuracy].to_f
-      record.estimated_score = 500 + (800 - 500) * record.accuracy
-      record.estimated_score = (record.estimated_score / 5.0).round * 5
+      # accuracy（0〜100 → 比率）
+      accuracy_ratio = params[:accuracy].to_f / 100.0
+
+      # 今回の正答数と問題数
+      today_correct = (accuracy_ratio * @questions.length).round
+      today_total   = @questions.length
+
+      # 既存の集計値
+      record.correct_total  ||= 0
+      record.question_total ||= 0
+
+      # 累積
+      record.correct_total  += today_correct
+      record.question_total += today_total
+
+      # 平均 accuracy（％）
+      record.accuracy = (record.correct_total.to_f / record.question_total * 100).round(1)
+
+      # 平均 accuracy から予想スコア
+      accuracy_ratio_all = record.accuracy / 100.0
+      record.predicted_score = 500 + (800 - 500) * accuracy_ratio_all
+      record.predicted_score = (record.predicted_score / 5.0).round * 5
     end
 
     record.save

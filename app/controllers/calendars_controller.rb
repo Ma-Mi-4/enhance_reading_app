@@ -13,12 +13,18 @@ class CalendarsController < ApplicationController
       {
         label: d.strftime("%m/%d"),
         minutes: record&.minutes || 0,
-        predicted_score: record&.estimated_score || 500
+
+        predicted_score: record&.predicted_score || 500
       }
     end
 
     total_minutes = records.sum(:minutes)
-    average_accuracy = records.any? ? records.sum { |r| r.accuracy.to_f } / records.size : 0
+
+    average_accuracy = if records.any?
+      (records.sum { |r| r.accuracy.to_f } / records.size) / 100.0
+    else
+      0
+    end
 
     predicted_score = 500 + (800 - 500) * average_accuracy
     predicted_score = (predicted_score / 5.0).round * 5
@@ -26,15 +32,16 @@ class CalendarsController < ApplicationController
     @month_summary = {
       total_duration: total_minutes,
       predicted_score: predicted_score,
-      average_accuracy: (average_accuracy * 100).round(1)
+      average_accuracy: (average_accuracy * 100).round(1) # %
     }
   end
 
   def show
     @date = Date.parse(params[:date])
     record = StudyRecord.find_by(user: current_user, date: @date)
+
     @accuracy = record&.accuracy
-    @score    = record&.estimated_score
+    @score    = record&.predicted_score
     @minutes  = record&.minutes
   end
 end

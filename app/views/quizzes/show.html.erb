@@ -65,8 +65,9 @@
       }
     });
 
-    const accuracy = correctCount / correctIndexes.length;
+    const accuracy = Math.round((correctCount / correctIndexes.length) * 100);
     document.getElementById("accuracy_field_quiz").value = accuracy;
+    console.log("Review Accuracy:", accuracy);
   }
 
   function initQuiz() {

@@ -21,12 +21,10 @@ class QuestionsController < ApplicationController
     @question_set = QuestionSet.find(params[:id])
 
     @questions = @question_set.questions.order(:order).map do |q|
-      shuffled = q.choices_text 
-    
       {
         id: q.id,
         body: q.body,
-        choices: shuffled,
+        choices: q.choices_text,
         correct_index: q.correct_index,
         explanation: q.explanation,
         wrong_explanations: q.wrong_explanations
@@ -35,21 +33,39 @@ class QuestionsController < ApplicationController
 
     seconds = params[:study_seconds].to_i
     minutes = (seconds / 60.0).round
-    today = Date.today
+    today = Date.current
 
     record = StudyRecord.find_or_initialize_by(user: current_user, date: today)
     record.minutes ||= 0
     record.minutes += minutes
 
     if params[:accuracy].present?
-      record.accuracy = params[:accuracy].to_f
-      record.estimated_score = 500 + (800 - 500) * record.accuracy
-      record.estimated_score = (record.estimated_score / 5.0).round * 5
+      # accuracy（0〜100）
+      accuracy_ratio = params[:accuracy].to_f / 100.0
+
+      # 今回の正答数と問題数
+      today_correct = (accuracy_ratio * @questions.length).round
+      today_total   = @questions.length
+
+      # 累積
+      record.correct_total  ||= 0
+      record.question_total ||= 0
+
+      record.correct_total  += today_correct
+      record.question_total += today_total
+
+      # 平均 accuracy（％）
+      record.accuracy = (record.correct_total.to_f / record.question_total * 100).round(1)
+
+      # 平均 accuracy から予想スコア
+      accuracy_ratio_all = record.accuracy / 100.0
+
+      record.predicted_score = 500 + (800 - 500) * accuracy_ratio_all
+      record.predicted_score = (record.predicted_score / 5.0).round * 5
     end
 
     record.save
   end
-
 
   def answer
     save_study_record(

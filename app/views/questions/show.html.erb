@@ -73,7 +73,7 @@
         }
       }
 
-      const accuracy = correctCount / correctIndexes.length;
+      const accuracy = Math.round((correctCount / correctIndexes.length) * 100);
       document.getElementById("accuracy_field_questions").value = accuracy;
       console.log("Accuracy:", accuracy);
     }
