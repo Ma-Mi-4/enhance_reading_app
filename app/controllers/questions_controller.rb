@@ -4,12 +4,34 @@ class QuestionsController < ApplicationController
 
   def show
     @question_set = QuestionSet.find(params[:id])
-    @questions    = @question_set.questions.order(:order)
+  
+    @questions = @question_set.questions.order(:order).map do |q|
+      shuffled = q.choices_text.shuffle
+
+      {
+        id: q.id,
+        body: q.body,
+        choices: shuffled,
+        correct_index: shuffled.index(q.choices_text[q.correct_index])
+      }
+    end
   end
 
   def explanation
     @question_set = QuestionSet.find(params[:id])
-    @questions    = @question_set.questions.order(:order)
+
+    @questions = @question_set.questions.order(:order).map do |q|
+      shuffled = q.choices_text 
+    
+      {
+        id: q.id,
+        body: q.body,
+        choices: shuffled,
+        correct_index: q.correct_index,
+        explanation: q.explanation,
+        wrong_explanations: q.wrong_explanations
+      }
+    end
 
     seconds = params[:study_seconds].to_i
     minutes = (seconds / 60.0).round

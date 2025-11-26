@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2025_11_26_043301) do
+ActiveRecord::Schema[7.1].define(version: 2025_11_26_061259) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -26,11 +26,10 @@ ActiveRecord::Schema[7.1].define(version: 2025_11_26_043301) do
 
   create_table "notification_settings", force: :cascade do |t|
     t.bigint "user_id", null: false
-    t.boolean "enabled", default: true, null: false
-    t.time "notify_time", default: "2000-01-01 09:00:00", null: false
+    t.boolean "enabled"
+    t.time "notify_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["notify_time"], name: "index_notification_settings_on_notify_time"
     t.index ["user_id"], name: "index_notification_settings_on_user_id"
   end
 
@@ -87,6 +86,8 @@ ActiveRecord::Schema[7.1].define(version: 2025_11_26_043301) do
     t.jsonb "meta"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "question_set_id"
+    t.index ["question_set_id"], name: "index_quiz_sets_on_question_set_id"
   end
 
   create_table "study_records", force: :cascade do |t|
@@ -132,6 +133,7 @@ ActiveRecord::Schema[7.1].define(version: 2025_11_26_043301) do
   add_foreign_key "notification_settings", "users"
   add_foreign_key "questions", "question_sets"
   add_foreign_key "quiz_questions", "quiz_sets"
+  add_foreign_key "quiz_sets", "question_sets"
   add_foreign_key "study_records", "users"
   add_foreign_key "study_times", "users"
 end

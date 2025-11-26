@@ -1,2 +1,0 @@
-class ReviewQuestionSet < ApplicationRecord
-end

@@ -1,29 +1,29 @@
 <% content_for :body_attributes do %> data-has-timer="true" data-turbo="false" <% end %>
 
-<h1><%= @quiz_set.title %></h1>
+<h1>復習問題</h1>
 
 <%= form_with url: explanation_quiz_path(@quiz_set),
               method: :post,
               local: true,
               html: { id: "quiz_form" },
-              data: { turbo: false },
-              onsubmit: "stopTimer(); calculateAccuracy(); return true;" do |f| %>
+              data: { turbo: false } do |f| %>
 
   <div id="timer">00:00</div>
   <%= hidden_field_tag :study_seconds, 0, id: "study_seconds" %>
   <%= hidden_field_tag :accuracy, 0, id: "accuracy_field_quiz" %>
 
-  <% @quiz_questions.each_with_index do |q, index| %>
+  <% @questions.each_with_index do |q, index| %>
     <div class="question" style="margin-bottom:20px;">
-      <p><strong><%= index + 1 %>. <%= q.question_text %></strong></p>
+      <p><strong><%= index + 1 %>. <%= q[:question_text] %></strong></p>
 
       <ul>
-        <% q.choices_text.each_with_index do |choice, i| %>
+        <% q[:choices].each_with_index do |choice, i| %>
           <li>
             <input type="radio"
                    name="q<%= index %>"
                    value="<%= i %>"
                    id="q<%= index %>_choice<%= i %>">
+
             <label for="q<%= index %>_choice<%= i %>"><%= choice %></label>
           </li>
         <% end %>
@@ -52,7 +52,7 @@
     clearInterval(timerInterval);
   }
 
-  const correctIndexes = <%= raw @quiz_questions.map(&:correct_index).to_json %>;
+  const correctIndexes = <%= raw @questions.map { |q| q[:correct_index] }.to_json %>;
 
   function calculateAccuracy() {
     let correctCount = 0;
@@ -71,6 +71,12 @@
 
   function initQuiz() {
     startTimer();
+
+    const form = document.getElementById("quiz_form");
+    form.addEventListener("submit", () => {
+      stopTimer();
+      calculateAccuracy();
+    });
   }
 
   document.addEventListener("DOMContentLoaded", initQuiz);

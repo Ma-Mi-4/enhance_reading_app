@@ -2,8 +2,6 @@
 
 <meta name="turbo-cache-control" content="no-cache">
 
-<h1><%= @questions_data["title"] %></h1>
-
 <h1><%= @question_set.title %></h1>
 
 <p><%= simple_format(@question_set.content) %></p>
@@ -11,28 +9,27 @@
 <%= form_with url: explanation_question_path(@question_set),
               method: :post,
               local: true,
-              html: { id: "question_form" }, 
+              html: { id: "question_form" },
               data: { turbo: false } do |f| %>
 
   <div id="timer" style="font-size: 24px;">00:00</div>
+
   <%= hidden_field_tag :study_seconds, 0, id: "study_seconds" %>
   <%= hidden_field_tag :accuracy, 0, id: "accuracy_field_questions" %>
 
   <% @questions.each_with_index do |q, index| %>
     <div style="margin-bottom: 20px; padding: 10px; border: 1px solid #ccc;">
-      <p><strong>Question <%= index + 1 %>:</strong> <%= q.body %></p>
+      <p><strong>Question <%= index + 1 %>:</strong> <%= q[:body] %></p>
 
       <ul>
-        <% q.choices_text.each_with_index do |choice, i| %>
+        <% q[:choices].each_with_index do |choice, i| %>
           <li>
             <input type="radio"
                    name="q<%= index %>"
                    value="<%= i %>"
                    id="q<%= index %>_choice<%= i %>">
 
-            <label for="q<%= index %>_choice<%= i %>">
-              <%= choice %>
-            </label>
+            <label for="q<%= index %>_choice<%= i %>"><%= choice %></label>
           </li>
         <% end %>
       </ul>
@@ -49,8 +46,10 @@
       timerInterval = setInterval(() => {
         totalSeconds++;
         document.getElementById("study_seconds").value = totalSeconds;
+
         const minutes = Math.floor(totalSeconds / 60);
         const seconds = totalSeconds % 60;
+
         document.getElementById("timer").textContent =
           String(minutes).padStart(2, "0") + ":" + String(seconds).padStart(2, "0");
       }, 1000);
@@ -60,11 +59,10 @@
       clearInterval(timerInterval);
     }
 
-    const correctIndexes = <%= raw @questions.map(&:correct_index).to_json %>;
+    // ★正解インデックス（シャッフル後）
+    const correctIndexes = <%= raw @questions.map { |q| q[:correct_index] }.to_json %>;
 
     function calculateAccuracy() {
-      console.log("correctIndexes:", correctIndexes);
-
       let correctCount = 0;
       const form = document.getElementById("question_form");
 
@@ -77,14 +75,12 @@
 
       const accuracy = correctCount / correctIndexes.length;
       document.getElementById("accuracy_field_questions").value = accuracy;
-
-      console.log("Correct answers:", correctCount);
-      console.log("Total questions:", correctIndexes.length);
-      console.log("Accuracy calculated:", accuracy);
+      console.log("Accuracy:", accuracy);
     }
 
     function initQuiz() {
       startTimer();
+
       const form = document.getElementById("question_form");
 
       form.addEventListener("submit", (e) => {

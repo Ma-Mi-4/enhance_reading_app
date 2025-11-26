@@ -6,26 +6,25 @@
 
 <% @questions.each_with_index do |q, index| %>
   <div style="margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; border-radius: 8px;">
-    
-    <!-- 問題文 -->
-    <p><strong>問題 <%= index + 1 %>:</strong> <%= q.body %></p>
 
-    <!-- 正解表示 -->
+    <!-- 問題文 -->
+    <p><strong>問題 <%= index + 1 %>:</strong> <%= q[:body] %></p>
+
+    <!-- 正解 -->
     <p style="color: green; font-weight: bold;">
-      正解: <%= q.choices_text[q.correct_index] %>
+      正解: <%= q[:choices][q[:correct_index]] %>
     </p>
 
     <hr>
 
-    <!-- 間違いの選択肢とその解説 -->
+    <!-- 間違いの選択肢 -->
     <h4>間違いの選択肢と解説：</h4>
-
-    <% q.choices_text.each_with_index do |choice, i| %>
-      <% next if i == q.correct_index %>
+    <% q[:choices].each_with_index do |choice, i| %>
+      <% next if i == q[:correct_index] %>
 
       <% wrong_explanation =
-           q.wrong_explanations.present? ?
-             q.wrong_explanations[i] : nil %>
+           q[:wrong_explanations].present? ?
+             q[:wrong_explanations][i] : nil %>
 
       <p>
         <strong><%= choice %></strong>：
@@ -33,18 +32,19 @@
       </p>
     <% end %>
 
-    <!-- 全体の解説 -->
-    <% if q.explanation.present? %>
-      <p><strong>解説:</strong> <%= q.explanation %></p>
+    <!-- 全体解説 -->
+    <% if q[:explanation].present? %>
+      <p><strong>解説:</strong> <%= q[:explanation] %></p>
     <% end %>
 
-    <!-- JSON 由来の例文（ある場合のみ）-->
-    <% if q.respond_to?(:example_sentence) && q.example_sentence.present? %>
-      <p><strong>例文:</strong> <%= q.example_sentence %></p>
+    <!-- 例文 -->
+    <% if q[:example_sentence].present? %>
+      <p><strong>例文:</strong> <%= q[:example_sentence] %></p>
     <% end %>
 
   </div>
 <% end %>
 
-<%= link_to "次の問題へ進む", next_question_path, class: "btn btn-primary" %>
+<%= link_to "復習問題へ", quiz_path(@question_set.quiz_set) %>
+
 

@@ -4,12 +4,36 @@ class QuizzesController < ApplicationController
 
   def show
     @quiz_set = QuizSet.find(params[:id])
-    @quiz_questions = @quiz_set.quiz_questions.order(:order)
+
+    @questions = @quiz_set.quiz_questions.order(:order).map do |q|
+      shuffled = q.choices_text.shuffle
+
+      {
+        id: q.id,
+        word: q.word,
+        question_text: q.question_text,
+        choices: shuffled,
+        correct_index: shuffled.index(q.choices_text[q.correct_index]),
+        explanation: q.explanation,
+        example_sentence: q.example_sentence
+      }
+    end
   end
 
   def explanation
     @quiz_set = QuizSet.find(params[:id])
-    @quiz_questions = @quiz_set.quiz_questions.order(:order)
+
+    @questions = @quiz_set.quiz_questions.order(:order).map do |q|
+      {
+        id: q.id,
+        question_text: q.question_text,
+        choices: q.choices_text,
+        correct_index: q.correct_index,
+        explanation_list: q.explanation.to_s.split("\n"),
+        example_sentence: q.example_sentence
+      }
+    end
+
 
     seconds = params[:study_seconds].to_i
     minutes = (seconds / 60.0).round
