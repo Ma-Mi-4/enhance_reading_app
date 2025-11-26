@@ -58,12 +58,12 @@ ActiveRecord::Schema[7.1].define(version: 2025_11_26_082644) do
     t.integer "word_count", default: 0, null: false
     t.string "source"
     t.jsonb "meta", default: {}
-    t.bigint "question_set_id", null: false
     t.jsonb "choices_text"
     t.integer "correct_index"
     t.text "explanation"
     t.jsonb "wrong_explanations"
     t.integer "order"
+    t.bigint "question_set_id"
     t.index ["question_set_id"], name: "index_questions_on_question_set_id"
   end
 
