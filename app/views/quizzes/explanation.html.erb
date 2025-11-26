@@ -1,40 +1,38 @@
-<h1>復習解説</h1>
+<h1>復習解説：<%= @quiz_set.title %></h1>
 
-<% if @quiz_data["questions"].present? %>
-  <% @quiz_data["questions"].each_with_index do |q, idx| %>
+<% if @quiz_questions.present? %>
+  <% @quiz_questions.each_with_index do |q, idx| %>
     <div style="margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; border-radius: 8px;">
-
+      
       <!-- 問題文 -->
-      <p><strong>問題 <%= idx + 1 %>:</strong> <%= q["question_text"] %></p>
-
-      <% # explanation を改行で分割して配列に変換 %>
-      <% explanations = q["explanation"].split("\n") %>
+      <p><strong>問題 <%= idx + 1 %>:</strong> <%= q.question_text %></p>
 
       <!-- 正解 -->
       <p style="color: green; font-weight: bold;">
-        正解: <%= q["choices_text"][q["correct_index"]] %> ： <%= explanations[q["correct_index"]] %>
+        正解: <%= q.choices_text[q.correct_index] %>
       </p>
 
-      <!-- 間違いの選択肢 -->
-      <h4>間違いの選択肢：</h4>
-      <% q["choices_text"].each_with_index do |choice, i| %>
-        <% next if i == q["correct_index"] %>
+      <!-- 説明（例: q.explanation が改行区切りの場合を想定） -->
+      <% explanations = q.explanation.to_s.split("\n") %>
+
+      <h4>選択肢別の解説</h4>
+      <% q.choices_text.each_with_index do |choice, i| %>
         <p>
-          <strong><%= choice %></strong> ： <%= explanations[i] %>
+          <strong><%= choice %></strong>：
+          <%= explanations[i].presence || "（解説なし）" %>
         </p>
       <% end %>
 
       <!-- 例文 -->
-      <% if q["example_sentence"].present? %>
-        <p><strong>例文:</strong> <%= q["example_sentence"] %></p>
+      <% if q.example_sentence.present? %>
+        <p><strong>例文:</strong> <%= q.example_sentence %></p>
       <% end %>
 
     </div>
   <% end %>
 <% else %>
-  <p>復習問題が見つかりません。</p>
+  <p>解説データが見つかりません。</p>
 <% end %>
 
 <p><%= link_to "学習を終了してカレンダーへ", calendars_path, class: "btn btn-primary" %></p>
 <p><%= link_to "次の問題へ", questions_path, class: "btn btn-primary" %></p>
-

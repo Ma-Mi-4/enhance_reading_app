@@ -4,9 +4,11 @@
 
 <h1><%= @questions_data["title"] %></h1>
 
-<p><%= @questions_data["text"] %></p>
+<h1><%= @question_set.title %></h1>
 
-<%= form_with url: (@review ? review_explanation_question_path(@id) : explanation_question_path(@id, level: (params[:level] || current_user.level))),
+<p><%= simple_format(@question_set.content) %></p>
+
+<%= form_with url: explanation_question_path(@question_set),
               method: :post,
               local: true,
               html: { id: "question_form" }, 
@@ -16,92 +18,86 @@
   <%= hidden_field_tag :study_seconds, 0, id: "study_seconds" %>
   <%= hidden_field_tag :accuracy, 0, id: "accuracy_field_questions" %>
 
-  <% @questions_data["questions"].each_with_index do |q, index| %>
+  <% @questions.each_with_index do |q, index| %>
     <div style="margin-bottom: 20px; padding: 10px; border: 1px solid #ccc;">
-      <p><strong>Question <%= index + 1 %>:</strong> <%= q["question_text"] %></p>
+      <p><strong>Question <%= index + 1 %>:</strong> <%= q.body %></p>
+
       <ul>
-        <% q["choices_text"].each_with_index do |choice, i| %>
+        <% q.choices_text.each_with_index do |choice, i| %>
           <li>
-            <input type="radio" name="q<%= index %>" value="<%= i %>" id="q<%= index %>_choice<%= i %>">
-            <label for="q<%= index %>_choice<%= i %>"><%= choice %></label>
+            <input type="radio"
+                   name="q<%= index %>"
+                   value="<%= i %>"
+                   id="q<%= index %>_choice<%= i %>">
+
+            <label for="q<%= index %>_choice<%= i %>">
+              <%= choice %>
+            </label>
           </li>
         <% end %>
       </ul>
     </div>
   <% end %>
 
-<script>
-console.log("Quiz script loaded");
+  <script>
+    console.log("Quiz script loaded");
 
-let timerInterval;
-let totalSeconds = 0;
+    let timerInterval;
+    let totalSeconds = 0;
 
-function startTimer() {
-  console.log("startTimer() called");
-  timerInterval = setInterval(() => {
-    totalSeconds++;
-    document.getElementById("study_seconds").value = totalSeconds;
-    const minutes = Math.floor(totalSeconds / 60);
-    const seconds = totalSeconds % 60;
-    document.getElementById("timer").textContent =
-      String(minutes).padStart(2, "0") + ":" + String(seconds).padStart(2, "0");
-
-     console.log("Study seconds:", totalSeconds);
-  }, 1000);
-}
-
-function stopTimer() {
-  console.log("stopTimer() called");
-  clearInterval(timerInterval);
-}
-
-function calculateAccuracy() {
-  const correctIndexes = <%= raw @questions_data["questions"].map { |q| q["correct_choice_index"] }.to_json %>;
-  console.log("correctIndexes:", correctIndexes);
-
-  let correctCount = 0;
-  const form = document.getElementById("question_form");
-
-  for (let i = 0; i < correctIndexes.length; i++) {
-    const selected = form.querySelector(`input[name="q${i}"]:checked`);
-    if (selected) {
-      if (parseInt(selected.value) === correctIndexes[i]) correctCount++;
-    } else {
-      console.log(`Question ${i} is not answered`);
+    function startTimer() {
+      timerInterval = setInterval(() => {
+        totalSeconds++;
+        document.getElementById("study_seconds").value = totalSeconds;
+        const minutes = Math.floor(totalSeconds / 60);
+        const seconds = totalSeconds % 60;
+        document.getElementById("timer").textContent =
+          String(minutes).padStart(2, "0") + ":" + String(seconds).padStart(2, "0");
+      }, 1000);
     }
-  }
 
-  const accuracy = correctCount / correctIndexes.length;
-  document.getElementById("accuracy_field_questions").value = accuracy;
+    function stopTimer() {
+      clearInterval(timerInterval);
+    }
 
-  console.log("Correct answers:", correctCount);
-  console.log("Total questions:", correctIndexes.length);
-  console.log("Accuracy calculated:", accuracy);
-  console.log("Study seconds at submit:", totalSeconds);
-}
+    const correctIndexes = <%= raw @questions.map(&:correct_index).to_json %>;
 
-function initQuiz() {
-  console.log("initQuiz called");
-  startTimer();
+    function calculateAccuracy() {
+      console.log("correctIndexes:", correctIndexes);
 
-  const form = document.getElementById("question_form");
-  if (form) {
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      console.log("Form submit event triggered");
-      stopTimer();
-      calculateAccuracy();
+      let correctCount = 0;
+      const form = document.getElementById("question_form");
 
-      console.log("Accuracy field value before submit:", document.getElementById("accuracy_field_questions").value);
-      form.submit();
-    });
-  }
-}
+      for (let i = 0; i < correctIndexes.length; i++) {
+        const selected = form.querySelector(`input[name="q${i}"]:checked`);
+        if (selected && parseInt(selected.value) === correctIndexes[i]) {
+          correctCount++;
+        }
+      }
 
-document.addEventListener("DOMContentLoaded", initQuiz);
-document.addEventListener("turbo:load", initQuiz);
-</script>
+      const accuracy = correctCount / correctIndexes.length;
+      document.getElementById("accuracy_field_questions").value = accuracy;
 
+      console.log("Correct answers:", correctCount);
+      console.log("Total questions:", correctIndexes.length);
+      console.log("Accuracy calculated:", accuracy);
+    }
 
-  <%= f.submit "解説を見る" %>
+    function initQuiz() {
+      startTimer();
+      const form = document.getElementById("question_form");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        stopTimer();
+        calculateAccuracy();
+        form.submit();
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", initQuiz);
+    document.addEventListener("turbo:load", initQuiz);
+  </script>
+
+  <%= f.submit "解説を見る", class: "btn btn-primary" %>
 <% end %>

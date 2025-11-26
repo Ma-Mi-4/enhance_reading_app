@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  quiz_set: one
+  word: MyString
+  question_text: MyString
+  choices_text: 
+  correct_index: 1
+  example_sentence: MyString
+  explanation: MyText
+  order: 1
+
+two:
+  quiz_set: two
+  word: MyString
+  question_text: MyString
+  choices_text: 
+  correct_index: 1
+  example_sentence: MyString
+  explanation: MyText
+  order: 1
