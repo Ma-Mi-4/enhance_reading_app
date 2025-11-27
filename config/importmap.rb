@@ -13,4 +13,4 @@ pin "@rails/ujs", to: "vendor/@rails--ujs.js"
 
 pin "chart.js", to: "https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.esm.js"
 pin "chartjs-plugin-annotation",
-    to: "https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@4.2.1/dist/chartjs-plugin-annotation.min.js"
+    to: "https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@4.2.1/dist/chartjs-plugin-annotation.esm.js"

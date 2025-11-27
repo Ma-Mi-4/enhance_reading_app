@@ -26,11 +26,10 @@ ActiveRecord::Schema[7.1].define(version: 2025_11_26_101841) do
 
   create_table "notification_settings", force: :cascade do |t|
     t.bigint "user_id", null: false
-    t.boolean "enabled", default: true, null: false
-    t.time "notify_time", default: "2000-01-01 09:00:00", null: false
+    t.boolean "enabled"
+    t.time "notify_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["notify_time"], name: "index_notification_settings_on_notify_time"
     t.index ["user_id"], name: "index_notification_settings_on_user_id"
   end
 
@@ -60,12 +59,12 @@ ActiveRecord::Schema[7.1].define(version: 2025_11_26_101841) do
     t.integer "word_count", default: 0, null: false
     t.string "source"
     t.jsonb "meta", default: {}
+    t.bigint "question_set_id", null: false
     t.jsonb "choices_text"
     t.integer "correct_index"
     t.text "explanation"
     t.jsonb "wrong_explanations"
     t.integer "order"
-    t.bigint "question_set_id"
     t.index ["question_set_id"], name: "index_questions_on_question_set_id"
   end
 

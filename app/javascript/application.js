@@ -8,11 +8,9 @@ import "timer";
 import "study_chart";
 
 import { Chart } from "chart.js";
-import "chartjs-plugin-annotation";
+import annotationPlugin from "chartjs-plugin-annotation";
 
-if (window['chartjs-plugin-annotation']) {
-  Chart.register(window['chartjs-plugin-annotation']);
-}
+Chart.register(annotationPlugin);
 
 window.Alpine = Alpine;
 Alpine.start();

@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-  skip_before_action :require_login, only: [:new, :create]
+  skip_before_action :require_login, only: [:new, :create, :callback, :google]
 
   def new; end
 
@@ -18,9 +18,14 @@ class SessionsController < ApplicationController
     redirect_to login_path, notice: "ログアウトしました"
   end
 
+  def callback
+    render :google_callback
+  end
+
   def google
     access_token = params[:access_token] || request.raw_post
     access_token = JSON.parse(access_token)['access_token'] rescue access_token
+
     user_info = SupabaseService.get_user_from_access_token(access_token)
     email = user_info[:email]
 
