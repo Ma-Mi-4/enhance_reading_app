@@ -1,8 +1,16 @@
-if (window.Chart && window['chartjs-plugin-annotation']) {
-  Chart.register(window['chartjs-plugin-annotation']);
-}
-
 document.addEventListener("turbo:load", () => {
+  // Chart.js と annotation plugin がロードされているか確認
+  if (!window.Chart) {
+    console.error("Chart.js がロードされていません");
+    return;
+  }
+  if (!window['chartjs-plugin-annotation']) {
+    console.error("chartjs-plugin-annotation がロードされていません");
+    return;
+  }
+
+  window.Chart.register(window['chartjs-plugin-annotation']);
+
   const canvas = document.getElementById("studyChart");
   if (!canvas) return;
 
@@ -13,9 +21,7 @@ document.addEventListener("turbo:load", () => {
   const durations = parsed.map(d => d.minutes);
   const predicted_scores = parsed.map(d => d.predicted_score);
 
-  if (canvas.chartInstance) {
-    canvas.chartInstance.destroy();
-  }
+  if (canvas.chartInstance) canvas.chartInstance.destroy();
 
   canvas.chartInstance = new Chart(canvas, {
     data: {
@@ -51,10 +57,10 @@ document.addEventListener("turbo:load", () => {
         legend: { position: "top" },
         annotation: {
           annotations: {
-            score500: { type: "line", yMin: 500, yMax: 500, borderColor: "gray", borderDash: [6,6], label: { enabled: true, content: "500点", position: "end" }},
-            score600: { type: "line", yMin: 600, yMax: 600, borderColor: "gray", borderDash: [6,6], label: { enabled: true, content: "600点", position: "end" }},
-            score700: { type: "line", yMin: 700, yMax: 700, borderColor: "gray", borderDash: [6,6], label: { enabled: true, content: "700点", position: "end" }},
-            score800: { type: "line", yMin: 800, yMax: 800, borderColor: "gray", borderDash: [6,6], label: { enabled: true, content: "800点", position: "end" }},
+            score500: { type: "line", yMin: 500, yMax: 500, borderColor: "gray", borderDash: [6, 6], label: { enabled: true, content: "500点", position: "end" }},
+            score600: { type: "line", yMin: 600, yMax: 600, borderColor: "gray", borderDash: [6, 6], label: { enabled: true, content: "600点", position: "end" }},
+            score700: { type: "line", yMin: 700, yMax: 700, borderColor: "gray", borderDash: [6, 6], label: { enabled: true, content: "700点", position: "end" }},
+            score800: { type: "line", yMin: 800, yMax: 800, borderColor: "gray", borderDash: [6, 6], label: { enabled: true, content: "800点", position: "end" }},
           }
         }
       },

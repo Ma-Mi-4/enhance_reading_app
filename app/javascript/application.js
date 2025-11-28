@@ -1,16 +1,21 @@
-console.log("application.js loaded");
-
 import "@hotwired/turbo-rails";
 import "controllers";
+import "alpinejs";
 
-import Alpine from "alpinejs";
-window.Alpine = Alpine;
-Alpine.start();
+// Chart.js（UMD を読み込む）
+import "chart";
+import "chartjs-plugin-annotation";
 
+// Chart.js ロード後の初期化（UMD）
+document.addEventListener("turbo:load", () => {
+  if (window.Chart && window["chartjs-plugin-annotation"]) {
+    console.log("Chart.js & Annotation plugin loaded");
+    window.Chart.register(window["chartjs-plugin-annotation"]);
+  } else {
+    console.error("Chart.js または annotation plugin がロードされていません");
+  }
+});
+
+// カスタム JS
 import "timer";
 import "study_chart";
-
-import { Chart } from "chart.js";
-import annotationPlugin from "chartjs-plugin-annotation";
-
-Chart.register(annotationPlugin);
