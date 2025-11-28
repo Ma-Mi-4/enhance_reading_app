@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
   skip_before_action :require_login, only: [:new, :create, :callback, :google]
+  skip_before_action :verify_authenticity_token, only: [:google]
 
   def new; end
 

@@ -61,7 +61,8 @@ Rails.application.routes.draw do
   get   'users/email/edit', to: 'emails#edit',   as: 'edit_user_email'
   patch 'users/email',      to: 'emails#update', as: 'user_email'
   get "/auth/callback", to: "sessions#callback"
-  post "/auth/callback_api", to: "sessions#google" 
+  post "/auth/callback_api", to: "sessions#google"
+  post "/sessions/google", to: "sessions#google"
 
   namespace :admin do
     root to: "main#index"

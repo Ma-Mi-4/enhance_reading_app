@@ -1,51 +1,19 @@
-# fly.toml app configuration file generated for enhance-reading-app-morning-sound-6129 on 2025-10-08T20:18:48+09:00
-#
-# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
-#
-
-app = 'enhance-reading-app-morning-sound-6129'
-primary_region = 'nrt'
-console_command = '/rails/bin/rails console'
+app = "enhance-reading-app-morning-sound-6129"
+primary_region = "nrt"
 
 [build]
+  dockerfile = "Dockerfile"
+
+[env]
+  RAILS_ENV = "production"
 
 [http_service]
   internal_port = 3000
-  force_https = false
+  force_https = true
   auto_start_machines = true
-  min_machines_running = 1
-  processes = ['app']
-
-[[http_service.checks]]
-  grace_period = "60s"
-  interval = "30s"  
-  method = "GET"
-  timeout = "10s"
-  path = "/up"
-  tls_skip_verify = true
+  auto_stop_machines = "stop"
 
 [[vm]]
-  memory = '512mb'
-  cpu_kind = 'shared'
+  memory = "1gb"
+  cpu_kind = "shared"
   cpus = 1
-
-[env]
-  PORT = "3000"
-  RAILS_ENV = "production"
-  RAILS_LOG_TO_STDOUT = "enabled"
-  RAILS_SERVE_STATIC_FILES = "enabled"
-  ENABLE_LETTER_OPENER_WEB = "true"
-  FORCE_SSL = "false" 
-  NEXT_PUBLIC_APP_URL = "https://enhance-reading-app-morning-sound-6129.fly.dev"
-
-[[services]]
-  internal_port = 3000
-  protocol = "tcp"
-
-  [[services.ports]]
-    port = 80
-    handlers = ["http"]
-
-  [[services.ports]]
-    port = 443
-    handlers = ["tls", "http"]

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["file:///mnt/c/Users/gekko/enhance_reading_app/frontend/proxy.ts"],"sourcesContent":["import type { NextRequest } from \"next/server\";\nimport { NextResponse } from \"next/server\";\n\nexport const config = {\n  matcher: [\"/api/:path*\"],\n};\n\nexport default function proxy(req: NextRequest) {\n  const url = req.nextUrl.clone();\n\n  // Rails (localhost:3001) へフォワード\n  url.hostname = \"localhost\";\n  url.port = \"3001\";\n  url.protocol = \"http\";\n\n  return NextResponse.rewrite(url);\n}\n"],"names":[],"mappings":";;;;;;AACA;;AAEO,MAAM,SAAS;IACpB,SAAS;QAAC;KAAc;AAC1B;AAEe,SAAS,MAAM,GAAgB;IAC5C,MAAM,MAAM,IAAI,OAAO,CAAC,KAAK;IAE7B,gCAAgC;IAChC,IAAI,QAAQ,GAAG;IACf,IAAI,IAAI,GAAG;IACX,IAAI,QAAQ,GAAG;IAEf,OAAO,0JAAY,CAAC,OAAO,CAAC;AAC9B"}}]
+}
