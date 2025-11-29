@@ -19,8 +19,26 @@ export default function AuthCallbackPage() {
         return;
       }
 
-      window.location.href =
-        `https://enhance-reading-app-morning-sound-6129.fly.dev/auth/callback_api?access_token=${accessToken}`;
+      const res = await fetch(
+        "https://enhance-reading-app-morning-sound-6129.fly.dev/auth/callback_api",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+          },
+          body: JSON.stringify({ access_token: accessToken }),
+          credentials: "include",
+        }
+      );
+
+      console.log("Rails status:", res.status);
+
+      if (res.ok) {
+        window.location.href = "https://enhance-reading-app-morning-sound-6129.fly.dev/";
+      } else {
+        router.push("/login");
+      }
     };
 
     handleOAuthCallback();
