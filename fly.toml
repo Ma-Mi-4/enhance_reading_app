@@ -1,16 +1,14 @@
-app = "enhance-reading-app-morning-sound-6129"
+fly.tomlapp = "enhance-reading-app-morning-sound-6129"
 primary_region = "nrt"
 
-kill_signal = "SIGINT"
-
 [build]
-  dockerfile = "Dockerfile"
+  dockerfile = "Dockerfile"  # Rails 用 Dockerfile
 
 [env]
   RAILS_ENV = "production"
 
 # -------------------------------
-# Rails のサービス (process: app)
+# Rails app (port 3000)
 # -------------------------------
 [[services]]
   internal_port = 3000
@@ -30,7 +28,7 @@ kill_signal = "SIGINT"
     handlers = ["tls", "http"]
 
 # -------------------------------
-# Next.js のサービス (process: front)
+# Next.js front (port 3001)
 # -------------------------------
 [[services]]
   internal_port = 3001
@@ -39,21 +37,25 @@ kill_signal = "SIGINT"
 
   auto_start_machines = true
   auto_stop_machines = "stop"
-  min_machines_running = 0
+  min_machines_running = 1
 
-  [[services.ports]]
-    port = 8080
-    handlers = ["http"]
+  [[services.http_routes]]
+    path = "/"
+    type = "prefix"
+
+  [[services.http_routes]]
+    path = "/*"
+    type = "prefix"
 
 # -------------------------------
-# プロセス定義
+# Processes config
 # -------------------------------
 [processes]
-  app = "bin/rails server"
-  front = "node server.js"   # ← Next.js の standalone 起動コマンド
+  app = "rails server -b 0.0.0.0 -p 3000"
+  front = "node server.js"
 
 # -------------------------------
-# VM設定
+# VM settings
 # -------------------------------
 [[vm]]
   memory = "1gb"
