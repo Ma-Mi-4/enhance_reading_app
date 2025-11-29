@@ -8,34 +8,16 @@ Googleログイン処理中...
     "<%= ENV['NEXT_PUBLIC_SUPABASE_ANON_KEY'] %>"
   );
 
-  console.log("Supabase client 初期化完了");
-
-  // Supabase session を取得
-  const { data, error } = await supabase.auth.getSession();
-
-  console.log("session:", data);
-
+  const { data } = await supabase.auth.getSession();
   const token = data.session?.access_token;
 
-  if (!token) {
-    alert("Supabase セッションが取得できませんでした");
-  } else {
-    console.log("Rails に token を送信中…");
-
-    const res = await fetch("/auth/callback_api", {
+  if (token) {
+    await fetch("/auth/callback_api", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ access_token: token })
     });
-
-    if (!res.ok) {
-      const body = await res.text();
-      alert("Rails 側 API エラー: " + body);
-      throw new Error(body);
-    }
   }
-
-  console.log("ログイン処理成功 → redirect");
 
   window.location.href = "/";
 </script>

@@ -16,7 +16,7 @@ export default function GoogleLoginButton() {
 
     console.log("OAuth result:", data, error);
 
-    if (data.url) {
+    if (data?.url) {
       window.location.href = data.url;
     }
   };

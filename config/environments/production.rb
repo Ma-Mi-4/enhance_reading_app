@@ -49,7 +49,7 @@ Rails.application.configure do
   # config.assume_ssl = true
   
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  config.force_ssl = false
+  # config.force_ssl = false
   
   # Log to STDOUT by default
   config.logger = ActiveSupport::Logger.new(STDOUT)
@@ -113,7 +113,6 @@ Rails.application.configure do
     protocol: "https"
   }
 
-  config.session_store :cookie_store, key: "_enhance_reading_app_session", secure: config.force_ssl
   config.action_controller.default_url_options = { protocol: config.force_ssl ? "https" : "http" }
   config.action_controller.relative_url_root = "/"
   config.force_ssl = ENV.fetch("FORCE_SSL", "false") == "true"

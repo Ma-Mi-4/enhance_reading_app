@@ -24,8 +24,12 @@ class SessionsController < ApplicationController
   end
 
   def google
-    access_token = params[:access_token] || request.raw_post
-    access_token = JSON.parse(access_token)['access_token'] rescue access_token
+    access_token = params[:access_token]
+
+    if access_token.blank?
+      render json: { error: "access_token がありません" }, status: :unprocessable_entity
+      return
+    end
 
     user_info = SupabaseService.get_user_from_access_token(access_token)
     email = user_info[:email]
@@ -41,6 +45,6 @@ class SessionsController < ApplicationController
 
     auto_login(user)
 
-    render json: { message: "Googleログイン成功" }, status: :ok
+    render json: { message: "OK" }, status: :ok
   end
 end

@@ -1,32 +1,41 @@
-# --- Base Image ---
-FROM node:20-slim AS base
+# -------------------------
+# 1. Install dependencies
+# -------------------------
+FROM node:20-alpine AS deps
 WORKDIR /app
-ENV NODE_ENV=production
-
-# --- Dependencies Layer ---
-FROM base AS deps
 COPY package.json package-lock.json ./
 RUN npm ci
 
-# --- Build Layer ---
-FROM base AS builder
-COPY --from=deps /app/node_modules ./node_modules
-
-# 🔥 ここが重要：環境変数ファイルをコピー
-COPY .env.production .env.production
-
-COPY . .
-RUN npm run build
-
-# --- Runner Layer ---
-FROM base AS runner
+# -------------------------
+# 2. Build Next.js in standalone mode (webpack)
+# -------------------------
+FROM node:20-alpine AS builder
 WORKDIR /app
 
-COPY --from=builder /app/public ./public
-COPY --from=builder /app/.next ./.next
+COPY . .
 COPY --from=deps /app/node_modules ./node_modules
+
+ENV NEXT_TELEMETRY_DISABLED=1
+RUN npm run build --webpack
+
+# -------------------------
+# 3. Production image
+# -------------------------
+FROM node:20-alpine AS runner
+WORKDIR /app
+
+ENV NODE_ENV=production
+ENV PORT=3000
+
+# Public assets
+COPY --from=builder /app/public ./public
+
+# Standalone build output
+COPY --from=builder /app/.next/standalone ./
+COPY --from=builder /app/.next/static ./.next/static
+
 COPY package.json ./
 
 EXPOSE 3000
-ENV PORT=3000
-CMD ["npm", "run", "start"]
+
+CMD ["node", "server.js"]
