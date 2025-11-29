@@ -60,7 +60,7 @@ Rails.application.routes.draw do
   patch 'users/password',     to: 'passwords#update', as: 'user_password'
   get   'users/email/edit', to: 'emails#edit',   as: 'edit_user_email'
   patch 'users/email',      to: 'emails#update', as: 'user_email'
-  post "/auth/callback_api", to: "sessions#google"
+  get "/auth/callback_api", to: "sessions#google"
   get "/auth/callback", to: "sessions#callback"
 
   namespace :admin do

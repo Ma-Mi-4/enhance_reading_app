@@ -27,16 +27,14 @@ class SessionsController < ApplicationController
     access_token = params[:access_token]
 
     if access_token.blank?
-      render json: { error: "access_token がありません" }, status: :unprocessable_entity
-      return
+      return redirect_to login_path, alert: "access_token がありません"
     end
 
     user_info = SupabaseService.get_user_from_access_token(access_token)
     email = user_info[:email]
 
     if email.blank?
-      render json: { error: "Googleからメールアドレスが取得できませんでした" }, status: :unprocessable_entity
-      return
+      return redirect_to login_path, alert: "Googleからメールアドレスが取得できませんでした"
     end
 
     user = User.find_or_create_by(email: email) do |u|
@@ -45,6 +43,6 @@ class SessionsController < ApplicationController
 
     auto_login(user)
 
-    render json: { message: "OK" }, status: :ok
+    redirect_to root_path, notice: "Googleログイン成功"
   end
 end

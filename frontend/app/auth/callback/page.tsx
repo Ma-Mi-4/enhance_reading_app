@@ -11,11 +11,7 @@ export default function AuthCallbackPage() {
 
   useEffect(() => {
     const handleOAuthCallback = async () => {
-      const { data, error } = await supabase.auth.getSession();
-
-      console.log('Session data:', data);
-      console.log('Session error:', error);
-
+      const { data } = await supabase.auth.getSession();
       const accessToken = data.session?.access_token;
 
       if (!accessToken) {
@@ -23,24 +19,8 @@ export default function AuthCallbackPage() {
         return;
       }
 
-      const res = await fetch(
-        'https://enhance-reading-app-morning-sound-6129.fly.dev/auth/callback_api', // ★ここも現在のルート名に合わせる
-        {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ access_token: accessToken }),
-          credentials: 'include',
-        }
-      );
-
-      console.log("Rails Response:", res.status);
-
-      if (res.ok) {
-        // ★★ ここを Next の / ではなく Rails のトップに変更 ★★
-        window.location.href = 'https://enhance-reading-app-morning-sound-6129.fly.dev/';
-      } else {
-        router.push('/login');
-      }
+      window.location.href =
+        `https://enhance-reading-app-morning-sound-6129.fly.dev/auth/callback_api?access_token=${accessToken}`;
     };
 
     handleOAuthCallback();
