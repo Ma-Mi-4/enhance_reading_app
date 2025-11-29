@@ -1,4 +1,4 @@
-fly.tomlapp = "enhance-reading-app-morning-sound-6129"
+app = "enhance-reading-app-morning-sound-6129"
 primary_region = "nrt"
 
 [build]
