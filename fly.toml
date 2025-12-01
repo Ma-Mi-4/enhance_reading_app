@@ -4,27 +4,30 @@
 #
 
 app = "enhance-reading-app-morning-sound-6129"
-primary_region = 'nrt'
-console_command = '/rails/bin/rails console'
+primary_region = "nrt"
+
+[env]
+  RAILS_ENV = "production"
+  RACK_ENV = "production"
 
 [build]
 
 [deploy]
-  release_command = './bin/rails db:prepare'
+  release_command = "./bin/rails db:prepare"
 
 [http_service]
   internal_port = 3000
   force_https = true
-  auto_stop_machines = 'stop'
+  auto_stop_machines = "stop"
   auto_start_machines = true
   min_machines_running = 0
-  processes = ['app']
+  processes = ["app"]
 
 [[vm]]
-  memory = '1gb'
-  cpu_kind = 'shared'
+  memory = "1gb"
+  cpu_kind = "shared"
   cpus = 1
 
 [[statics]]
-  guest_path = '/rails/public'
-  url_prefix = '/'
+  guest_path = "/rails/public"
+  url_prefix = "/"

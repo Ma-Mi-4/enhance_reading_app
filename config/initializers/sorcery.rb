@@ -85,7 +85,7 @@ Rails.application.config.sorcery.configure do |config|
 
   config.google.key = ENV["GOOGLE_CLIENT_ID"]
   config.google.secret = ENV["GOOGLE_CLIENT_SECRET"]
-  config.google.callback_url = "#{ENV['APP_URL']}/oauth/google/callback"
+  config.google.callback_url = "#{ENV['APP_HOST']}/oauth/callback?provider=google"
   config.google.user_info_mapping = { email: "email", username: "name" }
   config.google.scope = "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"
   
