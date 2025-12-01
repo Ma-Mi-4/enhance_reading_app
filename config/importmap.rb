@@ -1,10 +1,5 @@
 pin "application", preload: true
 
-# Hotwire
-pin "@hotwired/turbo-rails", to: "@hotwired/turbo-rails.js", preload: true
-pin "@hotwired/turbo",       to: "@hotwired/turbo.js", preload: true
-pin "@rails/actioncable/src", to: "@rails/actioncable/src.js", preload: true
-
 pin "@hotwired/stimulus", to: "stimulus.min.js", preload: true
 pin "@hotwired/stimulus-loading", to: "stimulus-loading.js", preload: true
 pin_all_from "app/javascript/controllers", under: "controllers"

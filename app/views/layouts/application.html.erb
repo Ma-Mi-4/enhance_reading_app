@@ -10,7 +10,7 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body data-turbo="false" <%= yield :body_attributes %>>
+  <body <%= yield :body_attributes %>>
     <%= render 'shared/header' %>
 
     <% flash.each do |key, message| %>

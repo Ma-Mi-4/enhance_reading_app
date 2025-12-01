@@ -12,11 +12,17 @@ Googleログイン処理中...
   const token = data.session?.access_token;
 
   if (token) {
-    await fetch("/auth/callback_api", {
+    const res = await fetch("https://enhance-reading-app-morning-sound-6129.fly.dev/auth/callback_api", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ access_token: token })
     });
+
+    const json = await res.json();
+
+    if (json.jwt) {
+      localStorage.setItem("auth_jwt", json.jwt);
+    }
   }
 
   window.location.href = "/";

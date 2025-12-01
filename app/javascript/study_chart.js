@@ -1,4 +1,4 @@
-document.addEventListener("turbo:load", () => {
+document.addEventListener("DOMContentLoaded", () => {
   // Chart.js と annotation plugin がロードされているか確認
   if (!window.Chart) {
     console.error("Chart.js がロードされていません");

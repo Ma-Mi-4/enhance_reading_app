@@ -78,7 +78,16 @@ Rails.application.configure do
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
 
+  config.action_controller.default_url_options = {
+    host: ENV['APP_URL'] || 'http://localhost:3001'
+  }
+
   config.action_mailer.default_url_options = { 
-    host: ENV['APP_HOST'] || 'localhost:3002' 
+    host: ENV['APP_HOST'] || 'localhost:3001' 
   }
 end
+
+Rails.application.config.session_store :cookie_store,
+  key: '_enhance_reading_app_session',
+  same_site: :lax,
+  secure: false

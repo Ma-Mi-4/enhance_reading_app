@@ -1,63 +1,30 @@
-app = "enhance-reading-app-morning-sound-6129"
-primary_region = "nrt"
+# fly.toml app configuration file generated for enhance-reading-app on 2025-11-30T21:55:49+09:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'enhance-reading-app'
+primary_region = 'nrt'
+console_command = '/rails/bin/rails console'
 
 [build]
-  dockerfile = "Dockerfile"  # Rails 用 Dockerfile
 
-[env]
-  RAILS_ENV = "production"
+[deploy]
+  release_command = './bin/rails db:prepare'
 
-# -------------------------------
-# Rails app (port 3000)
-# -------------------------------
-[[services]]
+[http_service]
   internal_port = 3000
-  processes = ["app"]
-  protocol = "tcp"
-
+  force_https = true
+  auto_stop_machines = 'stop'
   auto_start_machines = true
-  auto_stop_machines = "stop"
-  min_machines_running = 1
+  min_machines_running = 0
+  processes = ['app']
 
-  [[services.ports]]
-    port = 80
-    handlers = ["http"]
-
-  [[services.ports]]
-    port = 443
-    handlers = ["tls", "http"]
-
-# -------------------------------
-# Next.js front (port 3001)
-# -------------------------------
-[[services]]
-  internal_port = 3001
-  processes = ["front"]
-  protocol = "tcp"
-
-  auto_start_machines = true
-  auto_stop_machines = "stop"
-  min_machines_running = 1
-
-  [[services.http_routes]]
-    path = "/"
-    type = "prefix"
-
-  [[services.http_routes]]
-    path = "/*"
-    type = "prefix"
-
-# -------------------------------
-# Processes config
-# -------------------------------
-[processes]
-  app = "rails server -b 0.0.0.0 -p 3000"
-  front = "node server.js"
-
-# -------------------------------
-# VM settings
-# -------------------------------
 [[vm]]
-  memory = "1gb"
-  cpu_kind = "shared"
+  memory = '1gb'
+  cpu_kind = 'shared'
   cpus = 1
+
+[[statics]]
+  guest_path = '/rails/public'
+  url_prefix = '/'
