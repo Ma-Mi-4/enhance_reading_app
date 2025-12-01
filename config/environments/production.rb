@@ -93,6 +93,8 @@ Rails.application.configure do
   # ]
   # Skip DNS rebinding protection for the default health check endpoint.
   config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
+
+  config.hosts << "enhance-reading-app-morning-sound-6129.fly.dev"
   
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {

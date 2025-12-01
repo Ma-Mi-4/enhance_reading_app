@@ -21,11 +21,8 @@ RUN bundle install
 # Copy Rails app
 COPY . .
 
-# Precompile assets (optional for dev)
-# RUN bundle exec rails assets:precompile
+# Expose port (Fly.io expects 3000)
+EXPOSE 3000
 
-# Expose port
-EXPOSE 3001
-
-# Start server
-CMD ["bin/rails", "server", "-b", "0.0.0.0", "-p", "3001"]
+# Start server on correct port
+CMD ["bin/rails", "server", "-b", "0.0.0.0", "-p", "3000"]
