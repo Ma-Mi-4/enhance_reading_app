@@ -1,8 +1,7 @@
 pin "application", preload: true
 
-# --- Turbo ---
-pin "@hotwired/turbo-rails", to: "@hotwired--turbo-rails.js" # @8.0.20
-pin "@hotwired/turbo", to: "@hotwired--turbo.js" # @8.0.20
+pin "@hotwired/turbo-rails", to: "@hotwired--turbo-rails.js", preload: true
+pin "@hotwired/turbo", to: "@hotwired--turbo.js"
 
 # --- Stimulus ---
 pin "@hotwired/stimulus", to: "@hotwired--stimulus.js"

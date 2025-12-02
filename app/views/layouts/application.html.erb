@@ -4,10 +4,6 @@
     <title>TOEIC長文トレーニング</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <!-- Turbo 完全無効 -->
-    <meta name="turbo-cache-control" content="no-cache">
-    <meta name="turbo-visit-control" content="disable">
-
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -15,7 +11,7 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body data-turbo="false">
+  <body>
     <%= render 'shared/header' %>
 
     <% flash.each do |key, message| %>

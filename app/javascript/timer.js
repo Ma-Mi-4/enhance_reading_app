@@ -1,6 +1,5 @@
 if (window.__TIMER_LOADED__) {
   console.log("timer.js already loaded - skip");
-  return;
 }
 window.__TIMER_LOADED__ = true;
 
