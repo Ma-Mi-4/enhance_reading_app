@@ -1,15 +1,23 @@
-<h1>パスワード変更</h1>
+<div class="page-container">
 
-<%= form_with url: user_password_path, method: :patch do |f| %>
-  <div>
-    <%= f.label :password, "新しいパスワード" %>
-    <%= f.password_field :password, required: true %>
+  <h1>パスワード変更</h1>
+
+  <div class="setting-section">
+
+    <%= form_with url: user_password_path, method: :patch, local: true do |f| %>
+
+      <!-- 新しいパスワード -->
+      <label>新しいパスワード</label>
+      <%= f.password_field :password, required: true %>
+
+      <!-- 確認用パスワード -->
+      <label>確認用パスワード</label>
+      <%= f.password_field :password_confirmation, required: true %>
+
+      <%= f.submit "更新", class: "btn btn-primary w-full mt-4" %>
+
+    <% end %>
+
   </div>
 
-  <div>
-    <%= f.label :password_confirmation, "確認用パスワード" %>
-    <%= f.password_field :password_confirmation, required: true %>
-  </div>
-
-  <%= f.submit "更新" %>
-<% end %>
+</div>

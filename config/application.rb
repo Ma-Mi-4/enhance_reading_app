@@ -1,6 +1,7 @@
 require_relative "boot"
 
 require "rails/all"
+require "importmap-rails"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -23,5 +24,6 @@ module App
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.action_controller.raise_on_open_redirects = false
   end
 end

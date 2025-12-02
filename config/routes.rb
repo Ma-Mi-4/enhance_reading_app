@@ -60,6 +60,8 @@ Rails.application.routes.draw do
   patch 'users/password',     to: 'passwords#update', as: 'user_password'
   get   'users/email/edit', to: 'emails#edit',   as: 'edit_user_email'
   patch 'users/email',      to: 'emails#update', as: 'user_email'
+  get "/oauth/:provider", to: "sessions#oauth", as: :auth_at_provider
+  get "/oauth/:provider/callback", to: "sessions#oauth_callback", as: :auth_callback
 
   namespace :admin do
     root to: "main#index"

@@ -1,15 +1,9 @@
 class ApplicationController < ActionController::Base
-  before_action :require_login 
-  helper_method :current_user
+  include Sorcery::Controller
 
-  private
+  before_action :require_login
 
-  def current_user
-    @current_user ||= User.find_by(id: session[:user_id]) if session[:user_id]
-  end
-
-  def require_login
-    redirect_to login_path, alert: "ログインしてください" unless current_user
+  def not_authenticated
+    redirect_to login_path, alert: "ログインしてください"
   end
 end
-

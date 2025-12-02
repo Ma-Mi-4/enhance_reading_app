@@ -1,8 +1,8 @@
-console.log("application.js loaded");
 import "@hotwired/turbo-rails"
-import Alpine from "alpinejs"
-import "./timer" 
-import "./study_chart"
-
-window.Alpine = Alpine
-Alpine.start()
+import "controllers"
+import "alpinejs"
+import "chart"
+import "chartjs-plugin-annotation"
+import "timer"
+import "study_chart"
+import "question_quiz"

@@ -1,2 +1,324 @@
-// @import "application.bootstrap";
-// @import "top";
+/* ============================================
+   全画面・全ページ共通のスマホ最適化ルール
+   ============================================ */
+
+/* 画面の左右に余白 & 最大幅の統一 */
+.page-container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* 全体の文字・行間 */
+body {
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+/* 見出し */
+h1 {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin: 1rem 0 0.5rem;
+}
+
+/* ============================================
+   共通ボタンスタイル（スマホ押しやすく）
+   ============================================ */
+
+button,
+input[type="submit"] {
+  padding: 12px 16px;
+  font-size: 17px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+
+/* ============================================
+   ■ PART1: 問題・解説画面のスタイル
+   ============================================ */
+
+/* 問題本文 */
+.page-container p {
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+/* 問題ブロック（カード風） */
+.question-block {
+  margin-bottom: 20px;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+/* 選択肢リスト */
+.choice-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.choice-item {
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+}
+
+.choice-item label {
+  margin-left: 6px;
+}
+
+
+/* ============================================
+   ■ PART2: カレンダー画面のスタイル
+   ============================================ */
+
+/* カレンダー・グラフのカード */
+.month-summary,
+.calendar-container,
+.study-container {
+  background: #fafafa;
+  padding: 14px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+}
+
+/* カレンダー表 */
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 14px;
+}
+
+.calendar-table th,
+.calendar-table td {
+  padding: 6px;
+  border: 1px solid #ddd;
+  width: calc(100% / 7);
+}
+
+/* 日付リンク */
+.calendar-day-link {
+  display: block;
+  padding: 6px;
+  border-radius: 4px;
+  color: #333;
+}
+
+.calendar-day-link:hover {
+  background: #e6f0ff;
+}
+
+/* グラフのレスポンシブ対応 */
+.study-container canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* カレンダー＋グラフのレイアウト（スマホ：縦並び） */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+/* ============================================
+   ■ PART3: 設定画面のスタイル
+   ============================================ */
+
+/* 設定用カード */
+.setting-section {
+  background: #fafafa;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+}
+
+/* ラベル統一 */
+.setting-section label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* テキスト・select・textarea */
+.setting-section input[type="text"],
+.setting-section input[type="email"],
+.setting-section input[type="password"],
+.setting-section select,
+.setting-section textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+/* ボタン（設定画面用） */
+.setting-section button,
+.setting-section input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 17px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+
+/* ============================================
+   ■ PART4: 設定トップのリンク（カード型メニュー）
+   ============================================ */
+
+.setting-link {
+  display: block;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+}
+
+.setting-link:hover {
+  background: #f0f4ff;
+}
+
+
+/* ============================================
+   ■ PART5: 通知設定用ラジオボタンUI
+   ============================================ */
+
+.setting-radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.setting-radio-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  font-size: 17px;
+}
+
+.setting-radio-option input[type="radio"] {
+  width: 20px;
+  height: 20px;
+}
+
+/* ---- フッター全体 ---- */
+.app-footer {
+  background: #f8f9fa;
+  padding: 20px 0;
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* ---- 規約リンク ---- */
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.footer-link {
+  color: #333;
+  text-decoration: none;
+  padding: 8px 0;
+}
+
+.footer-link:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* ---- 著作権表示 ---- */
+.footer-copy {
+  color: #666;
+  font-size: 13px;
+}
+
+/* ラジオを縦並びにする */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* 解説ブロックのカード風スタイル */
+.explanation-block {
+  background: #ffffff;
+  padding: 18px;
+  margin-bottom: 24px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb; /* 薄いグレー */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* 問題タイトル */
+.explanation-block h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* 正解 */
+.correct-answer {
+  color: #0d7a28;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 見出し（選択肢別解説など） */
+.section-title {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #333;
+}
+
+/* 各選択肢 */
+.choice-explanation {
+  margin-bottom: 6px;
+}
+
+/* ============================================
+   END
+   ============================================ */

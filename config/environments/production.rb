@@ -28,7 +28,7 @@ Rails.application.configure do
   # config.assets.css_compressor = :sass
   
   # Do not fall back to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  config.assets.compile = true
   
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.asset_host = "http://assets.example.com"
@@ -43,13 +43,13 @@ Rails.application.configure do
   # config.action_cable.mount_path = nil
   # config.action_cable.url = "wss://example.com/cable"
   # config.action_cable.allowed_request_origins = [ "http://example.com", /http:\/\/example.*/ ]
-  
+  config.importmap.cache_sweepers << Rails.root.join("config/importmap.rb")
   # Assume all access to the app is happening through a SSL-terminating reverse proxy.
   # Can be used together with config.force_ssl for Strict-Transport-Security and secure cookies.
   # config.assume_ssl = true
   
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  config.force_ssl = false
+  # config.force_ssl = false
   
   # Log to STDOUT by default
   config.logger = ActiveSupport::Logger.new(STDOUT)
@@ -93,6 +93,8 @@ Rails.application.configure do
   # ]
   # Skip DNS rebinding protection for the default health check endpoint.
   config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
+
+  config.hosts << "enhance-reading-app-morning-sound-6129.fly.dev"
   
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
@@ -113,8 +115,13 @@ Rails.application.configure do
     protocol: "https"
   }
 
-  config.session_store :cookie_store, key: "_enhance_reading_app_session", secure: config.force_ssl
   config.action_controller.default_url_options = { protocol: config.force_ssl ? "https" : "http" }
   config.action_controller.relative_url_root = "/"
   config.force_ssl = ENV.fetch("FORCE_SSL", "false") == "true"
 end
+
+Rails.application.config.session_store :cookie_store,
+  key: '_enhance_reading_app_session',
+  domain: '.fly.dev',
+  same_site: :none,
+  secure: true

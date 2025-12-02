@@ -1,13 +1,14 @@
-<footer id='footer' class='footer-bottom'>
-  <div class='container'>
-    <div class='row'>
-      <div class='col-sm-6 col-12'>
-        <div class='copyright'>
-          <%= link_to '利用規約', '/terms_of_service.html', class: 'block px-3 py-1.5 text-gray-700 hover:bg-gray-100' %>
-          <%= link_to 'プライバシーポリシー', '/privacy_policy.html', class: 'text-gray-600 hover:text-gray-800' %>
-          Copyright © 2025. 長文読解アプリ
-        </div>
-      </div>
+<footer class="app-footer">
+  <div class="page-container">
+
+    <div class="footer-links">
+      <p><%= link_to '利用規約', '/terms_of_service.html', class: 'footer-link' %></p>
+      <p><%= link_to 'プライバシーポリシー', '/privacy_policy.html', class: 'footer-link' %></p>
     </div>
+
+    <div class="footer-copy">
+      © 2025 TOEIC長文トレーニング
+    </div>
+
   </div>
 </footer>

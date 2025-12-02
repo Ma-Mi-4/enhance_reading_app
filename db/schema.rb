@@ -10,9 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2025_11_26_082644) do
+ActiveRecord::Schema[7.1].define(version: 2025_12_01_033228) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "authentications", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.string "provider", null: false
+    t.string "uid", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["provider", "uid"], name: "index_authentications_on_provider_and_uid", unique: true
+    t.index ["user_id"], name: "index_authentications_on_user_id"
+  end
 
   create_table "choices", force: :cascade do |t|
     t.bigint "question_id", null: false
@@ -44,6 +54,8 @@ ActiveRecord::Schema[7.1].define(version: 2025_11_26_082644) do
     t.jsonb "meta"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "filename"
+    t.index ["filename"], name: "index_question_sets_on_filename", unique: true
   end
 
   create_table "questions", force: :cascade do |t|
@@ -58,12 +70,12 @@ ActiveRecord::Schema[7.1].define(version: 2025_11_26_082644) do
     t.integer "word_count", default: 0, null: false
     t.string "source"
     t.jsonb "meta", default: {}
-    t.bigint "question_set_id", null: false
     t.jsonb "choices_text"
     t.integer "correct_index"
     t.text "explanation"
     t.jsonb "wrong_explanations"
     t.integer "order"
+    t.bigint "question_set_id"
     t.index ["question_set_id"], name: "index_questions_on_question_set_id"
   end
 
@@ -88,6 +100,8 @@ ActiveRecord::Schema[7.1].define(version: 2025_11_26_082644) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "question_set_id"
+    t.string "filename"
+    t.index ["filename"], name: "index_quiz_sets_on_filename", unique: true
     t.index ["question_set_id"], name: "index_quiz_sets_on_question_set_id"
   end
 
@@ -132,6 +146,7 @@ ActiveRecord::Schema[7.1].define(version: 2025_11_26_082644) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "authentications", "users"
   add_foreign_key "choices", "questions"
   add_foreign_key "notification_settings", "users"
   add_foreign_key "questions", "question_sets"

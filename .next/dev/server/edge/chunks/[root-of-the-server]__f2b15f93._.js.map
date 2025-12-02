@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/middleware.ts"],"sourcesContent":["import { NextResponse, NextRequest } from 'next/server';\nimport { createMiddlewareClient } from '@supabase/auth-helpers-nextjs';\n\nexport async function middleware(req: NextRequest) {\n  const res = NextResponse.next();\n  const supabase = createMiddlewareClient({ req, res });\n  await supabase.auth.getSession();\n  return res;\n}\n\nexport const config = {\n  matcher: ['/((?!_next|static).*)'],\n};\n"],"names":[],"mappings":";;;;;;AAAA;AAAA;AACA;;;AAEO,eAAe,WAAW,GAAgB;IAC/C,MAAM,MAAM,gMAAY,CAAC,IAAI;IAC7B,MAAM,WAAW,IAAA,0MAAsB,EAAC;QAAE;QAAK;IAAI;IACnD,MAAM,SAAS,IAAI,CAAC,UAAU;IAC9B,OAAO;AACT;AAEO,MAAM,SAAS;IACpB,SAAS;QAAC;KAAwB;AACpC"}}]
-}
