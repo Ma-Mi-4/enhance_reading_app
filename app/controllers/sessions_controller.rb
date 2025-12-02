@@ -22,22 +22,24 @@ class SessionsController < ApplicationController
   def oauth_callback
     provider = params[:provider]
 
-    if (@user = login_from(provider))
+    if (user = login_from(provider))
+      auto_login(user)
       redirect_to root_path, notice: "#{provider.titleize}でログインしました"
       return
     end
 
-    begin
-      @user = create_from(provider)
+    user = create_from(provider)
 
-      reset_session
-      auto_login(@user)
+    user.update(email: user.email&.downcase) if user.email.present?
 
-      redirect_to root_path, notice: "#{provider.titleize}で新規登録しました"
-    rescue => e
-      Rails.logger.error(e)
-      redirect_to login_path, alert: "Googleログインに失敗しました"
-    end
+    reset_session
+    auto_login(user)
+
+    redirect_to root_path, notice: "#{provider.titleize}で新規登録しました"
+
+  rescue => e
+    Rails.logger.error(e)
+    redirect_to login_path, alert: "Googleログインに失敗しました"
   end
 
   def destroy

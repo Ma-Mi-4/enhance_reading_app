@@ -1,6 +1,6 @@
-<% content_for :body_attributes do %> data-has-timer="true" data-turbo="false" <% end %>
-
-<meta name="turbo-cache-control" content="no-cache">
+<% content_for :body_attributes do %>
+  data-turbo="false"
+<% end %>
 
 <h1><%= @question_set.title %></h1>
 
@@ -10,7 +10,9 @@
               method: :post,
               local: true,
               html: { id: "question_form" },
-              data: { turbo: false } do |f| %>
+              data: {
+                correct: @questions.map { |q| q[:correct_index] }.to_json
+              } do |f| %>
 
   <div id="timer" style="font-size: 24px;">00:00</div>
 
@@ -35,65 +37,6 @@
       </ul>
     </div>
   <% end %>
-
-  <script>
-    console.log("Quiz script loaded");
-
-    let timerInterval;
-    let totalSeconds = 0;
-
-    function startTimer() {
-      timerInterval = setInterval(() => {
-        totalSeconds++;
-        document.getElementById("study_seconds").value = totalSeconds;
-
-        const minutes = Math.floor(totalSeconds / 60);
-        const seconds = totalSeconds % 60;
-
-        document.getElementById("timer").textContent =
-          String(minutes).padStart(2, "0") + ":" + String(seconds).padStart(2, "0");
-      }, 1000);
-    }
-
-    function stopTimer() {
-      clearInterval(timerInterval);
-    }
-
-    // ★正解インデックス（シャッフル後）
-    const correctIndexes = <%= raw @questions.map { |q| q[:correct_index] }.to_json %>;
-
-    function calculateAccuracy() {
-      let correctCount = 0;
-      const form = document.getElementById("question_form");
-
-      for (let i = 0; i < correctIndexes.length; i++) {
-        const selected = form.querySelector(`input[name="q${i}"]:checked`);
-        if (selected && parseInt(selected.value) === correctIndexes[i]) {
-          correctCount++;
-        }
-      }
-
-      const accuracy = Math.round((correctCount / correctIndexes.length) * 100);
-      document.getElementById("accuracy_field_questions").value = accuracy;
-      console.log("Accuracy:", accuracy);
-    }
-
-    function initQuiz() {
-      startTimer();
-
-      const form = document.getElementById("question_form");
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        stopTimer();
-        calculateAccuracy();
-        form.submit();
-      });
-    }
-
-    document.addEventListener("DOMContentLoaded", initQuiz);
-    document.addEventListener("turbo:load", initQuiz);
-  </script>
 
   <%= f.submit "解説を見る", class: "btn btn-primary" %>
 <% end %>

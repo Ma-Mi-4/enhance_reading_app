@@ -84,6 +84,7 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = { 
     host: ENV['APP_HOST']
+  }
 end
 
 Rails.application.config.session_store :cookie_store,
