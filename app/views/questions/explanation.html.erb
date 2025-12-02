@@ -1,50 +1,54 @@
-<h1>解説: <%= @question_set.title %></h1>
+<div class="page-container">
 
-<div style="white-space: pre-wrap;">
-  <%= simple_format(@question_set.content) %>
-</div>
+  <h1>解説: <%= @question_set.title %></h1>
 
-<% @questions.each_with_index do |q, index| %>
-  <div style="margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; border-radius: 8px;">
+  <!-- Part7 本文 -->
+  <div style="margin-bottom: 20px;">
+    <%= simple_format(@question_set.content) %>
+  </div>
 
-    <!-- 問題文 -->
-    <p><strong>問題 <%= index + 1 %>:</strong> <%= q[:body] %></p>
+  <% @questions.each_with_index do |q, index| %>
 
-    <!-- 正解 -->
-    <p style="color: green; font-weight: bold;">
-      正解: <%= q[:choices][q[:correct_index]] %>
-    </p>
-
-    <hr>
-
-    <!-- 間違いの選択肢 -->
-    <h4>間違いの選択肢と解説：</h4>
-    <% q[:choices].each_with_index do |choice, i| %>
-      <% next if i == q[:correct_index] %>
-
-      <% wrong_explanation =
-           q[:wrong_explanations].present? ?
-             q[:wrong_explanations][i] : nil %>
+    <div class="question-block">
 
       <p>
-        <strong><%= choice %></strong>：
-        <%= wrong_explanation.present? ? wrong_explanation : "（解説なし）" %>
+        <strong>問題 <%= index + 1 %>:</strong>
+        <%= q[:body] %>
       </p>
-    <% end %>
 
-    <!-- 全体解説 -->
-    <% if q[:explanation].present? %>
-      <p><strong>解説:</strong> <%= q[:explanation] %></p>
-    <% end %>
+      <p style="color: green; font-weight: bold;">
+        正解：<%= q[:choices][q[:correct_index]] %>
+      </p>
 
-    <!-- 例文 -->
-    <% if q[:example_sentence].present? %>
-      <p><strong>例文:</strong> <%= q[:example_sentence] %></p>
-    <% end %>
+      <hr>
 
-  </div>
-<% end %>
+      <h4>間違いの選択肢と解説：</h4>
+      <% q[:choices].each_with_index do |choice, i| %>
+        <% next if i == q[:correct_index] %>
 
-<%= link_to "復習問題へ", quiz_path(@question_set.quiz_set) %>
+        <% wrong_explanation =
+             q[:wrong_explanations].present? ?
+               q[:wrong_explanations][i] : nil %>
 
+        <p>
+          <strong><%= choice %></strong>：
+          <%= wrong_explanation.presence || "（解説なし）" %>
+        </p>
+      <% end %>
 
+      <% if q[:explanation].present? %>
+        <p><strong>解説:</strong> <%= q[:explanation] %></p>
+      <% end %>
+
+      <% if q[:example_sentence].present? %>
+        <p><strong>例文:</strong> <%= q[:example_sentence] %></p>
+      <% end %>
+
+    </div>
+
+  <% end %>
+
+  <%= link_to "復習問題へ", quiz_path(@question_set.quiz_set),
+        class: "btn btn-primary w-full mt-4" %>
+
+</div>

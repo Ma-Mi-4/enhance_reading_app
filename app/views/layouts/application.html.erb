@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>TOEIC長文トレーニング</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,17 +11,24 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <!-- body_attributes をここで反映 -->
+  <body <%= yield :body_attributes %>>
+
     <%= render 'shared/header' %>
 
+    <!-- スマホUI版フラッシュメッセージ -->
     <% flash.each do |key, message| %>
-      <div class="alert alert-<%= key == 'notice' ? 'success' : 'danger' %>">
+      <div class="flash-message <%= key %>">
         <%= message %>
       </div>
     <% end %>
 
-    <%= yield %>
+    <!-- すべてのページの中身を page-container で統一 -->
+    <div class="page-container">
+      <%= yield %>
+    </div>
 
     <%= render 'shared/footer' %>
+
   </body>
 </html>

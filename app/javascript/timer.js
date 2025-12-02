@@ -10,9 +10,8 @@ let timerInterval = null;
 function startTimer() {
   const timerEl = document.getElementById("timer");
   const hiddenEl = document.getElementById("study_seconds");
-  if (!timerEl || !hiddenEl) return; // ← ここ重要（ページに timer 無ければ即終了）
+  if (!timerEl || !hiddenEl) return;
 
-  // すでに動いているタイマーがあるなら止める
   if (timerInterval) {
     clearInterval(timerInterval);
     timerInterval = null;
@@ -27,7 +26,6 @@ function startTimer() {
     const m = String(Math.floor(totalSeconds / 60)).padStart(2, "0");
     const s = String(totalSeconds % 60).padStart(2, "0");
     timerEl.textContent = `${m}:${s}`;
-
   }, 1000);
 
   console.log("timer started");
@@ -45,17 +43,26 @@ function initTimerOnce() {
   const timerEl = document.getElementById("timer");
   const hiddenEl = document.getElementById("study_seconds");
 
-  // このページに timer が無ければ起動しない
   if (!timerEl || !hiddenEl) return;
 
   console.log("initTimer called");
 
-  // すでに起動済みなら何もしない
   if (timerInterval) return;
 
   console.log("Calling startTimer...");
   startTimer();
 }
 
-// ← ここを 1 つだけにする！
+// ページロード時
 document.addEventListener("DOMContentLoaded", initTimerOnce);
+
+// ★ 追加：フォーム送信時に確実に stopTimer() ★
+document.addEventListener("turbo:submit-start", () => {
+  console.log("turbo:submit-start detected → stopTimer()");
+  window.stopTimer();
+});
+
+document.addEventListener("submit", () => {
+  console.log("submit detected → stopTimer()");
+  window.stopTimer();
+});

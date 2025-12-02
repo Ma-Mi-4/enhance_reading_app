@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       },
       scales: {
-        y: { type: "linear", position: "left", title: { display: true, text: "学習時間（分）" } },
+        y: { type: "linear", position: "left", title: { display: true, text: "学習時間（分）" }, ticks: { beginAtZero: true, stepSize: 10 } },
         y1: { type: "linear", position: "right", title: { display: true, text: "予想スコア" }, min: 500, max: 800, ticks: { stepSize: 50 }, grid: { drawOnChartArea: false } }
       }
     }

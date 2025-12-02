@@ -1,14 +1,15 @@
+<div class="page-container">
 <h1 class="text-2xl font-bold mb-4">メイン画面</h1>
 
 <% if current_user.present? %>
   <p class="mb-2">ようこそ、<%= current_user.name %>さん！</p>
   
   <nav class="space-x-4">
-    <%= link_to '問題へ',
+    <p><%= link_to '問題へ',
             question_path(QuestionSet.where(level: current_user.level).sample.id),
-            class: "text-blue-600 hover:underline" %>
-    <%= link_to '設定へ', settings_path, class: "text-blue-600 hover:underline" %>
-    <%= link_to '学習カレンダーへ', calendars_path, class: "text-blue-600 hover:underline" %>
+            class: "text-blue-600 hover:underline" %></p>
+    <p><%= link_to '設定へ', settings_path, class: "text-blue-600 hover:underline" %></p>
+    <p><%= link_to '学習カレンダーへ', calendars_path, class: "text-blue-600 hover:underline" %></p>
   </nav>
   
   <div class="mt-4">
@@ -17,3 +18,4 @@
 <% else %>
   <%= button_to 'ログイン', login_path, class: 'btn btn-outline-primary me-2' %>
 <% end %>
+</div>

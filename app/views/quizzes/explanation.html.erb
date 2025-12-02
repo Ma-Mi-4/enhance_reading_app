@@ -1,47 +1,40 @@
-<h1>復習解説</h1>
+<div class="page-container reading">
 
-<% if @questions.present? %>
+  <h1>復習解説</h1>
+
   <% @questions.each_with_index do |q, idx| %>
-    <div style="margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; border-radius: 8px;">
 
-      <!-- 問題文 -->
-      <p><strong>問題 <%= idx + 1 %>:</strong> <%= q[:question_text] %></p>
+    <div class="explanation-block">
+
+      <h3>問題 <%= idx + 1 %></h3>
 
       <!-- 正解 -->
-      <p style="color: green; font-weight: bold;">
+      <p class="correct-answer">
         正解: <%= q[:choices][q[:correct_index]] %>
         ： <%= q[:explanation_list][q[:correct_index]] %>
       </p>
 
-      <h4>選択肢別の解説</h4>
+      <!-- 選択肢別解説 -->
+      <p class="section-title">選択肢別の解説</p>
       <% q[:choices].each_with_index do |choice, i| %>
         <% next if i == q[:correct_index] %>
-        <p>
+
+        <p class="choice-explanation">
           <strong><%= choice %></strong>：
           <%= q[:explanation_list][i].presence || "（解説なし）" %>
         </p>
       <% end %>
 
+      <!-- 例文 -->
       <% if q[:example_sentence].present? %>
-        <p><strong>例文:</strong> <%= q[:example_sentence] %></p>
+        <p class="section-title">例文</p>
+        <p><%= q[:example_sentence] %></p>
       <% end %>
 
     </div>
+
   <% end %>
-<% else %>
-  <p>解説データが見つかりません。</p>
-<% end %>
 
-<p><%= link_to "学習を終了してカレンダーへ", calendars_path, class: "btn btn-primary" %></p>
-<p>
-  <%= link_to "次の問題へ",
-        question_path(
-          QuestionSet.where(level: current_user.level)
-                     .where("id > ?", @current_qs_id)
-                     .first&.id ||
-          QuestionSet.where(level: current_user.level).first.id
-        ),
-        class: "btn btn-primary" %>
-</p>
+  <%= link_to "学習を終了してカレンダーへ", calendars_path, class: "btn btn-primary w-full" %>
 
-
+</div>

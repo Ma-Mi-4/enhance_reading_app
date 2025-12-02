@@ -1,10 +1,27 @@
-<h1>設定</h1>
-<p>
-<% if @new_registration %>
-  <%= link_to 'レベル設定変更', set_level_users_path, class: 'block px-3 py-1.5 text-gray-700 hover:bg-gray-100' %>
-<% else %>
-  <%= link_to 'レベル設定変更', set_level_user_path(current_user), class: 'block px-3 py-1.5 text-gray-700 hover:bg-gray-100' %>
-<% end %>
-<%= link_to '通知設定', settings_notification_path, class: 'block px-3 py-1.5 text-gray-700 hover:bg-gray-100' %>
-<%= link_to 'アカウント情報変更', settings_account_path, class: 'block px-3 py-1.5 text-gray-700 hover:bg-gray-100' %>
-</p>
+<div class="page-container">
+
+  <h1>設定</h1>
+
+  <div class="setting-section">
+
+    <p><% if @new_registration %>
+      <%= link_to 'レベル設定変更',
+          set_level_users_path,
+          class: "setting-link" %>
+    <% else %>
+      <%= link_to 'レベル設定変更',
+          set_level_user_path(current_user),
+          class: "setting-link" %>
+    <% end %></p>
+
+    <p><%= link_to '通知設定',
+        settings_notification_path,
+        class: "setting-link" %></p>
+
+    <p><%= link_to 'アカウント情報変更',
+        settings_account_path,
+        class: "setting-link" %></p>
+
+  </div>
+
+</div>

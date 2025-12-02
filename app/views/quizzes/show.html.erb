@@ -1,88 +1,48 @@
-<% content_for :body_attributes do %> data-has-timer="true" data-turbo="false" <% end %>
+<div class="page-container">
 
-<h1>復習問題</h1>
-
-<%= form_with url: explanation_quiz_path(@quiz_set),
-              method: :post,
-              local: true,
-              html: { id: "quiz_form" },
-              data: { turbo: false } do |f| %>
-
-  <div id="timer">00:00</div>
-  <%= hidden_field_tag :study_seconds, 0, id: "study_seconds" %>
-  <%= hidden_field_tag :accuracy, 0, id: "accuracy_field_quiz" %>
-
-  <% @questions.each_with_index do |q, index| %>
-    <div class="question" style="margin-bottom:20px;">
-      <p><strong><%= index + 1 %>. <%= q[:question_text] %></strong></p>
-
-      <ul>
-        <% q[:choices].each_with_index do |choice, i| %>
-          <li>
-            <input type="radio"
-                   name="q<%= index %>"
-                   value="<%= i %>"
-                   id="q<%= index %>_choice<%= i %>">
-
-            <label for="q<%= index %>_choice<%= i %>"><%= choice %></label>
-          </li>
-        <% end %>
-      </ul>
-    </div>
+  <% content_for :body_attributes do %>
+    data-has-timer="true" data-turbo="false"
   <% end %>
 
-<script>
-  let timerInterval;
-  let totalSeconds = 0;
+  <h1>復習問題</h1>
 
-  function startTimer() {
-    timerInterval = setInterval(() => {
-      totalSeconds++;
-      document.getElementById("study_seconds").value = totalSeconds;
+  <%= form_with url: explanation_quiz_path(@quiz_set),
+                method: :post,
+                local: true,
+                html: { id: "quiz_form" } do |f| %>
 
-      const minutes = Math.floor(totalSeconds / 60);
-      const seconds = totalSeconds % 60;
+    <div id="timer" style="font-size: 20px; margin-bottom: 16px;">00:00</div>
 
-      document.getElementById("timer").textContent =
-        String(minutes).padStart(2, "0") + ":" + String(seconds).padStart(2, "0");
-    }, 1000);
-  }
+    <%= hidden_field_tag :study_seconds, 0, id: "study_seconds" %>
+    <%= hidden_field_tag :accuracy, 0, id: "accuracy_field_quiz" %>
 
-  function stopTimer() {
-    clearInterval(timerInterval);
-  }
+    <% @questions.each_with_index do |q, index| %>
+      <div class="question-block">
 
-  const correctIndexes = <%= raw @questions.map { |q| q[:correct_index] }.to_json %>;
+        <p><strong><%= index + 1 %>. <%= q[:question_text] %></strong></p>
 
-  function calculateAccuracy() {
-    let correctCount = 0;
-    const form = document.getElementById("quiz_form");
+        <ul class="choice-list">
+          <% q[:choices].each_with_index do |choice, i| %>
+            <li class="choice-item">
 
-    correctIndexes.forEach((correct, i) => {
-      const selected = form.querySelector(`input[name="q${i}"]:checked`);
-      if (selected && parseInt(selected.value) === correct) {
-        correctCount++;
-      }
-    });
+              <input type="radio"
+                     name="q<%= index %>"
+                     value="<%= i %>"
+                     id="q<%= index %>_choice<%= i %>">
 
-    const accuracy = Math.round((correctCount / correctIndexes.length) * 100);
-    document.getElementById("accuracy_field_quiz").value = accuracy;
-    console.log("Review Accuracy:", accuracy);
-  }
+              <label for="q<%= index %>_choice<%= i %>">
+                <%= choice %>
+              </label>
 
-  function initQuiz() {
-    startTimer();
+            </li>
+          <% end %>
+        </ul>
 
-    const form = document.getElementById("quiz_form");
-    form.addEventListener("submit", () => {
-      stopTimer();
-      calculateAccuracy();
-    });
-  }
+      </div>
+    <% end %>
 
-  document.addEventListener("DOMContentLoaded", initQuiz);
-  document.addEventListener("turbo:load", initQuiz);
-</script>
+    <%= f.submit "解説を見る", class: "btn btn-primary w-full mt-4" %>
 
-  <%= f.submit "解説を見る" %>
-<% end %>
+  <% end %>
+
+</div>

@@ -1,31 +1,47 @@
-<h1><%= @new_registration ? "レベル設定" : "レベル設定変更" %></h1>
+<div class="page-container">
 
-<% if @new_registration %>
-  <% form_url = update_level_for_registration_users_path %>
-<% else %>
-  <% form_url = update_level_user_path(@user) %>
-<% end %>
+  <h1><%= @new_registration ? "レベル設定" : "レベル設定変更" %></h1>
 
-<%= form_with(model: @user, url: form_url, method: :patch, local: true) do |f| %>
-
-  <% if @user&.errors&.any? %>
-    <div style="color: red;">
-      <ul>
-        <% @user.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <p><%= f.radio_button :level, 800 %> 800点</p>
-  <p><%= f.radio_button :level, 700 %> 700点</p>
-  <p><%= f.radio_button :level, 600 %> 600点</p>
-  <p><%= f.radio_button :level, 500 %> 500点</p>
+  <p>レベルを選択してください</p>
 
   <% if @new_registration %>
-    <%= hidden_field_tag :new_registration, true %>
+    <% form_url = update_level_for_registration_users_path %>
+  <% else %>
+    <% form_url = update_level_user_path(@user) %>
   <% end %>
 
-  <%= f.submit "保存" %>
-<% end %>
+  <div class="setting-section">
+
+    <%= form_with(model: @user, url: form_url, method: :patch, local: true) do |f| %>
+
+      <div class="radio-group">
+
+        <p><label class="radio-item">
+          <%= f.radio_button :level, 800 %> 800 点
+        </label></p>
+
+        <p><label class="radio-item">
+          <%= f.radio_button :level, 700 %> 700 点
+        </label></p>
+
+        <p><label class="radio-item">
+          <%= f.radio_button :level, 600 %> 600 点
+        </label></p>
+
+        <p><label class="radio-item">
+          <%= f.radio_button :level, 500 %> 500 点
+        </label></p>
+
+      </div>
+
+      <% if @new_registration %>
+        <%= hidden_field_tag :new_registration, true %>
+      <% end %>
+
+      <%= f.submit "保存", class: "btn btn-primary w-full mt-4" %>
+
+    <% end %>
+
+  </div>
+
+</div>
