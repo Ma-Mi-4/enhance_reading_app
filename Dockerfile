@@ -21,6 +21,9 @@ RUN bundle install
 # Copy Rails app
 COPY . .
 
+# Add this to prevent Permission denied errors
+RUN chmod +x /rails/bin/*
+
 # Expose port (Fly.io expects 3000)
 EXPOSE 3000
 
