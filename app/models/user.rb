@@ -7,12 +7,11 @@ class User < ApplicationRecord
 
   # OAuth ログイン時はパスワード不要
   def password_required?
-    # crypted_password がない かつ 既存認証(authentications)がない場合のみ必要
     crypted_password.blank? && authentications.blank?
   end
 
-  # 名前がない Google アカウントも存在するので任意にする
-  validates :name, presence: true, unless: -> { authentications.present? }
+  # 通常登録時のみ name 必須
+  validates :name, presence: true, on: :update
 
   validates :email, presence: true, uniqueness: true
   validates :reset_password_token, uniqueness: true, allow_nil: true
