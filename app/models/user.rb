@@ -5,13 +5,17 @@ class User < ApplicationRecord
   has_many :authentications, dependent: :destroy
   has_one :notification_setting, dependent: :destroy
 
-  validates :name, presence: true
+  # OAuth ログイン時はパスワード不要
+  def password_required?
+    # crypted_password がない かつ 既存認証(authentications)がない場合のみ必要
+    crypted_password.blank? && authentications.blank?
+  end
+
+  # 名前がない Google アカウントも存在するので任意にする
+  validates :name, presence: true, unless: -> { authentications.present? }
+
   validates :email, presence: true, uniqueness: true
   validates :reset_password_token, uniqueness: true, allow_nil: true
-
-  def password_required?
-    authentications.blank? && (new_record? || changes[:crypted_password])
-  end
 
   validates :password, length: { minimum: 8 }, if: :password_required?
   validates :password, confirmation: true, if: :password_required?
