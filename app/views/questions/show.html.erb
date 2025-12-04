@@ -1,9 +1,5 @@
 <div class="page-container">
 
-  <% content_for :body_attributes do %>
-    data-turbo="false"
-  <% end %>
-
   <h1><%= @question_set.title %></h1>
 
   <!-- Part7 本文 -->
@@ -12,12 +8,9 @@
   </div>
 
   <%= form_with url: explanation_question_path(@question_set),
-                method: :post,
-                local: true,
-                html: { id: "question_form" },
-                data: {
-                  correct: @questions.map { |q| q[:correct_index] }.to_json
-                } do |f| %>
+              method: :post,
+              local: true,
+              id: "question_form" do |f| %>
 
     <!-- タイマー -->
     <div id="timer" style="font-size: 20px; margin-bottom: 16px;">
@@ -25,7 +18,7 @@
     </div>
 
     <%= hidden_field_tag :study_seconds, 0, id: "study_seconds" %>
-    <%= hidden_field_tag :accuracy, 0, id: "accuracy_field_questions" %>
+    <%= hidden_field_tag :accuracy, 0, id: "accuracy_field" %>
 
     <% @questions.each_with_index do |q, index| %>
 

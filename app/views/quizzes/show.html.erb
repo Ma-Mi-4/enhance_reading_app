@@ -14,7 +14,7 @@
     <div id="timer" style="font-size: 20px; margin-bottom: 16px;">00:00</div>
 
     <%= hidden_field_tag :study_seconds, 0, id: "study_seconds" %>
-    <%= hidden_field_tag :accuracy, 0, id: "accuracy_field_quiz" %>
+    <%= hidden_field_tag :accuracy, 0, id: "accuracy_field" %>
 
     <% @questions.each_with_index do |q, index| %>
       <div class="question-block">

@@ -1,31 +1,54 @@
-# Base image
 FROM ruby:3.2.2-slim
 
-# Install dependencies
+ENV CHROME_VERSION=143.0.7499.40
+ENV CHROMEDRIVER_VERSION=143.0.7499.40
+
+# 必須ライブラリ
 RUN apt-get update -qq && \
-    apt-get install -y build-essential libpq-dev curl && \
+    apt-get install -y \
+      wget \
+      gnupg \
+      unzip \
+      curl \
+      build-essential \
+      libpq-dev \
+      ca-certificates \
+      libnss3 \
+      libgconf-2-4 \
+      libxss1 \
+      libasound2 \
+      fonts-liberation \
+      xdg-utils \
+      libu2f-udev \
+      libvulkan1 \
+      --no-install-recommends && \
     rm -rf /var/lib/apt/lists/*
 
-# Create app directory
+# Google Chrome（stable）インストール
+RUN wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add - && \
+    echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" \
+        > /etc/apt/sources.list.d/google-chrome.list && \
+    apt-get update -qq && \
+    apt-get install -y google-chrome-stable && \
+    rm -rf /var/lib/apt/lists/*
+
+# ChromeDriver 143（Chromeと同じバージョン）
+RUN wget -q -O /tmp/chromedriver.zip \
+      "https://storage.googleapis.com/chrome-for-testing-public/${CHROMEDRIVER_VERSION}/linux64/chromedriver-linux64.zip" && \
+    unzip /tmp/chromedriver.zip -d /tmp/ && \
+    mv /tmp/chromedriver-linux64/chromedriver /usr/local/bin/chromedriver && \
+    chmod +x /usr/local/bin/chromedriver && \
+    rm -rf /tmp/*
+
+# Rails
 WORKDIR /rails
 
-# Install bundler
 RUN gem install bundler
-
-# Copy Gemfiles
 COPY Gemfile Gemfile.lock ./
-
-# Install gems
 RUN bundle install
 
-# Copy Rails app
 COPY . .
-
-# Add this to prevent Permission denied errors
 RUN chmod +x /rails/bin/*
 
-# Expose port (Fly.io expects 3000)
 EXPOSE 3000
-
-# Start server on correct port
 CMD ["bin/rails", "server", "-b", "0.0.0.0", "-p", "3000"]

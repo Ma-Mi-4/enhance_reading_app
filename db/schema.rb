@@ -70,12 +70,12 @@ ActiveRecord::Schema[7.1].define(version: 2025_12_01_033228) do
     t.integer "word_count", default: 0, null: false
     t.string "source"
     t.jsonb "meta", default: {}
+    t.bigint "question_set_id"
     t.jsonb "choices_text"
     t.integer "correct_index"
     t.text "explanation"
     t.jsonb "wrong_explanations"
     t.integer "order"
-    t.bigint "question_set_id"
     t.index ["question_set_id"], name: "index_questions_on_question_set_id"
   end
 
@@ -134,13 +134,13 @@ ActiveRecord::Schema[7.1].define(version: 2025_12_01_033228) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "name"
+    t.string "password_digest"
     t.string "reset_password_token"
     t.datetime "reset_password_token_expires_at"
     t.datetime "reset_password_email_sent_at"
     t.integer "access_count_to_reset_password_page", default: 0
     t.string "crypted_password"
     t.string "salt"
-    t.string "password_digest"
     t.boolean "admin", default: false, null: false
     t.integer "level"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
