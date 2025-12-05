@@ -5,7 +5,7 @@ FactoryBot.define do
     level { 500 }
 
     transient do
-      raw_password { "password123" }
+      raw_password { "password" }
     end
 
     # Sorcery の password= を build 時点で呼ぶ必要がある！

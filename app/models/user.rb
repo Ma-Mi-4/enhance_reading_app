@@ -7,7 +7,7 @@ class User < ApplicationRecord
 
   # ▼ Sorcery の仕様に合わせて必ず public に置く
   def password_required?
-    crypted_password.blank? && authentications.blank?
+    new_record? && crypted_password.blank? && authentications.blank?
   end
 
   # ▼ Google login 判定（authentications があれば OAuth user）

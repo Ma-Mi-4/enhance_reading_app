@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
     if user
       redirect_to root_path, notice: "ログイン成功"
     else
-      flash.now[:alert] = "メールアドレスまたはパスワードが違います"
+      flash[:alert] = "メールアドレスまたはパスワードが違います"
       render :new, status: :unprocessable_entity
     end
   end

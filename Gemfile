@@ -85,6 +85,7 @@ group :test do
   gem "selenium-webdriver"
   gem 'rails-controller-testing'
   gem 'database_cleaner-active_record'
+  gem "cuprite"
 end
 
 gem "dockerfile-rails", ">= 1.7", :group => :development

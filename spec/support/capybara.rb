@@ -1,15 +1,17 @@
-Capybara.register_driver :selenium_chrome_headless do |app|
-  options = Selenium::WebDriver::Chrome::Options.new
+require "capybara/rspec"
+require "capybara/cuprite"
 
-  options.add_argument('--headless')
-  options.add_argument('--no-sandbox')
-  options.add_argument('--disable-dev-shm-usage')
-  options.add_argument('--disable-gpu')
-  options.add_argument('--disable-dev-tools')
-  options.add_argument('--disable-infobars')
-  options.add_argument('--window-size=1920,1080')
+Capybara.server = :puma, { Silent: true }
 
-  Capybara::Selenium::Driver.new(app, browser: :chrome, options: options)
+Capybara.default_driver = :cuprite
+Capybara.javascript_driver = :cuprite
+
+Capybara.register_driver(:cuprite) do |app|
+  Capybara::Cuprite::Driver.new(
+    app,
+    window_size: [1200, 800],
+    browser_options: {},
+    inspector: true,
+    headless: true
+  )
 end
-
-Capybara.javascript_driver = :selenium_chrome_headless
