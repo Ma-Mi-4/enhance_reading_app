@@ -51,8 +51,8 @@
               class: 'block px-4 py-2 text-gray-700 hover:bg-gray-100',
               'x-on:click': 'open = false; dropdownOpen = false' %>
 
-            <% if @new_registration %>
-              <%= link_to 'レベル設定変更', set_level_users_path,
+            <% if @new_registration && current_user %>
+              <%= link_to 'レベル設定変更', set_level_user_path(current_user),
                 class: 'block px-4 py-2 text-gray-700 hover:bg-gray-100',
                 'x-on:click': 'open = false; dropdownOpen = false' %>
             <% elsif current_user %>

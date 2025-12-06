@@ -21,12 +21,7 @@ Rails.application.routes.draw do
     member do
      get 'set_level', to: 'settings#level'
       patch 'update_level', to: 'settings#update_level'
-    end
-
-    collection do
-      get 'set_level', to: 'settings#level'
-      patch 'update_level_for_registration', to: 'settings#update_level_for_registration'
-    end
+    end  
   end
 
   resources :password_resets, only: %i[new create edit update]
