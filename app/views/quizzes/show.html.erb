@@ -6,10 +6,12 @@
 
   <h1>復習問題</h1>
 
-  <%= form_with url: explanation_quiz_path(@quiz_set),
-                method: :post,
-                local: true,
-                html: { id: "quiz_form" } do |f| %>
+  <%= form_with url: explanation_quiz_path(@quiz_set.uuid),
+              method: :post,
+              local: true,
+              html: { id: "quiz_form" } do |f| %>
+
+   <%= hidden_field_tag :uuid, @quiz_set.uuid %>
 
     <div id="timer" style="font-size: 20px; margin-bottom: 16px;">00:00</div>
 

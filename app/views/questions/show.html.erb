@@ -10,7 +10,7 @@
     <%= simple_format(@question_set.content) %>
   </div>
 
-  <%= form_with url: explanation_question_path(@question_set),
+  <%= form_with url: explanation_question_path(@question_set.uuid),
               method: :post,
               local: true,
               id: "question_form",

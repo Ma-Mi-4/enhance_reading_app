@@ -7,7 +7,7 @@
     <% if current_user.level.present? %>
       <nav class="space-x-4">
         <% if @question_set.present? %>
-          <p><%= link_to '問題へ', question_path(@question_set) %></p>
+          <p><%= link_to '問題へ', question_path(@question_set.uuid) %></p>
         <% else %>
           <p class="text-red-600">まだ学習できる問題がありません</p>
         <% end %>

@@ -29,7 +29,7 @@ Rails.application.routes.draw do
   post 'login', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
 
-  resources :questions, only: [:show] do
+  resources :questions, only: [:show], param: :uuid do
     member do
       get  'explanation'
       post 'explanation'
@@ -37,7 +37,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :quizzes, only: [:show] do
+  resources :quizzes, only: [:show], param: :uuid do
     member do
       post 'explanation'
       post 'answer'
