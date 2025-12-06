@@ -23,20 +23,21 @@ class SessionsController < ApplicationController
   def oauth_callback
     provider = params[:provider]
 
-    if (user = login_from(provider))
-      auto_login(user)
-      redirect_to root_path, notice: "#{provider.titleize}でログインしました"
-      return
+    user = login_from(provider)
+
+    unless user
+      user = create_from(provider)
+      fetch_extra_data(user)
+
+      user.email&.downcase!
+      user.level ||= 500
+
+      user.save!
     end
-
-    user = create_from(provider)
-
-    user.update(email: user.email&.downcase) if user.email.present?
 
     reset_session
     auto_login(user)
-
-    redirect_to root_path, notice: "#{provider.titleize}で新規登録しました"
+    redirect_to root_path, notice: "#{provider.titleize}でログインしました"
 
   rescue => e
     Rails.logger.error(e)
