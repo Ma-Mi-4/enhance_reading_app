@@ -35,6 +35,17 @@
 
   <% end %>
 
-  <%= link_to "学習を終了してカレンダーへ", calendars_path, class: "btn btn-primary w-full" %>
+  <p><%= link_to "学習を終了してカレンダーへ", calendars_path, class: "btn btn-primary w-full" %></p>
+
+  <p><%= link_to "次の問題へ",
+       question_path(
+         (
+           QuestionSet.where(level: current_user.level)
+                      .where("id > ?", @current_qs_id)
+                      .first ||
+           QuestionSet.where(level: current_user.level).first
+         ).uuid
+       ),
+       class: "btn btn-primary" %></p>
 
 </div>

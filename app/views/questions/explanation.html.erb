@@ -55,7 +55,7 @@
   <% quiz_set = QuizSet.find_by(question_set_id: @question_set.id) %>
 
   <% if quiz_set.present? %>
-    <%= link_to "復習問題へ", quiz_path(quiz_set), class: "btn btn-primary" %>
+    <%= link_to "復習問題へ", quiz_path(quiz_set.uuid), class: "btn btn-primary" %>
   <% end %>
 
 </div>

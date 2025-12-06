@@ -3,7 +3,7 @@ class QuestionsController < ApplicationController
   include StudyTimeTracker
 
   def show
-    @question_set = QuestionSet.find(params[:id])
+    @question_set = QuestionSet.find_by!(uuid: params[:uuid])
   
     @questions = @question_set.questions.order(:order).map do |q|
       shuffled = q.choices_text.shuffle
@@ -19,7 +19,7 @@ class QuestionsController < ApplicationController
   end
 
   def explanation
-    @question_set = QuestionSet.find(params[:id])
+    @question_set = QuestionSet.find_by!(uuid: params[:uuid])
 
     @questions = @question_set.questions.order(:order).map do |q|
       {

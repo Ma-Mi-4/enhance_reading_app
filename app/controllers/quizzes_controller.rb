@@ -3,7 +3,7 @@ class QuizzesController < ApplicationController
   include StudyTimeTracker
 
   def show
-    @quiz_set = QuizSet.find(params[:id])
+    @quiz_set = QuizSet.find_by!(uuid: params[:uuid])
 
     @questions = @quiz_set.quiz_questions.order(:order).map do |q|
       shuffled = q.choices_text.shuffle
@@ -21,7 +21,7 @@ class QuizzesController < ApplicationController
   end
 
   def explanation
-    @quiz_set = QuizSet.find(params[:id])
+    @quiz_set = QuizSet.find_by!(uuid: params[:uuid])
 
     @questions = @quiz_set.quiz_questions.order(:order).map do |q|
       {
@@ -43,25 +43,18 @@ class QuizzesController < ApplicationController
     record.minutes += minutes
 
     if params[:accuracy].present?
-      # accuracy（0〜100 → 比率）
       accuracy_ratio = params[:accuracy].to_f / 100.0
+      today_correct  = (accuracy_ratio * @questions.length).round
+      today_total    = @questions.length
 
-      # 今回の正答数と問題数
-      today_correct = (accuracy_ratio * @questions.length).round
-      today_total   = @questions.length
-
-      # 既存の集計値
       record.correct_total  ||= 0
       record.question_total ||= 0
 
-      # 累積
       record.correct_total  += today_correct
       record.question_total += today_total
 
-      # 平均 accuracy（％）
       record.accuracy = (record.correct_total.to_f / record.question_total * 100).round(1)
 
-      # 平均 accuracy から予想スコア
       accuracy_ratio_all = record.accuracy / 100.0
       record.predicted_score = 500 + (800 - 500) * accuracy_ratio_all
       record.predicted_score = (record.predicted_score / 5.0).round * 5
@@ -71,6 +64,8 @@ class QuizzesController < ApplicationController
   end
 
   def answer
+    @quiz_set = QuizSet.find_by!(uuid: params[:uuid])
+
     save_study_record(
       seconds: params[:study_seconds].to_i,
       accuracy: params[:accuracy],
