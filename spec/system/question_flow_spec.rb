@@ -1,26 +1,47 @@
 require "rails_helper"
 
 RSpec.describe "Question solving flow", type: :system do
-  let(:user) { create(:user) }
-  let(:question_set) { create(:question_set) }
+  let(:password) { "password123" }
+  let(:user) { create(:user, level: 500, password: password, password_confirmation: password) }
 
-  let!(:question) do
-    create(:question,
-      question_set: question_set,
-      order: 1,
-      body: "Sample body",
-      choices_text: ["A", "B", "C", "D"],
-      correct_index: 0
-    )
+  let!(:question_set) do
+    create(:question_set, :with_questions,
+           level: 500,
+           questions_count: 3,
+           title: "Test Question Set")
+  end
+
+  let!(:extra_set) do
+    create(:question_set, :with_questions, level: 500)
   end
 
   before do
-    system_login_as(user)
+    visit login_path
+    fill_in "email", with: user.email
+    fill_in "password", with: password   # ← ★ raw_password ではなく固定値
+    click_button "ログイン"
   end
 
-  it "ログイン後に問題ページにアクセスできる" do
-    visit question_path(question_set.id)
-    expect(page).to have_content("Sample body")
-    expect(page).to have_selector("li", text: "A")
+  it "問題を解き、解説ページへ進み、StudyRecord が保存される" do
+    visit question_path(question_set)
+
+    expect(page).to have_content(question_set.title)
+
+    correct_indexes = question_set.questions.order(:order).pluck(:correct_index)
+
+    correct_indexes.each_with_index do |correct, i|
+      target_id = "q#{i}_choice#{correct}"
+      choose(target_id)
+    end
+
+    find("#accuracy_field", visible: false).set(100)
+    find("#study_seconds", visible: false).set(120)
+
+    click_button "解説を見る"
+
+    expect(page).to have_content("解説")
+
+    record = StudyRecord.find_by(user: user, date: Date.current)
+    expect(record).not_to be_nil
   end
 end

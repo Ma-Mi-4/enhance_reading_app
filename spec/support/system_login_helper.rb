@@ -1,8 +1,10 @@
 module SystemLoginHelper
   def system_login_as(user)
+    puts "[DEBUG] system_login_as called for #{user.email}"
+
     visit login_path
-    fill_in "Email", with: user.email
-    fill_in "Password", with: user.password
+    fill_in "email", with: user.email
+    fill_in "password", with: user.raw_password
     click_button "ログイン"
   end
 end

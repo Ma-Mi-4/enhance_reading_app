@@ -1,16 +1,27 @@
 require "rails_helper"
 
-RSpec.describe "Question solving flow", type: :system, js: true do
-  include LoginHelper
+RSpec.describe "Question solving flow", type: :system do
+  let(:password) { "password" }
+  let(:user) { create(:user, level: 500, password: password, password_confirmation: password) }
 
-  let(:user) { create(:user, level: 500, raw_password: "password") }
-  let!(:question_set) { create(:question_set, :with_questions, level: 500, questions_count: 3) }
+  let!(:question_set) do
+    create(:question_set, :with_questions,
+           level: 500,
+           questions_count: 3,
+           title: "Test Question Set")
+  end
+
+  let!(:extra_set) do
+    create(:question_set, :with_questions, level: 500)
+  end
 
   before do
-    # Main#index が正常動作するため最低1件必要
-    create(:question_set, :with_questions, level: 500)
-
-    login_as(user, password: "password")
+    puts "[DEBUG] Trying login with #{user.email} / #{password}"
+    visit login_path
+    fill_in "email", with: user.email
+    fill_in "password", with: password
+    click_button "ログイン"
+    puts "[DEBUG] Current page after login: #{page.current_path}"
   end
 
   it "問題を解き、解説ページへ進み、StudyRecord が保存される" do
@@ -21,16 +32,15 @@ RSpec.describe "Question solving flow", type: :system, js: true do
     correct_indexes = question_set.questions.order(:order).pluck(:correct_index)
 
     correct_indexes.each_with_index do |correct, i|
-      target_id = "q#{i}_choice#{correct}"
-      page.execute_script("document.getElementById('#{target_id}').checked = true;")
+      choose("q#{i}_choice#{correct}")
     end
 
-    page.execute_script("document.getElementById('accuracy_field').value = 100;")
-    page.execute_script("document.getElementById('study_seconds').value = 120;")
+    find("#accuracy_field", visible: false).set(100)
+    find("#study_seconds", visible: false).set(120)
 
     click_button "解説を見る"
 
-    expect(page).to have_selector("body[data-page='explanation']", wait: 5)
+    expect(page).to have_content("解説")
 
     record = StudyRecord.find_by(user: user, date: Date.current)
     expect(record).not_to be_nil

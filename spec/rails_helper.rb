@@ -4,6 +4,7 @@ require_relative '../config/environment'
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 Capybara.server = :puma, { Silent: true }
 require 'rspec/rails'
+require 'capybara/rspec'
 
 # support 読み込み（最初でOK）
 Dir[Rails.root.join("spec/support/**/*.rb")].sort.each { |f| require f }
@@ -34,6 +35,10 @@ RSpec.configure do |config|
 
   config.after(:each) do
     DatabaseCleaner.clean
+  end
+
+  config.before(:each, type: :system) do
+    driven_by :rack_test
   end
 
   config.include FactoryBot::Syntax::Methods

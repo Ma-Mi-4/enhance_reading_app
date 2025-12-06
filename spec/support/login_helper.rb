@@ -6,3 +6,8 @@ module LoginHelper
     click_button "ログイン"
   end
 end
+
+# ★ LoginHelper は request spec 専用にする（ここが超重要！！！）
+RSpec.configure do |config|
+  config.include LoginHelper, type: :request
+end
