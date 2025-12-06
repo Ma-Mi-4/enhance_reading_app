@@ -15,6 +15,7 @@ class QuestionsController < ApplicationController
         correct_index: shuffled.index(q.choices_text[q.correct_index])
       }
     end
+    @correct_indexes = @questions.map { |h| h[:correct_index] }
   end
 
   def explanation

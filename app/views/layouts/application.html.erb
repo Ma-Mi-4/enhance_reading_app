@@ -11,7 +11,7 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body data-turbo="false" <%= " " + yield(:body_attributes) if content_for?(:body_attributes) %>>
+  <body data-turbo="false">
 
     <%= render 'shared/header' %>
 

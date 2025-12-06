@@ -13,12 +13,13 @@
   <%= form_with url: explanation_question_path(@question_set),
               method: :post,
               local: true,
-              id: "question_form" do |f| %>
+              id: "question_form",
+              data: { correct: @correct_indexes.to_json } do |f| %>
 
     <div id="timer" style="font-size: 20px; margin-bottom: 16px;">00:00</div>
 
-    <%= hidden_field_tag :study_seconds, 0, id: "study_seconds" %>
-    <%= hidden_field_tag :accuracy, 0, id: "accuracy_field" %>
+    <%= f.hidden_field :study_seconds, value: 0, id: "study_seconds" %>
+    <%= f.hidden_field :accuracy, value: 0, id: "accuracy_field_questions" %>
 
     <% @questions.each_with_index do |q, index| %>
       <div class="question-block">

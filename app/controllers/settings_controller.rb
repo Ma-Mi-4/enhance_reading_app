@@ -9,11 +9,7 @@ class SettingsController < ApplicationController
 
   def update_level
     if @user.update(level_params)
-      if params[:new_registration].present?
-        redirect_to login_path, notice: "レベル設定が完了しました。ログインしてください"
-      else
-        redirect_to set_level_user_path(@user), notice: "レベル設定を更新しました"
-      end
+      redirect_to main_path, notice: "レベル設定が完了しました"
     else
       flash.now[:alert] = "レベル設定に失敗しました"
       render :level, status: :unprocessable_entity

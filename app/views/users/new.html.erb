@@ -18,20 +18,20 @@
     <%= form_with model: @user, local: true do |f| %>
 
       <!-- 名前 -->
-      <label>名前</label>
-      <%= f.text_field :name %>
+      <p><label>名前</label>
+      <%= f.text_field :name %></p>
 
       <!-- メールアドレス -->
-      <label>メールアドレス</label>
-      <%= f.email_field :email %>
+      <p><label>メールアドレス</label>
+      <%= f.email_field :email %></p>
 
       <!-- パスワード -->
-      <label>パスワード</label>
-      <%= f.password_field :password %>
+      <p><label>パスワード</label>
+      <%= f.password_field :password %></p>
 
       <!-- パスワード確認 -->
-      <label>パスワード（確認）</label>
-      <%= f.password_field :password_confirmation %>
+      <p><label>パスワード（確認）</label>
+      <%= f.password_field :password_confirmation %></p>
 
       <%= f.submit "登録", class: "btn btn-primary w-full mt-4" %>
 
