@@ -1,28 +1,31 @@
-# Base image
 FROM ruby:3.2.2-slim
 
-# Install dependencies
-RUN apt-get update -qq && \
-    apt-get install -y build-essential libpq-dev curl && \
+# 必要パッケージ & Chromium & ChromeDriver
+RUN apt-get update -y && apt-get install -y \
+    build-essential \
+    libpq-dev \
+    curl \
+    wget \
+    gnupg \
+    chromium \
+    chromium-driver \
+    xvfb \
+    fonts-ipafont-gothic \
+    --no-install-recommends && \
     rm -rf /var/lib/apt/lists/*
 
-# Create app directory
 WORKDIR /rails
 
-# Install bundler
+# bundler
 RUN gem install bundler
 
-# Copy Gemfiles
+# Gemfile をコピー
 COPY Gemfile Gemfile.lock ./
-
-# Install gems
 RUN bundle install
 
-# Copy Rails app
+# Rails アプリコピー
 COPY . .
 
-# Expose port (Fly.io expects 3000)
 EXPOSE 3000
 
-# Start server on correct port
 CMD ["bin/rails", "server", "-b", "0.0.0.0", "-p", "3000"]

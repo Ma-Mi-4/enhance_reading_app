@@ -1,55 +1,40 @@
-<div class="page-container">
+<% content_for :body_attributes do %>
+  data-page="show" data-turbo="false" data-has-timer="true"
+<% end %>
 
-  <% content_for :body_attributes do %>
-    data-turbo="false"
-  <% end %>
+<div class="page-container">
 
   <h1><%= @question_set.title %></h1>
 
-  <!-- Part7 本文 -->
   <div style="margin-bottom: 20px;">
     <%= simple_format(@question_set.content) %>
   </div>
 
   <%= form_with url: explanation_question_path(@question_set),
-                method: :post,
-                local: true,
-                html: { id: "question_form" },
-                data: {
-                  correct: @questions.map { |q| q[:correct_index] }.to_json
-                } do |f| %>
+              method: :post,
+              local: true,
+              id: "question_form" do |f| %>
 
-    <!-- タイマー -->
-    <div id="timer" style="font-size: 20px; margin-bottom: 16px;">
-      00:00
-    </div>
+    <div id="timer" style="font-size: 20px; margin-bottom: 16px;">00:00</div>
 
     <%= hidden_field_tag :study_seconds, 0, id: "study_seconds" %>
-    <%= hidden_field_tag :accuracy, 0, id: "accuracy_field_questions" %>
+    <%= hidden_field_tag :accuracy, 0, id: "accuracy_field" %>
 
     <% @questions.each_with_index do |q, index| %>
-
       <div class="question-block">
-
         <p><strong>Question <%= index + 1 %>:</strong> <%= q[:body] %></p>
 
         <ul class="choice-list">
           <% q[:choices].each_with_index do |choice, i| %>
             <li class="choice-item">
-              <input type="radio"
-                     name="q<%= index %>"
-                     value="<%= i %>"
+              <input type="radio" name="q<%= index %>" value="<%= i %>"
                      id="q<%= index %>_choice<%= i %>">
-
-              <label for="q<%= index %>_choice<%= i %>">
-                <%= choice %>
-              </label>
+              <label for="q<%= index %>_choice<%= i %>"><%= choice %></label>
             </li>
           <% end %>
         </ul>
 
       </div>
-
     <% end %>
 
     <%= f.submit "解説を見る", class: "btn btn-primary w-full mt-4" %>

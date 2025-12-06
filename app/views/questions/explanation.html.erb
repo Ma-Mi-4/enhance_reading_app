@@ -1,3 +1,7 @@
+<% content_for :body_attributes do %>
+  data-page="explanation" data-turbo="false"
+<% end %>
+
 <div class="page-container">
 
   <h1>解説: <%= @question_set.title %></h1>
@@ -48,7 +52,10 @@
 
   <% end %>
 
-  <%= link_to "復習問題へ", quiz_path(@question_set.quiz_set),
-        class: "btn btn-primary w-full mt-4" %>
+  <% quiz_set = QuizSet.find_by(question_set_id: @question_set.id) %>
+
+  <% if quiz_set.present? %>
+    <%= link_to "復習問題へ", quiz_path(quiz_set), class: "btn btn-primary" %>
+  <% end %>
 
 </div>

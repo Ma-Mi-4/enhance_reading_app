@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   # root "posts#index"
   root "main#index"
 
-  if ENV["ENABLE_LETTER_OPENER_WEB"] == "true"
+  if Rails.env.development?
     mount LetterOpenerWeb::Engine, at: "/letter_opener"
   end
 
@@ -36,6 +36,7 @@ Rails.application.routes.draw do
 
   resources :questions, only: [:show] do
     member do
+      get  'explanation'
       post 'explanation'
       post 'answer'
     end
@@ -70,5 +71,9 @@ Rails.application.routes.draw do
     delete 'logout', to: 'sessions#destroy'
 
     resources :questions
+  end
+
+  if Rails.env.test?
+    post "/test_login", to: "test_sessions#login", as: :test_login
   end
 end

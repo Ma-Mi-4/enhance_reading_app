@@ -5,18 +5,33 @@ class User < ApplicationRecord
   has_many :authentications, dependent: :destroy
   has_one :notification_setting, dependent: :destroy
 
-  # OAuth ログイン時はパスワード不要
+  # ▼ Sorcery の仕様に合わせて必ず public に置く
   def password_required?
-    crypted_password.blank? && authentications.blank?
+    new_record? && crypted_password.blank? && authentications.blank?
   end
 
-  # 通常登録時のみ name 必須
-  validates :name, presence: true, on: :update
+  # ▼ Google login 判定（authentications があれば OAuth user）
+  def google_user?
+    authentications.present?
+  end
 
+  # ▼ name
+  validates :name, presence: true, unless: :google_user?
+
+  # ▼ email
   validates :email, presence: true, uniqueness: true
-  validates :reset_password_token, uniqueness: true, allow_nil: true
 
-  validates :password, length: { minimum: 8 }, if: :password_required?
-  validates :password, confirmation: true, if: :password_required?
-  validates :password_confirmation, presence: true, if: :password_required?
+  # ▼ password（通常ユーザーのみ）
+  validates :password,
+            length: { minimum: 8 },
+            confirmation: true,
+            if: :password_required?
+
+  validates :password_confirmation,
+            presence: true,
+            if: :password_required?
+
+  # ▼ level
+  validates :level, presence: true, unless: :google_user?
+  validates :level, numericality: { only_integer: true }, unless: :google_user?
 end

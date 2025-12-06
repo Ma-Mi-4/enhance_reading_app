@@ -5,11 +5,12 @@ services:
     build:
       context: .
     environment:
-      RAILS_ENV: development
+      RAILS_ENV: test
+      RACK_ENV: test
       DB_HOST: db
       DB_USERNAME: postgres
       DB_PASSWORD: password
-      DB_NAME: app_development
+      DB_NAME:  app_test
       ENABLE_LETTER_OPENER_WEB: "true"
       PORT: 3000
       APP_URL: http://localhost:3000
