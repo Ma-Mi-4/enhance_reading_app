@@ -27,7 +27,6 @@ class SessionsController < ApplicationController
 
     unless user
       user = create_from(provider)
-      fetch_extra_data(user)
 
       user.email&.downcase!
       user.level ||= 500
