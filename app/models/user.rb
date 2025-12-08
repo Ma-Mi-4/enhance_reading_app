@@ -17,21 +17,21 @@ class User < ApplicationRecord
   validates :name, presence: true, unless: :google_user?
 
   # email
-  validates :email, presence: true, uniqueness: true
+  validates :email, presence: true, uniqueness: true, unless: :google_user?
 
   # password
   validates :password,
             length: { minimum: 8 },
             confirmation: true,
             if: :password_required?
+
   validates :password_confirmation,
             presence: true,
             if: :password_required?
 
-  # level → update の時だけチェック（Google ユーザーは除外）
+  # level
   validates :level,
-            presence: true,
-            numericality: { only_integer: true },
-            unless: :google_user?,
-            on: :update
+          presence: true,
+          numericality: { only_integer: true },
+          unless: :google_user?
 end
