@@ -118,6 +118,9 @@ Rails.application.configure do
   config.action_controller.default_url_options = { protocol: config.force_ssl ? "https" : "http" }
   config.action_controller.relative_url_root = "/"
   config.force_ssl = ENV.fetch("FORCE_SSL", "false") == "true"
+
+  config.hosts << "readskillup.com"
+  config.hosts << "www.readskillup.com"
 end
 
 Rails.application.config.session_store :cookie_store,

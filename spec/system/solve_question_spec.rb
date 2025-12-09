@@ -17,7 +17,6 @@ RSpec.describe "Question solving flow", type: :system do
 
   before do
     puts "[DEBUG] Trying login with #{user.email} / #{password}"
-    visit login_path
     fill_in "email", with: user.email
     fill_in "password", with: password
     click_button "ログイン"

@@ -4,7 +4,7 @@ FactoryBot.define do
     name { "Test User" }
     level { 500 }
 
-    password { "password" }
-    password_confirmation { "password" }
+    password { "password123" }
+    password_confirmation { "password123" }
   end
 end

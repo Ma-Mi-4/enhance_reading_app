@@ -16,7 +16,7 @@ RSpec.describe "Question solving flow", type: :system do
   end
 
   before do
-    visit login_path
+    driven_by(:rack_test)
     fill_in "email", with: user.email
     fill_in "password", with: password   # ← ★ raw_password ではなく固定値
     click_button "ログイン"
