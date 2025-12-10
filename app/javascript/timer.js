@@ -56,13 +56,11 @@ function initTimerOnce() {
 // ページロード時
 document.addEventListener("DOMContentLoaded", initTimerOnce);
 
-// ★ 追加：フォーム送信時に確実に stopTimer() ★
-document.addEventListener("turbo:submit-start", () => {
-  console.log("turbo:submit-start detected → stopTimer()");
-  window.stopTimer();
-});
+const form = document.getElementById("question_form");
 
-document.addEventListener("submit", () => {
-  console.log("submit detected → stopTimer()");
-  window.stopTimer();
-});
+if (form) {
+  form.addEventListener("submit", () => {
+    console.log("form submit → stopTimer");
+    window.stopTimer();
+  });
+}
