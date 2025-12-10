@@ -8,9 +8,6 @@ pin "@hotwired/stimulus", to: "@hotwired--stimulus.js"
 pin "@hotwired/stimulus-loading", to: "stimulus-loading.js", preload: true
 pin_all_from "app/javascript/controllers", under: "controllers"
 
-# --- Alpine.js ---
-pin "alpinejs", to: "https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js"
-
 # --- Chart.js ---
 pin "chart", to: "chart.js"
 pin "chartjs-plugin-annotation", to: "chartjs-plugin-annotation.js"

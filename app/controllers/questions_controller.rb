@@ -1,4 +1,5 @@
 class QuestionsController < ApplicationController
+  skip_before_action :verify_authenticity_token, raise: false
   before_action :require_login
   include StudyTimeTracker
 
@@ -33,13 +34,13 @@ class QuestionsController < ApplicationController
     end
 
     seconds = params[:study_seconds].to_i
-    minutes = seconds / 60
     accuracy = params[:accuracy].to_i
 
     today = Date.current
     record = StudyRecord.find_or_initialize_by(user: current_user, date: today)
 
     # ---- すべての数値項目を確実に0初期化 ----
+    record.duration        ||= 0
     record.minutes         ||= 0
     record.correct_total   ||= 0
     record.question_total  ||= 0
@@ -47,7 +48,8 @@ class QuestionsController < ApplicationController
     record.predicted_score ||= 0
 
     # ---- 反映 ----
-    record.minutes += minutes
+    record.duration += seconds
+    record.minutes  = (record.duration / 60.0).floor
 
     # --- accuracy が無いケースでも保存可能にする ---
     if params[:accuracy].present?

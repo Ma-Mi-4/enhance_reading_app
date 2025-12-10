@@ -19,12 +19,12 @@ function calculateAccuracy() {
   console.log("accuracy:", accuracy);
 }
 
-document.addEventListener("submit", (e) => {
-  const form = document.getElementById("question_form");
-  if (!form || e.target !== form) return;
+const form = document.getElementById("question_form");
 
-  e.preventDefault();
-  window.stopTimer();
-  calculateAccuracy();
-  form.submit();
-});
+if (form) {
+  form.addEventListener("submit", () => {
+    console.log("form submit → stopTimer & calcAccuracy");
+    window.stopTimer();
+    calculateAccuracy();
+  });
+}

@@ -3,7 +3,6 @@ Turbo.session.drive = false
 
 import "@hotwired/turbo-rails"
 import "controllers"
-import "alpinejs"
 import "chart"
 import "chartjs-plugin-annotation"
 import "timer"

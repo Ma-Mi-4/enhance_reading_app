@@ -3,6 +3,8 @@ require 'rails_helper'
 RSpec.describe User, type: :model do
   describe 'validations' do
     it '名前が必須であること' do
+      allow_any_instance_of(User).to receive(:google_user?).and_return(false)
+
       user = build(:user, name: nil)
       expect(user).not_to be_valid
       expect(user.errors[:name]).to include("can't be blank")
@@ -23,7 +25,16 @@ RSpec.describe User, type: :model do
     end
 
     it 'パスワードが必須であること（Sorcery）' do
-      user = build(:user, password: nil)
+      allow_any_instance_of(User).to receive(:google_user?).and_return(false)
+
+      user = User.new(
+        email: "sample@example.com",
+        name: "Test",
+        password: nil,
+        password_confirmation: nil,
+        level: 500
+      )
+
       expect(user).not_to be_valid
       expect(user.errors[:password]).not_to be_empty
     end

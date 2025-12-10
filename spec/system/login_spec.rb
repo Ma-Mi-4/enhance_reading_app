@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe "Login", type: :system do
   before do
     create(:question_set, :with_questions, level: 500)
+    driven_by(:rack_test)
   end
 
   it "ログインに成功する" do

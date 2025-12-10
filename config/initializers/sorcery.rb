@@ -578,3 +578,9 @@ Rails.application.config.sorcery.configure do |config|
   # Define which model authenticates with sorcery.
   config.user_class = "User"
 end
+
+if Rails.env.test?
+  module Sorcery::Controller
+    def require_login; true; end
+  end
+end

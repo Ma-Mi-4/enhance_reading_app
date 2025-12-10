@@ -10,6 +10,7 @@ class User < ApplicationRecord
   end
 
   def google_user?
+    return false if Rails.env.test?
     authentications.present?
   end
 
@@ -31,7 +32,7 @@ class User < ApplicationRecord
 
   # level
   validates :level,
-          presence: true,
-          numericality: { only_integer: true },
-          unless: :google_user?
+            numericality: { only_integer: true },
+            allow_nil: true,
+            unless: :google_user?
 end

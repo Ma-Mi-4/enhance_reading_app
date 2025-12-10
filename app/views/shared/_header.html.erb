@@ -1,37 +1,42 @@
-<header data-turbo="false" 
-        x-data="{ open: false, dropdownOpen: false }" 
+<header x-data="{ open: false, dropdownOpen: false }" 
         class="bg-white shadow">
-  <nav class="container mx-auto flex items-center justify-between px-4 py-3">
+  <nav class="relative w-full flex justify-between items-center px-4 py-3 gap-4">
 
     <!-- タイトル -->
-    <h1 class="text-xl font-semibold text-gray-800">
+    <h1 class="text-lg font-semibold leading-tight block lg:hidden break-words">
+      TOEIC長文 トレーニング
+    </h1>
+
+    <!-- PC用 -->
+    <h1 class="text-lg font-semibold hidden lg:block">
       TOEIC長文トレーニング
     </h1>
 
     <!-- ハンバーガー（スマホ表示） -->
     <button
       @click="open = !open"
-      class="lg:hidden text-gray-700 hover:text-gray-900 focus:outline-none"
+      class="lg:hidden ml-auto text-gray-700 hover:text-gray-900 focus:outline-none"
       aria-label="Toggle Menu"
     >
       <svg xmlns="http://www.w3.org/2000/svg"
-           class="w-6 h-6"
+           width="24"
+           height="24"
            fill="none"
            viewBox="0 0 24 24"
            stroke="currentColor"
-           stroke-width="2">
+          stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round"
               d="M4 6h16M4 12h16M4 18h16" />
       </svg>
     </button>
 
     <!-- メニュー領域（スマホでは open / PC では常に表示） -->
-    <div :class="open ? 'block' : 'hidden'" class="w-full lg:flex lg:items-center lg:w-auto">
+    <div :class="open ? 'block' : 'hidden'" class="w-auto lg:flex lg:items-center lg:w-auto">
 
-      <ul class="list-none flex flex-col lg:flex-row w-full lg:justify-end mt-4 lg:mt-0 items-start lg:items-center gap-2 lg:gap-4">
+      <ul class="list-none flex flex-col lg:flex-row w-full lg:justify-end mt-4 lg:mt-0 items-start lg:items-center gap-2 lg:gap-4 relative">
 
         <!-- PC のみドロップダウンボタン -->
-        <li class="relative">
+        <li>
 
           <button
             @click="dropdownOpen = !dropdownOpen"
@@ -48,29 +53,29 @@
             class="lg:absolute right-0 lg:mt-2 w-full lg:w-40 bg-white border border-gray-200 rounded-md shadow-md py-2 z-50 text-sm"
           >
             <%= link_to '設定', settings_path,
-              class: 'block px-4 py-2 text-gray-700 hover:bg-gray-100',
+              class: 'block whitespace-nowrap px-4 py-2 text-gray-700 hover:bg-gray-100',
               'x-on:click': 'open = false; dropdownOpen = false' %>
 
             <% if @new_registration && current_user %>
               <%= link_to 'レベル設定変更', set_level_user_path(current_user),
-                class: 'block px-4 py-2 text-gray-700 hover:bg-gray-100',
+                class: 'block whitespace-nowrap px-4 py-2 text-gray-700 hover:bg-gray-100',
                 'x-on:click': 'open = false; dropdownOpen = false' %>
             <% elsif current_user %>
               <%= link_to 'レベル設定変更', set_level_user_path(current_user),
-                class: 'block px-4 py-2 text-gray-700 hover:bg-gray-100',
+                class: 'block whitespace-nowrap px-4 py-2 text-gray-700 hover:bg-gray-100',
                 'x-on:click': 'open = false; dropdownOpen = false' %>
             <% end %>
 
             <%= link_to '通知設定', settings_notification_path,
-              class: 'block px-4 py-2 text-gray-700 hover:bg-gray-100',
+              class: 'block whitespace-nowrap px-4 py-2 text-gray-700 hover:bg-gray-100',
               'x-on:click': 'open = false; dropdownOpen = false' %>
 
             <%= link_to 'アカウント情報変更', settings_account_path,
-              class: 'block px-4 py-2 text-gray-700 hover:bg-gray-100',
+              class: 'block whitespace-nowrap px-4 py-2 text-gray-700 hover:bg-gray-100',
               'x-on:click': 'open = false; dropdownOpen = false' %>
 
             <%= link_to 'メイン画面', main_path,
-              class: 'block px-4 py-2 text-gray-700 hover:bg-gray-100',
+              class: 'block whitespace-nowrap px-4 py-2 text-gray-700 hover:bg-gray-100',
               'x-on:click': 'open = false; dropdownOpen = false' %>
           </div>
 

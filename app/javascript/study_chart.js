@@ -48,13 +48,15 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     options: {
       responsive: true,
+      maintainAspectRatio: true,
+      aspectRatio: window.innerWidth < 500 ? 1.2 : 1.8,
       interaction: {
         mode: 'index',
         intersect: false
       },
       stacked: false,
       plugins: {
-        legend: { position: "top" },
+        legend: { position: window.innerWidth < 500 ? "bottom" : "top" },
         annotation: {
           annotations: {
             score500: { type: "line", yMin: 500, yMax: 500, borderColor: "gray", borderDash: [6, 6], label: { enabled: true, content: "500点", position: "end" }},
@@ -65,6 +67,16 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       },
       scales: {
+        x:{
+          ticks:{
+            callback:function(_, index){
+              if(window.innerWidth < 500){
+                return index % 4 === 0 ? this.getLabelForValue(index) : "";
+              }
+              return this.getLabelForValue(index);
+            }
+          }
+        },
         y: { type: "linear", position: "left", title: { display: true, text: "学習時間（分）" }, ticks: { beginAtZero: true, stepSize: 10 } },
         y1: { type: "linear", position: "right", title: { display: true, text: "予想スコア" }, min: 500, max: 800, ticks: { stepSize: 50 }, grid: { drawOnChartArea: false } }
       }

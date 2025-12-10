@@ -8,6 +8,9 @@ class CalendarsController < ApplicationController
 
     records = current_user.study_records.where(date: @first_day..@last_day)
 
+    @studied_dates = records.where("duration > 0").pluck(:date)
+    @studied_dates ||= []
+
     @study_data = (@first_day..@last_day).map do |d|
       record = records.find { |r| r.date == d }
       {

@@ -7,7 +7,9 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "top", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
 
     <% if Rails.env.production? %>
@@ -20,9 +22,10 @@
       <meta property="og:image:height" content="630">
       <meta name="twitter:card" content="summary_large_image">
     <% end %>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
 
-  <body data-turbo="false">
+  <body>
 
     <%= render 'shared/header' %>
 
