@@ -60,3 +60,33 @@
   background-color: #e9ecef;
   color: #000;
 }
+
+.stamp {
+  width: 32px;
+  height: 32px;
+  background-color: #FF6B6B;
+  border-radius: 50%;
+  opacity: .55;
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.stamp::after {
+  content: "✓";
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: bold;
+}
+
+@media(max-width:600px) {
+  .stamp {
+    width: 28px;
+    height: 28px;
+    top: -2px;
+  }
+}

@@ -1,1 +1,115 @@
 @import "tailwindcss";
+
+@layer components {
+
+  /* ───────────────── */
+  /* カレンダー関連全部貼る */
+  /* ───────────────── */
+
+  .calendar-table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .dashboard {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .calendar-container {
+    flex: 1;
+  }
+
+  .study-container {
+    flex: 1;
+    position: relative;
+    margin-bottom: 120px;
+    z-index: 10;
+    padding-bottom: 40px;
+  }
+
+  #studyChart {
+    width: 100% !important;
+    max-width: 600px;
+    height: auto !important;
+    max-height: 350px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .calendar-table th,
+  .calendar-table td {
+    border: 1px solid #000;
+    width: 14.2%;
+    height: 100%;
+    position: relative;
+    vertical-align: top;
+    padding: 0;
+  }
+
+  .calendar-day-link {
+    position: absolute;
+    bottom: 4px;
+    right: 8px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .stamp {
+    width: 32px;
+    height: 32px;
+    background-color: #FF6B6B;
+    border-radius: 50%;
+    opacity: .55;
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .stamp::after {
+    content: "✓";
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: bold;
+  }
+
+  .month-summary {
+    margin-top: 24px;
+  }
+
+  /* メイン画面へ戻る ボタンにもスペース */
+  .return-link {
+    display: block;
+    margin: 24px auto;
+    text-align: center;
+    position: relative;
+    z-index: 50;
+  }
+
+  /* 今月集計の余白 */
+  .month-summary{
+    margin-top: 24px;
+  }
+
+  /* メイン画面に戻る位置 */
+  .btn.btn-primary{
+    margin-top:24px;
+    display:inline-block;
+  }
+
+}
+
+/* header */
+header {
+  width: 100%;
+  padding: 16px 0;
+}

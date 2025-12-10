@@ -1,3 +1,6 @@
+@import "application.bootstrap";
+@import "top";
+
 /* ============================================
    全画面・全ページ共通のスマホ最適化ルール
    ============================================ */
@@ -93,13 +96,6 @@ input[type="submit"] {
 }
 
 /* カレンダー表 */
-.calendar-table {
-  width: 100%;
-  border-collapse: collapse;
-  text-align: center;
-  font-size: 14px;
-}
-
 .calendar-table th,
 .calendar-table td {
   padding: 6px;
@@ -108,13 +104,6 @@ input[type="submit"] {
 }
 
 /* 日付リンク */
-.calendar-day-link {
-  display: block;
-  padding: 6px;
-  border-radius: 4px;
-  color: #333;
-}
-
 .calendar-day-link:hover {
   background: #e6f0ff;
 }
@@ -123,13 +112,6 @@ input[type="submit"] {
 .study-container canvas {
   width: 100% !important;
   height: auto !important;
-}
-
-/* カレンダー＋グラフのレイアウト（スマホ：縦並び） */
-.dashboard {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 
 
@@ -322,3 +304,4 @@ input[type="submit"] {
 /* ============================================
    END
    ============================================ */
+

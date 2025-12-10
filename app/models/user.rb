@@ -32,7 +32,7 @@ class User < ApplicationRecord
 
   # level
   validates :level,
-            presence: true,
             numericality: { only_integer: true },
+            allow_nil: true,
             unless: :google_user?
 end

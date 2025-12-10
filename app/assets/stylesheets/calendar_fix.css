@@ -1,0 +1,11 @@
+.calendar table {
+  border-collapse: separate;
+  border-spacing: 4px;
+}
+
+.calendar th,
+.calendar td {
+  padding: 4px;
+  text-align: center;
+  font-size: 14px;
+}
