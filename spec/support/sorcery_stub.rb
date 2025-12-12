@@ -1,17 +1,17 @@
 RSpec.configure do |config|
   config.before(:each, type: :request) do
-    # current_user 偽装
-    allow_any_instance_of(ApplicationController)
-      .to receive(:current_user)
-      .and_return(create(:user))
+    user = FactoryBot.create(:user)
 
-    # require_login 無力化
+    # Sorcery の current_user を stub
     allow_any_instance_of(ApplicationController)
-      .to receive(:require_login)
-      .and_return(true)
+      .to receive(:current_user).and_return(user)
 
+    # require_login を強制無効化
     allow_any_instance_of(ApplicationController)
-      .to receive(:not_authenticated)
-      .and_return(false)
+      .to receive(:require_login).and_return(true)
+
+    # not_authenticated の redirect を無効化
+    allow_any_instance_of(ApplicationController)
+      .to receive(:not_authenticated).and_return(nil)
   end
 end

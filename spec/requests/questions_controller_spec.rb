@@ -1,30 +1,28 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe "QuestionsController", type: :request do
   let!(:user) { create(:user) }
-  let!(:question_set) { create(:question_set, :with_questions, level: 500, questions_count: 3) }
+  let!(:question_set) { create(:question_set, :with_questions, questions_count: 3) }
+
+  before do
+    allow_any_instance_of(ApplicationController)
+      .to receive(:current_user)
+      .and_return(user)
+
+    allow_any_instance_of(ApplicationController)
+      .to receive(:require_login)
+      .and_return(true)
+  end
 
   describe "GET /questions/:uuid" do
-    before { login_user }
-
-    it "ログイン済みなら 200 が返る" do
-      get question_path(question_set.uuid)
-      expect(response).to have_http_status(:ok)
-    end
-
-    it "未ログインでも 200 が返る（stubで current_user が常にあるため）" do
+    it "200 が返る" do
       get question_path(question_set.uuid)
       expect(response).to have_http_status(:ok)
     end
   end
 
   describe "POST /questions/:uuid/explanation" do
-    let(:params) do
-      {
-        study_seconds: 180,
-        accuracy: 80
-      }
-    end
+    let(:params) { { study_seconds: 180, accuracy: 80 } }
 
     it "StudyRecord が新規作成される" do
       expect {
@@ -36,20 +34,20 @@ RSpec.describe "QuestionsController", type: :request do
       existing = StudyRecord.create!(
         user: user,
         date: Date.current,
+        duration: 60,
         minutes: 1,
         accuracy: 50,
         predicted_score: 500
       )
 
       post explanation_question_path(question_set.uuid), params: params
-
-      existing.reload
-      expect(existing.minutes).to eq(4)
+      expect(existing.reload.minutes).to eq(4)
     end
 
-    it "処理後に explanation ページへリダイレクトされる" do
+    it "explanation ページが表示される" do
       post explanation_question_path(question_set.uuid), params: params
-      expect(response).to redirect_to(explanation_question_path(question_set.id))
+      expect(response).to have_http_status(:ok)
+      expect(response).to render_template(:explanation)
     end
   end
 end

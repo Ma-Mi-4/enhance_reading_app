@@ -1,6 +1,6 @@
 class QuestionsController < ApplicationController
-  skip_before_action :verify_authenticity_token, raise: false
-  before_action :require_login
+  skip_before_action :require_login, only: [:show, :explanation], raise: false
+
   include StudyTimeTracker
 
   def show

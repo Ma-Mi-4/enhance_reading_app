@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe "Login", type: :system do
   before do
     create(:question_set, :with_questions, level: 500)
-    driven_by(:rack_test)
+    driven_by(:selenium_chrome_headless)
   end
 
   it "ログインに成功する" do
@@ -16,7 +16,6 @@ RSpec.describe "Login", type: :system do
     click_button "ログイン"
 
     expect(page).to have_current_path(root_path)
-      .or have_content("ログイン成功")
   end
 
   it "ログインに失敗する" do
