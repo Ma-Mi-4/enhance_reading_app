@@ -1,6 +1,4 @@
 class QuestionsController < ApplicationController
-  skip_before_action :require_login, only: [:show, :explanation], raise: false
-
   include StudyTimeTracker
 
   def show

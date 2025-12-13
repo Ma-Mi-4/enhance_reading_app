@@ -69,6 +69,6 @@ Rails.application.routes.draw do
   end
 
   if Rails.env.test?
-    post "/test_login", to: "test_sessions#login", as: :test_login
+    post "/test_login", to: "test_sessions#create"
   end
 end

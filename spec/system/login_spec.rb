@@ -1,21 +1,20 @@
 require 'rails_helper'
 
-RSpec.describe "Login", type: :system do
+RSpec.describe "Login", type: :system, js: true do
   before do
     create(:question_set, :with_questions, level: 500)
-    driven_by(:selenium_chrome_headless)
   end
 
   it "ログインに成功する" do
-    password = "password123"
-    user = FactoryBot.create(:user, password: password, password_confirmation: password)
+    user = create(:user, password: "password")
 
     visit login_path
+
     fill_in "email", with: user.email
-    fill_in "password", with: password
+    fill_in "password", with: "password"
     click_button "ログイン"
 
-    expect(page).to have_current_path(root_path)
+    expect(page).to have_content("ログアウト")
   end
 
   it "ログインに失敗する" do

@@ -25,22 +25,23 @@ jobs:
     env:
       RAILS_ENV: test
       DATABASE_URL: postgres://postgres:postgres@localhost:5432/app_test
+      CHROME_PATH: /usr/bin/chromium-browser
 
     steps:
       - uses: actions/checkout@v3
 
+      - name: Install system dependencies (Chromium)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y chromium-browser
+
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2.2'
-
-      - name: Install dependencies
-        run: |
-          gem install bundler
-          bundle install --jobs 4 --retry 3
+          bundler-cache: true
 
       - name: Setup DB
         run: |
-          chmod +x bin/rails
           bin/rails db:create
           bin/rails db:schema:load
 

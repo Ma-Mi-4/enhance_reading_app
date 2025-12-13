@@ -27,8 +27,41 @@ RSpec.configure do |config|
   end
 
   config.before(:each, type: :request) do
-    allow_any_instance_of(ActionController::Base)
-      .to receive(:verify_same_origin_request)
-      .and_return(true)
+    ApplicationController.prepend(CurrentUserStub)
+  end
+end
+
+require "capybara/rspec"
+require "capybara/cuprite"
+
+Capybara.register_driver :cuprite do |app|
+  Capybara::Cuprite::Driver.new(
+    app,
+    browser_path: "/usr/bin/chromium",
+    window_size: [1400, 900],
+    process_timeout: 120,
+    timeout: 30,
+    browser_options: {
+      "headless" => nil,
+      "no-sandbox" => nil,
+      "disable-dev-shm-usage" => nil,
+      "disable-gpu" => nil,
+      "disable-software-rasterizer" => nil,
+      "disable-features" => "site-per-process",
+      "remote-debugging-port" => "0"
+    }
+  )
+end
+
+Capybara.default_driver = :cuprite
+Capybara.javascript_driver = :cuprite
+
+RSpec.configure do |config|
+  config.before(:each, type: :system) do
+    Capybara.current_driver = :cuprite
+  end
+
+  config.after(:each, type: :system) do
+    Capybara.use_default_driver
   end
 end

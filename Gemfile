@@ -83,12 +83,10 @@ end
 
 
 group :test do
-  # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem 'rails-controller-testing'
-  gem 'database_cleaner-active_record'
+  gem "rails-controller-testing"
+  gem "database_cleaner-active_record"
   gem "capybara"
-  gem 'selenium-webdriver'
-  gem "webdrivers"
+  gem "cuprite"
 end
 
 gem "dockerfile-rails", ">= 1.7", :group => :development

@@ -1,4 +1,3 @@
 class ApplicationController < ActionController::Base
-  if Rails.env.test?
-  end
+  before_action :require_login
 end
