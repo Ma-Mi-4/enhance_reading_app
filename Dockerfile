@@ -15,7 +15,6 @@ RUN apt-get update -y && apt-get install -y \
     # Chromium runtime deps
     libglib2.0-0 \
     libcups2 \
-    libxkbcommon0 \
     libnss3 \
     libx11-6 \
     libx11-xcb1 \
@@ -37,14 +36,15 @@ RUN apt-get update -y && apt-get install -y \
     libpangocairo-1.0-0 \
     libpango-1.0-0 \
     libcairo2 \
+    libxkbcommon0 \
     --no-install-recommends && \
     rm -rf /var/lib/apt/lists/*
 
-# Chrome for Testing（固定版）
+# Chrome for Testing（120 固定）
 RUN wget -q https://storage.googleapis.com/chrome-for-testing-public/120.0.6099.109/linux64/chrome-linux64.zip && \
     unzip chrome-linux64.zip && \
     mv chrome-linux64 /opt/chrome && \
-    ln -s /opt/chrome/chrome /usr/bin/chromium && \
+    ln -sf /opt/chrome/chrome /usr/bin/chromium && \
     rm chrome-linux64.zip
 
 ENV CHROME_PATH=/usr/bin/chromium

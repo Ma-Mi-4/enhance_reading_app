@@ -5,7 +5,4 @@ module CurrentUserStub
 end
 
 RSpec.configure do |config|
-  config.before(:each, type: :request) do
-    ApplicationController.prepend(CurrentUserStub)
-  end
 end

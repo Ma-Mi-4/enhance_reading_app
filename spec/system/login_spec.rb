@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Login", type: :system, js: true do
+RSpec.describe "Login", type: :system, js: true, system: true do
   before do
     create(:question_set, :with_questions, level: 500)
   end
