@@ -12,7 +12,8 @@ jobs:
     services:
       postgres:
         image: postgres:15
-        ports: ['5432:5432']
+        ports:
+          - 5432:5432
         env:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
@@ -41,9 +42,7 @@ jobs:
           bundler-cache: true
 
       - name: Setup DB
-        run: |
-          bin/rails db:create
-          bin/rails db:schema:load
+        run: bundle exec rails db:prepare
 
       - name: Run tests
         run: bundle exec rspec
