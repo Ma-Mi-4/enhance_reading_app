@@ -4,7 +4,9 @@
     data-has-timer="true" data-turbo="false"
   <% end %>
 
-  <h1>復習問題</h1>
+  <h1 class="text-center mb-6">
+    復習問題
+  </h1>
 
   <%= form_with url: explanation_quiz_path(@quiz_set.uuid),
               method: :post,
@@ -19,11 +21,11 @@
     <%= hidden_field_tag :accuracy, 0, id: "accuracy_field_quiz" %>
 
     <% @questions.each_with_index do |q, index| %>
-      <div class="question-block">
+      <div class="question-block max-w-3xl mx-auto text-left mb-8">
 
-        <p><strong><%= index + 1 %>. <%= q[:question_text] %></strong></p>
+        <p class="leading-relaxed mb-4"><strong><%= index + 1 %>. <%= q[:question_text] %></strong></p>
 
-        <ul class="choice-list">
+        <ul class="choice-list space-y-2">
           <% q[:choices].each_with_index do |choice, i| %>
             <li class="choice-item">
 
@@ -43,7 +45,7 @@
       </div>
     <% end %>
 
-    <%= f.submit "解説を見る", class: "btn btn-primary w-full mt-4" %>
+    <%= f.submit "解説を見る", class: "btn btn-primary mt-4" %>
 
   <% end %>
 

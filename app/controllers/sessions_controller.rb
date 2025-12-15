@@ -1,4 +1,6 @@
 class SessionsController < ApplicationController
+  skip_before_action :require_login, only: [:new, :create, :oauth, :oauth_callback]
+
   skip_before_action :verify_authenticity_token, only: :create
   skip_forgery_protection only: [:create, :oauth_callback]
 

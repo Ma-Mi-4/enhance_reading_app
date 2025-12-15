@@ -32,6 +32,10 @@ class QuestionsController < ApplicationController
       }
     end
 
+    unless current_user
+      render :explanation and return
+    end
+
     seconds = params[:study_seconds].to_i
     accuracy = params[:accuracy].to_i
 

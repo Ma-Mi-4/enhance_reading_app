@@ -4,9 +4,11 @@
 
 <div class="page-container">
 
-  <h1><%= @question_set.title %></h1>
+  <h1 class="text-center">
+    <%= @question_set.title %>
+  </h1>
 
-  <div style="margin-bottom: 20px;">
+  <div class="max-w-3xl mx-auto mb-8 text-left leading-loose">
     <%= simple_format(@question_set.content) %>
   </div>
 
@@ -22,10 +24,11 @@
     <%= f.hidden_field :accuracy, value: 0, id: "accuracy_field_questions" %>
 
     <% @questions.each_with_index do |q, index| %>
-      <div class="question-block">
-        <p><strong>Question <%= index + 1 %>:</strong> <%= q[:body] %></p>
+      <div class="question-block max-w-3xl mx-auto text-left mb-8">
+        <p class="mb-4 leading-relaxed">
+          <strong>Question <%= index + 1 %>:</strong> <%= q[:body] %></p>
 
-        <ul class="choice-list">
+        <ul class="choice-list text-left space-y-2">
           <% q[:choices].each_with_index do |choice, i| %>
             <li class="choice-item">
               <input type="radio" name="q<%= index %>" value="<%= i %>"
@@ -38,7 +41,7 @@
       </div>
     <% end %>
 
-    <%= f.submit "解説を見る", class: "btn btn-primary w-full mt-4" %>
+    <%= f.submit "解説を見る", class: "btn btn-primary mt-4" %>
 
   <% end %>
 

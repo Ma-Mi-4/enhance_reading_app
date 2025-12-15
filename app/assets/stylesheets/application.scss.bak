@@ -1,0 +1,51 @@
+/* 全ページ共通 */
+@import "calendars"; 
+@import "calendar_fix";
+
+/* ============================================
+   全画面・全ページ共通のスマホ最適化ルール
+   ============================================ */
+
+.page-container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+body {
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+/* 見出し */
+h1 {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin: 1rem 0 0.5rem;
+}
+
+/* 共通ボタン */
+button,
+input[type="submit"] {
+  padding: 12px 16px;
+  font-size: 17px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+/* フォーム input（★これが超重要） */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
