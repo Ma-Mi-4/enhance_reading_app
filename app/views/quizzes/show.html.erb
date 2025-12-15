@@ -1,51 +1,66 @@
-<div class="page-container">
+<% content_for :body_attributes do %>
+  data-has-timer="true" data-turbo="false"
+<% end %>
 
-  <% content_for :body_attributes do %>
-    data-has-timer="true" data-turbo="false"
-  <% end %>
+<div class="max-w-3xl mx-auto px-4 py-8">
 
-  <h1 class="text-center mb-6">
+  <!-- タイトル -->
+  <h1 class="text-2xl font-bold text-center mb-8">
     復習問題
   </h1>
 
   <%= form_with url: explanation_quiz_path(@quiz_set.uuid),
-              method: :post,
-              local: true,
-              html: { id: "quiz_form" } do |f| %>
+        method: :post,
+        local: true,
+        html: { id: "quiz_form" } do |f| %>
 
-   <%= hidden_field_tag :uuid, @quiz_set.uuid %>
+    <%= hidden_field_tag :uuid, @quiz_set.uuid %>
 
-    <div id="timer" style="font-size: 20px; margin-bottom: 16px;">00:00</div>
+    <!-- タイマー -->
+    <div id="timer" class="text-lg font-medium mb-6 text-center">
+      00:00
+    </div>
 
     <%= hidden_field_tag :study_seconds, 0, id: "study_seconds" %>
     <%= hidden_field_tag :accuracy, 0, id: "accuracy_field_quiz" %>
 
     <% @questions.each_with_index do |q, index| %>
-      <div class="question-block max-w-3xl mx-auto text-left mb-8">
+      <div class="mb-10">
 
-        <p class="leading-relaxed mb-4"><strong><%= index + 1 %>. <%= q[:question_text] %></strong></p>
+        <!-- 問題文 -->
+        <p class="mb-4 text-base font-medium">
+          <%= index + 1 %>. <%= q[:question_text] %>
+        </p>
 
-        <ul class="choice-list space-y-2">
+        <!-- 選択肢 -->
+        <div class="space-y-3">
           <% q[:choices].each_with_index do |choice, i| %>
-            <li class="choice-item">
+            <label class="flex items-start gap-3 p-4 border rounded-md
+                          cursor-pointer hover:bg-gray-50
+                          has-[:checked]:border-blue-600
+                          has-[:checked]:bg-blue-50">
 
               <input type="radio"
                      name="q<%= index %>"
                      value="<%= i %>"
-                     id="q<%= index %>_choice<%= i %>">
+                     id="q<%= index %>_choice<%= i %>"
+                     class="mt-1 h-4 w-4 text-blue-600">
 
-              <label for="q<%= index %>_choice<%= i %>">
+              <span class="text-base">
                 <%= choice %>
-              </label>
-
-            </li>
+              </span>
+            </label>
           <% end %>
-        </ul>
+        </div>
 
       </div>
     <% end %>
 
-    <%= f.submit "解説を見る", class: "btn btn-primary mt-4" %>
+    <!-- 解説ボタン -->
+    <div class="text-center">
+      <%= f.submit "解説を見る",
+            class: "btn-outline mt-4" %>
+    </div>
 
   <% end %>
 

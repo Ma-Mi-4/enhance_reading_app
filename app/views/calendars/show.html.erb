@@ -1,13 +1,46 @@
-<div class="page-container">
+<div class="max-w-3xl mx-auto px-4 py-8">
 
-  <h1><%= @date.strftime('%Y年%m月%d日') %> の記録</h1>
+  <!-- タイトル -->
+  <h1 class="text-2xl font-bold text-center mb-8">
+    <%= @date.strftime('%Y年%m月%d日') %> の記録
+  </h1>
 
-  <p>学習時間：<%= @minutes.present? ? "#{@minutes}分" : "記録なし" %></p>
-  <p>正答率：<%= @accuracy.present? ? "#{@accuracy}%" : "記録なし" %></p>
-  <p>予想スコア：<%= @score.present? ? "#{@score}点" : "記録なし" %></p>
+  <!-- 記録カード -->
+  <div class="max-w-md mx-auto space-y-4">
 
-  <br>
-  <%= link_to "カレンダーへ戻る", calendars_path,
-        class: "btn btn-secondary w-full mt-4" %>
+    <!-- 学習時間 -->
+    <div class="flex justify-between items-center p-4 border rounded-md">
+      <span class="text-gray-600">学習時間</span>
+      <span class="text-lg font-semibold">
+        <%= @minutes.present? ? "#{@minutes}分" : "記録なし" %>
+      </span>
+    </div>
+
+    <!-- 正答率 -->
+    <div class="flex justify-between items-center p-4 border rounded-md">
+      <span class="text-gray-600">正答率</span>
+      <span class="text-lg font-semibold">
+        <%= @accuracy.present? ? "#{@accuracy}%" : "記録なし" %>
+      </span>
+    </div>
+
+    <!-- 予想スコア -->
+    <div class="flex justify-between items-center p-4 border rounded-md">
+      <span class="text-gray-600">予想スコア</span>
+      <span class="text-lg font-semibold">
+        <%= @score.present? ? "#{@score}点" : "記録なし" %>
+      </span>
+    </div>
+
+  </div>
+
+  <!-- 戻る -->
+  <div class="mt-10 text-center">
+    <%= link_to "カレンダーへ戻る",
+          calendars_path,
+          class: "inline-block px-6 py-3
+                  bg-blue-600 text-white rounded-md
+                  hover:bg-blue-700 transition" %>
+  </div>
 
 </div>

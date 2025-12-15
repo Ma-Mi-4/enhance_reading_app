@@ -85,8 +85,8 @@
   }
 
   .stamp {
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
     background: rgba(255, 105, 180, .55);
 
@@ -171,6 +171,18 @@
     box-shadow: none;
     outline: none;
   }
+
+  .btn-outline {
+    @apply inline-block
+           px-6 py-3
+           border border-gray-300
+           rounded-xl
+           text-gray-800
+           bg-white
+           hover:bg-gray-50
+           transition;
+  }
+
 }
 
 /* header */

@@ -1,5 +1,18 @@
-<h1>問題編集（管理者用）</h1>
+<div class="max-w-5xl mx-auto px-4 py-8">
 
-<%= render "form", question: @question %>
+  <h1 class="text-2xl font-bold mb-6">
+    問題編集（管理者用）
+  </h1>
 
-<%= link_to "一覧に戻る", admin_questions_path, class: "btn btn-secondary mt-3" %>
+  <%= render "form", question: @question %>
+
+  <div class="mt-6">
+    <%= link_to "一覧に戻る",
+          admin_questions_path,
+          class: "inline-block px-4 py-2
+                  border border-gray-300 rounded-md
+                  text-gray-700
+                  hover:bg-gray-100 transition" %>
+  </div>
+
+</div>

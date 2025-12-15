@@ -2,66 +2,85 @@
   data-page="explanation" data-turbo="false"
 <% end %>
 
-<div class="page-container">
+<div class="max-w-3xl mx-auto px-4 py-8">
 
-  <h1 class="text-center text-xl font-semibold mb-8">
-    解説: <%= @question_set.title %>
+  <!-- タイトル -->
+  <h1 class="text-2xl font-bold text-center mb-8">
+    解説：<%= @question_set.title %>
   </h1>
 
-
   <!-- Part7 本文 -->
-  <div class="max-w-3xl mx-auto mb-10 text-left leading-loose text-base">
+  <div class="mb-10 text-gray-800 leading-relaxed">
     <%= simple_format(@question_set.content) %>
   </div>
 
   <% @questions.each_with_index do |q, index| %>
+    <div class="mb-12">
 
-    <div class="question-block max-w-3xl mx-auto mb-10 text-left">
-
-      <p class="leading-relaxed mb-4">
-        <strong>問題 <%= index + 1 %>:</strong>
-        <%= q[:body] %>
+      <!-- 問題文 -->
+      <p class="mb-3 text-base font-medium">
+        問題 <%= index + 1 %>：
+        <span class="font-normal"><%= q[:body] %></span>
       </p>
 
-      <p class="font-semibold text-green-600 mb-4">
-        正解：<%= q[:choices][q[:correct_index]] %>
-      </p>
-
-      <hr class="my-4">
-
-      <h4 class="font-semibold mb-3">
-        間違いの選択肢と解説：
-      </h4>
-
-      <% q[:choices].each_with_index do |choice, i| %>
-        <% next if i == q[:correct_index] %>
-
-        <% wrong_explanation =
-             q[:wrong_explanations].present? ?
-               q[:wrong_explanations][i] : nil %>
-
-        <p class="text-sm leading-relaxed mb-3">
-          <strong><%= choice %></strong>：
-          <%= wrong_explanation.presence || "（解説なし）" %>
+      <!-- 正解 -->
+      <div class="mb-4 p-4 rounded-md bg-green-50 border border-green-200">
+        <p class="font-semibold text-green-700">
+          正解：<%= q[:choices][q[:correct_index]] %>
         </p>
-      <% end %>
+      </div>
 
+      <!-- 間違いの選択肢 -->
+      <h2 class="text-sm font-semibold text-gray-700 mb-2">
+        間違いの選択肢と解説
+      </h2>
+
+      <div class="space-y-3 mb-6">
+        <% q[:choices].each_with_index do |choice, i| %>
+          <% next if i == q[:correct_index] %>
+
+          <% wrong_explanation =
+               q[:wrong_explanations].present? ?
+                 q[:wrong_explanations][i] : nil %>
+
+          <div class="p-3 border rounded-md bg-gray-50">
+            <p class="text-sm leading-relaxed">
+              <span class="font-medium"><%= choice %></span>：
+              <%= wrong_explanation.presence || "（解説なし）" %>
+            </p>
+          </div>
+        <% end %>
+      </div>
+
+      <!-- 正解の解説 -->
       <% if q[:explanation].present? %>
-        <p class="mt-4 leading-relaxed"><strong>解説:</strong> <%= q[:explanation] %></p>
+        <div class="mb-4">
+          <p class="font-semibold mb-1">解説</p>
+          <p class="leading-relaxed text-gray-800">
+            <%= q[:explanation] %>
+          </p>
+        </div>
       <% end %>
 
+      <!-- 例文 -->
       <% if q[:example_sentence].present? %>
-        <p class="mt-3 text-sm leading-relaxed text-gray-700"><strong>例文:</strong> <%= q[:example_sentence] %></p>
+        <div class="mt-3 text-sm text-gray-600 leading-relaxed">
+          <span class="font-semibold">例文：</span>
+          <%= q[:example_sentence] %>
+        </div>
       <% end %>
 
     </div>
-
   <% end %>
 
   <% quiz_set = QuizSet.find_by(question_set_id: @question_set.id) %>
 
   <% if quiz_set.present? %>
-    <%= link_to "復習問題へ", quiz_path(quiz_set.uuid), class: "btn btn-primary" %>
+    <div class="text-center mt-10">
+      <%= link_to "復習問題へ",
+            quiz_path(quiz_set.uuid),
+            class: "btn-outline mt-4" %>
+    </div>
   <% end %>
 
 </div>

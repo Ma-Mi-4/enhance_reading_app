@@ -1,53 +1,78 @@
-<div class="page-container reading leading-loose">
+<div class="max-w-3xl mx-auto px-4 py-8">
 
-  <h1 class="text-center text-xl font-semibold mb-10">
+  <!-- タイトル -->
+  <h1 class="text-2xl font-bold text-center mb-8">
     復習解説
   </h1>
 
   <% @questions.each_with_index do |q, idx| %>
+    <div class="mb-12">
 
-    <div class="explanation-block">
-
-      <h3 class="text-lg font-semibold mb-4">問題 <%= idx + 1 %></h3>
-
-      <!-- 正解 -->
-      <p class="correct-answer font-semibold text-green-600 mb-6 leading-relaxed">
-        正解: <%= q[:choices][q[:correct_index]] %>
-        ： <%= q[:explanation_list][q[:correct_index]] %>
+      <!-- 問題番号 -->
+      <p class="mb-3 text-base font-medium">
+        問題 <%= idx + 1 %>
       </p>
 
-      <!-- 選択肢別解説 -->
-      <p class="section-title font-semibold mb-3">選択肢別の解説</p>
-      <% q[:choices].each_with_index do |choice, i| %>
-        <% next if i == q[:correct_index] %>
-
-        <p class="choice-explanation leading-relaxed mb-3">
-          <strong><%= choice %></strong>：
-          <%= q[:explanation_list][i].presence || "（解説なし）" %>
+      <!-- 正解 -->
+      <div class="mb-4 p-4 rounded-md bg-green-50 border border-green-200">
+        <p class="font-semibold text-green-700 leading-relaxed">
+          正解：
+          <%= q[:choices][q[:correct_index]] %><br>
+          <span class="font-normal">
+            <%= q[:explanation_list][q[:correct_index]] %>
+          </span>
         </p>
-      <% end %>
+      </div>
+
+      <!-- 選択肢別解説 -->
+      <h2 class="text-sm font-semibold text-gray-700 mb-2">
+        選択肢別の解説
+      </h2>
+
+      <div class="space-y-3 mb-6">
+        <% q[:choices].each_with_index do |choice, i| %>
+          <% next if i == q[:correct_index] %>
+
+          <div class="p-3 border rounded-md bg-gray-50">
+            <p class="text-sm leading-relaxed">
+              <span class="font-medium"><%= choice %></span>：
+              <%= q[:explanation_list][i].presence || "（解説なし）" %>
+            </p>
+          </div>
+        <% end %>
+      </div>
 
       <!-- 例文 -->
       <% if q[:example_sentence].present? %>
-        <p class="section-title font-semibold mt-6 mb-2">例文</p>
-        <p class="text-sm leading-relaxed text-gray-700"><%= q[:example_sentence] %></p>
+        <div class="mt-3 text-sm text-gray-600 leading-relaxed">
+          <span class="font-semibold">例文：</span>
+          <%= q[:example_sentence] %>
+        </div>
       <% end %>
 
     </div>
-
   <% end %>
 
-  <p><%= link_to "学習を終了してカレンダーへ", calendars_path, class: "btn btn-primary w-full" %></p>
+  <!-- 行動ボタン -->
+  <div class="space-y-4 mt-10 text-center">
 
-  <p><%= link_to "次の問題へ",
-       question_path(
-         (
-           QuestionSet.where(level: current_user.level)
-                      .where("id > ?", @current_qs_id)
-                      .first ||
-           QuestionSet.where(level: current_user.level).first
-         ).uuid
-       ),
-       class: "btn btn-primary" %></p>
+    <%= link_to "学習を終了してカレンダーへ",
+          calendars_path,
+          class: "inline-block w-full max-w-md px-6 py-3
+                  bg-blue-600 text-white rounded-md
+                  hover:bg-blue-700 transition" %>
+
+    <%= link_to "次の問題へ",
+          question_path(
+            (
+              QuestionSet.where(level: current_user.level)
+                         .where("id > ?", @current_qs_id)
+                         .first ||
+              QuestionSet.where(level: current_user.level).first
+            ).uuid
+          ),
+          class: "btn-outline mt-4" %>
+
+  </div>
 
 </div>
