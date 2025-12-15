@@ -46,7 +46,6 @@ Rails.application.routes.draw do
   end
 
   get 'settings', to: 'settings#index'
-  get 'terms_of_service', to: 'static_pages#terms_of_service'
   get 'main', to: 'main#index'
   get 'settings/notification', to: 'settings#notification', as: 'settings_notification'
   patch 'settings/notification', to: 'settings#update_notification', as: 'update_notification_settings'
