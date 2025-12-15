@@ -86,7 +86,7 @@ Rails.application.config.sorcery.configure do |config|
   config.google.key = ENV["GOOGLE_CLIENT_ID"]
   config.google.secret = ENV["GOOGLE_CLIENT_SECRET"]
   config.google.callback_url = "https://enhance-reading-app-morning-sound-6129.fly.dev/oauth/google/callback"
-  config.google.user_info_mapping = { email: "email", username: "name" }
+  config.google.user_info_mapping = { email: "email", name: "name" }
   config.google.scope = "openid email profile"
 
   config.user_class = "User"
