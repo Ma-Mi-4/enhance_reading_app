@@ -1,6 +1,5 @@
 class QuestionsController < ApplicationController
-  skip_before_action :verify_authenticity_token, raise: false
-  before_action :require_login
+  skip_before_action :require_login, only: [:explanation]
   include StudyTimeTracker
 
   def show
@@ -31,6 +30,10 @@ class QuestionsController < ApplicationController
         explanation: q.explanation,
         wrong_explanations: q.wrong_explanations
       }
+    end
+
+    unless current_user
+      render :explanation and return
     end
 
     seconds = params[:study_seconds].to_i

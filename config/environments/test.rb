@@ -44,6 +44,7 @@ Rails.application.configure do
   }
 
   config.action_controller.allow_forgery_protection = false
+  config.action_controller.forgery_protection_origin_check = false
   config.action_dispatch.show_exceptions = false
 
   Rails.application.config.session_store :cookie_store,

@@ -1,25 +1,27 @@
-<div class="page-container reading">
+<div class="page-container reading leading-loose">
 
-  <h1>復習解説</h1>
+  <h1 class="text-center text-xl font-semibold mb-10">
+    復習解説
+  </h1>
 
   <% @questions.each_with_index do |q, idx| %>
 
     <div class="explanation-block">
 
-      <h3>問題 <%= idx + 1 %></h3>
+      <h3 class="text-lg font-semibold mb-4">問題 <%= idx + 1 %></h3>
 
       <!-- 正解 -->
-      <p class="correct-answer">
+      <p class="correct-answer font-semibold text-green-600 mb-6 leading-relaxed">
         正解: <%= q[:choices][q[:correct_index]] %>
         ： <%= q[:explanation_list][q[:correct_index]] %>
       </p>
 
       <!-- 選択肢別解説 -->
-      <p class="section-title">選択肢別の解説</p>
+      <p class="section-title font-semibold mb-3">選択肢別の解説</p>
       <% q[:choices].each_with_index do |choice, i| %>
         <% next if i == q[:correct_index] %>
 
-        <p class="choice-explanation">
+        <p class="choice-explanation leading-relaxed mb-3">
           <strong><%= choice %></strong>：
           <%= q[:explanation_list][i].presence || "（解説なし）" %>
         </p>
@@ -27,8 +29,8 @@
 
       <!-- 例文 -->
       <% if q[:example_sentence].present? %>
-        <p class="section-title">例文</p>
-        <p><%= q[:example_sentence] %></p>
+        <p class="section-title font-semibold mt-6 mb-2">例文</p>
+        <p class="text-sm leading-relaxed text-gray-700"><%= q[:example_sentence] %></p>
       <% end %>
 
     </div>

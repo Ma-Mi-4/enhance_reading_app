@@ -6,10 +6,9 @@
 
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
+
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= stylesheet_link_tag "top", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
 
     <% if Rails.env.production? %>
@@ -25,17 +24,21 @@
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
 
-  <body>
+  <body class="min-h-screen flex flex-col">
 
     <%= render 'shared/header' %>
 
     <% flash.each do |key, message| %>
-      <div class="flash-message <%= key %>"><%= message %></div>
+      <div class="text-center text-sm mt-2 text-red-600">
+        <%= message %>
+      </div>
     <% end %>
 
-    <div class="page-container">
-      <%= yield %>
-    </div>
+    <main class="flex-grow px-4">
+      <div class="mx-auto max-w-4xl">
+        <%= yield %>
+      </div>
+    </main>
 
     <%= render 'shared/footer' %>
 

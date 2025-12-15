@@ -1,28 +1,88 @@
-<div class="page-container">
-  <h1 class="text-2xl font-bold mb-4">メイン画面</h1>
+<div class="page-container max-w-3xl mx-auto px-4 py-8">
+
+  <!-- タイトル -->
+  <h1 class="text-2xl font-bold mb-6 text-center">
+    TOEIC長文トレーニング
+  </h1>
 
   <% if current_user.present? %>
-    <p class="mb-2">ようこそ、<%= current_user.name %>さん！</p>
+
+    <!-- ログイン後 -->
+    <p class="mb-4 text-center">
+      ようこそ、<%= current_user.name %>さん！
+    </p>
 
     <% if current_user.level.present? %>
-      <nav class="space-x-4">
+
+      <nav class="flex flex-col gap-4 items-center">
+
         <% if @question_set.present? %>
-          <p><%= link_to '問題へ', question_path(@question_set.uuid) %></p>
+          <%= link_to '問題を解く',
+              question_path(@question_set.uuid),
+              class: "px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition" %>
         <% else %>
-          <p class="text-red-600">まだ学習できる問題がありません</p>
+          <p class="text-red-600">
+            まだ学習できる問題がありません
+          </p>
         <% end %>
-        <p><%= link_to '設定へ', settings_path, class: "text-blue-600 hover:underline" %></p>
-        <p><%= link_to '学習カレンダーへ', calendars_path, class: "text-blue-600 hover:underline" %></p>
+
+        <%= link_to '設定',
+            settings_path,
+            class: "text-blue-600 hover:underline" %>
+        
+        <%= link_to '学習カレンダー',
+            calendars_path,
+            class: "text-blue-600 hover:underline" %>
+
       </nav>
+
     <% else %>
-      <p>レベル設定がまだ完了していません</p>
-      <%= link_to 'レベルを設定する', set_level_user_path(current_user), class: "text-purple-500 underline" %>
+
+      <!-- レベル未設定 -->
+      <div class="text-center space-y-3">
+        <p>レベル設定がまだ完了していません</p>
+        <%= link_to 'レベルを設定する',
+            set_level_user_path(current_user),
+            class: "text-purple-600 underline" %>
+      </div>
+
     <% end %>
 
-    <div class="mt-4">
-      <%= button_to 'ログアウト', logout_path, method: :delete, data: { turbo: false }, class: "text-red-600 hover:underline" %>
+    <div class="mt-8 text-center">
+      <%= button_to 'ログアウト',
+          logout_path,
+          method: :delete,
+          data: { turbo: false },
+          class: "text-red-600 hover:underline" %>
     </div>
+
   <% else %>
-    <%= button_to 'ログイン', login_path, class: 'btn btn-outline-primary me-2' %>
+
+    <!-- ログイン前（LP的役割） -->
+    <div class="space-y-6 text-center">
+
+      <p class="text-gray-700">
+        TOEICの長文問題を解きながら、学習時間や正答率を記録できる学習サービスです。
+      </p>
+
+      <div class="flex flex-col gap-3">
+        <%= link_to '使い方を見る',
+            guide_path,
+            class: "px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-100" %>
+
+        <%= link_to 'よくある質問を見る',
+            faq_path,
+            class: "px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-100" %>
+      </div>
+
+      <div class="pt-6 border-t">
+        <%= link_to 'ログイン',
+            login_path,
+            class: "inline-block px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition" %>
+      </div>
+
+    </div>
+
   <% end %>
+
 </div>

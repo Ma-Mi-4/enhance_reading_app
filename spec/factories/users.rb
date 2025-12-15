@@ -1,10 +1,15 @@
 FactoryBot.define do
   factory :user do
-    sequence(:email) { |n| "user#{n}@example.com" }
-    name { "Test User" }
-    level { 500 }
+    name  { "Test User" }
+    email { Faker::Internet.email }
+    password { "password" }
+    password_confirmation { "password" }
 
-    password { "password123" }
-    password_confirmation { "password123" }
+    after(:create) do |user|
+      user.update!(
+        password: "password",
+        password_confirmation: "password"
+      )
+    end
   end
 end

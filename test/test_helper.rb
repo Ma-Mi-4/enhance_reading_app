@@ -15,7 +15,6 @@ module ActiveSupport
 end
 
 module RequireLoginBypass
-  def require_login; true; end
 end
 
 class ApplicationController

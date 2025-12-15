@@ -16,9 +16,13 @@ RSpec.describe "Question solving flow", type: :system do
   end
 
   before do
-    driven_by(:rack_test)
+    visit login_path
+
+    expect(page).not_to have_content("ログイン")
+
     fill_in "email", with: user.email
-    fill_in "password", with: password   # ← ★ raw_password ではなく固定値
+    fill_in "password", with: password
+
     click_button "ログイン"
   end
 

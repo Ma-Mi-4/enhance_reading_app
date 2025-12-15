@@ -16,11 +16,14 @@ RSpec.describe "Question solving flow", type: :system do
   end
 
   before do
-    puts "[DEBUG] Trying login with #{user.email} / #{password}"
+    visit login_path
+
+    expect(page).not_to have_content("ログイン")
+
     fill_in "email", with: user.email
     fill_in "password", with: password
+
     click_button "ログイン"
-    puts "[DEBUG] Current page after login: #{page.current_path}"
   end
 
   it "問題を解き、解説ページへ進み、StudyRecord が保存される" do

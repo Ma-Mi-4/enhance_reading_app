@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'pages/guide'
   get 'emails/edit'
   get 'emails/update'
   get 'passwords/edit'
@@ -58,6 +59,8 @@ Rails.application.routes.draw do
   patch 'users/email',      to: 'emails#update', as: 'user_email'
   get "/oauth/:provider", to: "sessions#oauth", as: :auth_at_provider
   get "/oauth/:provider/callback", to: "sessions#oauth_callback", as: :auth_callback
+  get "guide", to: "pages#guide"
+  get "faq", to: "pages#faq"
 
   namespace :admin do
     root to: "main#index"
@@ -69,6 +72,6 @@ Rails.application.routes.draw do
   end
 
   if Rails.env.test?
-    post "/test_login", to: "test_sessions#login", as: :test_login
+    post "/test_login", to: "test_sessions#create"
   end
 end

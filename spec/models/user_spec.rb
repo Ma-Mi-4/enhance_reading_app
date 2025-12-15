@@ -39,10 +39,9 @@ RSpec.describe User, type: :model do
       expect(user.errors[:password]).not_to be_empty
     end
 
-    it 'level が必須であること' do
+    it 'level は任意であること（登録後に設定するため）' do
       user = build(:user, level: nil)
-      expect(user).not_to be_valid
-      expect(user.errors[:level]).to include("can't be blank")
+      expect(user).to be_valid
     end
 
     it 'level が整数であること' do
