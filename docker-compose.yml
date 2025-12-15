@@ -44,6 +44,8 @@ services:
       POSTGRES_USER_PROD: app
       POSTGRES_PASSWORD_PROD: password123
       POSTGRES_DB_PROD: app_production
+      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID}
+      GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET}
 
     volumes:
       - db_data:/var/lib/postgresql/data
