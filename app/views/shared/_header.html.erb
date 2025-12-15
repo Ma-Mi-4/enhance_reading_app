@@ -52,7 +52,15 @@
             x-cloak
             class="lg:absolute right-0 lg:mt-2 w-full lg:w-40 bg-white border border-gray-200 rounded-md shadow-md py-2 z-50 text-sm"
           >
-            <%= link_to '設定', settings_path,
+            <%= link_to '使い方', guide_path,
+              class: 'block whitespace-nowrap px-4 py-2 text-gray-700 hover:bg-gray-100',
+              'x-on:click': 'open = false; dropdownOpen = false' %>
+
+            <%= link_to 'FAQ', faq_path,
+              class: 'block whitespace-nowrap px-4 py-2 text-gray-700 hover:bg-gray-100',
+              'x-on:click': 'open = false; dropdownOpen = false' %>
+
+            <%= link_to 'メイン画面', main_path,
               class: 'block whitespace-nowrap px-4 py-2 text-gray-700 hover:bg-gray-100',
               'x-on:click': 'open = false; dropdownOpen = false' %>
 
@@ -74,7 +82,7 @@
               class: 'block whitespace-nowrap px-4 py-2 text-gray-700 hover:bg-gray-100',
               'x-on:click': 'open = false; dropdownOpen = false' %>
 
-            <%= link_to 'メイン画面', main_path,
+            <%= link_to '設定', settings_path,
               class: 'block whitespace-nowrap px-4 py-2 text-gray-700 hover:bg-gray-100',
               'x-on:click': 'open = false; dropdownOpen = false' %>
           </div>
