@@ -1,3 +1,7 @@
+<% content_for :body_attributes do %>
+  data-page="calendar"
+<% end %>
+
 <div class="max-w-4xl mx-auto px-4 py-8">
 
   <!-- 月タイトル -->
@@ -49,7 +53,7 @@
   </div>
 
   <!-- 学習グラフ -->
-  <div class="bg-white rounded-xl p-6 shadow-md mb-12">
+  <div class="bg-white rounded-xl p-6 shadow-sm mb-16">
     <h2 class="text-lg font-semibold mb-4">
       今月の学習時間・予想スコア
     </h2>
@@ -68,12 +72,11 @@
   </div>
 
   <!-- 戻る -->
-  <div class="text-center">
+  <div class="space-y-4 mt-16 text-center">
     <%= link_to "メイン画面へ戻る",
       main_path,
-      class: "inline-block px-6 py-3
-              bg-blue-600 text-white rounded-md
-              hover:bg-blue-700 transition" %>
+      class: "border border-blue-400 text-blue-600 px-6 py-2 rounded-md
+             hover:bg-blue-50 transition text-sm" %>
   </div>
 
 </div>

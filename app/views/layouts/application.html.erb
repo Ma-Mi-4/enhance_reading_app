@@ -25,7 +25,7 @@
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
 
-  <body class="min-h-screen flex flex-col">
+  <body class="min-h-screen flex flex-col" <%= yield :body_attributes %>>
 
     <%= render 'shared/header' %>
 

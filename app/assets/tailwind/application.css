@@ -183,6 +183,11 @@
            transition;
   }
 
+  body[data-page="explanation"] main,
+  body[data-page="calendar"] main {
+    flex-grow: 0;
+  }
+
 }
 
 /* header */
