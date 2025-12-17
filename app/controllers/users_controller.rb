@@ -8,6 +8,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      auto_login(@user)
       redirect_to set_level_user_path(@user, new_registration: true), notice: "ユーザー登録が完了しました。レベルを設定してください"
     else
       puts "🧩 Validation errors: #{@user.errors.full_messages}"
