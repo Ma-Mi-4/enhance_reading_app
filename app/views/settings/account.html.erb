@@ -5,7 +5,7 @@
   </h1>
 
   <!-- メールアドレス変更 -->
-  <div class="mb-12 max-w-md mx-auto">
+  <div class="max-w-md mx-auto">
 
     <h2 class="text-lg font-semibold mb-4">
       メールアドレス変更
@@ -20,12 +20,15 @@
         <%= f.email_field :email,
               value: current_user.email,
               required: true,
-              class: "btn-outline mt-4" %>
+              class: "block w-full rounded-md border border-gray-300
+                      px-3 py-2 bg-white
+                      focus:outline-none focus:ring-2 focus:ring-blue-500" %>
       </div>
 
       <div class="text-center">
         <%= f.submit "更新",
-              class: "btn-outline mt-4" %>
+              class: "border border-blue-400 text-blue-600 px-6 py-2 rounded-md
+                     hover:bg-blue-50 transition text-sm" %>
       </div>
 
     <% end %>
@@ -63,9 +66,8 @@
 
       <div class="text-center">
         <%= f.submit "更新",
-              class: "inline-block px-6 py-3
-                      bg-blue-600 text-white rounded-md
-                      hover:bg-blue-700 transition" %>
+              class: "border border-blue-400 text-blue-600 px-6 py-2 rounded-md
+                      hover:bg-blue-50 transition text-sm" %>
       </div>
 
     <% end %>

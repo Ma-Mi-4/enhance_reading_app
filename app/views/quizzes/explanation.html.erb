@@ -19,8 +19,9 @@
 
       <!-- 正解 -->
       <div class="mb-4">
-        <p class="leading-relaxed text-gray-800">
-          <span class="font-semibold text-emerald-600">正解：</span>
+        <p class="lblock border border-gray-300 rounded-md px-4 py-3
+                         hover:bg-gray-50 transition cursor-pointer">
+          <span class="font-semibold text-green-600">正解：</span>
             <%= q[:choices][q[:correct_index]] %>
           </span>
         </p>
@@ -35,7 +36,8 @@
         <% q[:choices].each_with_index do |choice, i| %>
           <% next if i == q[:correct_index] %>
 
-          <div class="p-3 border border-gray-200 rounded-md bg-gray-50">
+          <div class="block border border-gray-300 rounded-md px-4 py-3
+                         hover:bg-gray-50 transition cursor-pointer">
             <p class="text-sm leading-relaxed">
               <span class="font-medium"><%= choice %></span>：
               <%= q[:explanation_list][i].presence || "（解説なし）" %>
