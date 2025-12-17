@@ -48,8 +48,8 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     options: {
       responsive: true,
-      maintainAspectRatio: true,
-      aspectRatio: window.innerWidth < 500 ? 1.2 : 1.8,
+      maintainAspectRatio: false,
+      animation: false,
       interaction: {
         mode: 'index',
         intersect: false

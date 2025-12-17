@@ -48,7 +48,7 @@
       </div>
     <% end %>
 
-    <main class="flex-grow">
+    <main class="<%= request.params[:controller].in?(%w[calendars questions]) ? '' : 'flex-grow' %>">
       <%= yield %>
     </main>
 
