@@ -44,14 +44,11 @@ gem "bootsnap", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
-gem "dartsass-rails", "~> 0.5.1"
 gem 'jquery-rails'
 
 gem 'sorcery', '0.16.3'
 
 gem 'rack-cors', '~> 1.1'
-
-gem "sassc-rails"
 
 gem 'omniauth'
 gem 'omniauth-rails_csrf_protection'

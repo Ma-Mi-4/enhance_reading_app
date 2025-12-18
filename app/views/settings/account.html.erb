@@ -1,46 +1,76 @@
-<div class="page-container">
+<div class="max-w-3xl mx-auto px-4 py-8">
 
-  <h1>アカウント情報変更</h1>
+  <h1 class="text-2xl font-bold text-center mb-8">
+    アカウント情報変更
+  </h1>
 
   <!-- メールアドレス変更 -->
-  <div class="setting-section">
+  <div class="max-w-md mx-auto">
 
-    <h2>メールアドレス変更</h2>
+    <h2 class="text-lg font-semibold mb-4">
+      メールアドレス変更
+    </h2>
 
-    <%= form_with url: user_email_path, method: :patch, local: true do |f| %>
+    <%= form_with url: user_email_path, method: :patch, local: true,
+          class: "space-y-6" do |f| %>
 
-      <p><label>メールアドレス</label></p>
-      <p><%= f.email_field :email, 
-            value: current_user.email,
-            required: true %></p>
+      <div>
+        <%= f.label :email, "メールアドレス",
+              class: "block text-sm font-medium text-gray-700 mb-1" %>
+        <%= f.email_field :email,
+              value: current_user.email,
+              required: true,
+              class: "block w-full rounded-md border border-gray-300
+                      px-3 py-2 bg-white
+                      focus:outline-none focus:ring-2 focus:ring-blue-500" %>
+      </div>
 
-      <p><%= f.submit "更新", class: "btn btn-primary" %></p>
+      <div class="text-center">
+        <%= f.submit "更新",
+              class: "border border-blue-400 text-blue-600 px-6 py-2 rounded-md
+                     hover:bg-blue-50 transition text-sm" %>
+      </div>
 
     <% end %>
-
   </div>
 
   <!-- パスワード変更 -->
-  <div class="setting-section">
+  <div class="max-w-md mx-auto">
 
-    <h2>パスワード変更</h2>
+    <h2 class="text-lg font-semibold mb-4">
+      パスワード変更
+    </h2>
 
-    <%= form_with url: user_password_path, method: :patch, local: true do |f| %>
+    <%= form_with url: user_password_path, method: :patch, local: true,
+          class: "space-y-6" do |f| %>
 
-      <p><label>新しいパスワード</label></p>
-      <p><%= f.password_field :password,
-            placeholder: "新しいパスワード",
-            required: true %></p>
+      <div>
+        <%= f.label :password, "新しいパスワード",
+              class: "block text-sm font-medium text-gray-700 mb-1" %>
+        <%= f.password_field :password,
+              required: true,
+              class: "block w-full rounded-md border border-gray-300
+                      px-3 py-2 bg-white
+                      focus:outline-none focus:ring-2 focus:ring-blue-500" %>
+      </div>
 
-      <p><label>確認用</label></p>
-      <p><%= f.password_field :password_confirmation,
-            placeholder: "確認用",
-            required: true %></p>
+      <div>
+        <%= f.label :password_confirmation, "確認用",
+              class: "block text-sm font-medium text-gray-700 mb-1" %>
+        <%= f.password_field :password_confirmation,
+              required: true,
+              class: "block w-full rounded-md border border-gray-300
+                      px-3 py-2 bg-white
+                      focus:outline-none focus:ring-2 focus:ring-blue-500" %>
+      </div>
 
-      <p><%= f.submit "更新", class: "btn btn-primary" %></p>
+      <div class="text-center">
+        <%= f.submit "更新",
+              class: "border border-blue-400 text-blue-600 px-6 py-2 rounded-md
+                      hover:bg-blue-50 transition text-sm" %>
+      </div>
 
     <% end %>
-
   </div>
 
 </div>

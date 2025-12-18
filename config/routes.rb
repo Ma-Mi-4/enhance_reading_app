@@ -46,7 +46,6 @@ Rails.application.routes.draw do
   end
 
   get 'settings', to: 'settings#index'
-  get 'terms_of_service', to: 'static_pages#terms_of_service'
   get 'main', to: 'main#index'
   get 'settings/notification', to: 'settings#notification', as: 'settings_notification'
   patch 'settings/notification', to: 'settings#update_notification', as: 'update_notification_settings'
@@ -57,8 +56,8 @@ Rails.application.routes.draw do
   patch 'users/password',     to: 'passwords#update', as: 'user_password'
   get   'users/email/edit', to: 'emails#edit',   as: 'edit_user_email'
   patch 'users/email',      to: 'emails#update', as: 'user_email'
-  get "/oauth/:provider", to: "sessions#oauth", as: :auth_at_provider
-  get "/oauth/:provider/callback", to: "sessions#oauth_callback", as: :auth_callback
+  get "/oauth/:provider",          to: "sessions#oauth",          as: :auth_at_provider
+  get "/oauth/:provider/callback", to: "sessions#oauth_callback"
   get "guide", to: "pages#guide"
   get "faq", to: "pages#faq"
 

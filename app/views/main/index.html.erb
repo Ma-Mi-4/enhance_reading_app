@@ -19,9 +19,9 @@
         <% if @question_set.present? %>
           <%= link_to '問題を解く',
               question_path(@question_set.uuid),
-              class: "px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition" %>
+              class: "text-blue-600 hover:underline" %>
         <% else %>
-          <p class="text-red-600">
+          <p class="text-gray-600">
             まだ学習できる問題がありません
           </p>
         <% end %>
@@ -43,7 +43,7 @@
         <p>レベル設定がまだ完了していません</p>
         <%= link_to 'レベルを設定する',
             set_level_user_path(current_user),
-            class: "text-purple-600 underline" %>
+            class: "text-blue-600 underline" %>
       </div>
 
     <% end %>
@@ -53,7 +53,7 @@
           logout_path,
           method: :delete,
           data: { turbo: false },
-          class: "text-red-600 hover:underline" %>
+          class: "text-gray-600 hover:text-gray-800 hover:underline" %>
     </div>
 
   <% else %>
@@ -78,7 +78,8 @@
       <div class="pt-6 border-t">
         <%= link_to 'ログイン',
             login_path,
-            class: "inline-block px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition" %>
+            class: "border border-blue-400 text-blue-600 px-6 py-2 rounded-md
+                    hover:bg-blue-50 transition text-sm" %>
       </div>
 
     </div>

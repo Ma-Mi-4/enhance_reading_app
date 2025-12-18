@@ -1,44 +1,47 @@
-<div class="page-container">
+<div class="max-w-3xl mx-auto px-4 py-8">
 
-  <h1><%= @new_registration ? "レベル設定" : "レベル設定変更" %></h1>
+  <h1 class="text-2xl font-bold text-center mb-4">
+    <%= @new_registration ? "レベル設定" : "レベル設定変更" %>
+  </h1>
 
-  <p>レベルを選択してください</p>
+  <p class="text-center text-gray-600 mb-8">
+    目標とする TOEIC スコアを選択してください
+  </p>
 
-  <div class="setting-section">
+  <div class="max-w-md mx-auto">
 
-    <%= form_with(model: @user,
-                  url: update_level_user_path(@user),
-                  method: :patch,
-                  local: true) do |f| %>
+    <%= form_with model: @user,
+          url: update_level_user_path(@user),
+          method: :patch,
+          local: true,
+          class: "space-y-4" do |f| %>
 
-      <div class="radio-group">
+      <% [800, 700, 600, 500].each do |score| %>
+        <label class="block border border-gray-300 rounded-md px-4 py-3
+                      cursor-pointer hover:bg-gray-50
+                      has-[:checked]:border-blue-600
+                      has-[:checked]:bg-blue-50">
 
-        <p><label class="radio-item">
-          <%= f.radio_button :level, 800 %> 800 点
-        </label></p>
+          <%= f.radio_button :level, score,
+                class: "h-4 w-4 text-blue-600" %>
 
-        <p><label class="radio-item">
-          <%= f.radio_button :level, 700 %> 700 点
-        </label></p>
-
-        <p><label class="radio-item">
-          <%= f.radio_button :level, 600 %> 600 点
-        </label></p>
-
-        <p><label class="radio-item">
-          <%= f.radio_button :level, 500 %> 500 点
-        </label></p>
-
-      </div>
+          <span class="text-base font-medium">
+            <%= score %> 点
+          </span>
+        </label>
+      <% end %>
 
       <% if @new_registration %>
         <%= hidden_field_tag :new_registration, true %>
       <% end %>
 
-      <%= f.submit "保存", class: "btn btn-primary w-full mt-4" %>
+      <div class="text-center">
+        <%= f.submit "保存",
+              class: "border border-blue-400 text-blue-600 px-6 py-2 rounded-md
+                     hover:bg-blue-50 transition text-sm" %>
+      </div>
 
     <% end %>
-
   </div>
 
 </div>

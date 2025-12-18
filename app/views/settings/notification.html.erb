@@ -1,40 +1,60 @@
-<div class="page-container">
+<div class="max-w-3xl mx-auto px-4 py-8">
 
-  <h1>通知設定</h1>
+  <h1 class="text-2xl font-bold text-center mb-8">
+    通知設定
+  </h1>
 
-  <div class="setting-section">
+  <div class="max-w-md mx-auto">
 
     <%= form_with model: @notification_setting,
-                  url: update_notification_settings_path,
-                  method: :patch,
-                  local: true do |f| %>
+          url: update_notification_settings_path,
+          method: :patch,
+          local: true,
+          class: "space-y-6" do |f| %>
 
-      <!-- 通知 ON/OFF -->
-      <p><label>通知ON/OFF</label></page>
+      <!-- 通知 ON / OFF -->
+      <div>
+        <p class="text-sm font-medium text-gray-700 mb-2">
+          通知の有無
+        </p>
 
-      <div class="setting-radio-group">
+        <div class="space-y-3">
+          <% [[true, "通知ON"], [false, "通知OFF"]].each do |value, label| %>
+            <label class="block border border-gray-300 rounded-md px-4 py-3
+                          cursor-pointer hover:bg-gray-50
+                          has-[:checked]:border-blue-600
+                          has-[:checked]:bg-blue-50">
 
-        <p><label class="setting-radio-option">
-          <%= f.radio_button :enabled, true %>
-          <span>通知ON</span>
-        </label></p>
+              <%= f.radio_button :enabled, value,
+                    class: "h-4 w-4 text-blue-600" %>
 
-        <p><label class="setting-radio-option">
-          <%= f.radio_button :enabled, false %>
-          <span>通知OFF</span>
-        </label></p>
-
+              <span class="text-base font-medium">
+                <%= label %>
+              </span>
+            </label>
+          <% end %>
+        </div>
       </div>
 
       <!-- 通知時刻 -->
-      <p><label>通知時刻</label></p>
-      <p><%= f.time_field :notify_time,
-            value: @notification_setting.notify_time&.strftime("%H:%M") %></p>
+      <div>
+        <%= f.label :notify_time, "通知時刻",
+              class: "block text-sm font-medium text-gray-700 mb-1" %>
 
-      <%= f.submit "保存", class: "btn btn-primary w-full mt-4" %>
+        <%= f.time_field :notify_time,
+              value: @notification_setting.notify_time&.strftime("%H:%M"),
+              class: "block w-full rounded-md border border-gray-300
+                      px-3 py-2 bg-white
+                      focus:outline-none focus:ring-2 focus:ring-blue-500" %>
+      </div>
+
+      <div class="text-center">
+        <%= f.submit "保存",
+              class: "border border-blue-400 text-blue-600 px-6 py-2 rounded-md
+                     hover:bg-blue-50 transition text-sm" %>
+      </div>
 
     <% end %>
-
   </div>
 
 </div>

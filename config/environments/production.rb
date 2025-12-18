@@ -46,10 +46,10 @@ Rails.application.configure do
   config.importmap.cache_sweepers << Rails.root.join("config/importmap.rb")
   # Assume all access to the app is happening through a SSL-terminating reverse proxy.
   # Can be used together with config.force_ssl for Strict-Transport-Security and secure cookies.
-  # config.assume_ssl = true
+  config.assume_ssl = true
   
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  # config.force_ssl = false
+  config.force_ssl = true
   
   # Log to STDOUT by default
   config.logger = ActiveSupport::Logger.new(STDOUT)
@@ -115,16 +115,24 @@ Rails.application.configure do
     protocol: "https"
   }
 
-  config.action_controller.default_url_options = { protocol: config.force_ssl ? "https" : "http" }
+config.action_controller.default_url_options = {
+  protocol: "https"
+}
+
+config.force_ssl = true
+
   config.action_controller.relative_url_root = "/"
-  config.force_ssl = ENV.fetch("FORCE_SSL", "false") == "true"
 
   config.hosts << "readskillup.com"
   config.hosts << "www.readskillup.com"
 end
 
+Rails.application.routes.default_url_options = {
+  host: "enhance-reading-app-morning-sound-6129.fly.dev",
+  protocol: "https"
+}
+
 Rails.application.config.session_store :cookie_store,
   key: '_enhance_reading_app_session',
-  domain: '.fly.dev',
   same_site: :none,
   secure: true

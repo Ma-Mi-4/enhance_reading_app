@@ -108,12 +108,3 @@ docker compose exec web bin/rails db:create db:migrate
 
 ### 4. サーバ起動
 docker compose exec web bin/rails s
-
-## 画面イメージ（Screenshots）
-
-### ホーム画面
-
-### 長文問題画面
-
-### 学習カレンダー
-

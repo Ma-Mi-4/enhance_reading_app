@@ -86,7 +86,7 @@ Rails.application.config.sorcery.configure do |config|
   config.google.key = ENV["GOOGLE_CLIENT_ID"]
   config.google.secret = ENV["GOOGLE_CLIENT_SECRET"]
   config.google.callback_url = "https://enhance-reading-app-morning-sound-6129.fly.dev/oauth/google/callback"
-  config.google.user_info_mapping = { email: "email", username: "name" }
+  config.google.user_info_mapping = { email: "email", name: "name" }
   config.google.scope = "openid email profile"
 
   config.user_class = "User"
@@ -556,7 +556,7 @@ Rails.application.config.sorcery.configure do |config|
     # Class which holds the various external provider data for this user.
     # Default: `nil`
     #
-    # user.authentications_class =
+    user.authentications_class = Authentication
 
     # User's identifier in the `authentications` class.
     # Default: `:user_id`
@@ -577,9 +577,4 @@ Rails.application.config.sorcery.configure do |config|
   # This line must come after the 'user config' block.
   # Define which model authenticates with sorcery.
   config.user_class = "User"
-end
-
-if Rails.env.test?
-  module Sorcery::Controller
-  end
 end

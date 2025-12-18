@@ -2,46 +2,70 @@
   data-page="show" data-turbo="false" data-has-timer="true"
 <% end %>
 
-<div class="page-container">
+<div class="max-w-3xl mx-auto px-4 py-8">
 
-  <h1 class="text-center">
+  <!-- タイトル -->
+  <h1 class="text-2xl font-bold text-center mb-6">
     <%= @question_set.title %>
   </h1>
 
-  <div class="max-w-3xl mx-auto mb-8 text-left leading-loose">
+  <!-- 長文 -->
+  <div class="mb-10 text-gray-800 leading-relaxed">
     <%= simple_format(@question_set.content) %>
   </div>
 
   <%= form_with url: explanation_question_path(@question_set.uuid),
-              method: :post,
-              local: true,
-              id: "question_form",
-              data: { correct: @correct_indexes.to_json } do |f| %>
+        method: :post,
+        local: true,
+        id: "question_form",
+        data: { correct: @correct_indexes.to_json } do |f| %>
 
-    <div id="timer" style="font-size: 20px; margin-bottom: 16px;">00:00</div>
+    <!-- タイマー -->
+    <div id="timer" class="text-lg font-medium mb-6 text-center">
+      00:00
+    </div>
 
     <%= f.hidden_field :study_seconds, value: 0, id: "study_seconds" %>
     <%= f.hidden_field :accuracy, value: 0, id: "accuracy_field_questions" %>
 
     <% @questions.each_with_index do |q, index| %>
-      <div class="question-block max-w-3xl mx-auto text-left mb-8">
-        <p class="mb-4 leading-relaxed">
-          <strong>Question <%= index + 1 %>:</strong> <%= q[:body] %></p>
+      <div class="mb-10">
 
-        <ul class="choice-list text-left space-y-2">
+        <!-- 問題文 -->
+        <p class="mb-4 text-base font-medium">
+          Question <%= index + 1 %>：
+          <span class="font-normal"><%= q[:body] %></span>
+        </p>
+
+        <!-- 選択肢 -->
+        <div class="space-y-3">
           <% q[:choices].each_with_index do |choice, i| %>
-            <li class="choice-item">
-              <input type="radio" name="q<%= index %>" value="<%= i %>"
-                     id="q<%= index %>_choice<%= i %>">
-              <label for="q<%= index %>_choice<%= i %>"><%= choice %></label>
-            </li>
+            <label class="block border border-gray-300 rounded-md px-4 py-3
+                         hover:bg-gray-50 transition cursor-pointer">
+
+
+              <input type="radio"
+                     name="q<%= index %>"
+                     value="<%= i %>"
+                     id="q<%= index %>_choice<%= i %>"
+                     class="mt-1 h-4 w-4 text-blue-600">
+
+              <span class="text-base">
+                <%= choice %>
+              </span>
+            </label>
           <% end %>
-        </ul>
+        </div>
 
       </div>
     <% end %>
 
-    <%= f.submit "解説を見る", class: "btn btn-primary mt-4" %>
+    <!-- 解説ボタン -->
+    <div class="text-center">
+      <%= f.submit "解説を見る",
+            class: "border border-blue-400 text-blue-600 px-6 py-2 rounded-md
+                   hover:bg-blue-50 transition text-sm" %>
+    </div>
 
   <% end %>
 

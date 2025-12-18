@@ -1,18 +1,28 @@
-<div class="page-container max-w-4xl mx-auto px-4">
-  <h1 class="text-2xl font-bold text-center mb-6"><%= @date.strftime('%Y年%m月') %></h1>
+<% content_for :body_attributes do %>
+  data-page="calendar"
+<% end %>
 
-  <div class="mb-4 flex gap-3">
+<div class="max-w-4xl mx-auto px-4 py-8">
+
+  <!-- 月タイトル -->
+  <h1 class="text-2xl font-bold text-center mb-6">
+    <%= @date.strftime('%Y年%m月') %>
+  </h1>
+
+  <!-- 月切り替え -->
+  <div class="mb-6 flex justify-center gap-3">
     <%= link_to "前の月",
       calendars_path(month: @date.prev_month),
-      class: "px-3 py-1 rounded bg-gray-200 text-sm" %>
+      class: "px-3 py-1 rounded bg-gray-200 text-sm hover:bg-gray-300 transition" %>
 
     <%= link_to "次の月",
       calendars_path(month: @date.next_month),
-      class: "px-3 py-1 rounded bg-gray-200 text-sm" %>
+      class: "px-3 py-1 rounded bg-gray-200 text-sm hover:bg-gray-300 transition" %>
   </div>
 
-  <div class="calendar-container">
-    <table class="border-separate border-spacing-1 w-full text-center text-sm">
+  <!-- カレンダー -->
+  <div class="mb-12">
+    <table class="border-separate border-spacing-2 w-full text-center text-sm">
       <tr>
         <% ['日','月','火','水','木','金','土'].each_with_index do |d,i| %>
           <th class="<%= i == 0 ? 'text-red-500' : '' %> <%= i == 6 ? 'text-blue-500' : '' %>">
@@ -26,15 +36,17 @@
       <% end %>
 
       <% @days.each do |current_date| %>
-        <td class="relative p-2 bg-white rounded shadow-sm">
+        <td class="relative bg-white shadow-sm h-18">
+          <div class="p-3">
 
-          <% if @studied_dates.include?(current_date) %>
-            <div class="stamp"></div>
-          <% end %>
+            <% if @studied_dates.include?(current_date) %>
+              <div class="stamp"></div>
+            <% end %>
 
-          <%= link_to current_date.day,
-            calendar_day_path(date: current_date),
-            class: "font-semibold block" %>
+            <%= link_to current_date.day,
+              calendar_day_path(date: current_date),
+              class: "font-semibold block hover:underline" %>
+          </div>
         </td>
 
         <% if current_date.saturday? %></tr><tr><% end %>
@@ -43,20 +55,32 @@
   </div>
 
   <!-- 学習グラフ -->
-  <div class="study-container bg-white rounded-xl p-6 shadow-md mb-24">
-    <h2>今月の学習時間・予想スコア</h2>
-    <canvas id="studyChart"
+  <div class="bg-white rounded-xl p-6 shadow-sm mb-10">
+    <h2 class="text-lg font-semibold mb-4">
+      今月の学習時間・予想スコア
+    </h2>
+
+    <div class="chart-wrapper">
+      <canvas id="studyChart"
         data-study='<%= raw(@study_data.to_json) %>'
         class="w-full">
-    </canvas>
+      </canvas>
+    </div>
 
-    <!-- 今月の集計表示 -->
-    <div class="month-summary mt-4">
-      <p>今月の学習時間合計: <%= @month_summary[:total_duration] %> 分</p>
-      <p>今月の正答率: <%= @month_summary[:average_accuracy] %> %</p>
-      <p>今月の予想スコア: <%= @month_summary[:predicted_score] %> 点</p>
+    <!-- 月間サマリー -->
+    <div class="mt-6 space-y-1 text-sm">
+      <p>今月の学習時間合計：<strong><%= @month_summary[:total_duration] %> 分</strong></p>
+      <p>今月の正答率：<strong><%= @month_summary[:average_accuracy] %> %</strong></p>
+      <p>今月の予想スコア：<strong><%= @month_summary[:predicted_score] %> 点</strong></p>
     </div>
   </div>
-  <br>
-  <%= link_to "メイン画面へ戻る", main_path, class: "btn btn-primary mt-6" %>
+
+  <!-- 戻る -->
+  <div class="space-y-4 mt-32 text-center">
+    <%= link_to "メイン画面へ戻る",
+      main_path,
+      class: "border border-blue-400 text-blue-600 px-6 py-2 rounded-md
+             hover:bg-blue-50 transition text-sm" %>
+  </div>
+
 </div>
