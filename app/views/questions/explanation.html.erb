@@ -10,7 +10,7 @@
   </h1>
 
   <!-- Part7 本文 -->
-  <div class="mb-10 text-gray-800 leading-relaxed">
+  <div class="mb-10 text-gray-800 leading-relaxed text-sm sm:text-base">
     <%= simple_format(@question_set.content) %>
   </div>
 
@@ -60,7 +60,7 @@
       <% if q[:explanation].present? %>
         <div class="mb-4">
           <p class="font-semibold mb-1">解説</p>
-          <p class="leading-relaxed text-gray-800">
+          <p class="leading-relaxed text-gray-800 text-sm sm:text-base">
             <%= q[:explanation] %>
           </p>
         </div>
