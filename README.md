@@ -1,4 +1,6 @@
 # TOEIC長文トレーニング
+サービスURL:https://readskillup.com/
+![alt text](image.png)
 
 ## サービス概要
 TOEIC 600-800点を目標として英語学習をしているが、長文読解だけ点数が伸びない人向けに
@@ -96,15 +98,15 @@ TOEIC 600-800点を目標として英語学習をしているが、長文読解�
 ## セットアップ（開発環境）
 
 ### 1. リポジトリのクローン
-git clone https://github.com/Ma-Mi-4/enhance_reading_app.git
-cd enhance_reading_app
+- git clone https://github.com/Ma-Mi-4/enhance_reading_app.git
+- cd enhance_reading_app
 
 ### 2. Docker を起動
-docker compose build
-docker compose up -d
+- docker compose build
+- docker compose up -d
 
 ### 3. データベース作成
-docker compose exec web bin/rails db:create db:migrate
+- docker compose exec web bin/rails db:create db:migrate
 
 ### 4. サーバ起動
-docker compose exec web bin/rails s
+- docker compose exec web bin/rails s
