@@ -95,6 +95,12 @@ TOEIC 600-800点を目標として英語学習をしているが、長文読解�
 ### データ可視化
 - Chart.js（UMD版） + Annotation プラグイン（グラフ表示）
 
+## ER図
+https://drive.google.com/file/d/1akLAn5kkoSvmh6fmhbHIXvF-hglA2TaI/view?usp=sharing
+
+## 画面遷移図
+https://www.figma.com/design/3ng9xSuO1X1WmeQX9rvImt/enhance_reading_app_%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB%E5%9B%B3?node-id=0-1&t=yVgiaaSY4LvS9hra-1
+
 ## セットアップ（開発環境）
 
 ### 1. リポジトリのクローン
