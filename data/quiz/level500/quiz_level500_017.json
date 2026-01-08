@@ -1,0 +1,78 @@
+{
+  "level": 500,
+  "title": "Vocabulary Quiz from Part7 Level500_017",
+  "questions": [
+    {
+      "word": "schedule",
+      "question_text": "\"schedule\" の意味はどれでしょう？",
+      "choices_text": [
+        "A plan that shows when things will happen",
+        "A type of office machine",
+        "An employee rule",
+        "A payment method"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The maintenance schedule will be shared with all staff.",
+      "explanation": "予定・スケジュール\nオフィス機器の一種\n社員規則\n支払い方法"
+    },
+    {
+      "word": "encourage",
+      "question_text": "\"encourage\" の意味はどれでしょう？",
+      "choices_text": [
+        "To give support or confidence",
+        "To force someone to act",
+        "To cancel a plan",
+        "To carefully inspect something"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Employees are encouraged to refill their bottles early.",
+      "explanation": "促す・励ます\n強制する\n計画を中止する\n注意深く点検する"
+    },
+    {
+      "word": "available",
+      "question_text": "\"available\" の意味はどれでしょう？",
+      "choices_text": [
+        "Able to be used or obtained",
+        "Very expensive",
+        "Broken and unusable",
+        "Under construction"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Some machines will not be available during maintenance.",
+      "explanation": "利用可能な\n非常に高価な\n壊れて使えない\n工事中の"
+    },
+    {
+      "word": "post",
+      "question_text": "\"post\" の意味はどれでしょう？",
+      "choices_text": [
+        "To put up or display information",
+        "To remove a notice",
+        "To delay an announcement",
+        "To send equipment"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Signs will be posted on the machines.",
+      "explanation": "掲示する\n掲示を取り除く\n発表を遅らせる\n機材を送る"
+    },
+    {
+      "word": "report",
+      "question_text": "\"report\" の意味はどれでしょう？",
+      "choices_text": [
+        "To inform someone about a problem",
+        "To repair a device",
+        "To ignore an issue",
+        "To organize documents"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Please report any problems to the Facilities Department.",
+      "explanation": "報告する\n修理する\n問題を無視する\n書類を整理する"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level500_017.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 500",
+    "type": "vocabulary"
+  }
+}

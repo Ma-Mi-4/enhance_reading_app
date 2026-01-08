@@ -1,0 +1,30 @@
+{
+  "level": 500,
+  "title": "Office Printer Usage Policy Update",
+  "category": "notice",
+  "content": "To all employees,\n\nThis notice is to inform you of an update to the office printer usage policy, effective from the beginning of next month. Due to increasing printing costs and frequent maintenance issues, the company has decided to introduce new guidelines to ensure fair and efficient use of shared printers.\n\nUnder the revised policy, employees are asked to limit color printing to business-critical documents only. Black-and-white printing should be used whenever possible. In addition, all print jobs over 30 pages must be approved by a department manager in advance. This measure is intended to reduce unnecessary large-volume printing and prevent delays for other users.\n\nTo support this change, the IT Department will install updated printer management software on all office computers. This software will display print usage summaries and notify users when they exceed recommended limits. Training materials explaining how to use the new system will be available on the company intranet.\n\nPlease be aware that personal printing is no longer permitted, even outside regular working hours. Employees who require printing for personal reasons should use external printing services. These changes will be reviewed after three months to assess their effectiveness.\n\nIf you have any questions regarding the updated policy, please contact the IT Help Desk. Thank you for your cooperation.",
+  "word_count": 219,
+  "questions": [
+    {
+      "body": "What must employees do before printing documents longer than 30 pages?",
+      "choices_text": [
+        "Install new printer software",
+        "Request approval from a manager",
+        "Print only in black and white",
+        "Use an external printing service"
+      ],
+      "correct_index": 1,
+      "explanation": "本文で、30ページを超える印刷は事前に部署のマネージャーの承認が必要だと説明されているため。",
+      "wrong_explanations": [
+        "ソフトウェアのインストールはIT部門が行うため誤り。",
+        "白黒印刷の推奨はあるが、30ページ超の必須条件ではないため誤り。",
+        "外部サービスの利用は私的印刷の場合であり、業務文書には該当しないため誤り。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": {
+    "created_by": "chatgpt",
+    "checked": true
+  }
+}

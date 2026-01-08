@@ -1,0 +1,78 @@
+{
+  "level": 500,
+  "title": "Vocabulary Quiz from Part7 Level500_016",
+  "questions": [
+    {
+      "word": "maintenance",
+      "question_text": "\"maintenance\" の意味はどれでしょう？",
+      "choices_text": [
+        "The act of keeping something in good condition",
+        "A sudden accident",
+        "A new product launch",
+        "An employee training session"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Regular maintenance is necessary to keep the machines working.",
+      "explanation": "維持・保守\n突然の事故\n新商品の発売\n社員研修"
+    },
+    {
+      "word": "temporarily",
+      "question_text": "\"temporarily\" の意味はどれでしょう？",
+      "choices_text": [
+        "For a short period of time",
+        "In a very expensive way",
+        "Without permission",
+        "At the same time"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The office entrance is temporarily closed.",
+      "explanation": "一時的に\n非常に高価に\n許可なく\n同時に"
+    },
+    {
+      "word": "function",
+      "question_text": "\"function\" の意味はどれでしょう？",
+      "choices_text": [
+        "To work or operate properly",
+        "To decorate a room",
+        "To change a schedule",
+        "To explain a rule"
+      ],
+      "correct_index": 0,
+      "example_sentence": "All systems are functioning normally.",
+      "explanation": "機能する\n部屋を装飾する\n予定を変更する\n規則を説明する"
+    },
+    {
+      "word": "interrupt",
+      "question_text": "\"interrupt\" の意味はどれでしょう？",
+      "choices_text": [
+        "To stop something for a short time",
+        "To improve performance",
+        "To complete a task",
+        "To approve a request"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The power outage interrupted the meeting.",
+      "explanation": "中断する\n性能を向上させる\n作業を完了する\n申請を承認する"
+    },
+    {
+      "word": "minimize",
+      "question_text": "\"minimize\" の意味はどれでしょう？",
+      "choices_text": [
+        "To reduce as much as possible",
+        "To delay an action",
+        "To remove completely",
+        "To carefully examine"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The team will try to minimize any inconvenience.",
+      "explanation": "最小限にする\n遅らせる\n完全に取り除く\n詳しく調べる"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level500_016.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 500",
+    "type": "vocabulary"
+  }
+}

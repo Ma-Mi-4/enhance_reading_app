@@ -1,0 +1,30 @@
+{
+  "level": 500,
+  "title": "Temporary Change to Office Delivery Procedures",
+  "category": "notice",
+  "content": "To all employees,\n\nDue to renovation work in the main lobby, there will be a temporary change to the office delivery procedures starting next Wednesday. During this period, all incoming packages and mail will be delivered to the secondary reception area on the second floor instead of the main desk on the first floor.\n\nEmployees expecting deliveries are asked to check the delivery notification emails carefully, as pickup instructions will be included. Packages will be available for collection between 9:30 a.m. and 5:00 p.m. on weekdays. For security reasons, staff members must present their employee ID when picking up items.\n\nLarge or heavy packages that cannot be easily carried should be reported to the General Affairs team in advance. Assistance will be arranged to ensure safe handling and transport to individual departments. Please note that same-day delivery requests may experience slight delays during the renovation period.\n\nThe renovation work is scheduled to last approximately three weeks. Once the lobby reopens, delivery services will return to the usual procedure, and an announcement will be made to inform all staff.\n\nIf you have any questions regarding delivery schedules or package handling, please contact the General Affairs office by email or phone. We appreciate your patience and cooperation while improvements are being made to our office facilities.",
+  "word_count": 214,
+  "questions": [
+    {
+      "body": "What should employees do when picking up their packages during the renovation period?",
+      "choices_text": [
+        "Go to the main lobby reception desk",
+        "Bring an employee ID to the second-floor reception",
+        "Ask the delivery company to reschedule",
+        "Wait until the renovation work is finished"
+      ],
+      "correct_index": 1,
+      "explanation": "本文では、荷物は2階の受付で受け取り、その際に社員証を提示する必要があると説明されているため。",
+      "wrong_explanations": [
+        "メインロビーではなく2階の受付で受け取ると書かれているため誤り。",
+        "配送業者に再配達を依頼する必要はないため誤り。",
+        "工事終了まで待つような指示は本文にないため誤り。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": {
+    "created_by": "chatgpt",
+    "checked": true
+  }
+}

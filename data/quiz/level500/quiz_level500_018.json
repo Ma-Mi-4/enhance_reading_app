@@ -1,0 +1,78 @@
+{
+  "level": 500,
+  "title": "Vocabulary Quiz from Part7 Level500_018",
+  "questions": [
+    {
+      "word": "maintenance",
+      "question_text": "\"maintenance\" の意味はどれでしょう？",
+      "choices_text": [
+        "The work needed to keep something in good condition",
+        "A company meeting",
+        "A type of office supply",
+        "An employee benefit"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The water dispensers will undergo maintenance this Friday.",
+      "explanation": "保守・点検・メンテナンス\n会社の会議\n事務用品の一種\n福利厚生"
+    },
+    {
+      "word": "temporarily",
+      "question_text": "\"temporarily\" の意味はどれでしょう？",
+      "choices_text": [
+        "For a short period of time",
+        "At a fixed schedule",
+        "Without permission",
+        "In a careful way"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Some dispensers will be temporarily unavailable.",
+      "explanation": "一時的に\n決められた予定で\n許可なく\n注意深く"
+    },
+    {
+      "word": "ensure",
+      "question_text": "\"ensure\" の意味はどれでしょう？",
+      "choices_text": [
+        "To make sure something happens",
+        "To explain in detail",
+        "To postpone a task",
+        "To remove equipment"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The team will ensure all units are working properly.",
+      "explanation": "確実にする\n詳しく説明する\n作業を延期する\n機器を撤去する"
+    },
+    {
+      "word": "sanitize",
+      "question_text": "\"sanitize\" の意味はどれでしょう？",
+      "choices_text": [
+        "To clean and remove bacteria",
+        "To replace with new equipment",
+        "To turn off a machine",
+        "To label an item"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The staff will sanitize the machines during maintenance.",
+      "explanation": "消毒する・衛生的にする\n新しい機器に交換する\n機械の電源を切る\n物にラベルを付ける"
+    },
+    {
+      "word": "interrupt",
+      "question_text": "\"interrupt\" の意味はどれでしょう？",
+      "choices_text": [
+        "To stop something for a short time",
+        "To improve a process",
+        "To carefully continue work",
+        "To announce a schedule"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The work may briefly interrupt normal use.",
+      "explanation": "中断する\n改善する\n注意深く続ける\n予定を発表する"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level500_018.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 500",
+    "type": "vocabulary"
+  }
+}

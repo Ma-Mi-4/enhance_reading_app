@@ -1,0 +1,78 @@
+{
+  "level": 500,
+  "title": "Vocabulary Quiz from Part7 Level500_015",
+  "questions": [
+    {
+      "word": "available",
+      "question_text": "\"available\" の意味はどれでしょう？",
+      "choices_text": [
+        "Able to be used or obtained",
+        "Very expensive",
+        "Already finished",
+        "Difficult to understand"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The meeting room is available after 3 p.m.",
+      "explanation": "利用できる・入手可能な\nとても高価な\nすでに終わった\n理解しにくい"
+    },
+    {
+      "word": "access",
+      "question_text": "\"access\" の意味はどれでしょう？",
+      "choices_text": [
+        "The ability to enter or use something",
+        "A written announcement",
+        "A payment method",
+        "A delivery delay"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Employees need an ID card to access the office.",
+      "explanation": "利用・立ち入り\n掲示文\n支払い方法\n配達の遅れ"
+    },
+    {
+      "word": "instruction",
+      "question_text": "\"instruction\" の意味はどれでしょう？",
+      "choices_text": [
+        "Information on how to do something",
+        "A personal opinion",
+        "A meeting place",
+        "A type of equipment"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Please read the instructions carefully before use.",
+      "explanation": "指示・説明\n個人的な意見\n集合場所\n機材の種類"
+    },
+    {
+      "word": "confirm",
+      "question_text": "\"confirm\" の意味はどれでしょう？",
+      "choices_text": [
+        "To check and make sure something is correct",
+        "To cancel an arrangement",
+        "To move to another place",
+        "To prepare materials"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Please confirm your reservation by email.",
+      "explanation": "確認する\n取り消す\n移動する\n資料を準備する"
+    },
+    {
+      "word": "require",
+      "question_text": "\"require\" の意味はどれでしょう？",
+      "choices_text": [
+        "To need something",
+        "To recommend something",
+        "To repair something",
+        "To postpone something"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The form requires your signature.",
+      "explanation": "必要とする\n勧める\n修理する\n延期する"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level500_015.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 500",
+    "type": "vocabulary"
+  }
+}

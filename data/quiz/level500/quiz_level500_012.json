@@ -1,0 +1,78 @@
+{
+  "level": 500,
+  "title": "Vocabulary Quiz from Part7 Level500_012",
+  "questions": [
+    {
+      "word": "schedule",
+      "question_text": "\"schedule\" の意味はどれでしょう？",
+      "choices_text": [
+        "A plan that shows times and dates",
+        "A written complaint",
+        "A type of machine",
+        "A payment method"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The updated schedule will be shared with all staff.",
+      "explanation": "予定・日程表\n書面での苦情\n機械の一種\n支払い方法"
+    },
+    {
+      "word": "adjust",
+      "question_text": "\"adjust\" の意味はどれでしょう？",
+      "choices_text": [
+        "To make a small change",
+        "To completely cancel something",
+        "To officially announce something",
+        "To deliver an item"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The meeting time was adjusted to 3 p.m.",
+      "explanation": "調整する\n完全に中止する\n正式に発表する\n物を配達する"
+    },
+    {
+      "word": "remain",
+      "question_text": "\"remain\" の意味はどれでしょう？",
+      "choices_text": [
+        "To continue to be the same",
+        "To leave a place",
+        "To improve quickly",
+        "To prepare materials"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The afternoon schedule will remain unchanged.",
+      "explanation": "〜のままである\nその場を離れる\n急速に改善する\n資料を準備する"
+    },
+    {
+      "word": "present",
+      "question_text": "\"present\" の意味はどれでしょう？",
+      "choices_text": [
+        "To show or give something officially",
+        "To hide information",
+        "To postpone a meeting",
+        "To repair equipment"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Employees must present their ID at the entrance.",
+      "explanation": "提示する\n情報を隠す\n会議を延期する\n設備を修理する"
+    },
+    {
+      "word": "priority",
+      "question_text": "\"priority\" の意味はどれでしょう？",
+      "choices_text": [
+        "Something that is more important than others",
+        "A fixed schedule",
+        "A company department",
+        "A written notice"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Safety is our top priority.",
+      "explanation": "優先事項\n固定された予定\n会社の部署\n掲示文"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level500_012.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 500",
+    "type": "vocabulary"
+  }
+}

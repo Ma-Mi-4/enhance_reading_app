@@ -1,0 +1,30 @@
+{
+  "level": 500,
+  "title": "Temporary Change to Company Shuttle Bus Service",
+  "category": "notice",
+  "content": "To all staff members,\n\nPlease be advised that there will be a temporary change to the company shuttle bus service starting next Wednesday due to road construction near the main office building. The construction is expected to last for approximately two weeks, during which time several streets normally used by the shuttle will be partially closed. As a result, the shuttle route and schedule will be adjusted.\n\nDuring this period, the morning shuttle will depart ten minutes earlier than usual in order to avoid traffic delays. The evening shuttle schedule will remain mostly unchanged; however, arrival times may vary depending on traffic conditions. Updated timetables will be posted on the company intranet and at each shuttle stop by the end of this week.\n\nPlease note that the shuttle will not stop at the Central Park entrance during the construction period. Employees who usually use this stop are asked to board the shuttle at the City Library stop instead, which is located two blocks east. Directional signs will be placed to assist passengers.\n\nWe recommend that employees allow extra travel time and check the latest updates before commuting. If you have questions about the revised shuttle service, please contact the Human Resources Department. Thank you for your cooperation.",
+  "word_count": 213,
+  "questions": [
+    {
+      "body": "What should employees do if they normally use the Central Park shuttle stop?",
+      "choices_text": [
+        "Wait until construction is finished",
+        "Use the City Library stop instead",
+        "Take public transportation only",
+        "Contact the shuttle driver directly"
+      ],
+      "correct_index": 1,
+      "explanation": "本文で、工事期間中はCentral Park入口には停車せず、City Library停留所を利用するよう指示されているため。",
+      "wrong_explanations": [
+        "工事終了まで待つような指示は本文にないため誤り。",
+        "公共交通機関のみを使うよう求められてはいないため誤り。",
+        "運転手に直接連絡する指示は本文にないため誤り。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": {
+    "created_by": "chatgpt",
+    "checked": true
+  }
+}

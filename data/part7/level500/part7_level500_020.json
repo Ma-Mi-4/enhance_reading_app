@@ -1,0 +1,30 @@
+{
+  "level": 500,
+  "title": "Change in Company Training Room Usage Policy",
+  "category": "notice",
+  "content": "To all staff members,\n\nWe would like to inform you of an important update regarding the use of company training rooms. Starting from the beginning of next month, all training rooms must be reserved in advance through the internal booking system. This change is intended to prevent double bookings and to ensure fair access for all departments.\n\nReservations can be made up to two weeks in advance, and users are required to confirm their booking at least one day before the scheduled time. If a reservation is not confirmed, the room may be released for other teams to use. Please also note that cancellations should be made as early as possible to allow others to adjust their plans.\n\nTraining rooms are available for use between 8:30 a.m. and 8:00 p.m. on weekdays. After each session, users are expected to return the room to its original condition, including arranging chairs and turning off any equipment. Food and drinks, except bottled water, are not permitted in the rooms.\n\nThe Facilities Department will monitor room usage and may contact teams if repeated violations are observed. We appreciate your cooperation in maintaining an efficient and respectful working environment.\n\nFor questions about the new policy or assistance with the booking system, please contact the Facilities Department.",
+  "word_count": 222,
+  "questions": [
+    {
+      "body": "What happens if a training room reservation is not confirmed?",
+      "choices_text": [
+        "The reservation is automatically extended",
+        "The room may be made available to others",
+        "The booking system will block future reservations",
+        "The Facilities Department will cancel all bookings"
+      ],
+      "correct_index": 1,
+      "explanation": "本文では、予約が前日までに確認されない場合、その部屋は他のチームが使えるように解放される可能性があると説明されているため。",
+      "wrong_explanations": [
+        "自動的に延長されるとは書かれていないため誤り。",
+        "将来の予約を禁止するという記載はないため誤り。",
+        "すべての予約を取り消すとは説明されていないため誤り。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": {
+    "created_by": "chatgpt",
+    "checked": true
+  }
+}

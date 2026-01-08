@@ -1,0 +1,78 @@
+{
+  "level": 500,
+  "title": "Vocabulary Quiz from Part7 Level500_020",
+  "questions": [
+    {
+      "word": "maintenance",
+      "question_text": "\"maintenance\" の意味はどれでしょう？",
+      "choices_text": [
+        "Work done to keep something in good condition",
+        "A special company event",
+        "A type of office rule",
+        "An employee benefit"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Regular maintenance helps prevent equipment problems.",
+      "explanation": "点検・保守作業\n特別な社内イベント\nオフィスの規則\n従業員の福利厚生"
+    },
+    {
+      "word": "temporarily",
+      "question_text": "\"temporarily\" の意味はどれでしょう？",
+      "choices_text": [
+        "For a short period of time",
+        "On a regular basis",
+        "Without any notice",
+        "In a permanent way"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The meeting room will be temporarily closed.",
+      "explanation": "一時的に\n定期的に\n予告なしで\n永久的に"
+    },
+    {
+      "word": "ensure",
+      "question_text": "\"ensure\" の意味はどれでしょう？",
+      "choices_text": [
+        "To make certain that something happens",
+        "To delay a process",
+        "To cancel a request",
+        "To explain a problem"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The team checked the system to ensure safety.",
+      "explanation": "確実にする\n工程を遅らせる\n依頼を取り消す\n問題を説明する"
+    },
+    {
+      "word": "minimize",
+      "question_text": "\"minimize\" の意味はどれでしょう？",
+      "choices_text": [
+        "To reduce as much as possible",
+        "To increase rapidly",
+        "To ignore completely",
+        "To change the schedule"
+      ],
+      "correct_index": 0,
+      "example_sentence": "We will try to minimize any inconvenience.",
+      "explanation": "最小限にする\n急激に増やす\n完全に無視する\n予定を変更する"
+    },
+    {
+      "word": "cooperation",
+      "question_text": "\"cooperation\" の意味はどれでしょう？",
+      "choices_text": [
+        "Working together with others",
+        "A written instruction",
+        "A service interruption",
+        "A payment request"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Thank you for your cooperation during the maintenance work.",
+      "explanation": "協力\n書面での指示\nサービスの中断\n支払いの依頼"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level500_020.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 500",
+    "type": "vocabulary"
+  }
+}
