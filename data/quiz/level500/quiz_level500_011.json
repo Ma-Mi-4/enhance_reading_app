@@ -1,0 +1,79 @@
+{
+  "level": 500,
+  "title": "Vocabulary Quiz from Part7 Level500_011",
+  "questions": [
+    {
+      "word": "maintenance",
+      "question_text": "\"maintenance\" の意味はどれでしょう？",
+      "choices_text": [
+        "Work done to keep something in good condition",
+        "A public announcement",
+        "A delivery service",
+        "A company rule"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The water dispensers are closed for maintenance.",
+      "explanation": "点検・保守作業\n公的なお知らせ\n配達サービス\n会社の規則"
+    },
+    {
+      "word": "sanitize",
+      "question_text": "\"sanitize\" の意味はどれでしょう？",
+      "choices_text": [
+        "To clean something to remove bacteria",
+        "To repair broken equipment",
+        "To replace old machines",
+        "To turn off a device"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The staff will sanitize the machines during maintenance.",
+      "explanation": "消毒する・衛生的にする\n壊れた機械を修理する\n古い機械を交換する\n装置の電源を切る"
+    },
+    {
+      "word": "temporarily",
+      "question_text": "\"temporarily\" の意味はどれでしょう？",
+      "choices_text": [
+        "For a short period of time",
+        "Forever",
+        "Very carefully",
+        "At a fixed time"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Some dispensers will be temporarily unavailable.",
+      "explanation": "一時的に\n永久に\nとても注意深く\n決まった時間に"
+    },
+    {
+      "word": "unavailable",
+      "question_text": "\"unavailable\" の意味はどれでしょう？",
+      "choices_text": [
+        "Not able to be used or accessed",
+        "Easy to use",
+        "Recently repaired",
+        "Open all day"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The dispenser is unavailable during maintenance.",
+      "explanation": "利用できない\n使いやすい\n最近修理された\n一日中利用可能な"
+    },
+    {
+      "word": "report",
+      "question_text": "\"report\" の意味はどれでしょう？",
+      "choices_text": [
+        "To inform someone about a problem",
+        "To fix an issue",
+        "To delay a schedule",
+        "To clean equipment"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Please report any issues to the Facilities Department.",
+      "explanation": "報告する\n問題を修理する\n予定を遅らせる\n設備を掃除する"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level500_011.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 500",
+    "type": "vocabulary"
+  }
+}
+

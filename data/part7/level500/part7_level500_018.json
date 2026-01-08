@@ -1,0 +1,30 @@
+{
+  "level": 500,
+  "title": "Change in Office Meeting Room Reservation System",
+  "category": "notice",
+  "content": "To all staff members,\n\nThis notice is to inform you of an upcoming change to the office meeting room reservation system. Starting next Monday, the current email-based reservation method will be replaced with a new online booking system. This change is intended to improve scheduling efficiency and reduce double bookings.\n\nUnder the new system, employees will be required to reserve meeting rooms through the company intranet. Each reservation must include the meeting purpose, expected number of participants, and duration. Rooms will be automatically released if a meeting does not begin within 15 minutes of the scheduled start time, allowing others to use available space more effectively.\n\nTo help staff adjust to the new process, short training sessions will be offered throughout next week. These sessions will demonstrate how to create, modify, and cancel reservations. In addition, a step-by-step user guide will be posted on the intranet for those unable to attend the training.\n\nPlease note that reservations made through email or verbal requests will no longer be accepted after the system goes live. Employees who experience technical issues should contact the IT Support Desk immediately.\n\nThe Facilities Department will monitor the system during the first month and gather feedback for further improvements. We appreciate your cooperation as we work to create a more organized and efficient workplace.",
+  "word_count": 218,
+  "questions": [
+    {
+      "body": "What will happen if a meeting does not start within 15 minutes of the scheduled time?",
+      "choices_text": [
+        "The meeting will be automatically canceled",
+        "The room will become available for others",
+        "IT support will contact the organizer",
+        "The reservation will be extended automatically"
+      ],
+      "correct_index": 1,
+      "explanation": "本文で、開始から15分経っても使用されない場合は、部屋が自動的に解放されると説明されているため。",
+      "wrong_explanations": [
+        "自動キャンセルについての記載はなく、部屋の解放のみが説明されているため誤り。",
+        "ITサポートが連絡するとは書かれていないため誤り。",
+        "予約が自動延長されるとは述べられていないため誤り。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": {
+    "created_by": "chatgpt",
+    "checked": true
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "level": 500,
+  "title": "Vocabulary Quiz from Part7 Level500_014",
+  "questions": [
+    {
+      "word": "procedure",
+      "question_text": "\"procedure\" の意味はどれでしょう？",
+      "choices_text": [
+        "A series of steps to do something",
+        "A type of building",
+        "A personal message",
+        "A delivery service"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Please follow the correct procedure when using the room.",
+      "explanation": "手順・手続き\n建物の種類\n個人的なメッセージ\n配送サービス"
+    },
+    {
+      "word": "policy",
+      "question_text": "\"policy\" の意味はどれでしょう？",
+      "choices_text": [
+        "An official rule or guideline",
+        "A meeting schedule",
+        "A travel plan",
+        "A piece of equipment"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The company policy applies to all employees.",
+      "explanation": "方針・規則\n会議の予定\n旅行計画\n機材"
+    },
+    {
+      "word": "permit",
+      "question_text": "\"permit\" の意味はどれでしょう？",
+      "choices_text": [
+        "To allow something",
+        "To delay something",
+        "To repair equipment",
+        "To cancel a meeting"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The policy does not permit outside food.",
+      "explanation": "許可する\n遅らせる\n機材を修理する\n会議を中止する"
+    },
+    {
+      "word": "restriction",
+      "question_text": "\"restriction\" の意味はどれでしょう？",
+      "choices_text": [
+        "A limit or control",
+        "A helpful suggestion",
+        "A delivery request",
+        "A personal item"
+      ],
+      "correct_index": 0,
+      "example_sentence": "There are time restrictions for using the facility.",
+      "explanation": "制限\n役立つ提案\n配送依頼\n個人の持ち物"
+    },
+    {
+      "word": "compliance",
+      "question_text": "\"compliance\" の意味はどれでしょう？",
+      "choices_text": [
+        "Acting according to rules",
+        "Giving instructions",
+        "Making a complaint",
+        "Organizing an event"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Thank you for your compliance with the new policy.",
+      "explanation": "規則を守うこと・順守\n指示を出すこと\n苦情を言うこと\nイベントを企画すること"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level500_014.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 500",
+    "type": "vocabulary"
+  }
+}

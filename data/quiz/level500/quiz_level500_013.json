@@ -1,0 +1,78 @@
+{
+  "level": 500,
+  "title": "Vocabulary Quiz from Part7 Level500_013",
+  "questions": [
+    {
+      "word": "facility",
+      "question_text": "\"facility\" の意味はどれでしょう？",
+      "choices_text": [
+        "A place or building used for a specific purpose",
+        "A personal document",
+        "A type of schedule",
+        "A written message"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The facility will be open until 9 p.m.",
+      "explanation": "施設\n個人用書類\nスケジュールの種類\n書かれたメッセージ"
+    },
+    {
+      "word": "available",
+      "question_text": "\"available\" の意味はどれでしょう？",
+      "choices_text": [
+        "Able to be used or obtained",
+        "Very expensive",
+        "Under repair",
+        "No longer needed"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Meeting rooms are available on the second floor.",
+      "explanation": "利用可能な\nとても高価な\n修理中の\n不要になった"
+    },
+    {
+      "word": "access",
+      "question_text": "\"access\" の意味はどれでしょう？",
+      "choices_text": [
+        "The ability to enter or use something",
+        "A safety rule",
+        "A cleaning service",
+        "A type of equipment"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Staff have access to the facility after 8 a.m.",
+      "explanation": "利用・立ち入りの権利\n安全規則\n清掃サービス\n機材の種類"
+    },
+    {
+      "word": "instruction",
+      "question_text": "\"instruction\" の意味はどれでしょう？",
+      "choices_text": [
+        "Information on how to do something",
+        "A personal opinion",
+        "A meeting invitation",
+        "A delivery notice"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Please follow the instructions on the notice.",
+      "explanation": "指示・説明\n個人的な意見\n会議の招待\n配送通知"
+    },
+    {
+      "word": "require",
+      "question_text": "\"require\" の意味はどれでしょう？",
+      "choices_text": [
+        "To need something",
+        "To recommend something",
+        "To delay an event",
+        "To prepare a document"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The facility requires all users to show an ID.",
+      "explanation": "必要とする\n勧める\nイベントを延期する\n書類を準備する"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level500_013.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 500",
+    "type": "vocabulary"
+  }
+}

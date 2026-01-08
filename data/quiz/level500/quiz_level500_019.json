@@ -1,0 +1,78 @@
+{
+  "level": 500,
+  "title": "Vocabulary Quiz from Part7 Level500_019",
+  "questions": [
+    {
+      "word": "schedule",
+      "question_text": "\"schedule\" の意味はどれでしょう？",
+      "choices_text": [
+        "A plan showing when activities will happen",
+        "A type of office equipment",
+        "A written complaint",
+        "A payment method"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The maintenance schedule was shared with all employees.",
+      "explanation": "予定・スケジュール\n事務機器の一種\n書面での苦情\n支払い方法"
+    },
+    {
+      "word": "unavailable",
+      "question_text": "\"unavailable\" の意味はどれでしょう？",
+      "choices_text": [
+        "Not able to be used or accessed",
+        "Very easy to use",
+        "Recently repaired",
+        "Open to the public"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Some dispensers will be unavailable during maintenance.",
+      "explanation": "利用できない\nとても使いやすい\n最近修理された\n一般公開されている"
+    },
+    {
+      "word": "post",
+      "question_text": "\"post\" の意味はどれでしょう？",
+      "choices_text": [
+        "To put information in a public place",
+        "To remove a notice",
+        "To send a package",
+        "To delay an event"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Notices will be posted near the machines.",
+      "explanation": "掲示する\n掲示物を外す\n荷物を送る\nイベントを延期する"
+    },
+    {
+      "word": "report",
+      "question_text": "\"report\" の意味はどれでしょう？",
+      "choices_text": [
+        "To give information about a problem",
+        "To repair equipment",
+        "To organize an event",
+        "To attend a meeting"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Please report any issues to the Facilities Department.",
+      "explanation": "報告する\n機器を修理する\nイベントを企画する\n会議に出席する"
+    },
+    {
+      "word": "department",
+      "question_text": "\"department\" の意味はどれでしょう？",
+      "choices_text": [
+        "A division of an organization",
+        "A delivery service",
+        "A meeting agenda",
+        "A work schedule"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Contact the Facilities Department for assistance.",
+      "explanation": "部署・部門\n配送サービス\n会議の議題\n勤務予定表"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level500_019.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 500",
+    "type": "vocabulary"
+  }
+}

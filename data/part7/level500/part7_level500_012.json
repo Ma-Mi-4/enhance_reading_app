@@ -1,0 +1,30 @@
+{
+  "level": 500,
+  "title": "Office Supply Ordering Procedure",
+  "category": "notice",
+  "content": "To all employees,\n\nThis notice is to remind staff of the proper procedure for ordering office supplies. To ensure that materials are delivered on time and that costs are managed efficiently, all supply requests must follow the standard ordering process.\n\nEmployees who need office supplies such as paper, pens, or folders should submit a request form through the internal ordering system. The form must be completed with accurate item names, quantities, and the required delivery date. Incomplete forms may result in delays.\n\nAll requests are reviewed by the Administration Team every Wednesday. Approved orders will be placed with our supplier on Thursday, and delivery is usually completed within three business days. Please plan ahead when requesting items needed for meetings or projects.\n\nIf you urgently require supplies due to unexpected circumstances, please contact the Administration Team directly. However, urgent requests should be limited to essential items only.\n\nThank you for your cooperation in helping us maintain an efficient ordering system.",
+  "word_count": 214,
+  "questions": [
+    {
+      "body": "When are office supply requests reviewed?",
+      "choices_text": [
+        "Every Monday",
+        "Every Wednesday",
+        "Every Thursday",
+        "Every Friday"
+      ],
+      "correct_index": 1,
+      "explanation": "本文で、備品の申請は毎週水曜日に管理チームによって確認されると述べられているため。",
+      "wrong_explanations": [
+        "月曜日に確認されるとは本文に書かれていないため誤り。",
+        "木曜日は発注日であり、確認日ではないため誤り。",
+        "金曜日に確認するという記載はないため誤り。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": {
+    "created_by": "chatgpt",
+    "checked": true
+  }
+}

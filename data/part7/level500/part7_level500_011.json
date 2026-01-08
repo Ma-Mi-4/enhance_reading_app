@@ -1,0 +1,30 @@
+{
+  "level": 500,
+  "title": "Desk Assignment Update",
+  "category": "notice",
+  "content": "To all staff,\n\nWe would like to inform you of an upcoming update regarding desk assignments in the main office. Due to recent team reorganization and the addition of new employees, several desk locations will be changed starting next Monday.\n\nA detailed desk assignment chart has been posted on the bulletin board near the front desk. Please take a moment to review the chart carefully to confirm your new seating location. Some employees may notice that they are moving to a different floor or sitting closer to another team.\n\nIf you have any questions or concerns about your new desk assignment, please contact your team leader by the end of this week. Requests for changes will be considered, but approval is not guaranteed.\n\nWe kindly ask all employees to complete their desk move by Friday evening so that work can begin smoothly the following week. Thank you for your understanding and cooperation.",
+  "word_count": 213,
+  "questions": [
+    {
+      "body": "What should employees do to find their new desk location?",
+      "choices_text": [
+        "Ask a coworker for help",
+        "Check the chart on the bulletin board",
+        "Wait for an email from HR",
+        "Move to a different desk immediately"
+      ],
+      "correct_index": 1,
+      "explanation": "本文で、新しい座席はフロントデスク近くの掲示板に貼られた表で確認するよう説明されているため。",
+      "wrong_explanations": [
+        "同僚に聞くような指示は本文に書かれていないため誤り。",
+        "人事部からメールが届くとは書かれていないため誤り。",
+        "すぐに机を移動するよう求めているわけではないため誤り。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": {
+    "created_by": "chatgpt",
+    "checked": true
+  }
+}

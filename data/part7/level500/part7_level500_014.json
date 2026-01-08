@@ -1,0 +1,30 @@
+{
+  "level": 500,
+  "title": "Mandatory Customer Service Training Session",
+  "category": "notice",
+  "content": "To all staff members,\n\nThis notice is to inform you about a mandatory customer service training session that will be held later this month. The purpose of this training is to improve communication skills and ensure consistent service quality across all departments. As customer expectations continue to rise, it is important that all employees understand and follow the company’s service standards.\n\nThe training session will take place on Wednesday, March 27, from 1:00 p.m. to 4:00 p.m. in Conference Room B on the third floor. Attendance is required for all full-time and part-time employees who regularly interact with customers. Managers are responsible for adjusting work schedules so that employees can attend.\n\nDuring the session, participants will take part in group discussions, role-playing activities, and short presentations. Training materials will be provided on the day of the session, so there is no need to prepare anything in advance. However, employees are encouraged to bring a notebook for taking notes.\n\nIf you are unable to attend due to unavoidable circumstances, please inform your supervisor by March 20. Additional sessions may be arranged if necessary.\n\nWe appreciate your cooperation and look forward to your active participation.",
+  "word_count": 216,
+  "questions": [
+    {
+      "body": "What should employees do if they cannot attend the training session?",
+      "choices_text": [
+        "Complete the training online later",
+        "Ask a coworker to attend instead",
+        "Inform their supervisor by a specific date",
+        "Submit written feedback to management"
+      ],
+      "correct_index": 2,
+      "explanation": "本文で、参加できない場合は3月20日までに上司へ連絡するように指示されているため。",
+      "wrong_explanations": [
+        "オンラインで受講できるとは本文に書かれていないため誤り。",
+        "代理で同僚が参加することは認められていないため誤り。",
+        "書面でのフィードバック提出についての記載はないため誤り。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": {
+    "created_by": "chatgpt",
+    "checked": true
+  }
+}

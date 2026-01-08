@@ -1,0 +1,30 @@
+{
+  "level": 500,
+  "title": "Change in Employee Parking Policy",
+  "category": "notice",
+  "content": "To all employees,\n\nThis notice is to inform you of an upcoming change to the employee parking policy at our office building. Due to recent renovations and an increase in the number of tenants, parking availability has become more limited than before. As a result, adjustments are necessary to ensure fair and efficient use of the parking facilities.\n\nStarting next month, employee parking permits will be reassigned based on work schedules and job roles. Employees who work night shifts or frequently travel for business will be given priority access to on-site parking spaces. Others may be asked to use nearby public parking areas or alternative transportation methods.\n\nEmployees who wish to request a parking permit must submit an application form by the end of this month. Forms can be downloaded from the internal website and should be sent to the Human Resources Department after completion.\n\nPlease note that parking in unauthorized areas may result in penalties, including warnings or fines. Clear signs will be posted throughout the parking area to indicate permitted zones.\n\nIf you have questions regarding this change, please contact the Human Resources Department for further information.",
+  "word_count": 223,
+  "questions": [
+    {
+      "body": "Who will be given priority for on-site parking spaces?",
+      "choices_text": [
+        "Employees who arrive early in the morning",
+        "Employees with long working hours",
+        "Employees who work night shifts or travel often",
+        "Employees who submit applications first"
+      ],
+      "correct_index": 2,
+      "explanation": "本文で、夜勤勤務者や出張が多い社員が優先的に駐車スペースを利用できると説明されているため。",
+      "wrong_explanations": [
+        "早朝に来る社員が優先されるとは書かれていないため誤り。",
+        "勤務時間の長さによる優先についての記載はないため誤り。",
+        "申請順で決まるとは本文に書かれていないため誤り。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": {
+    "created_by": "chatgpt",
+    "checked": true
+  }
+}

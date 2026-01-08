@@ -1,0 +1,30 @@
+{
+  "level": 500,
+  "title": "Office Renovation Schedule and Temporary Changes",
+  "category": "notice",
+  "content": "To all employees,\n\nWe would like to inform you about an upcoming office renovation that will begin next Monday and continue for approximately three weeks. The purpose of this renovation is to improve the working environment by upgrading lighting, replacing old carpeting, and reorganizing shared workspaces. These changes are part of the company’s ongoing effort to create a more comfortable and efficient office.\n\nDuring the renovation period, some areas on the second and third floors will be temporarily closed. Employees who usually work in these areas will be relocated to available desks on other floors. A detailed seating plan will be sent by email before the renovation begins. Please follow the instructions carefully to avoid confusion.\n\nConstruction work will take place between 9:00 a.m. and 6:00 p.m. every weekday. While the renovation team will try to keep noise to a minimum, some disruption may be unavoidable. Employees are encouraged to use meeting rooms or remote work options when concentration is required.\n\nIf you have any questions or concerns regarding the renovation or temporary seating arrangements, please contact the Administration Office by Friday. We appreciate your patience and cooperation during this period.",
+  "word_count": 221,
+  "questions": [
+    {
+      "body": "What is employees’ main responsibility during the renovation period?",
+      "choices_text": [
+        "Bring their own office equipment",
+        "Follow the temporary seating instructions",
+        "Work from home every day",
+        "Report directly to the renovation team"
+      ],
+      "correct_index": 1,
+      "explanation": "本文で、従業員は事前に送られる座席案内に従うよう指示されているため。",
+      "wrong_explanations": [
+        "私物の機材を持参する必要があるとは書かれていないため誤り。",
+        "在宅勤務は推奨されている場合があるだけで、毎日義務とは書かれていないため誤り。",
+        "工事チームへ直接報告する指示は本文にないため誤り。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": {
+    "created_by": "chatgpt",
+    "checked": true
+  }
+}
