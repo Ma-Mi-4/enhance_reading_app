@@ -1,0 +1,28 @@
+{
+  "level": 600,
+  "title": "Notice: Change in Monthly Performance Review Schedule",
+  "category": "notice",
+  "content": "To all staff,\n\nPlease note that the monthly performance review meetings scheduled for May will follow a revised timetable. Due to several department-wide projects reaching critical deadlines, management has decided to adjust the review schedule to reduce conflicts and ensure adequate preparation time for all participants.\n\nUnder the updated plan, reviews originally planned for the first week of May will be moved to the third week of the month. Employees will receive individual meeting invitations with specific dates and times no later than May 10. The format of the reviews will remain the same, including a discussion of recent achievements, challenges, and performance goals for the next quarter.\n\nManagers are asked to review team members’ progress reports in advance so meetings can remain focused and efficient. Employees should also prepare any questions or topics they wish to discuss during their session.\n\nIf you have a scheduling conflict during the new review period, please notify your manager as soon as possible so alternative arrangements can be considered. We appreciate your flexibility and cooperation during this busy period.",
+  "word_count": 244,
+  "questions": [
+    {
+      "body": "Why was the performance review schedule changed?",
+      "choices_text": [
+        "Because several major projects are reaching important deadlines.",
+        "Because the review format needed to be redesigned.",
+        "Because managers will be unavailable in May.",
+        "Because employees requested shorter meetings."
+      ],
+      "correct_index": 0,
+      "explanation": "本文で、部門全体の重要なプロジェクトが締切を迎えているため、日程を調整したと説明されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使いません。",
+        "レビュー形式を変更するという記述はありません。",
+        "マネージャーの不在が理由とは書かれていません。",
+        "社員からの要望による変更ではありません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

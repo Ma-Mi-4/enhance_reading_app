@@ -1,0 +1,28 @@
+{
+  "level": 600,
+  "title": "Email: Update on Training Session Materials",
+  "category": "email",
+  "content": "Hello Team,\n\nThank you to everyone who attended last week’s customer service training session. We appreciate your active participation and valuable feedback. As mentioned during the session, several of you requested additional reference materials to review the key points discussed.\n\nWe are pleased to inform you that the updated training materials are now available on the company’s internal learning portal. These materials include revised presentation slides, sample response scripts, and a short checklist to help you apply the techniques in your daily work.\n\nPlease note that access to the materials requires logging in with your employee ID. If you experience any difficulty accessing the portal, contact the IT support desk by the end of this week. We recommend reviewing the materials before the follow-up workshop scheduled for next month.\n\nThank you again for your continued commitment to improving our service quality.\n\nBest regards,\nTraining Department",
+  "word_count": 221,
+  "questions": [
+    {
+      "body": "What are employees encouraged to do before the follow-up workshop?",
+      "choices_text": [
+        "Review the updated training materials.",
+        "Submit written feedback to managers.",
+        "Register for another training session.",
+        "Contact customers for practice."
+      ],
+      "correct_index": 0,
+      "explanation": "本文では、来月予定されているフォローアップ研修の前に、資料を確認することが推奨されている。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使いません。",
+        "フィードバック提出についての指示は書かれていません。",
+        "追加の研修登録を求める記述はありません。",
+        "顧客への連絡については触れられていません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

@@ -1,0 +1,78 @@
+{
+  "level": 600,
+  "title": "Vocabulary Review from Part7 Level600_011",
+  "questions": [
+    {
+      "word": "reservation",
+      "question_text": "\"reservation\" の意味はどれでしょう？",
+      "choices_text": [
+        "An arrangement to keep something for future use",
+        "A written company policy",
+        "A group training session",
+        "A technical problem"
+      ],
+      "correct_index": 0,
+      "example_sentence": "All training rooms require a reservation in advance.",
+      "explanation": "予約・事前確保\n会社方針\n研修セッション\n技術的問題"
+    },
+    {
+      "word": "advance",
+      "question_text": "\"advance\" の意味はどれでしょう？",
+      "choices_text": [
+        "Before a certain time",
+        "At the same time",
+        "After a delay",
+        "Without permission"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Rooms must be booked 48 hours in advance.",
+      "explanation": "事前に\n同時に\n遅れて\n許可なく"
+    },
+    {
+      "word": "approved",
+      "question_text": "\"approved\" の意味はどれでしょう？",
+      "choices_text": [
+        "Officially accepted or permitted",
+        "Carefully reviewed",
+        "Automatically rejected",
+        "Temporarily delayed"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Same-day reservations must be approved by a manager.",
+      "explanation": "承認された\n精査された\n却下された\n一時的に延期された"
+    },
+    {
+      "word": "availability",
+      "question_text": "\"availability\" の意味はどれでしょう？",
+      "choices_text": [
+        "The state of being free for use",
+        "A booking mistake",
+        "A payment requirement",
+        "A system error"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Rooms may be released based on availability.",
+      "explanation": "利用可能な状態\n予約ミス\n支払い条件\nシステムエラー"
+    },
+    {
+      "word": "monitor",
+      "question_text": "\"monitor\" の意味はどれでしょう？",
+      "choices_text": [
+        "To watch or check something carefully",
+        "To announce a new policy",
+        "To reserve a room",
+        "To repair equipment"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The Facilities Team will monitor the new policy.",
+      "explanation": "注意深く監視・確認する\n新方針を発表する\n部屋を予約する\n機材を修理する"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level600_review_011.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 600",
+    "type": "vocabulary_review"
+  }
+}

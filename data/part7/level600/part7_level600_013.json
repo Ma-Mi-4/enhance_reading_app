@@ -1,0 +1,28 @@
+{
+  "level": 600,
+  "title": "Email: Registration Reminder for Compliance Training",
+  "category": "email",
+  "content": "Dear Employees,\n\nThis is a reminder that registration for the annual compliance training program will close on April 5. The training is mandatory for all full-time staff members and is designed to ensure that everyone is familiar with current regulations, company policies, and ethical standards.\n\nThe program will be delivered through a series of online modules, which employees can complete at their own pace. However, all modules must be finished by April 30 to meet the compliance requirement. Employees who do not complete the training by the deadline may temporarily lose access to certain internal systems until completion is confirmed.\n\nTo register, please log in to the learning management system via the internal portal and select the appropriate course. If you have already completed the registration, no further action is required at this time.\n\nFor departments with heavy workloads during this period, managers may approve limited schedule adjustments to allow staff members sufficient time to complete the modules. Any such arrangements should be discussed directly with your supervisor.\n\nIf you experience technical difficulties during registration or while accessing the modules, please contact the IT Support Team for assistance.",
+  "word_count": 247,
+  "questions": [
+    {
+      "body": "What may happen if employees do not complete the training by April 30?",
+      "choices_text": [
+        "They may lose access to some internal systems temporarily.",
+        "They will need to attend an in-person makeup session.",
+        "Their annual evaluation will be delayed.",
+        "They will be removed from the training program."
+      ],
+      "correct_index": 0,
+      "explanation": "本文で、期限までに完了しない場合、一部の社内システムへのアクセスが一時的に制限される可能性があると述べられているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使いません。",
+        "対面での補講については本文に記載されていません。",
+        "評価の延期についての言及はありません。",
+        "プログラムから除外されるとは書かれていません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

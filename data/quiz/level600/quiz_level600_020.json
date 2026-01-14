@@ -1,0 +1,78 @@
+{
+  "level": 600,
+  "title": "Vocabulary Review from Part7 Level600_020",
+  "questions": [
+    {
+      "word": "inspection",
+      "question_text": "\"inspection\" の意味はどれでしょう？",
+      "choices_text": [
+        "A careful examination to check condition or safety",
+        "A formal company celebration",
+        "A training session for employees",
+        "An emergency repair request"
+      ],
+      "correct_index": 0,
+      "example_sentence": "A routine inspection of office equipment will be conducted on Friday.",
+      "explanation": "点検・検査\n会社の公式な祝賀行事\n従業員向け研修\n緊急修理の依頼"
+    },
+    {
+      "word": "routine",
+      "question_text": "\"routine\" の意味はどれでしょう？",
+      "choices_text": [
+        "Done regularly as part of normal procedure",
+        "Very expensive and rare",
+        "Unexpected and unplanned",
+        "Related to customer service"
+      ],
+      "correct_index": 0,
+      "example_sentence": "This is a routine inspection conducted every few months.",
+      "explanation": "定期的な・通常の\n高額で珍しい\n予期しない\n顧客対応に関する"
+    },
+    {
+      "word": "function",
+      "question_text": "\"function\" の意味はどれでしょう？",
+      "choices_text": [
+        "To work or operate properly",
+        "To be removed permanently",
+        "To require approval",
+        "To be replaced immediately"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The inspection ensures all devices function properly.",
+      "explanation": "正常に作動する\n永久に撤去される\n承認を必要とする\n直ちに交換される"
+    },
+    {
+      "word": "require",
+      "question_text": "\"require\" の意味はどれでしょう？",
+      "choices_text": [
+        "To need or demand something",
+        "To suggest politely",
+        "To postpone an action",
+        "To cancel a request"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Some employees may require access during the inspection.",
+      "explanation": "必要とする\n丁寧に提案する\n行動を延期する\n依頼を取り消す"
+    },
+    {
+      "word": "cooperation",
+      "question_text": "\"cooperation\" の意味はどれでしょう？",
+      "choices_text": [
+        "The act of working together willingly",
+        "A strict company rule",
+        "A type of office equipment",
+        "A formal written warning"
+      ],
+      "correct_index": 0,
+      "example_sentence": "We appreciate your cooperation during the inspection.",
+      "explanation": "協力\n厳格な社内規則\nオフィス機器の一種\n正式な書面警告"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level600_review_020.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 600",
+    "type": "vocabulary_review"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "level": 600,
+  "title": "Internal Email: Update on Project Deadline",
+  "category": "email",
+  "content": "Dear Project Team,\n\nI would like to provide an update regarding the deadline for the Orion Project. After reviewing the current progress and receiving input from several departments, management has decided to adjust the timeline to ensure the final deliverables meet quality standards.\n\nThe revised deadline for the project is now August 30, which is two weeks later than originally planned. This extension is intended to allow additional time for testing and final revisions. Team leaders should review their task schedules and notify the project office if any resource conflicts arise.\n\nPlease note that interim milestones will remain unchanged, and weekly status meetings will continue as scheduled. It is important that all team members continue to document their progress and report any issues as early as possible.\n\nThank you for your continued efforts and cooperation. If you have questions about the revised deadline or task assignments, please contact your team leader.",
+  "word_count": 242,
+  "questions": [
+    {
+      "body": "Why was the project deadline extended?",
+      "choices_text": [
+        "To allow more time for testing and final revisions.",
+        "Because several team members requested vacation time.",
+        "Because the interim milestones were delayed.",
+        "Because additional funding was approved."
+      ],
+      "correct_index": 0,
+      "explanation": "本文で、品質を確保するためテストと最終修正の時間を確保する目的で期限が延長されたと説明されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使いません。",
+        "休暇の要望が理由とは本文に書かれていません。",
+        "中間マイルストーンは変更されないと明記されています。",
+        "追加予算の承認についての記述はありません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

@@ -1,0 +1,28 @@
+{
+  "level": 600,
+  "title": "Notice: Office Equipment Inspection",
+  "category": "notice",
+  "content": "To All Staff,\n\nThis is a reminder that a routine inspection of office equipment will be conducted this Friday afternoon. The inspection will include printers, shared computers, and meeting room devices to ensure they are functioning properly and safely.\n\nEmployees are asked to shut down their computers and clear their desks by 1:00 p.m. on the day of the inspection. Personal items left on shared equipment may delay the process. If you require access to any equipment during the inspection period, please inform your supervisor in advance.\n\nThe inspection is expected to be completed by the end of the workday. We appreciate your cooperation in helping us maintain a safe and efficient workplace.\n\nFacilities Management",
+  "word_count": 178,
+  "questions": [
+    {
+      "body": "What are employees requested to do by 1:00 p.m. on Friday?",
+      "choices_text": [
+        "Turn off computers and clear their desks.",
+        "Report equipment problems to management.",
+        "Attend a safety meeting.",
+        "Move equipment to another office."
+      ],
+      "correct_index": 0,
+      "explanation": "本文では、点検当日の13時までにPCのシャットダウンと机の整理を求めている。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使いません。",
+        "問題報告についての指示は書かれていません。",
+        "安全ミーティングへの出席は求められていません。",
+        "機材の移動についての指示はありません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

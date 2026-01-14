@@ -1,0 +1,78 @@
+{
+  "level": 600,
+  "title": "Vocabulary Review from Part7 Level600_013",
+  "questions": [
+    {
+      "word": "mandatory",
+      "question_text": "\"mandatory\" の意味はどれでしょう？",
+      "choices_text": [
+        "Required by rules or law",
+        "Recommended but optional",
+        "Related to technology",
+        "Paid by the company"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The compliance training is mandatory for all full-time staff.",
+      "explanation": "義務的な・必須の\n推奨されているが任意の\n技術に関する\n会社が支払う"
+    },
+    {
+      "word": "compliance",
+      "question_text": "\"compliance\" の意味はどれでしょう？",
+      "choices_text": [
+        "The act of following rules or regulations",
+        "A type of employee benefit",
+        "An online system",
+        "A training schedule"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The program ensures compliance with company policies.",
+      "explanation": "規則・法令の順守\n従業員福利厚生の一種\nオンラインシステム\n研修スケジュール"
+    },
+    {
+      "word": "deadline",
+      "question_text": "\"deadline\" の意味はどれでしょう？",
+      "choices_text": [
+        "The latest time something must be completed",
+        "A meeting location",
+        "An approval request",
+        "A technical problem"
+      ],
+      "correct_index": 0,
+      "example_sentence": "All modules must be finished by the deadline.",
+      "explanation": "締め切り期限\n会議場所\n承認依頼\n技術的問題"
+    },
+    {
+      "word": "approve",
+      "question_text": "\"approve\" の意味はどれでしょう？",
+      "choices_text": [
+        "To officially agree to something",
+        "To delay a task",
+        "To report a problem",
+        "To cancel a request"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Managers may approve schedule adjustments.",
+      "explanation": "承認する\n作業を遅らせる\n問題を報告する\n依頼を取り消す"
+    },
+    {
+      "word": "access",
+      "question_text": "\"access\" の意味はどれでしょう？",
+      "choices_text": [
+        "The ability to use or enter something",
+        "A training document",
+        "A system update",
+        "An ethical rule"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Employees may lose access to internal systems.",
+      "explanation": "利用権・アクセス権\n研修資料\nシステム更新\n倫理規則"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level600_review_013.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 600",
+    "type": "vocabulary_review"
+  }
+}

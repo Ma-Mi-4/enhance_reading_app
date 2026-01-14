@@ -1,0 +1,28 @@
+{
+  "level": 600,
+  "title": "Notice: Temporary Change to Office Entry Hours",
+  "category": "notice",
+  "content": "To all employees,\n\nPlease be advised of a temporary change to office entry hours during the first week of September. Due to scheduled maintenance on the building’s access control system, employees will only be able to enter the office between 8:30 a.m. and 6:00 p.m. from September 2 to September 6.\n\nDuring this period, early-morning and late-evening access will be restricted. Employees who normally work outside these hours are encouraged to adjust their schedules or consult with their managers in advance. Security staff will be on-site throughout the day to assist with entry-related issues.\n\nAll other office facilities and services will operate as usual. Once the maintenance work is completed, normal access hours will resume, and a follow-up announcement will be posted on the internal portal.\n\nWe apologize for any inconvenience this may cause and appreciate your understanding and cooperation.",
+  "word_count": 238,
+  "questions": [
+    {
+      "body": "What is the reason for the temporary change in office entry hours?",
+      "choices_text": [
+        "Maintenance on the building’s access control system.",
+        "A company-wide safety training program.",
+        "An increase in after-hours office usage.",
+        "A shortage of security staff."
+      ],
+      "correct_index": 0,
+      "explanation": "本文に、入退室管理システムのメンテナンスが理由であると明記されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使いません。",
+        "安全研修の実施については本文に記載されていません。",
+        "時間外利用の増加が理由とは述べられていません。",
+        "警備員不足についての記述はありません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

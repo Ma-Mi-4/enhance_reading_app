@@ -1,0 +1,78 @@
+{
+  "level": 600,
+  "title": "Vocabulary Review from Part7 Level600_016",
+  "questions": [
+    {
+      "word": "procedure",
+      "question_text": "\"procedure\" の意味はどれでしょう？",
+      "choices_text": [
+        "An official way of doing something",
+        "A personal opinion",
+        "A temporary visitor",
+        "A security badge"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The new procedure will start on July 1.",
+      "explanation": "手続き・手順\n個人的な意見\n一時的な訪問者\nセキュリティバッジ"
+    },
+    {
+      "word": "enhance",
+      "question_text": "\"enhance\" の意味はどれでしょう？",
+      "choices_text": [
+        "Improve or strengthen",
+        "Remove completely",
+        "Delay temporarily",
+        "Explain in detail"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The update is intended to enhance building security.",
+      "explanation": "向上させる・強化する\n完全に取り除く\n一時的に遅らせる\n詳しく説明する"
+    },
+    {
+      "word": "registered",
+      "question_text": "\"registered\" の意味はどれでしょう？",
+      "choices_text": [
+        "Officially recorded",
+        "Verbally informed",
+        "Accidentally listed",
+        "Publicly announced"
+      ],
+      "correct_index": 0,
+      "example_sentence": "All visitors must be registered in advance.",
+      "explanation": "正式に登録された\n口頭で伝えられた\n誤って記載された\n公表された"
+    },
+    {
+      "word": "affiliation",
+      "question_text": "\"affiliation\" の意味はどれでしょう？",
+      "choices_text": [
+        "The organization someone belongs to",
+        "A personal schedule",
+        "An arrival time",
+        "A security rule"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Employees must submit the visitor’s company affiliation.",
+      "explanation": "所属・関係団体\n個人の予定\n到着時刻\n警備規則"
+    },
+    {
+      "word": "denied",
+      "question_text": "\"denied\" の意味はどれでしょう？",
+      "choices_text": [
+        "Refused or not allowed",
+        "Delayed briefly",
+        "Approved automatically",
+        "Checked carefully"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Visitors may be denied entry during peak hours.",
+      "explanation": "拒否された・許可されなかった\n少し遅らされた\n自動的に承認された\n慎重に確認された"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level600_review_016.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 600",
+    "type": "vocabulary_review"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "level": 600,
+  "title": "Vocabulary Review from Part7 Level600_019",
+  "questions": [
+    {
+      "word": "participation",
+      "question_text": "\"participation\" の意味はどれでしょう？",
+      "choices_text": [
+        "The act of taking part in an activity",
+        "The process of making a decision",
+        "A written evaluation report",
+        "An official company announcement"
+      ],
+      "correct_index": 0,
+      "example_sentence": "We appreciate your active participation in the training session.",
+      "explanation": "参加すること\n意思決定の過程\n書面での評価報告\n公式な社内通知"
+    },
+    {
+      "word": "reference",
+      "question_text": "\"reference\" の意味はどれでしょう？",
+      "choices_text": [
+        "Information used to help understand something",
+        "A personal opinion",
+        "A financial document",
+        "An informal conversation"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Additional reference materials are now available online.",
+      "explanation": "参考資料・参照情報\n個人的な意見\n財務書類\n非公式な会話"
+    },
+    {
+      "word": "available",
+      "question_text": "\"available\" の意味はどれでしょう？",
+      "choices_text": [
+        "Able to be used or accessed",
+        "No longer necessary",
+        "Temporarily unavailable",
+        "Reserved for managers only"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The updated training materials are now available on the portal.",
+      "explanation": "利用可能な\nもはや不要な\n一時的に利用できない\n管理職専用の"
+    },
+    {
+      "word": "access",
+      "question_text": "\"access\" の意味はどれでしょう？",
+      "choices_text": [
+        "The ability to enter or use something",
+        "A formal request letter",
+        "A training schedule",
+        "An approval process"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Access to the materials requires logging in with your ID.",
+      "explanation": "利用・閲覧する権限\n正式な申請書\n研修スケジュール\n承認手続き"
+    },
+    {
+      "word": "recommend",
+      "question_text": "\"recommend\" の意味はどれでしょう？",
+      "choices_text": [
+        "To suggest something as a good idea",
+        "To require by company policy",
+        "To cancel an event",
+        "To postpone indefinitely"
+      ],
+      "correct_index": 0,
+      "example_sentence": "We recommend reviewing the materials before the workshop.",
+      "explanation": "勧める・推奨する\n会社規定として義務付ける\nイベントを中止する\n無期限に延期する"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level600_review_019.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 600",
+    "type": "vocabulary_review"
+  }
+}
