@@ -1,0 +1,28 @@
+{
+  "level": 600,
+  "title": "Internal Email: Change in Training Room Reservation Policy",
+  "category": "email",
+  "content": "Dear Employees,\n\nThis message is to inform you of an upcoming change to the reservation policy for the training rooms located on the fourth floor. Due to increased demand over the past few months, the Facilities Team has reviewed current usage patterns and identified the need for a more structured booking process.\n\nEffective February 1, all training rooms must be reserved at least 48 hours in advance through the internal scheduling system. Same-day reservations will no longer be accepted unless approved by a department manager. This change is intended to ensure fair access and allow adequate time for room setup, including audio-visual equipment checks.\n\nIn addition, employees who reserve a room but do not check in within 15 minutes of the scheduled start time may lose their reservation. The room may then be released to other teams waiting for availability. To avoid this, please cancel reservations you no longer need as early as possible.\n\nThe Facilities Team will monitor the new policy closely during the first month and may make adjustments based on employee feedback. If you have questions about the reservation system or need assistance with booking, please contact Facilities Support.\n\nThank you for your cooperation.",
+  "word_count": 247,
+  "questions": [
+    {
+      "body": "Why is the reservation policy being changed?",
+      "choices_text": [
+        "Because demand for the training rooms has increased.",
+        "Because the rooms require major repairs.",
+        "Because the fourth floor will be closed.",
+        "Because employees requested fewer rules."
+      ],
+      "correct_index": 0,
+      "explanation": "本文で、利用需要の増加により、より管理された予約方法が必要になったと説明されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使いません。",
+        "大規模な修理についての記述はありません。",
+        "フロア閉鎖については触れられていません。",
+        "ルール削減の要望があったとは書かれていません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

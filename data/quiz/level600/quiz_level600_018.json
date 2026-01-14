@@ -1,0 +1,78 @@
+{
+  "level": 600,
+  "title": "Vocabulary Review from Part7 Level600_018",
+  "questions": [
+    {
+      "word": "temporary",
+      "question_text": "\"temporary\" の意味はどれでしょう？",
+      "choices_text": [
+        "Lasting for a short period of time",
+        "Planned far in advance",
+        "Permanent and fixed",
+        "Unexpected and sudden"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Please be advised of a temporary change to office entry hours.",
+      "explanation": "一時的な\n事前に長く計画された\n恒久的な\n突然の"
+    },
+    {
+      "word": "maintenance",
+      "question_text": "\"maintenance\" の意味はどれでしょう？",
+      "choices_text": [
+        "Work done to keep something in good condition",
+        "A safety inspection report",
+        "A change in company policy",
+        "An employee training session"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The change is due to scheduled maintenance on the system.",
+      "explanation": "保守・点検作業\n安全点検報告書\n会社方針の変更\n社員研修"
+    },
+    {
+      "word": "restricted",
+      "question_text": "\"restricted\" の意味はどれでしょう？",
+      "choices_text": [
+        "Limited or controlled",
+        "Completely removed",
+        "Strongly recommended",
+        "Automatically approved"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Early-morning and late-evening access will be restricted.",
+      "explanation": "制限された\n完全に撤去された\n強く推奨された\n自動的に承認された"
+    },
+    {
+      "word": "adjust",
+      "question_text": "\"adjust\" の意味はどれでしょう？",
+      "choices_text": [
+        "To change slightly to fit a situation",
+        "To refuse a request",
+        "To delay indefinitely",
+        "To report formally"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Employees are encouraged to adjust their schedules.",
+      "explanation": "調整する\n依頼を拒否する\n無期限に延期する\n正式に報告する"
+    },
+    {
+      "word": "resume",
+      "question_text": "\"resume\" の意味はどれでしょう？",
+      "choices_text": [
+        "To begin again after stopping",
+        "To review carefully",
+        "To replace completely",
+        "To cancel permanently"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Normal access hours will resume after the maintenance.",
+      "explanation": "再開する\n注意深く見直す\n完全に置き換える\n永久に中止する"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level600_review_018.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 600",
+    "type": "vocabulary_review"
+  }
+}

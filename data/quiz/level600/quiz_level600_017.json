@@ -1,0 +1,78 @@
+{
+  "level": 600,
+  "title": "Vocabulary Review from Part7 Level600_017",
+  "questions": [
+    {
+      "word": "deadline",
+      "question_text": "\"deadline\" の意味はどれでしょう？",
+      "choices_text": [
+        "The latest time by which something must be completed",
+        "A meeting agenda",
+        "A project budget",
+        "A team leader"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The revised deadline for the project is August 30.",
+      "explanation": "締切・期限\n会議の議題\nプロジェクト予算\nチームリーダー"
+    },
+    {
+      "word": "adjust",
+      "question_text": "\"adjust\" の意味はどれでしょう？",
+      "choices_text": [
+        "To change slightly to improve something",
+        "To cancel completely",
+        "To announce publicly",
+        "To record officially"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Management decided to adjust the project timeline.",
+      "explanation": "調整する・修正する\n完全に中止する\n公表する\n正式に記録する"
+    },
+    {
+      "word": "deliverables",
+      "question_text": "\"deliverables\" の意味はどれでしょう？",
+      "choices_text": [
+        "Final products or results of a project",
+        "Daily work schedules",
+        "Team meeting notes",
+        "Temporary resources"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The extension helps ensure the final deliverables meet quality standards.",
+      "explanation": "成果物・提出物\n日々の作業予定\n会議メモ\n一時的な資源"
+    },
+    {
+      "word": "interim",
+      "question_text": "\"interim\" の意味はどれでしょう？",
+      "choices_text": [
+        "Temporary or in-between",
+        "Final and complete",
+        "Unexpected",
+        "Unnecessary"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Interim milestones will remain unchanged.",
+      "explanation": "暫定的な・中間の\n最終的な\n予期しない\n不要な"
+    },
+    {
+      "word": "document",
+      "question_text": "\"document\" の意味はどれでしょう？",
+      "choices_text": [
+        "To record information in written form",
+        "To delay a decision",
+        "To approve a request",
+        "To assign a task"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Team members should document their progress regularly.",
+      "explanation": "記録する・文書化する\n決定を遅らせる\n申請を承認する\n作業を割り当てる"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level600_review_017.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 600",
+    "type": "vocabulary_review"
+  }
+}

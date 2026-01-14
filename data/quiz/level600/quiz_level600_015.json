@@ -1,0 +1,78 @@
+{
+  "level": 600,
+  "title": "Vocabulary Review from Part7 Level600_015",
+  "questions": [
+    {
+      "word": "compliance",
+      "question_text": "\"compliance\" の意味はどれでしょう？",
+      "choices_text": [
+        "Following rules or laws",
+        "Employee training time",
+        "Company profit",
+        "Workplace communication"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Compliance training helps the company meet legal standards.",
+      "explanation": "規則・法律を守ること\n従業員研修の時間\n会社の利益\n職場でのコミュニケーション"
+    },
+    {
+      "word": "mandatory",
+      "question_text": "\"mandatory\" の意味はどれでしょう？",
+      "choices_text": [
+        "Required by rules",
+        "Recommended but optional",
+        "Delayed until later",
+        "Available online"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Completing the training is mandatory for all employees.",
+      "explanation": "義務的な・必須の\n推奨されているが任意\n後日に延期された\nオンラインで利用可能な"
+    },
+    {
+      "word": "convenience",
+      "question_text": "\"convenience\" の意味はどれでしょう？",
+      "choices_text": [
+        "A suitable or easy time",
+        "A technical problem",
+        "A training deadline",
+        "A legal requirement"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The course can be completed at your convenience.",
+      "explanation": "都合のよい時間・便利さ\n技術的な問題\n研修の締切\n法的要件"
+    },
+    {
+      "word": "approximately",
+      "question_text": "\"approximately\" の意味はどれでしょう？",
+      "choices_text": [
+        "About or roughly",
+        "Exactly",
+        "At least",
+        "Immediately"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The training takes approximately 60 minutes.",
+      "explanation": "約・およそ\n正確に\n少なくとも\nすぐに"
+    },
+    {
+      "word": "temporarily",
+      "question_text": "\"temporarily\" の意味はどれでしょう？",
+      "choices_text": [
+        "For a short time",
+        "Permanently",
+        "In advance",
+        "By mistake"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Access may be temporarily restricted.",
+      "explanation": "一時的に\n永久に\n事前に\n誤って"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level600_review_015.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 600",
+    "type": "vocabulary_review"
+  }
+}

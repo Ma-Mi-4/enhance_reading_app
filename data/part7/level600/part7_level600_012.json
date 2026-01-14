@@ -1,0 +1,28 @@
+{
+  "level": 600,
+  "title": "Notice: Update to Employee Travel Expense Guidelines",
+  "category": "notice",
+  "content": "To all staff,\n\nPlease review the following update to the employee travel expense guidelines, which will take effect on March 1. These revisions were made after an internal audit revealed inconsistencies in how travel-related costs were being reported across departments.\n\nUnder the updated guidelines, employees must submit all travel expense reports within ten business days of completing a business trip. Receipts are now required for all transportation and lodging expenses, regardless of amount. Meal expenses under ¥1,000 may be reported without a receipt, provided the purpose of the expense is clearly described.\n\nIn addition, the Finance Department has introduced standardized reimbursement rates for domestic travel to simplify the approval process. These rates will be published on the internal portal and reviewed on a quarterly basis. Expenses that exceed the listed rates will require prior approval from a department manager.\n\nEmployees who frequently travel for work are encouraged to attend one of the upcoming online briefing sessions, where the Finance Team will explain the changes in detail and answer questions. Session dates and registration links will be announced next week.\n\nIf you have immediate concerns regarding an upcoming trip, please contact the Finance Help Desk.",
+  "word_count": 249,
+  "questions": [
+    {
+      "body": "What is one new requirement in the updated guidelines?",
+      "choices_text": [
+        "Expense reports must be submitted within ten business days.",
+        "All meals must be approved in advance.",
+        "Only international travel expenses are covered.",
+        "Receipts are no longer necessary for lodging."
+      ],
+      "correct_index": 0,
+      "explanation": "本文で、出張終了後10営業日以内に経費精算を提出する必要があると明記されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使いません。",
+        "食事の事前承認が必要とは書かれていません。",
+        "国内出張も対象であると記載されています。",
+        "宿泊費には金額に関係なく領収書が必要です。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

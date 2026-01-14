@@ -1,0 +1,78 @@
+{
+  "level": 600,
+  "title": "Vocabulary Review from Part7 Level600_012",
+  "questions": [
+    {
+      "word": "guidelines",
+      "question_text": "\"guidelines\" の意味はどれでしょう？",
+      "choices_text": [
+        "Rules or instructions that show how to do something",
+        "Personal travel plans",
+        "A financial reward",
+        "An online meeting"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Employees must follow the updated travel expense guidelines.",
+      "explanation": "指針・ガイドライン\n個人の旅行計画\n金銭的報酬\nオンライン会議"
+    },
+    {
+      "word": "submit",
+      "question_text": "\"submit\" の意味はどれでしょう？",
+      "choices_text": [
+        "To send something for review or approval",
+        "To cancel a request",
+        "To store information",
+        "To explain a rule"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Expense reports must be submitted within ten business days.",
+      "explanation": "提出する\n依頼を取り消す\n情報を保存する\n規則を説明する"
+    },
+    {
+      "word": "receipt",
+      "question_text": "\"receipt\" の意味はどれでしょう？",
+      "choices_text": [
+        "A document showing that payment was made",
+        "A travel schedule",
+        "An approval notice",
+        "A company policy"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Receipts are required for transportation expenses.",
+      "explanation": "領収書\n旅行日程\n承認通知\n会社方針"
+    },
+    {
+      "word": "reimbursement",
+      "question_text": "\"reimbursement\" の意味はどれでしょう？",
+      "choices_text": [
+        "Money paid back for expenses",
+        "An additional service fee",
+        "A salary increase",
+        "A tax penalty"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Standardized reimbursement rates were introduced.",
+      "explanation": "払い戻し・立替金の返金\n追加手数料\n昇給\n税金の罰金"
+    },
+    {
+      "word": "prior",
+      "question_text": "\"prior\" の意味はどれでしょう？",
+      "choices_text": [
+        "Happening before something else",
+        "Occurring at the same time",
+        "Planned for the future",
+        "Related to travel"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Expenses over the limit require prior approval.",
+      "explanation": "事前の\n同時に起こる\n将来予定された\n旅行に関連した"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level600_review_012.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 600",
+    "type": "vocabulary_review"
+  }
+}

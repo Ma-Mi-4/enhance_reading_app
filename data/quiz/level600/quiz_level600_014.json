@@ -1,0 +1,78 @@
+{
+  "level": 600,
+  "title": "Vocabulary Review from Part7 Level600_014",
+  "questions": [
+    {
+      "word": "performance",
+      "question_text": "\"performance\" の意味はどれでしょう？",
+      "choices_text": [
+        "How well someone does their job",
+        "A company policy document",
+        "A type of meeting room",
+        "An office location"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The review focuses on employee performance.",
+      "explanation": "業績・仕事の成果\n会社の方針書\n会議室の種類\nオフィスの所在地"
+    },
+    {
+      "word": "schedule",
+      "question_text": "\"schedule\" の意味はどれでしょう？",
+      "choices_text": [
+        "A plan that shows dates and times",
+        "A performance score",
+        "A department rule",
+        "A written report"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The review schedule has been revised.",
+      "explanation": "予定・スケジュール\n評価点数\n部署の規則\n書面の報告書"
+    },
+    {
+      "word": "deadline",
+      "question_text": "\"deadline\" の意味はどれでしょう？",
+      "choices_text": [
+        "The latest time something must be completed",
+        "A meeting invitation",
+        "An employee request",
+        "A long-term plan"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Several projects are reaching critical deadlines.",
+      "explanation": "締切・期限\n会議招待\n従業員の要望\n長期計画"
+    },
+    {
+      "word": "adjust",
+      "question_text": "\"adjust\" の意味はどれでしょう？",
+      "choices_text": [
+        "To change something slightly to improve it",
+        "To cancel a plan completely",
+        "To record information",
+        "To approve a request"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Management decided to adjust the review schedule.",
+      "explanation": "調整する・修正する\n完全に中止する\n情報を記録する\n依頼を承認する"
+    },
+    {
+      "word": "conflict",
+      "question_text": "\"conflict\" の意味はどれでしょう？",
+      "choices_text": [
+        "A situation where plans interfere with each other",
+        "A written agreement",
+        "A performance goal",
+        "A team discussion"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The change helps reduce scheduling conflicts.",
+      "explanation": "予定の衝突・対立\n書面による契約\n業績目標\nチームでの話し合い"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level600_review_014.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 600",
+    "type": "vocabulary_review"
+  }
+}

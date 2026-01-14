@@ -1,0 +1,28 @@
+{
+  "level": 600,
+  "title": "Notice: Change in Visitor Registration Procedure",
+  "category": "notice",
+  "content": "To all employees,\n\nPlease be informed of an upcoming change to the visitor registration procedure at our main office. This update is being implemented to enhance building security and improve the efficiency of the check-in process. The new procedure will take effect on July 1.\n\nUnder the updated system, all visitors must be registered in advance through the internal portal. Employees hosting visitors are responsible for submitting the visitor’s name, company affiliation, and expected arrival time at least one business day before the visit. Upon arrival, visitors will be required to present a valid photo ID at the reception desk and wear a temporary badge at all times while on the premises.\n\nFor last-minute visits, employees should contact the Security Office directly for approval. Please note that visitors who are not pre-registered may experience delays or be denied entry during peak hours.\n\nWe appreciate your cooperation in following these procedures to maintain a safe working environment. If you have any questions about the new registration process, please contact the Security Office.",
+  "word_count": 241,
+  "questions": [
+    {
+      "body": "What is required under the new visitor registration procedure?",
+      "choices_text": [
+        "Visitors must be registered in advance through the internal portal.",
+        "Visitors may enter freely during business hours.",
+        "Visitors must attend a security briefing before arrival.",
+        "Visitors must submit a written request one week ahead."
+      ],
+      "correct_index": 0,
+      "explanation": "本文で、新しい手続きでは社内ポータルを通じて事前登録が必要と明記されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使いません。",
+        "自由に入館できるとは本文に記載されていません。",
+        "事前のセキュリティ説明会についての記述はありません。",
+        "1週間前の書面提出という条件は示されていません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

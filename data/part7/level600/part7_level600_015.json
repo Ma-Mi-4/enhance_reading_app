@@ -1,0 +1,28 @@
+{
+  "level": 600,
+  "title": "Email: Reminder About Annual Compliance Training",
+  "category": "email",
+  "content": "Dear Colleagues,\n\nThis is a reminder that all employees are required to complete the Annual Compliance Training by June 15. The training covers key topics such as data protection, workplace ethics, and updated regulatory requirements. Completing this course is mandatory and helps ensure that our company continues to meet legal and industry standards.\n\nThe training is available through the online learning portal and can be completed at your convenience. Most participants finish the course in approximately 60 minutes. Once completed, your progress will be automatically recorded in the system, and no further action is needed.\n\nEmployees who have already completed the training this year may disregard this message. However, those who do not finish the course by the deadline may temporarily lose access to certain internal systems until the requirement is met.\n\nIf you experience technical issues accessing the training materials, please contact the IT Helpdesk. Thank you for your prompt attention to this matter.",
+  "word_count": 243,
+  "questions": [
+    {
+      "body": "What may happen if an employee does not complete the training by June 15?",
+      "choices_text": [
+        "They may lose access to some internal systems.",
+        "They will be required to attend an in-person workshop.",
+        "They will receive a formal written warning.",
+        "They will be removed from future training programs."
+      ],
+      "correct_index": 0,
+      "explanation": "本文に、期限までに完了しない場合は一部の社内システムへのアクセスが一時的に制限される可能性があると記載されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使いません。",
+        "対面ワークショップへの参加義務については書かれていません。",
+        "正式な警告が出るとは本文に記載されていません。",
+        "今後の研修から除外されるとは述べられていません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}
