@@ -1,0 +1,78 @@
+{
+  "level": 700,
+  "title": "Vocabulary Quiz from Part7 Level700_011",
+  "questions": [
+    {
+      "word": "reward",
+      "question_text": "\"reward\" の意味はどれでしょう？",
+      "choices_text": [
+        "Something given in return for loyalty or effort",
+        "A required service charge",
+        "A payment deadline",
+        "A written complaint"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Members receive a reward after reaching a certain spending level.",
+      "explanation": "報酬・特典\n必須の手数料\n支払期限\n苦情文書"
+    },
+    {
+      "word": "accumulate",
+      "question_text": "\"accumulate\" の意味はどれでしょう？",
+      "choices_text": [
+        "To build up gradually over time",
+        "To use immediately",
+        "To reduce suddenly",
+        "To exchange for cash"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Reward points accumulate with each purchase.",
+      "explanation": "蓄積する\nすぐ使う\n急に減らす\n現金に換える"
+    },
+    {
+      "word": "redeem",
+      "question_text": "\"redeem\" の意味はどれでしょう？",
+      "choices_text": [
+        "To exchange points for goods or services",
+        "To delay a payment",
+        "To earn interest",
+        "To cancel a reservation"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Members can redeem points for discounts.",
+      "explanation": "交換する\n支払いを遅らせる\n利息を得る\n予約を取り消す"
+    },
+    {
+      "word": "tier",
+      "question_text": "\"tier\" の意味はどれでしょう？",
+      "choices_text": [
+        "A level or rank within a system",
+        "A refund policy",
+        "A product shipment",
+        "A billing method"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Each tier provides different membership benefits.",
+      "explanation": "階層・ランク\n返金規定\n出荷\n請求方法"
+    },
+    {
+      "word": "benefit",
+      "question_text": "\"benefit\" の意味はどれでしょう？",
+      "choices_text": [
+        "An advantage gained from something",
+        "A government regulation",
+        "A booking restriction",
+        "A delivery fee"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Priority support is one benefit of higher membership tiers.",
+      "explanation": "利益・特典\n規制\n予約制限\n配送料"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level700_011.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 700",
+    "type": "vocabulary"
+  }
+}

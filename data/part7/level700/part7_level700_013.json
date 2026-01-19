@@ -1,0 +1,28 @@
+{
+  "level": 700,
+  "title": "Notice: Implementation of New Employee Development Program",
+  "category": "notice",
+  "content": "To all employees,\n\nThe Human Resources Department is pleased to announce the launch of a new Employee Development Program, which will begin on September 1. This program is designed to support skill enhancement and career growth across all departments and employment levels.\n\nParticipation in the program is optional but strongly encouraged for employees seeking to expand their professional capabilities. The program consists of a combination of online training modules, in-person workshops, and small group discussions led by certified instructors. Employees may select courses that align with their individual goals, subject to supervisor approval.\n\nRegistration for the first training cycle will open on August 10 and close on August 25. Due to limited classroom capacity, some workshops may fill quickly. Employees are advised to complete registration as early as possible through the internal learning portal.\n\nSupervisors are responsible for reviewing course selections to ensure that participation does not interfere with operational responsibilities. Employees who successfully complete designated courses will receive certificates that may be considered during future performance evaluations.\n\nA detailed program schedule, course descriptions, and eligibility requirements will be published on the company intranet next week. For questions regarding registration or course availability, please contact the HR Development Team.\n\nWe look forward to your active participation in this initiative.",
+  "word_count": 245,
+  "questions": [
+    {
+      "body": "What should employees do before enrolling in courses under the new program?",
+      "choices_text": [
+        "Obtain approval from their supervisor.",
+        "Complete all online modules in advance.",
+        "Pay a registration fee through HR.",
+        "Submit certificates from previous training."
+      ],
+      "correct_index": 0,
+      "explanation": "本文に、コース選択は上司の承認を前提とすると明記されているため。",
+      "wrong_explanations": [
+        "正解のため誤答理由には使いません。",
+        "事前にすべてのオンライン講座を修了する必要はありません。",
+        "参加費についての記載はありません。",
+        "過去の証明書提出については触れられていません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

@@ -1,0 +1,28 @@
+{
+  "level": 700,
+  "title": "Memo: Changes to Office Supply Ordering Process",
+  "category": "memo",
+  "content": "To all department staff,\n\nThis memo is to inform you of upcoming changes to the office supply ordering process, which will be implemented starting September 1. These changes are intended to reduce unnecessary spending, improve inventory tracking, and ensure that essential materials are consistently available across all departments. The revised process follows a review conducted earlier this year that identified delays and duplicated orders as recurring issues.\n\nUnder the new system, routine office supplies such as paper, pens, and printer cartridges must be ordered through the centralized procurement portal. Individual purchases using department credit cards will no longer be permitted for standard items. Each department will be assigned a monthly spending limit based on past usage, and requests that exceed this limit will require written justification and managerial approval.\n\nTo streamline delivery, supplies will be distributed on a fixed weekly schedule rather than on an on-demand basis. Departments are encouraged to plan ahead and submit requests by noon every Thursday to ensure delivery the following week. Urgent requests outside the regular schedule may be considered, but approval will depend on availability and operational necessity.\n\nDetailed instructions on how to use the procurement portal, along with a list of approved items, will be shared via email later this week. If you have questions about the updated procedure or need assistance placing an order, please contact the Administrative Services Team.\n\nThank you for your cooperation.",
+  "word_count": 246,
+  "questions": [
+    {
+      "body": "What is one purpose of the new office supply ordering process?",
+      "choices_text": [
+        "To reduce unnecessary spending and improve inventory management.",
+        "To allow departments to order supplies more frequently.",
+        "To eliminate the need for managerial approval entirely.",
+        "To shorten delivery times by offering daily shipments."
+      ],
+      "correct_index": 0,
+      "explanation": "本文の冒頭で、無駄な支出の削減と在庫管理の改善が目的であると述べられているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使用しません。",
+        "注文頻度を増やすとは書かれていません。",
+        "一定の場合には承認が必要と明記されています。",
+        "配送は週1回の固定スケジュールになると説明されています。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

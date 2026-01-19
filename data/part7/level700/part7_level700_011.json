@@ -1,0 +1,28 @@
+{
+  "level": 700,
+  "title": "Notice: Update to Customer Rewards Membership Program",
+  "category": "notice",
+  "content": "Dear members,\n\nWe are writing to inform you of upcoming changes to our Customer Rewards Membership Program. These revisions will take effect on October 1 and are intended to improve clarity, increase flexibility, and provide greater value to long-term customers.\n\nUnder the revised program, members will earn reward points based on the total amount spent on eligible purchases, rather than the number of visits made. Points will be added automatically to member accounts within forty-eight hours after each transaction is completed. Members may accumulate points over time and redeem them for discounts, complimentary services, or limited promotional items offered throughout the year.\n\nThe updated program will also introduce a tier-based structure consisting of three membership levels. Each tier offers a different set of benefits, such as priority customer support, extended return periods, and early access to seasonal sales. Tier status will be evaluated once per year using the member’s total annual spending.\n\nA detailed summary of available rewards, tier qualifications, and redemption guidelines will be published on our website later this month. If you have questions regarding your membership status or need assistance understanding the changes, please contact our Customer Support Team during regular business hours.\n\nThank you for your continued loyalty.",
+  "word_count": 245,
+  "questions": [
+    {
+      "body": "What determines how many reward points a member earns under the new program?",
+      "choices_text": [
+        "The total amount spent on eligible purchases.",
+        "The number of store visits made each month.",
+        "How long the member has been enrolled.",
+        "Whether purchases are made during sales periods."
+      ],
+      "correct_index": 0,
+      "explanation": "本文では、ポイントは来店回数ではなく、対象購入の支出総額に基づいて付与されると説明されているため。",
+      "wrong_explanations": [
+        "正解のため誤答理由には使いません。",
+        "来店回数については本文に記載がありません。",
+        "会員期間がポイント数を決めるとは書かれていません。",
+        "セール期間による加算についての記述はありません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

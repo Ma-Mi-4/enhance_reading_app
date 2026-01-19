@@ -1,0 +1,78 @@
+{
+  "level": 700,
+  "title": "Vocabulary Quiz from Part7 Level700_014",
+  "questions": [
+    {
+      "word": "upgrade",
+      "question_text": "\"upgrade\" の意味はどれでしょう？",
+      "choices_text": [
+        "To improve something by adding newer or better features",
+        "To stop using a system permanently",
+        "To reduce the cost of a service",
+        "To transfer data to another company"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The company plans to upgrade its project management software.",
+      "explanation": "改良する・アップグレードする\n完全に使用をやめる\n費用を下げる\n他社へデータ移行する"
+    },
+    {
+      "word": "temporarily",
+      "question_text": "\"temporarily\" の意味はどれでしょう？",
+      "choices_text": [
+        "For a short period of time",
+        "On a regular schedule",
+        "Without any limits",
+        "Earlier than expected"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The system will be temporarily unavailable during maintenance.",
+      "explanation": "一時的に\n定期的に\n制限なく\n予想より早く"
+    },
+    {
+      "word": "feature",
+      "question_text": "\"feature\" の意味はどれでしょう？",
+      "choices_text": [
+        "An important function or characteristic",
+        "A technical problem",
+        "A security risk",
+        "A user complaint"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The update includes several new features for users.",
+      "explanation": "機能・特徴\n技術的問題\nセキュリティ上の危険\n利用者の苦情"
+    },
+    {
+      "word": "optional",
+      "question_text": "\"optional\" の意味はどれでしょう？",
+      "choices_text": [
+        "Not required, but available if desired",
+        "Required by company policy",
+        "Available only to managers",
+        "Scheduled automatically"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Attendance at the training sessions is optional.",
+      "explanation": "任意の\n義務的な\n管理職限定\n自動的に予定される"
+    },
+    {
+      "word": "register",
+      "question_text": "\"register\" の意味はどれでしょう？",
+      "choices_text": [
+        "To sign up or officially record participation",
+        "To cancel a reservation",
+        "To repair a system error",
+        "To approve a budget request"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Employees can register for the training sessions online.",
+      "explanation": "登録する・申し込む\n予約を取り消す\nエラーを修正する\n予算を承認する"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level700_014.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 700",
+    "type": "vocabulary"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "level": 700,
+  "title": "Vocabulary Quiz from Part7 Level700_012",
+  "questions": [
+    {
+      "word": "exhibitor",
+      "question_text": "\"exhibitor\" の意味はどれでしょう？",
+      "choices_text": [
+        "A person or company that displays products at an event",
+        "A visitor who buys tickets",
+        "An event security officer",
+        "A venue maintenance worker"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Each exhibitor must complete booth setup before opening day.",
+      "explanation": "出展者\n来場者\n警備員\n施設管理者"
+    },
+    {
+      "word": "guideline",
+      "question_text": "\"guideline\" の意味はどれでしょう？",
+      "choices_text": [
+        "A rule or instruction to follow",
+        "A payment receipt",
+        "A marketing slogan",
+        "An emergency exit"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Exhibitors must follow all safety guidelines.",
+      "explanation": "指針・ガイドライン\n領収書\n宣伝文句\n非常口"
+    },
+    {
+      "word": "demonstration",
+      "question_text": "\"demonstration\" の意味はどれでしょう？",
+      "choices_text": [
+        "A live display showing how something works",
+        "A written product manual",
+        "A private business meeting",
+        "A final sales report"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Product demonstrations require prior approval.",
+      "explanation": "実演・デモ\n取扱説明書\n会議\n報告書"
+    },
+    {
+      "word": "inspection",
+      "question_text": "\"inspection\" の意味はどれでしょう？",
+      "choices_text": [
+        "An official check to confirm rules are followed",
+        "A delivery schedule",
+        "A promotional campaign",
+        "A refund request"
+      ],
+      "correct_index": 0,
+      "example_sentence": "A safety inspection is conducted every morning.",
+      "explanation": "検査・点検\n配送予定\n販促活動\n返金申請"
+    },
+    {
+      "word": "prohibited",
+      "question_text": "\"prohibited\" の意味はどれでしょう？",
+      "choices_text": [
+        "Not allowed by rules or laws",
+        "Highly recommended",
+        "Available upon request",
+        "Free of charge"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Certain materials are prohibited at the venue.",
+      "explanation": "禁止されている\n強く推奨される\n要請すれば利用可\n無料"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level700_012.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 700",
+    "type": "vocabulary"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "level": 700,
+  "title": "Vocabulary Quiz from Part7 Level700_013",
+  "questions": [
+    {
+      "word": "development",
+      "question_text": "\"development\" の意味はどれでしょう？",
+      "choices_text": [
+        "The process of growth or improvement",
+        "A company holiday policy",
+        "A financial penalty",
+        "An office relocation plan"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The program focuses on professional development.",
+      "explanation": "成長・能力開発\n休暇規定\n罰則\n移転計画"
+    },
+    {
+      "word": "participation",
+      "question_text": "\"participation\" の意味はどれでしょう？",
+      "choices_text": [
+        "The act of taking part in something",
+        "A written evaluation",
+        "A training certificate",
+        "A scheduling conflict"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Participation in the program is optional.",
+      "explanation": "参加\n評価文書\n修了証\n日程の衝突"
+    },
+    {
+      "word": "register",
+      "question_text": "\"register\" の意味はどれでしょう？",
+      "choices_text": [
+        "To sign up officially",
+        "To supervise employees",
+        "To cancel an application",
+        "To delay a decision"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Employees must register through the learning portal.",
+      "explanation": "登録する\n監督する\n取り消す\n決定を遅らせる"
+    },
+    {
+      "word": "capacity",
+      "question_text": "\"capacity\" の意味はどれでしょう？",
+      "choices_text": [
+        "The maximum number something can accommodate",
+        "A personal skill level",
+        "A training document",
+        "A performance score"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Classroom capacity is limited.",
+      "explanation": "収容人数・定員\n能力値\n研修資料\n評価点"
+    },
+    {
+      "word": "evaluation",
+      "question_text": "\"evaluation\" の意味はどれでしょう？",
+      "choices_text": [
+        "An assessment of performance or quality",
+        "A training location",
+        "A job assignment",
+        "An attendance record"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Course completion may affect performance evaluations.",
+      "explanation": "評価\n研修場所\n業務割当\n出席記録"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level700_013.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 700",
+    "type": "vocabulary"
+  }
+}
+

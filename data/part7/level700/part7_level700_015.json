@@ -1,0 +1,30 @@
+{
+  "level": 700,
+  "title": "Email: Revised Office Supply Ordering Procedures",
+  "category": "email",
+  "content": "Dear Department Managers,\n\nThe Operations Department would like to announce upcoming changes to the company’s office supply ordering procedures, which will take effect at the beginning of next month. These revisions are intended to improve efficiency, reduce unnecessary administrative tasks, and ensure that all departments remain within their assigned budgets while maintaining access to essential materials.\n\nUnder the new system, commonly used items such as paper, pens, and printer toner may be ordered directly through the internal purchasing portal without prior approval, provided that the total cost does not exceed the monthly limit established for each department. This adjustment is expected to shorten processing times and allow staff to receive supplies more quickly.\n\nIn contrast, requests for specialized equipment or large-volume orders will continue to require managerial review. Managers are asked to confirm that such requests are necessary for current projects and that they align with budget priorities. Orders submitted without sufficient justification may be returned for clarification or delayed until additional information is provided.\n\nTo support a smooth transition, all employees responsible for placing orders must complete a short online training module outlining the updated guidelines. Access to the revised ordering system will be granted only after this training has been completed.\n\nPlease direct any questions regarding these changes to the Operations Department by the end of this week. Thank you for your cooperation.",
+  "word_count": 246,
+  "questions": [
+    {
+      "body": "What is the main reason for introducing the new ordering procedures?",
+      "choices_text": [
+        "To improve efficiency and control costs",
+        "To eliminate the use of office supplies",
+        "To increase the number of vendors",
+        "To centralize all purchases under one manager"
+      ],
+      "correct_index": 0,
+      "explanation": "本文冒頭で、業務効率の向上とコスト管理を目的として手続きが改定されると述べられている。",
+      "wrong_explanations": [
+        "本文では備品の使用をやめるとは述べていない。",
+        "取引業者の増加については触れられていない。",
+        "すべての購入を1人の管理者に集中させるとは書かれていない。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": {
+    "created_by": "chatgpt",
+    "checked": true
+  }
+}

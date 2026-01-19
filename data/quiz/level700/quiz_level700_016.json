@@ -1,0 +1,78 @@
+{
+  "level": 700,
+  "title": "Vocabulary Quiz from Part7 Level700_016",
+  "questions": [
+    {
+      "word": "reservation",
+      "question_text": "\"reservation\" の意味はどれでしょう？",
+      "choices_text": [
+        "An arrangement to keep something for future use",
+        "A written summary after a meeting",
+        "A change in company policy",
+        "An unexpected system error"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Conference room reservations must be made through the internal system.",
+      "explanation": "予約・事前確保\n会議後の要約\n社内規定の変更\n予期しないシステムエラー"
+    },
+    {
+      "word": "availability",
+      "question_text": "\"availability\" の意味はどれでしょう？",
+      "choices_text": [
+        "The state of being able to be used or scheduled",
+        "A list of approved vendors",
+        "A formal complaint",
+        "An internal audit process"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Please confirm your availability before the meeting is scheduled.",
+      "explanation": "利用可能状況・都合\n承認業者リスト\n正式な苦情\n内部監査"
+    },
+    {
+      "word": "confirm",
+      "question_text": "\"confirm\" の意味はどれでしょう？",
+      "choices_text": [
+        "To make sure something is correct or decided",
+        "To cancel a request",
+        "To delay a decision",
+        "To explain in detail"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Participants are asked to confirm their attendance by Friday.",
+      "explanation": "確認する\n依頼を取り消す\n決定を延期する\n詳しく説明する"
+    },
+    {
+      "word": "requirement",
+      "question_text": "\"requirement\" の意味はどれでしょう？",
+      "choices_text": [
+        "Something that is necessary or mandatory",
+        "An optional suggestion",
+        "A completed task",
+        "A financial reward"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Meeting room use is subject to specific safety requirements.",
+      "explanation": "必要条件・必須事項\n任意の提案\n完了した作業\n報酬"
+    },
+    {
+      "word": "coordinate",
+      "question_text": "\"coordinate\" の意味はどれでしょう？",
+      "choices_text": [
+        "To organize activities so they work well together",
+        "To reject a proposal",
+        "To record financial data",
+        "To simplify a report"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The assistant will coordinate schedules among all departments.",
+      "explanation": "調整する・連携させる\n提案を却下する\n財務データを記録する\n報告書を簡略化する"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level700_016.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 700",
+    "type": "vocabulary"
+  }
+}

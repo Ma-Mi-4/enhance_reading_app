@@ -1,0 +1,28 @@
+{
+  "level": 700,
+  "title": "Email: Update on Company-Wide Software Upgrade",
+  "category": "email",
+  "content": "Dear Employees,\n\nWe would like to inform you about an upcoming upgrade to the company’s internal project management software, which is scheduled to take place on August 15. This upgrade is part of our ongoing efforts to improve system performance, enhance security, and introduce features that better support cross-department collaboration. The decision follows feedback collected earlier this year regarding system speed and usability issues.\n\nDuring the upgrade process, the system will be temporarily unavailable from 9:00 p.m. to 1:00 a.m. Employees who regularly work during late hours are advised to save their work in advance and avoid accessing the platform during this maintenance window. Once the upgrade is complete, users will notice a redesigned dashboard, improved search functionality, and expanded reporting tools.\n\nTo help employees adapt to the changes, short training sessions will be offered online starting the week after the upgrade. These sessions will cover key updates and provide tips on how to use the new features efficiently. Attendance is optional but strongly recommended, especially for team leaders who frequently manage shared projects.\n\nA detailed summary of the changes, along with a link to register for the training sessions, will be posted on the internal portal later this week. If you experience any issues after the upgrade or have questions in advance, please contact the IT Support Desk.\n\nThank you for your cooperation.",
+  "word_count": 244,
+  "questions": [
+    {
+      "body": "What are employees advised to do during the software upgrade?",
+      "choices_text": [
+        "Avoid using the system during the maintenance period.",
+        "Attend mandatory training sessions that evening.",
+        "Submit feedback reports before the upgrade begins.",
+        "Continue working as usual without saving files."
+      ],
+      "correct_index": 0,
+      "explanation": "本文で、アップグレード中はシステムが利用できないため、アクセスを避けるよう案内されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使用しません。",
+        "研修は後日実施され、必須ではありません。",
+        "事前のフィードバック提出については触れられていません。",
+        "事前に作業を保存するよう注意されています。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

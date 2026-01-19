@@ -1,0 +1,78 @@
+{
+  "level": 700,
+  "title": "Review Vocabulary Quiz from Part7 Level700_018",
+  "questions": [
+    {
+      "word": "implement",
+      "question_text": "\"implement\" の意味はどれでしょう？",
+      "choices_text": [
+        "To put a plan or decision into action",
+        "To delay a decision temporarily",
+        "To explain a rule in detail",
+        "To cancel an existing system"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The new ordering system will be implemented starting September 1.",
+      "explanation": "実行する・導入する\n一時的に延期する\n詳しく説明する\n既存の制度を中止する"
+    },
+    {
+      "word": "centralized",
+      "question_text": "\"centralized\" の意味はどれでしょう？",
+      "choices_text": [
+        "Controlled or managed from one main place",
+        "Handled separately by each department",
+        "Used only in emergencies",
+        "Available for personal use"
+      ],
+      "correct_index": 0,
+      "example_sentence": "All orders must be placed through a centralized procurement portal.",
+      "explanation": "集中管理された\n各部署で個別管理された\n緊急時のみ使用される\n個人利用向けの"
+    },
+    {
+      "word": "limit",
+      "question_text": "\"limit\" の意味はどれでしょう？",
+      "choices_text": [
+        "The maximum amount that is allowed",
+        "A detailed written explanation",
+        "A delivery schedule",
+        "A type of approval form"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Each department has a monthly spending limit.",
+      "explanation": "上限・制限\n詳細な説明\n配送予定\n承認書類"
+    },
+    {
+      "word": "routine",
+      "question_text": "\"routine\" の意味はどれでしょう？",
+      "choices_text": [
+        "Done regularly as part of normal practice",
+        "Unusual and unexpected",
+        "Highly specialized",
+        "Related to emergencies only"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Routine office supplies must be ordered through the portal.",
+      "explanation": "日常的な・定期的な\n異例の\n専門的な\n緊急時限定の"
+    },
+    {
+      "word": "urgent",
+      "question_text": "\"urgent\" の意味はどれでしょう？",
+      "choices_text": [
+        "Needing immediate attention",
+        "Planned far in advance",
+        "Optional to handle",
+        "Related to long-term goals"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Urgent requests may be approved outside the regular schedule.",
+      "explanation": "緊急の\n事前に計画された\n対応不要な\n長期目標に関する"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level700_018_review.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 700",
+    "type": "vocabulary_review"
+  }
+}
