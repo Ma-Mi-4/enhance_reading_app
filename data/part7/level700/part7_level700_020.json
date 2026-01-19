@@ -1,0 +1,28 @@
+{
+  "level": 700,
+  "title": "Notice: Introduction of Centralized Procurement System",
+  "category": "notice",
+  "content": "To all department managers,\n\nWe are pleased to announce the introduction of a new centralized procurement system, which will be implemented company-wide starting September 1. This initiative is intended to improve cost control, increase transparency, and ensure consistent purchasing procedures across all departments. By consolidating procurement activities into a single platform, the company aims to reduce duplicate orders and improve coordination with approved suppliers.\n\nUnder the new system, all requests for office supplies, specialized equipment, and external services must be submitted through the internal procurement portal. Requests will automatically be routed to the appropriate manager for review and approval based on department budgets and item categories. Orders that exceed predefined spending limits or involve specialized items may require additional justification before approval is granted.\n\nThe procurement team will oversee vendor communication and contract management, allowing departments to focus on their core responsibilities. This change is also expected to shorten processing times and minimize errors caused by manual paperwork. Training materials, including step-by-step guides and short instructional videos, will be made available on the internal portal by mid-August.\n\nManagers are responsible for ensuring that their teams understand and follow the new procedures. During the first month of implementation, the procurement team will provide additional support to address questions or technical issues. For further details or assistance, please contact the Procurement Support Desk.\n\nThank you for your cooperation as we work to streamline our purchasing processes.",
+  "word_count": 246,
+  "questions": [
+    {
+      "body": "What is one main purpose of introducing the centralized procurement system?",
+      "choices_text": [
+        "To improve cost control and purchasing efficiency.",
+        "To allow departments to choose vendors independently.",
+        "To eliminate the need for managerial approval.",
+        "To increase manual paperwork for orders."
+      ],
+      "correct_index": 0,
+      "explanation": "本文の冒頭で、コスト管理の改善や効率化を目的としていると説明されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使用しません。",
+        "ベンダー選定は集中管理されると書かれています。",
+        "承認プロセスは引き続き必要だと述べられています。",
+        "手作業を減らすことが目的です。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

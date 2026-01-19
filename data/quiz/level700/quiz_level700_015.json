@@ -1,0 +1,78 @@
+{
+  "level": 700,
+  "title": "Vocabulary Quiz from Part7 Level700_015",
+  "questions": [
+    {
+      "word": "procedure",
+      "question_text": "\"procedure\" の意味はどれでしょう？",
+      "choices_text": [
+        "An established way of doing something",
+        "A type of office equipment",
+        "A financial document",
+        "A temporary employee"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Employees must follow the new procedure when ordering supplies.",
+      "explanation": "手順・手続き\n事務機器\n財務書類\n臨時社員"
+    },
+    {
+      "word": "efficient",
+      "question_text": "\"efficient\" の意味はどれでしょう？",
+      "choices_text": [
+        "Working in a well-organized and effective way",
+        "Using excessive time and effort",
+        "Focused only on appearance",
+        "Difficult to understand"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The updated system allows staff to work more efficiently.",
+      "explanation": "効率的な\n時間と労力を浪費する\n見た目重視の\n理解しにくい"
+    },
+    {
+      "word": "approval",
+      "question_text": "\"approval\" の意味はどれでしょう？",
+      "choices_text": [
+        "Official permission or agreement",
+        "A delivery schedule",
+        "A price increase",
+        "A training session"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Large orders require managerial approval.",
+      "explanation": "承認・許可\n配送予定\n値上げ\n研修"
+    },
+    {
+      "word": "specialized",
+      "question_text": "\"specialized\" の意味はどれでしょう？",
+      "choices_text": [
+        "Designed for a specific purpose",
+        "Available to everyone",
+        "Used only temporarily",
+        "Outdated or no longer needed"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Specialized equipment must be reviewed before purchase.",
+      "explanation": "専門的な\n誰でも使える\n一時的な\n不要になった"
+    },
+    {
+      "word": "justification",
+      "question_text": "\"justification\" の意味はどれでしょう？",
+      "choices_text": [
+        "A reason explaining why something is necessary",
+        "A record of attendance",
+        "A payment method",
+        "A technical failure"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Orders without proper justification may be delayed.",
+      "explanation": "正当な理由・説明\n出席記録\n支払い方法\n技術的障害"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level700_015.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 700",
+    "type": "vocabulary"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "level": 700,
+  "title": "Notice: Introduction of Centralized Office Supply Ordering System",
+  "category": "notice",
+  "content": "To all staff,\n\nThe Administration Department is pleased to announce the introduction of a new centralized office supply ordering system, which will be implemented starting September 10. This change is intended to streamline purchasing procedures, improve cost control, and reduce delays caused by inconsistent ordering practices across departments. By consolidating requests into a single platform, the company aims to improve efficiency and ensure better visibility of overall spending.\n\nUnder the new system, employees will be required to submit supply requests through the internal procurement portal rather than placing orders independently. Each department will be assigned a monthly spending limit, and requests exceeding this limit will require managerial approval. Routine items such as stationery and printer supplies can be ordered directly, while specialized equipment may require additional justification before approval is granted.\n\nTo support a smooth transition, training materials and step-by-step guides will be made available on the internal portal next week. Employees are encouraged to review these materials carefully before submitting their first request. During the initial rollout period, the Administration Team will monitor usage closely and provide assistance to address any issues that may arise.\n\nPlease note that urgent supply needs should still be communicated directly to your department manager, as emergency purchases may be handled outside the standard process. For questions regarding the new system or ordering procedures, contact the Administration Help Desk.\n\nThank you for your cooperation.",
+  "word_count": 245,
+  "questions": [
+    {
+      "body": "What is one purpose of introducing the centralized ordering system?",
+      "choices_text": [
+        "To improve efficiency and control company spending.",
+        "To eliminate the need for office supplies.",
+        "To allow employees to order freely without limits.",
+        "To replace department managers’ approval responsibilities."
+      ],
+      "correct_index": 0,
+      "explanation": "本文で、業務効率の向上とコスト管理の改善が目的であると説明されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使用しません。",
+        "備品自体を不要にするとは書かれていません。",
+        "支出上限や承認が必要と明記されています。",
+        "管理職の承認が不要になるとは述べられていません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

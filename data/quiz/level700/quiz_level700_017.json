@@ -1,0 +1,78 @@
+{
+  "level": 700,
+  "title": "Vocabulary Quiz from Part7 Level700_017_Review",
+  "questions": [
+    {
+      "word": "procedure",
+      "question_text": "\"procedure\" の意味はどれでしょう？",
+      "choices_text": [
+        "An established way of doing something",
+        "A building entrance",
+        "A type of security card",
+        "A delivery schedule"
+      ],
+      "correct_index": 0,
+      "example_sentence": "All visitors must follow the security procedure when entering the building.",
+      "explanation": "手順・手続き\n建物の入口\nセキュリティカード\n配送予定"
+    },
+    {
+      "word": "maintenance",
+      "question_text": "\"maintenance\" の意味はどれでしょう？",
+      "choices_text": [
+        "Work done to keep something in good condition",
+        "An employee evaluation",
+        "A temporary job assignment",
+        "An emergency meeting"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The entrance was closed for scheduled maintenance.",
+      "explanation": "保守・点検\n人事評価\n一時的な業務\n緊急会議"
+    },
+    {
+      "word": "verify",
+      "question_text": "\"verify\" の意味はどれでしょう？",
+      "choices_text": [
+        "To confirm that something is correct",
+        "To delay an action",
+        "To refuse entry",
+        "To make a reservation"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Security staff will verify visitor identification.",
+      "explanation": "確認する\n遅らせる\n入場を拒否する\n予約する"
+    },
+    {
+      "word": "designated",
+      "question_text": "\"designated\" の意味はどれでしょう？",
+      "choices_text": [
+        "Officially chosen for a specific purpose",
+        "Recently repaired",
+        "Open to the public",
+        "Used only temporarily"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Deliveries must be made to the designated loading area.",
+      "explanation": "指定された\n修理されたばかりの\n一般公開された\n一時的な"
+    },
+    {
+      "word": "coordinate",
+      "question_text": "\"coordinate\" の意味はどれでしょう？",
+      "choices_text": [
+        "To organize people or activities to work together",
+        "To cancel a plan",
+        "To inspect equipment",
+        "To approve a budget"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Administrators should coordinate delivery times with vendors.",
+      "explanation": "調整する・連携する\n計画を中止する\n設備を点検する\n予算を承認する"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level700_017_review.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 700",
+    "type": "vocabulary_review"
+  }
+}

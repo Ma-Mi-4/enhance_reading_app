@@ -1,0 +1,78 @@
+{
+  "level": 700,
+  "title": "Vocabulary Quiz from Part7 Level700_020",
+  "questions": [
+    {
+      "word": "procurement",
+      "question_text": "\"procurement\" の意味はどれでしょう？",
+      "choices_text": [
+        "The process of obtaining goods or services",
+        "The repair of office equipment",
+        "A company training program",
+        "The delivery of internal mail"
+      ],
+      "correct_index": 0,
+      "example_sentence": "All procurement activities will be handled through the new system.",
+      "explanation": "調達・購買業務\n機器の修理\n研修プログラム\n社内郵便"
+    },
+    {
+      "word": "centralized",
+      "question_text": "\"centralized\" の意味はどれでしょう？",
+      "choices_text": [
+        "Managed from a single main point",
+        "Handled separately by each team",
+        "Temporary and unofficial",
+        "Outdated and no longer used"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The company adopted a centralized procurement system.",
+      "explanation": "一元管理された\n各部署で個別対応\n一時的な\n時代遅れの"
+    },
+    {
+      "word": "transparency",
+      "question_text": "\"transparency\" の意味はどれでしょう？",
+      "choices_text": [
+        "The quality of being open and easy to understand",
+        "A type of legal document",
+        "A purchasing limit",
+        "A security device"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The new process improves transparency in purchasing decisions.",
+      "explanation": "透明性・分かりやすさ\n法的書類\n購入上限\n防犯装置"
+    },
+    {
+      "word": "consolidate",
+      "question_text": "\"consolidate\" の意味はどれでしょう？",
+      "choices_text": [
+        "To combine several things into one",
+        "To delay a decision",
+        "To cancel an agreement",
+        "To inspect equipment"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The company aims to consolidate orders into a single platform.",
+      "explanation": "統合する・まとめる\n決定を遅らせる\n契約を解消する\n設備を点検する"
+    },
+    {
+      "word": "vendor",
+      "question_text": "\"vendor\" の意味はどれでしょう？",
+      "choices_text": [
+        "A person or company that sells goods or services",
+        "A department manager",
+        "An internal auditor",
+        "A software developer"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The procurement team will manage communication with vendors.",
+      "explanation": "販売業者・取引先\n部門マネージャー\n内部監査担当\n開発者"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level700_020.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 700",
+    "type": "vocabulary"
+  }
+}

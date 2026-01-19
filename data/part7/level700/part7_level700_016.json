@@ -1,0 +1,28 @@
+{
+  "level": 700,
+  "title": "Notice: Changes to Office Meeting Room Reservations",
+  "category": "notice",
+  "content": "To all staff members,\n\nThis notice is to inform you of upcoming changes to the company’s meeting room reservation system, which will take effect beginning September 1. These updates are intended to improve room availability, reduce scheduling conflicts, and ensure that shared spaces are used more efficiently across all departments.\n\nUnder the revised policy, meeting rooms must be reserved at least 24 hours in advance using the online booking platform. Same-day reservations will no longer be permitted, except in cases approved by a department manager. In addition, employees are required to cancel reservations promptly if a meeting is no longer needed, allowing other teams to use the space.\n\nTo address frequent no-shows, reservations that remain unused for more than 15 minutes past the scheduled start time will be automatically released. This measure is expected to increase access during peak hours, particularly for larger conference rooms that are often in high demand.\n\nThe updated system will also include a feature that allows organizers to specify equipment needs, such as video conferencing tools or presentation screens. Requests for specialized equipment should be submitted at least two business days before the meeting to ensure availability.\n\nA step-by-step guide explaining the new reservation procedures will be available on the internal portal later this month. Employees with questions or technical issues are encouraged to contact the Facilities Management Team for assistance.",
+  "word_count": 245,
+  "questions": [
+    {
+      "body": "What will happen if a reserved meeting room is not used within 15 minutes of the scheduled time?",
+      "choices_text": [
+        "The reservation will be automatically canceled.",
+        "The meeting will be reported to management.",
+        "Employees will be charged a usage fee.",
+        "The room will be locked for the rest of the day."
+      ],
+      "correct_index": 0,
+      "explanation": "本文に、開始時刻から15分経過しても使用されない場合は予約が自動的に解除されると書かれているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使用しません。",
+        "管理部門への報告については触れられていません。",
+        "利用料金が発生するという記述はありません。",
+        "終日ロックされるという説明はありません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

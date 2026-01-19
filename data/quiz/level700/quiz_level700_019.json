@@ -1,0 +1,78 @@
+{
+  "level": 700,
+  "title": "Vocabulary Quiz from Part7 Level700_019",
+  "questions": [
+    {
+      "word": "centralized",
+      "question_text": "\"centralized\" の意味はどれでしょう？",
+      "choices_text": [
+        "Managed or controlled from one main place",
+        "Spread across many independent locations",
+        "Operated only temporarily",
+        "Limited to a small team"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The company introduced a centralized system to manage office supply orders.",
+      "explanation": "一元管理された\n分散した\n一時的な\n少人数限定の"
+    },
+    {
+      "word": "streamline",
+      "question_text": "\"streamline\" の意味はどれでしょう？",
+      "choices_text": [
+        "To make a process more efficient and simpler",
+        "To delay an important task",
+        "To remove all rules completely",
+        "To increase the cost of operations"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The new platform is designed to streamline the purchasing process.",
+      "explanation": "効率化する・簡素化する\n遅らせる\n規則をすべて廃止する\n運用コストを増やす"
+    },
+    {
+      "word": "procurement",
+      "question_text": "\"procurement\" の意味はどれでしょう？",
+      "choices_text": [
+        "The process of obtaining supplies or services",
+        "Employee training activities",
+        "Financial auditing work",
+        "Product marketing strategies"
+      ],
+      "correct_index": 0,
+      "example_sentence": "All requests must be submitted through the internal procurement portal.",
+      "explanation": "調達・購入手続き\n研修活動\n監査業務\n販売戦略"
+    },
+    {
+      "word": "approval",
+      "question_text": "\"approval\" の意味はどれでしょう？",
+      "choices_text": [
+        "Official permission or consent",
+        "A written explanation",
+        "A system error message",
+        "An automatic rejection"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Orders above the spending limit require managerial approval.",
+      "explanation": "承認・許可\n説明文\nエラーメッセージ\n自動却下"
+    },
+    {
+      "word": "justification",
+      "question_text": "\"justification\" の意味はどれでしょう？",
+      "choices_text": [
+        "A valid reason explaining why something is necessary",
+        "A delivery confirmation notice",
+        "A monthly budget limit",
+        "A technical instruction manual"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Specialized equipment orders may require additional justification.",
+      "explanation": "正当な理由・根拠\n配送確認\n月間予算上限\n技術マニュアル"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level700_019.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 700",
+    "type": "vocabulary"
+  }
+}

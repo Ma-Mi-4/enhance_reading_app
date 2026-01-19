@@ -1,0 +1,28 @@
+{
+  "level": 700,
+  "title": "Notice: Guidelines for Annual Industry Exhibition Participation",
+  "category": "notice",
+  "content": "To all registered exhibitors,\n\nWe are pleased to confirm your participation in the Annual Industry Exhibition, scheduled to take place from November 15 to November 17 at the Metropolitan Convention Center. To ensure a smooth and well-organized event, please review the following participation guidelines carefully.\n\nAll exhibitors are required to complete booth setup between 9:00 a.m. and 6:00 p.m. on November 14. Early access will not be permitted due to venue regulations. Each booth must be staffed during official exhibition hours, and exhibitors are responsible for maintaining a clean and professional display throughout the event.\n\nExhibitors planning live product demonstrations must submit a demonstration schedule in advance for approval. Demonstrations involving sound equipment must comply with volume limits established by the venue. Any materials considered hazardous or prohibited under local safety regulations are strictly forbidden.\n\nAn on-site inspection will be conducted each morning before the exhibition opens to the public. Booths found in violation of the guidelines may be required to make immediate adjustments or suspend operations temporarily.\n\nA detailed floor map, setup instructions, and contact information for event staff will be provided via email one week prior to the exhibition. If you have questions regarding booth requirements or operational procedures, please contact the Exhibition Coordination Office.\n\nWe appreciate your cooperation and look forward to a successful event.",
+  "word_count": 246,
+  "questions": [
+    {
+      "body": "What may happen if an exhibitor does not follow the participation guidelines?",
+      "choices_text": [
+        "They may be required to adjust or temporarily suspend booth operations.",
+        "They will lose their registration fee automatically.",
+        "They will be permanently banned from future exhibitions.",
+        "They will receive additional setup time as compensation."
+      ],
+      "correct_index": 0,
+      "explanation": "本文には、ガイドライン違反があった場合、即時修正や一時的な運営停止を求められる可能性があると書かれているため。",
+      "wrong_explanations": [
+        "正解のため誤答理由には使いません。",
+        "登録費没収についての記載はありません。",
+        "将来の出展禁止については触れられていません。",
+        "補償として時間が与えられるとは書かれていません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

@@ -1,0 +1,31 @@
+{
+  "level": 700,
+  "title": "Notice: Temporary Changes to Building Access Procedures",
+  "category": "notice",
+  "content": "To all staff members,\n\nPlease be advised that temporary changes will be made to the building access procedures starting September 3 due to scheduled maintenance work in the main entrance area. These changes are intended to ensure employee safety while allowing daily operations to continue with minimal disruption.\n\nDuring the maintenance period, the main entrance will be closed between 8:00 a.m. and 6:00 p.m. on weekdays. Employees are asked to use the east-side entrance, which will remain open throughout the day. Access cards will continue to function as usual, but security personnel will be stationed at the alternative entrance to assist visitors and verify identification when necessary.\n\nEmployees who frequently host external guests are responsible for informing them of the temporary access changes in advance. Visitors must sign in at the security desk upon arrival and wear a visitor badge at all times while inside the building. Failure to follow these procedures may result in delayed entry.\n\nDeliveries will also be affected during this period. Vendors are requested to use the designated loading area behind the building, and delivery schedules may need to be adjusted accordingly. Department administrators should coordinate with vendors to confirm delivery times and avoid congestion.\n\nThe maintenance work is expected to be completed within two weeks. Updates will be provided if the schedule changes. For questions or concerns, please contact the Facilities Management Office.\n\nThank you for your cooperation.",
+  "word_count": 246,
+  "questions": [
+    {
+      "body": "What are employees required to do during the maintenance period?",
+      "choices_text": [
+        "Use the east-side entrance instead of the main entrance.",
+        "Deactivate their access cards during weekdays.",
+        "Cancel meetings with external visitors.",
+        "Reschedule all deliveries until maintenance is finished."
+      ],
+      "correct_index": 0,
+      "explanation": "本文に、平日の日中は正面入口が閉鎖され、東側入口を使用するよう求められているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使用しません。",
+        "アクセスカードは通常通り使用できると記載されています。",
+        "来客のキャンセルについての指示はありません。",
+        "配送は調整が必要な場合があるだけで、全面停止とは書かれていません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": {
+    "created_by": "chatgpt",
+    "checked": true
+  }
+}
