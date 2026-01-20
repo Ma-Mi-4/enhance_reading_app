@@ -1,0 +1,78 @@
+{
+  "level": 800,
+  "title": "Vocabulary Quiz from Part7 Level800_018",
+  "questions": [
+    {
+      "word": "centralized",
+      "question_text": "\"centralized\" の意味はどれでしょう？",
+      "choices_text": [
+        "Managed or stored in one main location",
+        "Spread widely across different areas",
+        "Temporarily unavailable",
+        "Controlled by external partners"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The company introduced a centralized system to manage internal documents.",
+      "explanation": "一元化された\n分散した\n一時的に利用不可\n外部管理"
+    },
+    {
+      "word": "fragmentation",
+      "question_text": "\"fragmentation\" の意味はどれでしょう？",
+      "choices_text": [
+        "The state of being divided into separate parts",
+        "A process of long-term planning",
+        "An improvement in efficiency",
+        "A formal approval procedure"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Information fragmentation made it hard for employees to find accurate data.",
+      "explanation": "分散・断片化\n長期計画\n効率向上\n承認手続き"
+    },
+    {
+      "word": "consolidate",
+      "question_text": "\"consolidate\" の意味はどれでしょう？",
+      "choices_text": [
+        "To combine multiple things into one",
+        "To remove outdated information",
+        "To delay a scheduled launch",
+        "To assign tasks to individuals"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The new platform helps consolidate documents from different departments.",
+      "explanation": "統合する\n削除する\n延期する\n割り当てる"
+    },
+    {
+      "word": "designate",
+      "question_text": "\"designate\" の意味はどれでしょう？",
+      "choices_text": [
+        "To officially choose someone for a role or task",
+        "To criticize existing procedures",
+        "To request additional funding",
+        "To publish information publicly"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Each department will designate a content owner for document updates.",
+      "explanation": "指名する\n批判する\n資金要請\n公開する"
+    },
+    {
+      "word": "usability",
+      "question_text": "\"usability\" の意味はどれでしょう？",
+      "choices_text": [
+        "How easy something is to use",
+        "The cost of maintaining a system",
+        "The speed of internet access",
+        "The legal status of a platform"
+      ],
+      "correct_index": 0,
+      "example_sentence": "User feedback will be used to improve the system’s usability.",
+      "explanation": "使いやすさ\n維持費\n通信速度\n法的地位"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level800_018.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 800",
+    "type": "vocabulary"
+  }
+}

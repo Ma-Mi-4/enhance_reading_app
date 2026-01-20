@@ -1,0 +1,28 @@
+{
+  "level": 800,
+  "title": "Internal Announcement: Introduction of Flexible Work Hours Policy",
+  "category": "notice",
+  "content": "To all employees,\n\nIn response to ongoing feedback regarding work-life balance and productivity, the company will introduce a Flexible Work Hours Policy starting November 1. This policy is intended to provide employees with greater autonomy in managing their schedules while maintaining consistent collaboration and service quality across teams.\n\nUnder the new policy, employees may choose their daily start time between 7:00 a.m. and 10:00 a.m., provided that they complete their required working hours and are available during core collaboration hours from 10:00 a.m. to 3:00 p.m. These core hours have been established to ensure sufficient overlap for meetings, team discussions, and client communication.\n\nThe policy applies to all full-time employees whose roles do not require fixed on-site schedules. Employees working in customer support, manufacturing, or facility operations should consult their department managers to confirm eligibility, as certain operational constraints may apply.\n\nManagers are responsible for monitoring team performance and ensuring that flexible schedules do not negatively affect project timelines or internal coordination. Employees are expected to communicate their chosen schedules clearly within their teams and update shared calendars accordingly.\n\nTo support a smooth transition, the Human Resources Department will provide detailed guidelines and conduct informational sessions throughout October. These sessions will address common questions and outline best practices for maintaining accountability and collaboration under flexible working arrangements.\n\nThe company believes that this policy will contribute to increased employee satisfaction and sustained productivity over the long term.",
+  "word_count": 263,
+  "questions": [
+    {
+      "body": "What is one requirement employees must follow under the Flexible Work Hours Policy?",
+      "choices_text": [
+        "They must be available during designated core collaboration hours.",
+        "They must reduce their total weekly working hours.",
+        "They must work remotely at least three days a week.",
+        "They must receive daily approval from Human Resources."
+      ],
+      "correct_index": 0,
+      "explanation": "本文では、始業時間を柔軟に選べる一方で、10時から15時のコアタイム中は必ず勤務可能である必要があると説明されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使用しません。",
+        "労働時間の削減については言及されていません。",
+        "在宅勤務の義務化は記載されていません。",
+        "日次で人事承認を受ける必要はありません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

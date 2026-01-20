@@ -1,0 +1,28 @@
+{
+  "level": 800,
+  "title": "Guide: Rollout of the Remote Meeting Best Practices Framework",
+  "category": "guide",
+  "content": "As remote and hybrid work arrangements become a permanent part of daily operations, the company is introducing a Remote Meeting Best Practices Framework to improve efficiency and participation. This guide outlines recommended standards for planning, conducting, and following up on virtual meetings across all departments.\n\nBefore scheduling a meeting, organizers are encouraged to confirm whether real-time discussion is necessary or if the objective can be achieved through written communication. When meetings are required, clear agendas should be shared at least one business day in advance, along with relevant materials. This preparation allows participants to contribute more effectively and reduces time spent clarifying basic information.\n\nDuring meetings, facilitators should define discussion priorities and manage speaking time to ensure balanced participation. The use of video is recommended when feasible, as it supports engagement, though flexibility is advised for employees facing technical or environmental constraints. Meetings should begin and end on time to respect participants’ schedules.\n\nAfter the session, organizers are responsible for distributing concise summaries that capture key decisions, action items, and assigned owners. These summaries serve as a reference point and help prevent misunderstandings, particularly when teams operate across time zones.\n\nManagement believes that consistent application of this framework will lead to more focused discussions and better outcomes. Employees are encouraged to review the full guidelines available on the internal portal before hosting future meetings.",
+  "word_count": 261,
+  "questions": [
+    {
+      "body": "What is one recommendation made in the framework?",
+      "choices_text": [
+        "Sharing meeting agendas in advance to improve participation.",
+        "Requiring video use in all remote meetings without exception.",
+        "Replacing all meetings with written communication.",
+        "Allowing meetings to run longer if discussions are productive."
+      ],
+      "correct_index": 0,
+      "explanation": "本文中で、事前にアジェンダや資料を共有することで参加の質が高まると述べられているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使用しません。",
+        "ビデオ使用は推奨だが必須ではないため誤り。",
+        "すべての会議を文章に置き換えるとは書かれていません。",
+        "時間厳守が推奨されており、延長を勧めてはいません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

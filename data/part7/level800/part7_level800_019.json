@@ -1,0 +1,28 @@
+{
+  "level": 800,
+  "title": "Internal Announcement: Introduction of Performance Review Enhancements",
+  "category": "notice",
+  "content": "To all employees,\n\nThe Human Resources Department is introducing several enhancements to the company’s performance review process beginning next quarter. These changes are intended to improve transparency, encourage professional development, and ensure evaluations more accurately reflect individual contributions and team outcomes.\n\nUnder the revised system, performance reviews will take place twice a year instead of annually. This adjustment allows managers and employees to discuss progress more frequently and address challenges before they escalate. Each review cycle will include both quantitative performance metrics and qualitative feedback related to collaboration, communication, and problem-solving skills.\n\nAnother key update involves goal setting. Employees will now be required to define measurable objectives at the start of each review period. These objectives should align with departmental priorities and broader company goals. Managers will provide written feedback on goal progress and may recommend training opportunities or mentoring support where appropriate.\n\nTo promote consistency across departments, all managers will participate in mandatory calibration sessions. During these meetings, evaluation standards and rating criteria will be reviewed to minimize discrepancies and potential bias.\n\nEmployees will receive detailed guidance materials and access to an online self-assessment tool prior to the first review cycle. The HR team encourages staff to review these resources carefully and prepare questions in advance.\n\nWe believe these enhancements will support clearer communication, fairer evaluations, and continued growth across the organization.",
+  "word_count": 258,
+  "questions": [
+    {
+      "body": "Why will performance reviews be conducted twice a year under the new system?",
+      "choices_text": [
+        "To allow issues to be discussed and addressed more promptly.",
+        "To reduce the amount of written feedback required from managers.",
+        "To eliminate the need for employee self-assessments.",
+        "To shorten the overall evaluation process."
+      ],
+      "correct_index": 0,
+      "explanation": "本文では、評価頻度を増やすことで課題を早期に把握し、問題が深刻化する前に対応できると説明されているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使用しません。",
+        "フィードバック量を減らす目的とは記載されていません。",
+        "自己評価ツールは引き続き使用されます。",
+        "評価全体を短縮する目的ではありません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

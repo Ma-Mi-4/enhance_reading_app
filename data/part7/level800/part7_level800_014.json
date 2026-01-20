@@ -1,0 +1,29 @@
+{
+  "level": 800,
+  "title": "Internal Notice: Revision of Internal Transfer Policy",
+  "category": "notice",
+  "content": "To improve employee retention and encourage long-term career development, Orion Systems announced revisions to its internal transfer policy. Under the updated guidelines, employees who have completed at least eighteen months in their current role may apply for openings in other departments without requiring direct supervisor approval at the initial stage.\n\nAccording to the Human Resources department, this change is intended to provide staff with greater visibility into available opportunities while reducing concerns that expressing interest in another position might negatively affect performance evaluations. Once an employee is selected as a final candidate, the current manager will be informed to coordinate a transition plan.\n\nThe company also introduced quarterly information sessions where department representatives outline their team’s responsibilities, skill requirements, and ongoing projects. These sessions are optional but strongly encouraged for employees considering a transfer within the next year.\n\nHowever, HR clarified that transfers are not guaranteed and will depend on business needs and the applicant’s qualifications. Employees are advised to discuss long-term career goals with their managers during annual reviews to ensure alignment with organizational priorities.\n\nThe revised policy will take effect on April 1 and will be reviewed after six months based on participation rates and employee feedback.",
+  "word_count": 262,
+  "questions": [
+    {
+      "body": "What is one main purpose of the revised transfer policy?",
+      "choices_text": [
+        "Employees can explore internal opportunities more openly.",
+        "Annual performance reviews will no longer be required.",
+        "Managers must attend quarterly information sessions.",
+        "All eligible employees are guaranteed a transfer."
+      ],
+      "correct_index": 0,
+      "explanation": "本文では、異動希望を表明することで評価に悪影響が出るのではという不安を減らし、社内の機会をよりオープンに検討できるようにする目的だと述べられているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使用しません。",
+        "評価制度を廃止するとは書かれていません。",
+        "情報セッションは参加必須ではありません。",
+        "異動は保証されないと明記されています。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}
+

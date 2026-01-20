@@ -20,14 +20,27 @@ end
 
 puts "✓ Admin user ensured."
 
+# -------------------------------
+# Part7 QuestionSet の登録
+# -------------------------------
 part7_files = Dir.glob(Rails.root.join("data/part7/**/*.json")).sort
 
 part7_files.each do |file|
-  data = JSON.parse(File.read(file))
+  content = File.read(file)
+
+  if content.strip.empty?
+    puts "⚠ Skipping empty file: #{file}"
+    next
+  end
+
+  begin
+    data = JSON.parse(content)
+  rescue JSON::ParserError => e
+    puts "⚠ JSON parse error in file #{file}: #{e.message}"
+    next
+  end
 
   filename = File.basename(file, ".json")
-  index_num = filename.split("_").last.to_i
-
   set = QuestionSet.find_or_initialize_by(filename: filename)
   set.level = data["level"]
   set.title = data["title"]
@@ -49,14 +62,27 @@ part7_files.each do |file|
   puts "✓ QuestionSet imported: #{filename}"
 end
 
+# -------------------------------
+# QuizSet の登録
+# -------------------------------
 quiz_files = Dir.glob(Rails.root.join("data/quiz/**/*.json")).sort
 
 quiz_files.each do |file|
-  data = JSON.parse(File.read(file))
+  content = File.read(file)
+
+  if content.strip.empty?
+    puts "⚠ Skipping empty file: #{file}"
+    next
+  end
+
+  begin
+    data = JSON.parse(content)
+  rescue JSON::ParserError => e
+    puts "⚠ JSON parse error in file #{file}: #{e.message}"
+    next
+  end
 
   filename = File.basename(file, ".json")
-  index_num = filename.split("_").last.to_i
-
   question_set_filename = filename.sub("quiz_", "part7_")
   question_set = QuestionSet.find_by(filename: question_set_filename)
 

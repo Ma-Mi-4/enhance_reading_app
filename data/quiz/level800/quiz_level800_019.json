@@ -1,0 +1,78 @@
+{
+  "level": 800,
+  "title": "Vocabulary Quiz from Part7 Level800_019",
+  "questions": [
+    {
+      "word": "transparency",
+      "question_text": "\"transparency\" の意味はどれでしょう？",
+      "choices_text": [
+        "The quality of being open and easy to understand",
+        "The speed at which decisions are made",
+        "A formal written agreement",
+        "A method for reducing costs"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The new review system was designed to increase transparency in evaluations.",
+      "explanation": "透明性・明確さ\n意思決定の速さ\n契約書\nコスト削減手法"
+    },
+    {
+      "word": "escalate",
+      "question_text": "\"escalate\" の意味はどれでしょう？",
+      "choices_text": [
+        "To become more serious or intense",
+        "To be officially approved",
+        "To end unexpectedly",
+        "To be carefully documented"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Managers aim to resolve issues before they escalate.",
+      "explanation": "悪化する・深刻化する\n承認される\n突然終わる\n記録される"
+    },
+    {
+      "word": "qualitative",
+      "question_text": "\"qualitative\" の意味はどれでしょう？",
+      "choices_text": [
+        "Related to quality rather than quantity",
+        "Measured strictly by numerical data",
+        "Based on financial performance only",
+        "Determined by legal standards"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The evaluation includes qualitative feedback on communication skills.",
+      "explanation": "質的な\n数値のみの\n財務限定\n法的基準"
+    },
+    {
+      "word": "calibration",
+      "question_text": "\"calibration\" の意味はどれでしょう？",
+      "choices_text": [
+        "The process of adjusting standards for consistency",
+        "The announcement of final results",
+        "The delegation of tasks to employees",
+        "The removal of outdated procedures"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Calibration meetings help ensure fair performance ratings.",
+      "explanation": "基準調整・すり合わせ\n結果発表\n業務分担\n手順廃止"
+    },
+    {
+      "word": "bias",
+      "question_text": "\"bias\" の意味はどれでしょう？",
+      "choices_text": [
+        "An unfair preference or prejudice",
+        "A performance improvement plan",
+        "A technical system error",
+        "A temporary workload increase"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The revised process aims to reduce potential bias in evaluations.",
+      "explanation": "偏り・先入観\n改善計画\nシステム障害\n業務増加"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level800_019.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 800",
+    "type": "vocabulary"
+  }
+}

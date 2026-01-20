@@ -1,0 +1,78 @@
+{
+  "level": 800,
+  "title": "Vocabulary Quiz from Part7 Level800_015",
+  "questions": [
+    {
+      "word": "authorization",
+      "question_text": "\"authorization\" の意味はどれでしょう？",
+      "choices_text": [
+        "Official permission or approval",
+        "A technical system failure",
+        "A summary of project results",
+        "An internal training schedule"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Access to the database requires manager authorization.",
+      "explanation": "許可・承認\nシステム障害\n結果要約\n研修日程"
+    },
+    {
+      "word": "confidential",
+      "question_text": "\"confidential\" の意味はどれでしょう？",
+      "choices_text": [
+        "Intended to be kept secret or private",
+        "Easily accessible to the public",
+        "Related to customer satisfaction",
+        "Temporary and informal"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Employees must protect confidential client information.",
+      "explanation": "機密の\n公開されている\n顧客満足関連\n一時的"
+    },
+    {
+      "word": "oversight",
+      "question_text": "\"oversight\" の意味はどれでしょう？",
+      "choices_text": [
+        "Supervision or careful monitoring",
+        "A serious legal violation",
+        "An unexpected financial loss",
+        "A completed project phase"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The policy ensures proper oversight of data access requests.",
+      "explanation": "監督・管理\n法的違反\n損失\n完了段階"
+    },
+    {
+      "word": "designated",
+      "question_text": "\"designated\" の意味はどれでしょう？",
+      "choices_text": [
+        "Officially chosen for a specific role or purpose",
+        "Recently canceled",
+        "Shared informally",
+        "Delayed without notice"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Only designated staff members may approve access requests.",
+      "explanation": "指定された\n中止された\n非公式共有\n遅延"
+    },
+    {
+      "word": "compliance",
+      "question_text": "\"compliance\" の意味はどれでしょう？",
+      "choices_text": [
+        "The act of following rules or standards",
+        "A request for additional resources",
+        "A system upgrade process",
+        "A disagreement between teams"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Regular audits help ensure compliance with security policies.",
+      "explanation": "遵守\n追加要求\n更新作業\n対立"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level800_015.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 800",
+    "type": "vocabulary"
+  }
+}

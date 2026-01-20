@@ -1,0 +1,28 @@
+{
+  "level": 800,
+  "title": "Internal Update: Revision of Remote Meeting Guidelines",
+  "category": "notice",
+  "content": "To all staff members,\n\nAs remote work continues to play an important role in our operations, the company has revised its Remote Meeting Guidelines to improve efficiency and communication quality across teams. These updates are based on feedback collected over the past year and reflect best practices observed in high-performing departments.\n\nOne major change involves meeting preparation standards. Organizers are now required to distribute a clear agenda and relevant background materials at least 24 hours in advance. This measure is intended to help participants review key points beforehand and contribute more effectively during discussions. Meetings without shared agendas may be rescheduled at the discretion of department managers.\n\nThe revised guidelines also introduce the role of a designated meeting facilitator. This individual is responsible for managing time, encouraging balanced participation, and summarizing key decisions before the meeting concludes. Early trials of this approach have shown improvements in focus and reduced meeting duration.\n\nAdditionally, teams are encouraged to limit meetings to essential participants only and to keep sessions under 60 minutes whenever possible. For complex topics requiring longer discussion, organizers should consider dividing content into multiple sessions or using written updates as a supplement.\n\nAfter each remote meeting, a concise summary outlining action items and deadlines must be shared with all relevant stakeholders. This practice aims to minimize misunderstandings and ensure accountability.\n\nThe updated guidelines will take effect on October 1. Detailed documentation and examples are available on the internal collaboration portal.",
+  "word_count": 262,
+  "questions": [
+    {
+      "body": "What is one expected benefit of requiring agendas to be shared in advance?",
+      "choices_text": [
+        "Participants can prepare and contribute more effectively.",
+        "Meetings can be conducted without facilitators.",
+        "Managers can reduce the number of written summaries.",
+        "All meetings can be shortened to under 30 minutes."
+      ],
+      "correct_index": 0,
+      "explanation": "本文では、事前にアジェンダを共有することで参加者が準備しやすくなり、議論への貢献度が高まると述べられているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使用しません。",
+        "ファシリテーター不要になるとは書かれていません。",
+        "要約削減についての言及はありません。",
+        "30分以内に制限するとは書かれていません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

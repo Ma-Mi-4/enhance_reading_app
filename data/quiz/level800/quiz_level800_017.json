@@ -1,0 +1,78 @@
+{
+  "level": 800,
+  "title": "Vocabulary Quiz from Part7 Level800_017",
+  "questions": [
+    {
+      "word": "autonomy",
+      "question_text": "\"autonomy\" の意味はどれでしょう？",
+      "choices_text": [
+        "The ability to make decisions independently",
+        "Strict supervision by management",
+        "A reduction in work responsibilities",
+        "Mandatory compliance with fixed schedules"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The new policy gives employees greater autonomy in managing their work schedules.",
+      "explanation": "自主性・自律性\n厳格な管理\n業務削減\n固定勤務"
+    },
+    {
+      "word": "core",
+      "question_text": "\"core\" の意味はどれでしょう？",
+      "choices_text": [
+        "Central and most important",
+        "Optional and nonessential",
+        "Temporary and short-term",
+        "Unrelated to daily operations"
+      ],
+      "correct_index": 0,
+      "example_sentence": "All employees must be available during core working hours.",
+      "explanation": "中核となる・主要な\n任意の\n一時的な\n業務無関係"
+    },
+    {
+      "word": "eligibility",
+      "question_text": "\"eligibility\" の意味はどれでしょう？",
+      "choices_text": [
+        "The state of being qualified or allowed",
+        "A decline in job performance",
+        "An informal workplace agreement",
+        "A type of employee benefit"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Employees should confirm their eligibility for flexible schedules with their managers.",
+      "explanation": "適格性・資格\n業績低下\n非公式合意\n福利厚生"
+    },
+    {
+      "word": "constraint",
+      "question_text": "\"constraint\" の意味はどれでしょう？",
+      "choices_text": [
+        "A limitation or restriction",
+        "A financial incentive",
+        "A performance evaluation",
+        "A scheduling preference"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Operational constraints may limit who can participate in the program.",
+      "explanation": "制約・制限\n報奨\n評価\n希望"
+    },
+    {
+      "word": "accountability",
+      "question_text": "\"accountability\" の意味はどれでしょう？",
+      "choices_text": [
+        "Responsibility for one’s actions and outcomes",
+        "Complete freedom from supervision",
+        "A method of time tracking",
+        "A formal employment contract"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Managers emphasized accountability under the flexible work policy.",
+      "explanation": "責任・説明責任\n監督不要\n勤怠管理\n雇用契約"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level800_017.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 800",
+    "type": "vocabulary"
+  }
+}

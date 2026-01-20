@@ -1,0 +1,78 @@
+{
+  "level": 800,
+  "title": "Vocabulary Quiz from Part7 Level800_013",
+  "questions": [
+    {
+      "word": "agenda",
+      "question_text": "\"agenda\" の意味はどれでしょう？",
+      "choices_text": [
+        "A list of topics to be discussed at a meeting",
+        "A written summary after a meeting",
+        "An online communication tool",
+        "A department performance report"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The organizer shared the meeting agenda one day in advance.",
+      "explanation": "議題・会議の進行項目\n議事録\n通信ツール\n業績報告書"
+    },
+    {
+      "word": "facilitator",
+      "question_text": "\"facilitator\" の意味はどれでしょう？",
+      "choices_text": [
+        "A person who helps guide and manage discussions",
+        "Someone who records meeting minutes",
+        "An employee who approves budgets",
+        "A technical support system"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The facilitator ensured that all participants had a chance to speak.",
+      "explanation": "進行役・促進者\n書記\n予算承認者\n技術支援システム"
+    },
+    {
+      "word": "efficient",
+      "question_text": "\"efficient\" の意味はどれでしょう？",
+      "choices_text": [
+        "Achieving results with minimal wasted time or effort",
+        "Extremely detailed and complex",
+        "Delayed due to technical issues",
+        "Focused mainly on informal discussion"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Clear agendas help make meetings more efficient.",
+      "explanation": "効率的な\n複雑な\n遅延した\n雑談中心の"
+    },
+    {
+      "word": "accountability",
+      "question_text": "\"accountability\" の意味はどれでしょう？",
+      "choices_text": [
+        "Responsibility for completing tasks or decisions",
+        "A method of online collaboration",
+        "A formal training session",
+        "A system for scheduling meetings"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Sharing action items increases accountability among team members.",
+      "explanation": "責任・説明責任\n協働方法\n研修\n会議管理システム"
+    },
+    {
+      "word": "discretion",
+      "question_text": "\"discretion\" の意味はどれでしょう？",
+      "choices_text": [
+        "The freedom to decide what should be done in a situation",
+        "A strict company rule",
+        "A financial estimation method",
+        "A mandatory approval process"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Managers may reschedule meetings at their discretion.",
+      "explanation": "裁量・判断の自由\n厳格な規則\n見積方法\n必須承認手続き"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level800_013.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 800",
+    "type": "vocabulary"
+  }
+}

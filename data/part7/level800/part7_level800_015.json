@@ -1,0 +1,28 @@
+{
+  "level": 800,
+  "title": "Internal Notice: Introduction of Data Access Management Policy",
+  "category": "notice",
+  "content": "To all employees,\n\nIn response to recent growth in cross-functional projects and the increasing volume of shared digital information, the company will introduce a new Data Access Management Policy effective November 15. This policy is intended to strengthen information security while ensuring that employees can access the data necessary to perform their roles efficiently.\n\nUnder the new policy, access to internal systems and project databases will be granted based on job responsibilities and current project involvement. Employees may request temporary or extended access through the internal request portal, subject to approval by both their department manager and the Information Security Team. This process is designed to maintain appropriate oversight without causing unnecessary delays.\n\nThe policy also clarifies responsibilities related to data handling. Employees with access to confidential or sensitive information are required to complete an annual data protection training session. This training will cover proper data usage, storage guidelines, and procedures for reporting potential security incidents.\n\nTo support a smooth transition, the IT Department will host several informational briefings throughout October. These sessions will explain access categories, demonstrate the request process, and address common concerns raised during the pilot phase. Attendance is strongly encouraged, particularly for staff members involved in cross-departmental initiatives.\n\nWe recognize that effective data sharing is essential to collaboration and innovation. By implementing this policy, we aim to balance accessibility with security and establish clear standards that support responsible information management across the organization.\n\nDetailed policy documents and training schedules are available on the internal governance portal.",
+  "word_count": 263,
+  "questions": [
+    {
+      "body": "What is one main purpose of the new Data Access Management Policy?",
+      "choices_text": [
+        "To improve information security while allowing necessary access.",
+        "To eliminate cross-functional projects.",
+        "To centralize all decision-making within the IT Department.",
+        "To reduce the need for employee training programs."
+      ],
+      "correct_index": 0,
+      "explanation": "本文では、情報セキュリティを強化しつつ、業務に必要なデータへの適切なアクセスを確保することが目的だと述べられているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使用しません。",
+        "部門横断プロジェクトを廃止するとは書かれていません。",
+        "意思決定をIT部門に集中させる目的ではありません。",
+        "研修削減が目的とは記載されていません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

@@ -1,0 +1,78 @@
+{
+  "level": 800,
+  "title": "Vocabulary Quiz from Part7 Level800_011",
+  "questions": [
+    {
+      "word": "accountability",
+      "question_text": "\"accountability\" の意味はどれでしょう？",
+      "choices_text": [
+        "Responsibility for explaining or justifying actions",
+        "A reduction in workload",
+        "An optional guideline",
+        "A financial incentive program"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The new review system was designed to strengthen accountability in document approvals.",
+      "explanation": "説明責任\n業務削減\n任意指針\n報奨制度"
+    },
+    {
+      "word": "facilitate",
+      "question_text": "\"facilitate\" の意味はどれでしょう？",
+      "choices_text": [
+        "To make a process easier or smoother",
+        "To formally reject a proposal",
+        "To delay a scheduled task",
+        "To assign legal responsibility"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The tracking system will facilitate communication between reviewers.",
+      "explanation": "円滑にする\n却下する\n遅らせる\n責任を課す"
+    },
+    {
+      "word": "expedited",
+      "question_text": "\"expedited\" の意味はどれでしょう？",
+      "choices_text": [
+        "Handled more quickly than usual",
+        "Carefully documented",
+        "Publicly announced",
+        "Repeated without changes"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Time-sensitive materials may qualify for expedited review.",
+      "explanation": "迅速な\n記録された\n公表された\n繰り返された"
+    },
+    {
+      "word": "transparency",
+      "question_text": "\"transparency\" の意味はどれでしょう？",
+      "choices_text": [
+        "Openness and ease of understanding processes",
+        "Strict confidentiality requirements",
+        "Visual design consistency",
+        "Financial profitability"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The shared system was introduced to increase transparency in approvals.",
+      "explanation": "透明性\n機密性\nデザイン統一\n収益性"
+    },
+    {
+      "word": "guideline",
+      "question_text": "\"guideline\" の意味はどれでしょう？",
+      "choices_text": [
+        "A recommended rule or instruction",
+        "A binding legal contract",
+        "An informal complaint",
+        "A performance evaluation score"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Employees should review the guidelines before submitting documents.",
+      "explanation": "指針・ガイドライン\n法的契約\n苦情\n評価点"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level800_011.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 800",
+    "type": "vocabulary"
+  }
+}
