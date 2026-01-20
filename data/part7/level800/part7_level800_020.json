@@ -1,0 +1,27 @@
+{
+  "level": 800,
+  "title": "Internal Memo: Implementation of a New Employee Wellness Program",
+  "category": "notice",
+  "content": "To all employees,\n\nThe company is excited to announce the launch of a new Employee Wellness Program beginning next month. This initiative is designed to support both physical and mental well-being and to encourage a healthier, more productive workplace culture.\n\nThe program includes weekly on-site fitness classes, access to virtual yoga and meditation sessions, and quarterly health assessments. Employees will also have the opportunity to attend workshops on nutrition, stress management, and work-life balance. Participation is voluntary, but all employees are encouraged to take advantage of the available resources.\n\nIn addition, a new wellness portal will be introduced to provide personalized recommendations, track participation, and allow employees to schedule appointments for health assessments and counseling sessions. The portal will also feature a library of educational materials, including articles, videos, and interactive tools, to help employees make informed choices about their health.\n\nManagers are asked to promote the program within their teams and to provide support for employees who wish to participate during working hours. Feedback will be collected regularly to evaluate the program’s effectiveness and to identify areas for improvement.\n\nWe believe that investing in employee wellness is an investment in the company’s long-term success. Your participation and engagement will help create a more positive and supportive workplace for everyone. For more details, please visit the wellness portal or contact the HR Wellness Team directly.",
+  "word_count": 266,
+  "questions": [
+    {
+      "body": "What is one feature of the new Employee Wellness Program?",
+      "choices_text": [
+        "It provides access to both on-site and virtual wellness activities.",
+        "It replaces all existing health insurance plans.",
+        "It requires mandatory participation in weekly classes.",
+        "It limits educational resources to written materials only."
+      ],
+      "correct_index": 0,
+      "explanation": "本文に「週次のオンサイトクラスとオンラインヨガ・瞑想セッションが利用可能」と記載されているため。",
+      "wrong_explanations": [
+        "既存の保険プランを置き換えるとは書かれていません。",
+        "参加は任意（voluntary）と明記されているため誤り。",
+        "教育資料は記事・動画・インタラクティブツールも含むため誤り。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

@@ -1,0 +1,28 @@
+{
+  "level": 800,
+  "title": "Notice: Implementation of Company-Wide Document Review Process",
+  "category": "notice",
+  "content": "To all employees,\n\nBeginning next month, the company will implement a standardized document review process aimed at improving accuracy, consistency, and accountability across departments. This initiative responds to internal audits that identified variations in document quality and approval timelines.\n\nUnder the new process, all formal reports, proposals, and external communications must undergo a two-stage review prior to distribution. The first stage focuses on content accuracy, ensuring that data sources are properly cited and that conclusions are supported by evidence. The second stage evaluates clarity, tone, and alignment with company policies.\n\nTo facilitate smooth adoption, each department will appoint a Review Coordinator responsible for overseeing submissions and addressing reviewer feedback. Coordinators will receive training materials outlining review criteria, common errors, and recommended best practices. Departments handling time-sensitive materials may request expedited reviews, provided justification is documented.\n\nThe company will also introduce a shared tracking system that records submission dates, reviewer comments, and final approvals. This system is intended to increase transparency and help teams monitor progress without relying on email chains.\n\nManagement expects that the new process will reduce revisions after release and support more efficient collaboration. Employees are encouraged to familiarize themselves with the guidelines available on the intranet before the rollout date.",
+  "word_count": 262,
+  "questions": [
+    {
+      "body": "What is one purpose of introducing the document review process?",
+      "choices_text": [
+        "To improve consistency and accountability across departments.",
+        "To eliminate the need for external communications.",
+        "To centralize all document writing in one department.",
+        "To shorten all approval timelines regardless of content."
+      ],
+      "correct_index": 0,
+      "explanation": "本文冒頭で、文書の正確性や一貫性、説明責任を高めることが目的だと述べられているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使用しません。",
+        "社外文書をなくすとは書かれていません。",
+        "作成部門を一つに集約する記述はありません。",
+        "内容に関係なく短縮するとは述べられていません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": { "created_by": "chatgpt", "checked": true }
+}

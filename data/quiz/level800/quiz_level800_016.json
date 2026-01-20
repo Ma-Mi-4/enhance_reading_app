@@ -1,0 +1,78 @@
+{
+  "level": 800,
+  "title": "Vocabulary Quiz from Part7 Level800_016",
+  "questions": [
+    {
+      "word": "visibility",
+      "question_text": "\"visibility\" の意味はどれでしょう？",
+      "choices_text": [
+        "The ability to be easily seen or clearly understood",
+        "A formal approval process",
+        "A reduction in operating costs",
+        "A technical system failure"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The new system improves visibility into project progress across teams.",
+      "explanation": "可視性・見えやすさ\n承認手続き\nコスト削減\nシステム障害"
+    },
+    {
+      "word": "coordinate",
+      "question_text": "\"coordinate\" の意味はどれでしょう？",
+      "choices_text": [
+        "To organize activities so they work together effectively",
+        "To cancel an ongoing task",
+        "To document past performance",
+        "To delegate authority permanently"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Managers must coordinate tasks across departments to avoid delays.",
+      "explanation": "調整する・連携させる\n中止する\n記録する\n権限委譲"
+    },
+    {
+      "word": "rollout",
+      "question_text": "\"rollout\" の意味はどれでしょう？",
+      "choices_text": [
+        "The introduction of a new system or product",
+        "A temporary system shutdown",
+        "An employee evaluation meeting",
+        "A financial audit procedure"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The rollout of the new platform will occur in multiple phases.",
+      "explanation": "導入・展開\n停止\n評価面談\n監査"
+    },
+    {
+      "word": "mandatory",
+      "question_text": "\"mandatory\" の意味はどれでしょう？",
+      "choices_text": [
+        "Required and not optional",
+        "Strongly recommended but optional",
+        "Scheduled for future consideration",
+        "Limited to management only"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Attendance at one training session is mandatory for project staff.",
+      "explanation": "義務的な\n任意\n将来検討\n管理職限定"
+    },
+    {
+      "word": "transition",
+      "question_text": "\"transition\" の意味はどれでしょう？",
+      "choices_text": [
+        "The process of changing from one system or state to another",
+        "A permanent organizational structure",
+        "A delay caused by technical issues",
+        "A formal written agreement"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Employees are encouraged to prepare for the transition to the new system.",
+      "explanation": "移行・転換\n組織構造\n遅延\n契約"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level800_016.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 800",
+    "type": "vocabulary"
+  }
+}

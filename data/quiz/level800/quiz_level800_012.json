@@ -1,0 +1,78 @@
+{
+  "level": 800,
+  "title": "Vocabulary Quiz from Part7 Level800_012",
+  "questions": [
+    {
+      "word": "framework",
+      "question_text": "\"framework\" の意味はどれでしょう？",
+      "choices_text": [
+        "A structured system or set of guidelines",
+        "A temporary online meeting room",
+        "A financial support program",
+        "An informal discussion style"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The company introduced a framework to standardize remote meeting practices.",
+      "explanation": "枠組み・指針\n一時的な会議室\n支援制度\n非公式な話し方"
+    },
+    {
+      "word": "agenda",
+      "question_text": "\"agenda\" の意味はどれでしょう？",
+      "choices_text": [
+        "A list of topics to be discussed in a meeting",
+        "A summary sent after a meeting",
+        "A technical issue during a call",
+        "A company-wide policy document"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Clear agendas should be shared before scheduling virtual meetings.",
+      "explanation": "議題\n要約\n技術的問題\n社内方針"
+    },
+    {
+      "word": "facilitator",
+      "question_text": "\"facilitator\" の意味はどれでしょう？",
+      "choices_text": [
+        "A person who guides and manages a discussion",
+        "A participant who only observes",
+        "A technician who fixes system errors",
+        "A manager who approves budgets"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The facilitator ensured balanced participation during the meeting.",
+      "explanation": "進行役\n傍観者\n技術担当\n予算承認者"
+    },
+    {
+      "word": "concise",
+      "question_text": "\"concise\" の意味はどれでしょう？",
+      "choices_text": [
+        "Short and clear without unnecessary detail",
+        "Highly technical and complex",
+        "Focused mainly on visual design",
+        "Written for external audiences"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Organizers are asked to share concise meeting summaries afterward.",
+      "explanation": "簡潔な\n複雑な\nデザイン重視\n社外向け"
+    },
+    {
+      "word": "misunderstanding",
+      "question_text": "\"misunderstanding\" の意味はどれでしょう？",
+      "choices_text": [
+        "A failure to understand something correctly",
+        "A delay caused by scheduling conflicts",
+        "An intentional change in strategy",
+        "A formal agreement between teams"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Written summaries help prevent misunderstandings among remote teams.",
+      "explanation": "誤解\n日程遅延\n戦略変更\n正式合意"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level800_012.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 800",
+    "type": "vocabulary"
+  }
+}

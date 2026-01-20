@@ -1,0 +1,78 @@
+{
+  "level": 800,
+  "title": "Vocabulary Quiz from Part7 Level800_014",
+  "questions": [
+    {
+      "word": "retention",
+      "question_text": "\"retention\" の意味はどれでしょう？",
+      "choices_text": [
+        "Keeping employees within an organization",
+        "Reducing operational costs",
+        "Evaluating employee performance",
+        "Expanding into new markets"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The revised policy aims to improve employee retention by offering more career options.",
+      "explanation": "定着・保持\nコスト削減\n評価\n市場拡大"
+    },
+    {
+      "word": "visibility",
+      "question_text": "\"visibility\" の意味はどれでしょう？",
+      "choices_text": [
+        "The ability to see or access information clearly",
+        "A formal approval process",
+        "A reduction in responsibility",
+        "A temporary assignment"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The policy provides employees with greater visibility into internal job openings.",
+      "explanation": "見える状態・可視性\n承認手続き\n責任軽減\n一時的配置"
+    },
+    {
+      "word": "coordinate",
+      "question_text": "\"coordinate\" の意味はどれでしょう？",
+      "choices_text": [
+        "To organize actions smoothly with others",
+        "To cancel an existing plan",
+        "To delay a final decision",
+        "To evaluate employee skills"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Managers will coordinate the transition plan once a candidate is selected.",
+      "explanation": "調整する\n中止する\n延期する\n評価する"
+    },
+    {
+      "word": "qualifications",
+      "question_text": "\"qualifications\" の意味はどれでしょう？",
+      "choices_text": [
+        "Skills or experience required for a role",
+        "Company-wide policies",
+        "Short-term training sessions",
+        "Employee benefits"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Transfers depend on business needs and the applicant’s qualifications.",
+      "explanation": "資格・適性\n社内規定\n研修\n福利厚生"
+    },
+    {
+      "word": "alignment",
+      "question_text": "\"alignment\" の意味はどれでしょう？",
+      "choices_text": [
+        "Agreement or consistency between goals",
+        "A conflict between departments",
+        "A financial adjustment",
+        "An organizational restructuring"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Employees should ensure alignment between career goals and company priorities.",
+      "explanation": "一致・整合\n対立\n財務調整\n組織再編"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level800_014.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 800",
+    "type": "vocabulary"
+  }
+}

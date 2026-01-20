@@ -1,0 +1,31 @@
+{
+  "level": 800,
+  "title": "Internal Notice: Introduction of Centralized Task Management System",
+  "category": "notice",
+  "content": "To all employees,\n\nIn order to improve visibility into ongoing projects and enhance coordination across departments, the company will introduce a centralized task management system starting next month. This platform is intended to replace several separate tools currently used by different teams and provide a unified overview of task progress and responsibilities.\n\nThe new system allows users to create tasks, assign deadlines, and track completion status in real time. Team members will be able to view dependencies between tasks, reducing delays caused by unclear ownership or missed handoffs. Managers will also have access to summary dashboards that display workload distribution and potential bottlenecks.\n\nTo ensure a smooth transition, the system will be rolled out in phases. During the first phase, only project leaders and supervisors will be required to use the platform. Other employees will be granted access gradually after initial feedback is reviewed and necessary adjustments are made.\n\nTraining sessions will be offered both online and in person to familiarize staff with key features. Participation in at least one training session is mandatory for employees involved in project-based work. Detailed user guides and short tutorial videos will also be available on the internal support site.\n\nPlease note that after December 1, task updates submitted through legacy tools will no longer be officially recognized. Employees are encouraged to begin preparing for the transition by reviewing the training schedule and system overview materials in advance.\n\nIf you have questions or concerns, contact the Operations Support Team for assistance.",
+  "word_count": 263,
+  "questions": [
+    {
+      "body": "Why is the new task management system being introduced?",
+      "choices_text": [
+        "To improve coordination and visibility across projects.",
+        "To reduce the number of employees involved in projects.",
+        "To eliminate the need for project leaders.",
+        "To outsource task tracking to an external vendor."
+      ],
+      "correct_index": 0,
+      "explanation": "本文冒頭で、プロジェクトの可視性向上と部門間の連携強化が導入目的として述べられているため。",
+      "wrong_explanations": [
+        "これは正解のため誤答理由には使用しません。",
+        "人員削減についての記述はありません。",
+        "プロジェクトリーダーを不要にするとは書かれていません。",
+        "外部委託に関する説明はありません。"
+      ]
+    }
+  ],
+  "source": "generated_by_chatgpt",
+  "meta": {
+    "created_by": "chatgpt",
+    "checked": true
+  }
+}

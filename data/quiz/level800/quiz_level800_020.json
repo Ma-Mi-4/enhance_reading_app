@@ -1,0 +1,78 @@
+{
+  "level": 800,
+  "title": "Vocabulary Quiz from Part7 Level800_020",
+  "questions": [
+    {
+      "word": "wellness",
+      "question_text": "\"wellness\" の意味はどれでしょう？",
+      "choices_text": [
+        "A state of being healthy and maintaining physical and mental well-being",
+        "A financial bonus program",
+        "An employee attendance record",
+        "A workplace relocation plan"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The company’s wellness program includes fitness classes and stress management workshops.",
+      "explanation": "健康・心身の健康維持\nボーナス制度\n出席記録\n転勤計画"
+    },
+    {
+      "word": "engagement",
+      "question_text": "\"engagement\" の意味はどれでしょう？",
+      "choices_text": [
+        "Active participation or involvement in an activity",
+        "A formal contractual obligation",
+        "A delayed project deadline",
+        "A financial penalty"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Employee engagement in wellness activities is encouraged but voluntary.",
+      "explanation": "参加・関与\n契約義務\n遅延\n罰金"
+    },
+    {
+      "word": "participation",
+      "question_text": "\"participation\" の意味はどれでしょう？",
+      "choices_text": [
+        "The act of taking part in an activity or event",
+        "The act of hiring new employees",
+        "The amount of financial investment",
+        "The evaluation of workplace performance"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Participation in the fitness classes is optional but recommended.",
+      "explanation": "参加・関与\n採用\n投資額\n業績評価"
+    },
+    {
+      "word": "assessment",
+      "question_text": "\"assessment\" の意味はどれでしょう？",
+      "choices_text": [
+        "The act of evaluating or analyzing something",
+        "A sudden failure of equipment",
+        "A brief team meeting",
+        "A formal job promotion"
+      ],
+      "correct_index": 0,
+      "example_sentence": "Quarterly health assessments will be provided to employees.",
+      "explanation": "評価・査定\n故障\n会議\n昇進"
+    },
+    {
+      "word": "initiative",
+      "question_text": "\"initiative\" の意味はどれでしょう？",
+      "choices_text": [
+        "A new plan or program intended to achieve a goal",
+        "A delay in project completion",
+        "A financial report",
+        "A routine administrative task"
+      ],
+      "correct_index": 0,
+      "example_sentence": "The Employee Wellness Program is a company-wide initiative to promote health.",
+      "explanation": "新しい計画・取り組み\n遅延\n財務報告\n日常業務"
+    }
+  ],
+  "meta": {
+    "created_by": "chatgpt",
+    "source_file": "part7_level800_020.json",
+    "question_count": 5,
+    "difficulty": "TOEIC Level 800",
+    "type": "vocabulary"
+  }
+}
